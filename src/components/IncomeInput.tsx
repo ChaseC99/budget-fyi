@@ -85,10 +85,11 @@ export function IncomeInput({
                   i
                 </button>
                 <span id={tooltipId} role="tooltip" className={styles.tooltip}>
-                  We estimate your federal taxes using income tax plus Social Security and Medicare.
-                  Then we scale that amount against total federal revenue to estimate your share of
-                  total federal spending. The gap is shown here as additional debt, representing the
-                  deficit-financed portion of that spending.
+                  <strong>Additional Debt?</strong>
+                  <br /><br />
+                  The US government spends more money than it earns. It does this by taking on debt.
+                  <br /><br />
+                  The number you see here isn't your <em>personal</em> debt. It is an estimate based on your share of the national deficit, calculated proportionally from your federal tax contribution.
                 </span>
               </span>
               )
