@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "dev",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["/Users/chase/Documents/Code/Web/budget-fyi/node_modules/.bin/astro", "dev"],
+      "port": 4321
+    }
+  ]
+}

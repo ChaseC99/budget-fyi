@@ -1,0 +1,45 @@
+.explorer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 0 16px 48px;
+  gap: 16px;
+  overflow: hidden;
+}
+
+.divider {
+  width: 100%;
+  max-width: 480px;
+  height: 1px;
+  background: #e5e7eb;
+  margin: 4px 0;
+}
+
+.receiptNav {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0 4px;
+}
+
+.receiptHeader {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #9ca3af;
+  padding: 0 12px;
+}
+
+.backSlot {
+  width: 100%;
+  max-width: 480px;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+}
