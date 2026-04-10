@@ -30,6 +30,21 @@ export function BudgetExplorer() {
     () => Math.max(0, representedSpending - userTax),
     [representedSpending, userTax],
   );
+  const centerBreakdownItems = useMemo(
+    () =>
+      isRoot && hasIncome
+        ? [
+            { label: "Taxes", value: userTax },
+            {
+              label: "Debt share",
+              value: additionalDebt,
+              tooltip:
+                "The US government spends more money than it earns, so part of the budget is funded by debt.\n\nThis is your share of that debt.\n\n(A rough estimate based on your tax contribution)",
+            },
+          ]
+        : undefined,
+    [additionalDebt, hasIncome, isRoot, userTax],
+  );
 
   const getAmount = useCallback(
     (total: number) => (hasIncome ? computeUserShare(userTax, total) : total),
@@ -55,11 +70,7 @@ export function BudgetExplorer() {
   return (
     <div className={styles.explorer}>
       <IncomeInput
-        income={income}
         onIncomeChange={setIncome}
-        userTax={userTax}
-        additionalDebt={additionalDebt}
-        representedSpending={representedSpending}
       />
 
       <div className={styles.chartSlot}>
@@ -70,7 +81,8 @@ export function BudgetExplorer() {
           depth={depth}
           onSelect={drillDown}
           centerAmount={centerAmount}
-          centerLabel={isRoot ? (hasIncome ? "represented spending" : "total spending") : current.title}
+          centerLabel={isRoot ? (hasIncome ? "your contribution" : "total spending") : current.title}
+          centerBreakdownItems={centerBreakdownItems}
         />
       </div>
 

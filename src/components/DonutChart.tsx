@@ -22,6 +22,7 @@ interface DonutChartProps {
   onSelect: (node: BudgetNode) => void;
   centerAmount: number;
   centerLabel: string;
+  centerBreakdownItems?: { label: string; value: number; tooltip?: string }[];
 }
 
 export interface DonutChartHandle {
@@ -248,7 +249,7 @@ function isDarkColor(color: string): boolean {
 
 export const DonutChart = forwardRef<DonutChartHandle, DonutChartProps>(
   function DonutChart(
-    { node, parentIndex, depth, onSelect, centerAmount, centerLabel },
+    { node, parentIndex, depth, onSelect, centerAmount, centerLabel, centerBreakdownItems },
     ref,
   ) {
     const wrapperRef = useRef<HTMLDivElement>(null);
@@ -488,7 +489,11 @@ export const DonutChart = forwardRef<DonutChartHandle, DonutChartProps>(
             )}
           </g>
         </svg>
-        <CenterLabel amount={centerAmount} label={centerLabel} />
+        <CenterLabel
+          amount={centerAmount}
+          label={centerLabel}
+          breakdownItems={centerBreakdownItems}
+        />
       </div>
     );
   },

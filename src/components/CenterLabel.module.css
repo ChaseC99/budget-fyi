@@ -16,6 +16,10 @@
   text-align: center;
 }
 
+.contentWithBreakdown {
+  width: min(64%, 11rem);
+}
+
 .amount {
   max-width: 100%;
   font-size: clamp(1.32rem, 1.08rem + 0.82vw, 1.85rem);
@@ -36,4 +40,139 @@
   white-space: normal;
   overflow-wrap: anywhere;
   text-wrap: balance;
+}
+
+.breakdown {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  pointer-events: auto;
+}
+
+.breakdownItem {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 0;
+}
+
+.breakdownTopline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.breakdownLabel {
+  font-size: 0.64rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #4338ca;
+}
+
+.breakdownValue {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #1f2937;
+  font-variant-numeric: tabular-nums;
+}
+
+.infoGroup {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.infoButton {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border: 1px solid #a5b4fc;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #4f46e5;
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1;
+  cursor: help;
+  pointer-events: auto;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.infoButton:hover {
+  background: #eef2ff;
+  border-color: #818cf8;
+  box-shadow: 0 4px 10px rgb(99 102 241 / 0.18);
+  transform: translateY(-1px);
+}
+
+.infoButton:focus-visible {
+  outline: 2px solid #6366f1;
+  outline-offset: 2px;
+}
+
+.tooltip {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  width: min(240px, calc(100vw - 24px));
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #1a1a2e;
+  color: #fafafa;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  text-transform: none;
+  letter-spacing: 0;
+  text-align: left;
+  white-space: pre-wrap;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.18);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-50%) translateY(4px);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  z-index: 10;
+}
+
+.infoGroup:hover .tooltip,
+.infoGroup:focus-within .tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+@media (max-width: 480px) {
+  .contentWithBreakdown {
+    width: min(68%, 10.25rem);
+  }
+
+  .amount {
+    font-size: clamp(1.16rem, 0.96rem + 0.76vw, 1.6rem);
+  }
+
+  .breakdown {
+    margin-top: 8px;
+    gap: 5px;
+  }
+
+  .breakdownItem {
+    padding: 0;
+  }
+
+  .breakdownValue {
+    font-size: 0.76rem;
+  }
 }

@@ -1,26 +1,14 @@
-import { useState, useEffect, useCallback, useId } from "react";
-import { formatCurrencyFull } from "../lib/format";
+import { useState, useEffect, useCallback } from "react";
 import styles from "./IncomeInput.module.css";
 
 interface IncomeInputProps {
-  income: number;
   onIncomeChange: (income: number) => void;
-  userTax: number;
-  additionalDebt: number;
-  representedSpending: number;
 }
 
 const STORAGE_KEY = "budget-fyi-income";
 
-export function IncomeInput({
-  income,
-  onIncomeChange,
-  userTax,
-  additionalDebt,
-  representedSpending,
-}: IncomeInputProps) {
+export function IncomeInput({ onIncomeChange }: IncomeInputProps) {
   const [inputValue, setInputValue] = useState("");
-  const tooltipId = useId();
 
   useEffect(() => {
     const saved = localStorage.getItem(STORAGE_KEY);
@@ -31,7 +19,7 @@ export function IncomeInput({
         setInputValue(parsed.toLocaleString("en-US"));
       }
     }
-  }, []);
+  }, [onIncomeChange]);
 
   const handleChange = useCallback(
     (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -48,57 +36,21 @@ export function IncomeInput({
     [onIncomeChange],
   );
 
-  const hasIncome = income > 0;
-
   return (
     <div className={styles.container}>
-      <div className={styles.heading}>
-        I made <span className={styles.highlight}>&hellip;</span>
-      </div>
-      <div className={styles.inputRow}>
-        <span className={styles.dollarSign}>$</span>
+      <div className={styles.inputShell}>
+        <span className={styles.inputPrefix}>$</span>
         <input
           className={styles.input}
           type="text"
           inputMode="numeric"
           value={inputValue}
           onChange={handleChange}
-          placeholder="80,000"
+          placeholder="100,000"
           aria-label="Enter your annual income"
         />
       </div>
-      <div className={styles.taxInfo}>
-        {hasIncome ? (
-          <>
-            <span>
-              estimated federal spend: {formatCurrencyFull(representedSpending)} <br/>
-            </span>
-            <span>
-              {formatCurrencyFull(userTax)} (federal taxes) + {formatCurrencyFull(additionalDebt)} (additional debt
-              <span className={styles.debtGroup}>
-                <button
-                  type="button"
-                  className={styles.infoButton}
-                  aria-label="Explain additional debt methodology"
-                  aria-describedby={tooltipId}
-                >
-                  i
-                </button>
-                <span id={tooltipId} role="tooltip" className={styles.tooltip}>
-                  <strong>Additional Debt?</strong>
-                  <br /><br />
-                  The US government spends more money than it earns. It does this by taking on debt.
-                  <br /><br />
-                  The number you see here isn't your <em>personal</em> debt. It is an estimate based on your share of the national deficit, calculated proportionally from your federal tax contribution.
-                </span>
-              </span>
-              )
-            </span>
-          </>
-        ) : (
-          "Enter your income to personalize"
-        )}
-      </div>
+      <div className={styles.helperText}>Enter your income to see your share of the bill.</div>
     </div>
   );
 }

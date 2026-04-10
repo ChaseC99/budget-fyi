@@ -2,107 +2,76 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
-  padding: 16px;
+  width: 100%;
+  gap: 10px;
+  padding: 20px 16px 8px;
 }
 
-.heading {
-  font-size: 1.125rem;
+.label {
+  font-size: 0.75rem;
   font-weight: 600;
-  color: #1a1a2e;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #9ca3af;
 }
 
-.highlight {
-  color: #6366f1;
-}
-
-.inputRow {
+.inputShell {
   display: flex;
   align-items: center;
-  gap: 8px;
+  width: min(100%, 280px);
+  padding: 0 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #ffffff;
+  transition: border-color 0.15s ease;
 }
 
-.dollarSign {
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: #6366f1;
+.inputShell:focus-within {
+  border-color: #6b7280;
+}
+
+.inputPrefix {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #9ca3af;
 }
 
 .input {
-  width: 140px;
-  padding: 6px 10px;
-  font-size: 1.125rem;
+  width: 100%;
+  padding: 12px 8px 12px 6px;
+  font-size: clamp(1.75rem, 6vw, 2.1rem);
   font-weight: 600;
-  border: 2px solid #e5e7eb;
-  border-radius: 8px;
-  text-align: center;
+  line-height: 1;
+  border: 0;
+  background: transparent;
+  text-align: left;
   font-family: inherit;
-  color: #1a1a2e;
-  transition: border-color 0.15s;
+  color: #111827;
+  font-variant-numeric: tabular-nums;
 }
 
 .input:focus {
   outline: none;
-  border-color: #6366f1;
 }
 
-.taxInfo {
-  font-size: 0.75rem;
+.input::placeholder {
+  color: #d1d5db;
+  font-weight: 400;
+}
+
+.helperText {
+  font-size: 0.85rem;
   color: #9ca3af;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
   text-align: center;
 }
 
-.debtGroup {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-}
+@media (max-width: 480px) {
+  .container {
+    gap: 8px;
+    padding-top: 16px;
+  }
 
-.infoButton {
-  width: 16px;
-  height: 16px;
-  border: 1px solid #c7d2fe;
-  border-radius: 999px;
-  background: #eef2ff;
-  color: #4f46e5;
-  font-size: 0.625rem;
-  font-weight: 700;
-  line-height: 1;
-  cursor: help;
-}
-
-.infoButton:focus-visible {
-  outline: 2px solid #6366f1;
-  outline-offset: 2px;
-}
-
-.tooltip {
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  transform: translateY(4px);
-  width: min(280px, calc(100vw - 24px));
-  padding: 10px 12px;
-  border-radius: 10px;
-  background: #1a1a2e;
-  color: #fafafa;
-  font-size: 0.75rem;
-  line-height: 1.4;
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.18);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.15s ease, transform 0.15s ease;
-  z-index: 10;
-}
-
-.debtGroup:hover .tooltip,
-.debtGroup:focus-within .tooltip {
-  opacity: 1;
-  transform: translateY(0);
+  .inputShell {
+    width: min(100%, 260px);
+  }
 }
