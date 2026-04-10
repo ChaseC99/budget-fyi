@@ -8,13 +8,17 @@ import { DonutChart, type DonutChartHandle } from "./DonutChart";
 import { ItemList } from "./ItemList";
 import { BackNav } from "./BackNav";
 import { IncomeInput } from "./IncomeInput";
+import { LeafTicker, createLeafTickerSample } from "./LeafTicker";
 import styles from "./BudgetExplorer.module.css";
+
+const rootNode = budgetData as BudgetNode;
 
 export function BudgetExplorer() {
   const [income, setIncome] = useState(0);
+  const [tickerItems] = useState(() => createLeafTickerSample(rootNode));
   const donutRef = useRef<DonutChartHandle>(null);
-  const { current, parent, drillDown, goBack, depth, isRoot, direction } =
-    useBudgetNavigation(budgetData as BudgetNode);
+  const { current, parent, drillDown, goBack, navigateToNode, depth, isRoot, direction } =
+    useBudgetNavigation(rootNode);
 
   const hasIncome = income > 0;
   const userTax = useMemo(() => (hasIncome ? computeFederalTax(income) : 0), [income, hasIncome]);
@@ -44,6 +48,10 @@ export function BudgetExplorer() {
     donutRef.current?.selectNode(child);
   }, []);
 
+  const handleTickerSelect = useCallback((item: (typeof tickerItems)[number]) => {
+    navigateToNode(item.parentId);
+  }, [navigateToNode]);
+
   return (
     <div className={styles.explorer}>
       <IncomeInput
@@ -67,9 +75,18 @@ export function BudgetExplorer() {
       </div>
 
       <div className={styles.backSlot}>
-        <AnimatePresence>
-          {!isRoot && parent && (
-            <BackNav parentTitle={parent.title} onBack={goBack} />
+        <AnimatePresence mode="wait" initial={false}>
+          {isRoot ? (
+            <LeafTicker
+              key="ticker"
+              items={tickerItems}
+              getAmount={getAmount}
+              onSelect={handleTickerSelect}
+            />
+          ) : parent ? (
+            <BackNav key="back" parentTitle={parent.title} onBack={goBack} />
+          ) : (
+            null
           )}
         </AnimatePresence>
       </div>

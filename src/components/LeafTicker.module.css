@@ -1,0 +1,149 @@
+.viewport {
+  width: 100%;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    black 18px,
+    black calc(100% - 18px),
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    black 18px,
+    black calc(100% - 18px),
+    transparent 100%
+  );
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  animation: ticker-scroll 72s linear infinite;
+  will-change: transform;
+}
+
+.segment {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-right: 12px;
+}
+
+.item {
+  --ticker-color: #6366f1;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  min-width: max-content;
+  padding: 7px 12px;
+  font-family: "SF Mono", "Fira Code", "Consolas", monospace;
+  font-size: 0.72rem;
+  line-height: 1;
+  color: #111827;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--ticker-color) 12%, white);
+  border: 1px solid color-mix(in srgb, var(--ticker-color) 28%, white);
+  box-shadow: 0 1px 0 color-mix(in srgb, var(--ticker-color) 18%, transparent);
+  cursor: pointer;
+  appearance: none;
+  text-align: left;
+  transition:
+    transform 0.18s ease,
+    background-color 0.18s ease,
+    border-color 0.18s ease;
+}
+
+.item:hover {
+  background: color-mix(in srgb, var(--ticker-color) 18%, white);
+  border-color: color-mix(in srgb, var(--ticker-color) 40%, white);
+}
+
+.item:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--ticker-color) 54%, white);
+  outline-offset: 2px;
+}
+
+.item:active {
+  transform: translateY(1px);
+}
+
+.value {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: color-mix(in srgb, var(--ticker-color) 76%, #111827);
+}
+
+.title {
+  color: #4b5563;
+}
+
+.separator {
+  color: color-mix(in srgb, var(--ticker-color) 44%, #6b7280);
+}
+
+.parent {
+  display: inline-flex;
+  align-items: center;
+  color: color-mix(in srgb, var(--ticker-color) 70%, #111827);
+}
+
+.staticViewport {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.staticViewport::-webkit-scrollbar {
+  display: none;
+}
+
+.staticRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: max-content;
+  min-width: 100%;
+}
+
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 640px) {
+  .viewport {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0,
+      black 8px,
+      black calc(100% - 8px),
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent 0,
+      black 8px,
+      black calc(100% - 8px),
+      transparent 100%
+    );
+  }
+
+  .segment,
+  .staticRow {
+    gap: 10px;
+  }
+
+  .item {
+    gap: 6px;
+    padding: 6px 10px;
+    font-size: 0.68rem;
+  }
+}
