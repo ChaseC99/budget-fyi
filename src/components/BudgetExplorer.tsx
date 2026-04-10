@@ -54,15 +54,17 @@ export function BudgetExplorer() {
         representedSpending={representedSpending}
       />
 
-      <DonutChart
-        ref={donutRef}
-        node={current}
-        parentIndex={parentIndex}
-        depth={depth}
-        onSelect={drillDown}
-        centerAmount={centerAmount}
-        centerLabel={isRoot ? (hasIncome ? "represented spending" : "total spending") : current.title}
-      />
+      <div className={styles.chartSlot}>
+        <DonutChart
+          ref={donutRef}
+          node={current}
+          parentIndex={parentIndex}
+          depth={depth}
+          onSelect={drillDown}
+          centerAmount={centerAmount}
+          centerLabel={isRoot ? (hasIncome ? "represented spending" : "total spending") : current.title}
+        />
+      </div>
 
       <div className={styles.backSlot}>
         <AnimatePresence>

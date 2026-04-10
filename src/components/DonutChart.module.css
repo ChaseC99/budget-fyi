@@ -1,13 +1,45 @@
 .wrapper {
   position: relative;
   width: 100%;
-  max-width: 320px;
+  max-width: none;
   margin: 0 auto;
-  aspect-ratio: 1;
+  aspect-ratio: 1.45 / 1;
+  overflow: visible;
 }
 
 .svg {
   width: 100%;
   height: 100%;
   overflow: visible;
+}
+
+.directLabelLayer {
+  pointer-events: none;
+}
+
+.directLabel {
+  transition: opacity 160ms ease;
+}
+
+.directLabelText {
+  font-size: 10.25px;
+  font-weight: 600;
+  letter-spacing: 0;
+  dominant-baseline: middle;
+  line-height: 1.08;
+  user-select: none;
+}
+
+.labelOnDark .directLabelText {
+  fill: rgb(255 255 255 / 0.96);
+}
+
+.labelOnLight .directLabelText {
+  fill: rgb(31 41 55 / 0.94);
+}
+
+@media (min-width: 720px) {
+  .directLabelText {
+    font-size: 10.75px;
+  }
 }

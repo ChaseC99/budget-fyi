@@ -8,6 +8,11 @@ export interface ArcDatum {
   startAngle: number;
   endAngle: number;
   index: number;
+  span: number;
+  share: number;
+  midAngle: number;
+  labelX: number;
+  labelY: number;
 }
 
 const MIN_ARC_ANGLE = 0.06; // ~3.4 degrees minimum for tap targets
@@ -42,12 +47,28 @@ export function useDonutGeometry(
       return a;
     });
 
-    return adjusted.map((a, i) => ({
-      node: categories[i],
-      path: arcGen({ startAngle: a.startAngle, endAngle: a.endAngle }) ?? "",
-      startAngle: a.startAngle,
-      endAngle: a.endAngle,
-      index: i,
-    }));
+    const labelRadius = innerRadius + (outerRadius - innerRadius) * 0.5;
+
+    return adjusted.map((a, i) => {
+      const startAngle = a.startAngle;
+      const endAngle = a.endAngle;
+      const span = endAngle - startAngle;
+      const midAngle = (startAngle + endAngle) / 2;
+      const labelX = Math.sin(midAngle) * labelRadius;
+      const labelY = -Math.cos(midAngle) * labelRadius;
+
+      return {
+        node: categories[i],
+        path: arcGen({ startAngle, endAngle }) ?? "",
+        startAngle,
+        endAngle,
+        index: i,
+        span,
+        share: node.total === 0 ? 0 : categories[i].total / node.total,
+        midAngle,
+        labelX,
+        labelY,
+      };
+    });
   }, [node, innerRadius, outerRadius]);
 }
