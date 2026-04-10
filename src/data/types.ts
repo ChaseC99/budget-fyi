@@ -4,6 +4,5 @@ export interface BudgetNode {
   desc: string;
   total: number;
   source?: string;
-  sourceUrl?: string;
   categories?: BudgetNode[];
 }

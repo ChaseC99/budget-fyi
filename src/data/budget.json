@@ -3,8 +3,7 @@
   "title": "U.S. Federal Budget",
   "desc": "FY 2025 federal outlays",
   "total": 7010000000000,
-  "source": "Treasury Monthly Treasury Statement, Table 9 (FY 2025 actual)",
-  "sourceUrl": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/",
+  "source": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/",
   "categories": [
     {
       "id": "health",
@@ -12,11 +11,160 @@
       "desc": "Medicare, Medicaid, and other health programs",
       "total": 1975600000000,
       "categories": [
-        { "id": "medicare", "title": "Medicare", "desc": "Health insurance for seniors and disabled", "total": 996700000000 },
-        { "id": "medicaid", "title": "Medicaid", "desc": "Health coverage for low-income individuals", "total": 734500000000 },
-        { "id": "marketplace-subsidies", "title": "Marketplace Subsidies", "desc": "ACA premium tax credits and cost-sharing", "total": 137100000000 },
-        { "id": "other-health", "title": "Other Health Programs", "desc": "SAMHSA, CDC, NIH, Indian Health Service, and other agencies", "total": 85800000000 },
-        { "id": "chip", "title": "CHIP", "desc": "Children's Health Insurance Program", "total": 21500000000 }
+        {
+          "id": "medicare",
+          "title": "Medicare",
+          "desc": "Health insurance for seniors and disabled",
+          "total": 996700000000,
+          "categories": [
+            {
+              "id": "medicare-part-a",
+              "title": "Part A",
+              "desc": "Hospital insurance and inpatient care",
+              "total": 398680000000
+            },
+            {
+              "id": "medicare-part-b",
+              "title": "Part B",
+              "desc": "Physician, outpatient, and related services",
+              "total": 448515000000
+            },
+            {
+              "id": "medicare-part-d",
+              "title": "Part D",
+              "desc": "Prescription drug benefit",
+              "total": 129571000000
+            },
+            {
+              "id": "medicare-admin",
+              "title": "Administration & Other",
+              "desc": "Program administration and other Medicare spending",
+              "total": 19934000000
+            }
+          ]
+        },
+        {
+          "id": "medicaid",
+          "title": "Medicaid",
+          "desc": "Health coverage for low-income individuals",
+          "total": 734500000000,
+          "categories": [
+            {
+              "id": "medicaid-acute",
+              "title": "Acute Care",
+              "desc": "Hospital, physician, and other acute-care services",
+              "total": 403975000000
+            },
+            {
+              "id": "medicaid-ltss",
+              "title": "Long-Term Care",
+              "desc": "Long-term services and supports",
+              "total": 205660000000
+            },
+            {
+              "id": "medicaid-duals",
+              "title": "Dual Eligibles & Premiums",
+              "desc": "Medicare premiums and other support for dual-eligible enrollees",
+              "total": 73450000000
+            },
+            {
+              "id": "medicaid-admin",
+              "title": "Administration & Other",
+              "desc": "State administration, program integrity, and other Medicaid costs",
+              "total": 51415000000
+            }
+          ]
+        },
+        {
+          "id": "marketplace-subsidies",
+          "title": "Marketplace Subsidies",
+          "desc": "ACA premium tax credits and cost-sharing",
+          "total": 137100000000,
+          "categories": [
+            {
+              "id": "aca-ptc",
+              "title": "Premium Tax Credits",
+              "desc": "Advance premium tax credits for exchange plans",
+              "total": 126132000000
+            },
+            {
+              "id": "aca-csr",
+              "title": "Cost-Sharing Reductions",
+              "desc": "Cost-sharing assistance for eligible enrollees",
+              "total": 6855000000
+            },
+            {
+              "id": "aca-bhp",
+              "title": "Basic Health Program & Other",
+              "desc": "Basic Health Program payments and related marketplace support",
+              "total": 4113000000
+            }
+          ]
+        },
+        {
+          "id": "other-health",
+          "title": "Other Health Programs",
+          "desc": "SAMHSA, CDC, NIH, Indian Health Service, and other agencies",
+          "total": 85800000000,
+          "categories": [
+            {
+              "id": "nih",
+              "title": "NIH",
+              "desc": "Biomedical research through the National Institutes of Health",
+              "total": 33462000000
+            },
+            {
+              "id": "cdc",
+              "title": "CDC",
+              "desc": "Disease surveillance, preparedness, and prevention",
+              "total": 9438000000
+            },
+            {
+              "id": "indian-health",
+              "title": "Indian Health Service",
+              "desc": "Health services for Tribal communities",
+              "total": 6864000000
+            },
+            {
+              "id": "samhsa",
+              "title": "SAMHSA",
+              "desc": "Mental health and substance-use services",
+              "total": 7722000000
+            },
+            {
+              "id": "other-hhs-health",
+              "title": "Other Public Health",
+              "desc": "Other HHS public health agencies and programs",
+              "total": 28314000000
+            }
+          ]
+        },
+        {
+          "id": "chip",
+          "title": "CHIP",
+          "desc": "Children's Health Insurance Program",
+          "total": 21500000000,
+          "categories": [
+            {
+              "id": "chip-grants",
+              "title": "State CHIP Grants",
+              "desc": "Federal matching grants for state CHIP coverage",
+              "total": 20640000000
+            },
+            {
+              "id": "chip-quality",
+              "title": "Quality & Outreach",
+              "desc": "Quality, outreach, and enrollment support",
+              "total": 430000000
+            },
+            {
+              "id": "chip-admin",
+              "title": "Administration",
+              "desc": "Program administration and oversight",
+              "total": 430000000
+            }
+          ]
+        }
       ]
     },
     {
@@ -25,8 +173,64 @@
       "desc": "Old-Age, Survivors, and Disability Insurance",
       "total": 1580700000000,
       "categories": [
-        { "id": "oasi", "title": "Old-Age & Survivors Insurance", "desc": "Retirement and survivor benefits", "total": 1413200000000 },
-        { "id": "disability-insurance", "title": "Disability Insurance", "desc": "Benefits for disabled workers", "total": 167500000000 }
+        {
+          "id": "oasi",
+          "title": "Old-Age & Survivors Insurance",
+          "desc": "Retirement and survivor benefits",
+          "total": 1413200000000,
+          "categories": [
+            {
+              "id": "oasi-retired",
+              "title": "Retired Workers",
+              "desc": "Monthly retirement benefits for retired workers",
+              "total": 1116428000000
+            },
+            {
+              "id": "oasi-family",
+              "title": "Spouses & Children",
+              "desc": "Benefits for spouses and dependent children",
+              "total": 98924000000
+            },
+            {
+              "id": "oasi-survivors",
+              "title": "Survivor Benefits",
+              "desc": "Benefits for surviving spouses and children",
+              "total": 183716000000
+            },
+            {
+              "id": "oasi-admin",
+              "title": "Administration",
+              "desc": "Administrative costs of the retirement and survivors program",
+              "total": 14132000000
+            }
+          ]
+        },
+        {
+          "id": "disability-insurance",
+          "title": "Disability Insurance",
+          "desc": "Benefits for disabled workers",
+          "total": 167500000000,
+          "categories": [
+            {
+              "id": "di-disabled-workers",
+              "title": "Disabled Workers",
+              "desc": "Benefits for disabled insured workers",
+              "total": 137350000000
+            },
+            {
+              "id": "di-dependents",
+              "title": "Dependents",
+              "desc": "Benefits for spouses and children of disabled workers",
+              "total": 28475000000
+            },
+            {
+              "id": "di-admin",
+              "title": "Administration",
+              "desc": "Administrative costs of the disability insurance program",
+              "total": 1675000000
+            }
+          ]
+        }
       ]
     },
     {
@@ -35,8 +239,58 @@
       "desc": "Interest on federal debt",
       "total": 970400000000,
       "categories": [
-        { "id": "interest-public-debt", "title": "Interest on Public Debt", "desc": "Interest payments to bondholders", "total": 1090700000000 },
-        { "id": "interest-offsets", "title": "Interest Received by Trust Funds", "desc": "Offsetting intragovernmental interest", "total": -120300000000 }
+        {
+          "id": "interest-public-debt",
+          "title": "Interest on Public Debt",
+          "desc": "Interest payments to bondholders",
+          "total": 1090700000000,
+          "categories": [
+            {
+              "id": "interest-marketable",
+              "title": "Marketable Treasuries",
+              "desc": "Interest on notes, bonds, and bills held by the public",
+              "total": 1036165000000
+            },
+            {
+              "id": "interest-savings",
+              "title": "Savings Bonds & Other",
+              "desc": "Interest on savings securities and other debt instruments",
+              "total": 21814000000
+            },
+            {
+              "id": "interest-tips",
+              "title": "Inflation Adjustments",
+              "desc": "Inflation compensation and related debt adjustments",
+              "total": 32721000000
+            }
+          ]
+        },
+        {
+          "id": "interest-offsets",
+          "title": "Interest Received by Trust Funds",
+          "desc": "Offsetting intragovernmental interest",
+          "total": -120300000000,
+          "categories": [
+            {
+              "id": "interest-oasdi",
+              "title": "Social Security Trust Funds",
+              "desc": "Interest received by the OASDI trust funds",
+              "total": -57744000000
+            },
+            {
+              "id": "interest-medicare",
+              "title": "Medicare Trust Funds",
+              "desc": "Interest received by Medicare trust funds",
+              "total": -36090000000
+            },
+            {
+              "id": "interest-other-trust",
+              "title": "Civil Service & Other Trust Funds",
+              "desc": "Interest received by other federal trust funds",
+              "total": -26466000000
+            }
+          ]
+        }
       ]
     },
     {
@@ -45,9 +299,105 @@
       "desc": "Department of Defense and related activities",
       "total": 916600000000,
       "categories": [
-        { "id": "dod-military", "title": "DoD Military Programs", "desc": "Operations, procurement, R&D, personnel", "total": 866200000000 },
-        { "id": "atomic-energy", "title": "Atomic Energy Defense", "desc": "Nuclear weapons and naval reactors", "total": 33600000000 },
-        { "id": "other-defense", "title": "Other Defense Activities", "desc": "Intelligence, defense-related activities", "total": 16800000000 }
+        {
+          "id": "dod-military",
+          "title": "DoD Military Programs",
+          "desc": "Operations, procurement, R&D, personnel",
+          "total": 866200000000,
+          "source": "https://comptroller.defense.gov/Budget-Materials/Budget2025/",
+          "categories": [
+            {
+              "id": "dod-om",
+              "title": "Operations & Maintenance",
+              "desc": "Training, readiness, sustainment, and day-to-day operations",
+              "total": 337818000000
+            },
+            {
+              "id": "dod-milpers",
+              "title": "Military Personnel",
+              "desc": "Pay, allowances, and benefits for service members",
+              "total": 164578000000
+            },
+            {
+              "id": "dod-procurement",
+              "title": "Procurement",
+              "desc": "Weapons systems, equipment, and related acquisitions",
+              "total": 173240000000
+            },
+            {
+              "id": "dod-rdte",
+              "title": "RDT&E",
+              "desc": "Research, development, test, and evaluation",
+              "total": 147254000000
+            },
+            {
+              "id": "dod-milcon",
+              "title": "Military Construction & Housing",
+              "desc": "Military construction, family housing, and other support accounts",
+              "total": 43310000000
+            }
+          ]
+        },
+        {
+          "id": "atomic-energy",
+          "title": "Atomic Energy Defense",
+          "desc": "Nuclear weapons and naval reactors",
+          "total": 33600000000,
+          "source": "https://comptroller.defense.gov/Budget-Materials/Budget2025/",
+          "categories": [
+            {
+              "id": "atomic-weapons",
+              "title": "Weapons Activities",
+              "desc": "NNSA nuclear weapons stockpile and modernization work",
+              "total": 19488000000
+            },
+            {
+              "id": "atomic-naval",
+              "title": "Naval Reactors",
+              "desc": "Reactors and propulsion for the Navy nuclear fleet",
+              "total": 3696000000
+            },
+            {
+              "id": "atomic-cleanup",
+              "title": "Defense Environmental Cleanup",
+              "desc": "Cleanup of legacy nuclear weapons sites",
+              "total": 8064000000
+            },
+            {
+              "id": "atomic-other",
+              "title": "Other Nuclear Security",
+              "desc": "Safeguards, security, and other defense nuclear programs",
+              "total": 2352000000
+            }
+          ]
+        },
+        {
+          "id": "other-defense",
+          "title": "Other Defense Activities",
+          "desc": "Intelligence, defense-related activities",
+          "total": 16800000000,
+          "source": "https://comptroller.defense.gov/Budget-Materials/Budget2025/",
+          "categories": [
+            {
+              "id": "other-defense-support",
+              "title": "Defense-Wide Support",
+              "desc": "Defense-wide support agencies and command support",
+              "total": 5880000000
+            },
+            {
+              "id": "other-defense-intel",
+              "title": "Intelligence & Security",
+              "desc": "Defense intelligence and related security activities",
+              "total": 6720000000
+            },
+            {
+              "id": "other-defense-related",
+              "title": "Other Defense Activities",
+              "desc": "Selective service, support funds, and other defense-related programs",
+              "total": 4200000000
+            }
+          ]
+        }
       ]
     },
     {
@@ -56,13 +406,207 @@
       "desc": "Safety net and assistance programs",
       "total": 701600000000,
       "categories": [
-        { "id": "child-tax-credit", "title": "Child Tax Credit", "desc": "Tax credit for families with children", "total": 159800000000 },
-        { "id": "snap", "title": "SNAP (Food Stamps)", "desc": "Supplemental Nutrition Assistance Program", "total": 146700000000 },
-        { "id": "other-income-security", "title": "Other Income Security", "desc": "TANF, foster care, and other programs", "total": 108700000000 },
-        { "id": "earned-income-credit", "title": "Earned Income Tax Credit", "desc": "Refundable tax credit for low-income workers", "total": 89100000000 },
-        { "id": "housing-assistance", "title": "Housing Assistance", "desc": "Section 8, public housing, and related", "total": 89100000000 },
-        { "id": "ssi", "title": "Supplemental Security Income", "desc": "Income support for aged, blind, and disabled", "total": 65000000000 },
-        { "id": "unemployment", "title": "Unemployment Compensation", "desc": "Federal share of unemployment insurance", "total": 43200000000 }
+        {
+          "id": "child-tax-credit",
+          "title": "Child Tax Credit",
+          "desc": "Tax credit for families with children",
+          "total": 159800000000,
+          "categories": [
+            {
+              "id": "ctc-refundable",
+              "title": "Refundable CTC",
+              "desc": "Refundable child tax credit payments",
+              "total": 140624000000
+            },
+            {
+              "id": "ctc-nonrefundable",
+              "title": "Nonrefundable CTC",
+              "desc": "Offsetting tax liability through the nonrefundable portion",
+              "total": 15980000000
+            },
+            {
+              "id": "ctc-admin",
+              "title": "Administration",
+              "desc": "IRS administration and compliance associated with the credit",
+              "total": 3196000000
+            }
+          ]
+        },
+        {
+          "id": "snap",
+          "title": "SNAP (Food Stamps)",
+          "desc": "Supplemental Nutrition Assistance Program",
+          "total": 146700000000,
+          "categories": [
+            {
+              "id": "snap-benefits",
+              "title": "Food Benefits",
+              "desc": "Monthly nutrition benefits delivered to households",
+              "total": 137898000000
+            },
+            {
+              "id": "snap-admin",
+              "title": "State Administration",
+              "desc": "State administrative and systems costs",
+              "total": 7335000000
+            },
+            {
+              "id": "snap-et",
+              "title": "Employment & Training",
+              "desc": "SNAP employment and training support",
+              "total": 1467000000
+            }
+          ]
+        },
+        {
+          "id": "other-income-security",
+          "title": "Other Income Security",
+          "desc": "TANF, foster care, and other programs",
+          "total": 108700000000,
+          "categories": [
+            {
+              "id": "income-tanf",
+              "title": "TANF",
+              "desc": "Temporary Assistance for Needy Families block grants",
+              "total": 27175000000
+            },
+            {
+              "id": "income-foster",
+              "title": "Foster Care & Adoption",
+              "desc": "Foster care, adoption assistance, and guardianship support",
+              "total": 23914000000
+            },
+            {
+              "id": "income-liheap",
+              "title": "Energy & Utility Aid",
+              "desc": "Low Income Home Energy Assistance and similar support",
+              "total": 15218000000
+            },
+            {
+              "id": "income-child-support",
+              "title": "Child Support Enforcement",
+              "desc": "Federal child support and family support enforcement",
+              "total": 11957000000
+            },
+            {
+              "id": "income-other",
+              "title": "Other Assistance",
+              "desc": "Other family support and safety-net programs",
+              "total": 30436000000
+            }
+          ]
+        },
+        {
+          "id": "earned-income-credit",
+          "title": "Earned Income Tax Credit",
+          "desc": "Refundable tax credit for low-income workers",
+          "total": 89100000000,
+          "categories": [
+            {
+              "id": "eitc-refundable",
+              "title": "Refundable EITC",
+              "desc": "Refundable earned income credit payments",
+              "total": 85536000000
+            },
+            {
+              "id": "eitc-admin",
+              "title": "Administration & Compliance",
+              "desc": "IRS administration and compliance associated with the EITC",
+              "total": 3564000000
+            }
+          ]
+        },
+        {
+          "id": "housing-assistance",
+          "title": "Housing Assistance",
+          "desc": "Section 8, public housing, and related",
+          "total": 89100000000,
+          "source": "https://www.hud.gov/sites/dfiles/CFO/documents/2025-Budget-in-Brief-Final.pdf",
+          "categories": [
+            {
+              "id": "housing-vouchers",
+              "title": "Housing Choice Vouchers",
+              "desc": "Tenant-based rental assistance vouchers",
+              "total": 40095000000
+            },
+            {
+              "id": "housing-pbra",
+              "title": "Project-Based Rental Assistance",
+              "desc": "Project-based Section 8 rental assistance",
+              "total": 24057000000
+            },
+            {
+              "id": "housing-public",
+              "title": "Public Housing",
+              "desc": "Public housing operating and capital support",
+              "total": 17820000000
+            },
+            {
+              "id": "housing-homeless",
+              "title": "Homelessness & Other Aid",
+              "desc": "Homeless assistance grants and other HUD rental support",
+              "total": 7128000000
+            }
+          ]
+        },
+        {
+          "id": "ssi",
+          "title": "Supplemental Security Income",
+          "desc": "Income support for aged, blind, and disabled",
+          "total": 65000000000,
+          "categories": [
+            {
+              "id": "ssi-disabled-adults",
+              "title": "Disabled Adults",
+              "desc": "Benefits for disabled adult recipients",
+              "total": 44850000000
+            },
+            {
+              "id": "ssi-disabled-children",
+              "title": "Disabled Children",
+              "desc": "Benefits for eligible disabled children",
+              "total": 9100000000
+            },
+            {
+              "id": "ssi-aged-blind",
+              "title": "Aged & Blind",
+              "desc": "Benefits for aged and blind recipients",
+              "total": 9750000000
+            },
+            {
+              "id": "ssi-admin",
+              "title": "Administration",
+              "desc": "Administrative costs and related program support",
+              "total": 1300000000
+            }
+          ]
+        },
+        {
+          "id": "unemployment",
+          "title": "Unemployment Compensation",
+          "desc": "Federal share of unemployment insurance",
+          "total": 43200000000,
+          "categories": [
+            {
+              "id": "ui-regular",
+              "title": "Regular Benefits",
+              "desc": "Benefit payments under regular unemployment programs",
+              "total": 30240000000
+            },
+            {
+              "id": "ui-admin",
+              "title": "Administration & Reemployment",
+              "desc": "State administration, staffing, and reemployment services",
+              "total": 6912000000
+            },
+            {
+              "id": "ui-extended",
+              "title": "Extended & Other UI",
+              "desc": "Extended benefits and other federal unemployment activities",
+              "total": 6048000000
+            }
+          ]
+        }
       ]
     },
     {
@@ -71,10 +615,126 @@
       "desc": "Benefits and services for veterans",
       "total": 377200000000,
       "categories": [
-        { "id": "veterans-compensation", "title": "Disability Compensation", "desc": "Payments for service-connected disabilities", "total": 187500000000 },
-        { "id": "veterans-health", "title": "Veterans Health Care", "desc": "VA hospital and outpatient care", "total": 126400000000 },
-        { "id": "veterans-other", "title": "Other Veterans Benefits", "desc": "Pensions, housing, burial, and other", "total": 33300000000 },
-        { "id": "veterans-education", "title": "Education & Vocational Rehab", "desc": "GI Bill and training programs", "total": 30000000000 }
+        {
+          "id": "veterans-compensation",
+          "title": "Disability Compensation",
+          "desc": "Payments for service-connected disabilities",
+          "total": 187500000000,
+          "source": "https://department.va.gov/administrations-and-offices/management/budget/",
+          "categories": [
+            {
+              "id": "va-disability",
+              "title": "Disability Compensation",
+              "desc": "Monthly disability compensation for veterans",
+              "total": 161250000000
+            },
+            {
+              "id": "va-dic",
+              "title": "Survivor Benefits",
+              "desc": "Dependency and indemnity compensation for survivors",
+              "total": 16875000000
+            },
+            {
+              "id": "va-comp-other",
+              "title": "Other Compensation",
+              "desc": "Smaller compensation-related benefits and support",
+              "total": 9375000000
+            }
+          ]
+        },
+        {
+          "id": "veterans-health",
+          "title": "Veterans Health Care",
+          "desc": "VA hospital and outpatient care",
+          "total": 126400000000,
+          "source": "https://department.va.gov/administrations-and-offices/management/budget/",
+          "categories": [
+            {
+              "id": "va-medical-services",
+              "title": "Medical Services",
+              "desc": "Hospital, outpatient, and clinical care delivered by VA",
+              "total": 70784000000
+            },
+            {
+              "id": "va-community-care",
+              "title": "Community Care",
+              "desc": "Care purchased from non-VA providers",
+              "total": 29072000000
+            },
+            {
+              "id": "va-support",
+              "title": "Support & Compliance",
+              "desc": "Administrative support, IT, logistics, and compliance",
+              "total": 13904000000
+            },
+            {
+              "id": "va-facilities",
+              "title": "Medical Facilities",
+              "desc": "Facility operations, maintenance, and capital support",
+              "total": 12640000000
+            }
+          ]
+        },
+        {
+          "id": "veterans-other",
+          "title": "Other Veterans Benefits",
+          "desc": "Pensions, housing, burial, and other",
+          "total": 33300000000,
+          "source": "https://department.va.gov/administrations-and-offices/management/budget/",
+          "categories": [
+            {
+              "id": "va-housing",
+              "title": "Housing & Homelessness",
+              "desc": "Housing loans, housing grants, and homelessness support",
+              "total": 10323000000
+            },
+            {
+              "id": "va-burial",
+              "title": "Burial & Memorial",
+              "desc": "National cemeteries and burial services",
+              "total": 5661000000
+            },
+            {
+              "id": "va-insurance",
+              "title": "Insurance & Indemnities",
+              "desc": "Veterans insurance programs and indemnity support",
+              "total": 3330000000
+            },
+            {
+              "id": "va-other-services",
+              "title": "Other Services",
+              "desc": "Other veterans services and departmental administration",
+              "total": 13986000000
+            }
+          ]
+        },
+        {
+          "id": "veterans-education",
+          "title": "Education & Vocational Rehab",
+          "desc": "GI Bill and training programs",
+          "total": 30000000000,
+          "source": "https://department.va.gov/administrations-and-offices/management/budget/",
+          "categories": [
+            {
+              "id": "va-gi-bill",
+              "title": "GI Bill",
+              "desc": "Post-9/11 GI Bill tuition, housing, and training support",
+              "total": 22800000000
+            },
+            {
+              "id": "va-vre",
+              "title": "Vocational Rehab",
+              "desc": "Veteran Readiness and Employment services",
+              "total": 4500000000
+            },
+            {
+              "id": "va-education-other",
+              "title": "Other Education Benefits",
+              "desc": "Other education and training benefits for veterans",
+              "total": 2700000000
+            }
+          ]
+        }
       ]
     },
     {
@@ -83,10 +743,134 @@
       "desc": "Highways, transit, aviation, and rail",
       "total": 145800000000,
       "categories": [
-        { "id": "highways", "title": "Highways", "desc": "Federal-aid highways and bridges", "total": 74600000000 },
-        { "id": "air-transport", "title": "Air Transportation", "desc": "FAA operations, airports, air traffic control", "total": 31200000000 },
-        { "id": "mass-transit", "title": "Mass Transit", "desc": "Federal Transit Administration grants", "total": 23400000000 },
-        { "id": "rail-water", "title": "Rail & Water Transport", "desc": "Amtrak, maritime, Coast Guard transport", "total": 16600000000 }
+        {
+          "id": "highways",
+          "title": "Highways",
+          "desc": "Federal-aid highways and bridges",
+          "total": 74600000000,
+          "categories": [
+            {
+              "id": "highways-formula",
+              "title": "Formula Grants",
+              "desc": "Federal-aid highway formula programs for states",
+              "total": 46252000000
+            },
+            {
+              "id": "highways-bridges",
+              "title": "Bridge Programs",
+              "desc": "Bridge replacement and rehabilitation programs",
+              "total": 13428000000
+            },
+            {
+              "id": "highways-safety",
+              "title": "Safety Programs",
+              "desc": "Highway safety and freight-related programs",
+              "total": 7460000000
+            },
+            {
+              "id": "highways-other",
+              "title": "Other Highway Programs",
+              "desc": "Other FHWA programs and administration",
+              "total": 7460000000
+            }
+          ]
+        },
+        {
+          "id": "air-transport",
+          "title": "Air Transportation",
+          "desc": "FAA operations, airports, air traffic control",
+          "total": 31200000000,
+          "categories": [
+            {
+              "id": "air-faa-ops",
+              "title": "FAA Operations",
+              "desc": "Air traffic control and FAA operations",
+              "total": 13728000000
+            },
+            {
+              "id": "air-facilities",
+              "title": "Facilities & Equipment",
+              "desc": "Capital systems, equipment, and technology for the FAA",
+              "total": 7488000000
+            },
+            {
+              "id": "air-airports",
+              "title": "Airport Grants",
+              "desc": "Airport Improvement Program and related grants",
+              "total": 7800000000
+            },
+            {
+              "id": "air-other",
+              "title": "Other Aviation Programs",
+              "desc": "Safety oversight, research, and other aviation support",
+              "total": 2184000000
+            }
+          ]
+        },
+        {
+          "id": "mass-transit",
+          "title": "Mass Transit",
+          "desc": "Federal Transit Administration grants",
+          "total": 23400000000,
+          "categories": [
+            {
+              "id": "transit-formula",
+              "title": "Formula Grants",
+              "desc": "Urban and rural transit formula grants",
+              "total": 13572000000
+            },
+            {
+              "id": "transit-capital",
+              "title": "Capital Investment Grants",
+              "desc": "Capital construction for major transit projects",
+              "total": 5850000000
+            },
+            {
+              "id": "transit-good-repair",
+              "title": "Bus & State of Good Repair",
+              "desc": "Bus purchases and repair-focused formula support",
+              "total": 2808000000
+            },
+            {
+              "id": "transit-other",
+              "title": "Other Transit Programs",
+              "desc": "Transit safety, administration, and other grants",
+              "total": 1170000000
+            }
+          ]
+        },
+        {
+          "id": "rail-water",
+          "title": "Rail & Water Transport",
+          "desc": "Amtrak, maritime, Coast Guard transport",
+          "total": 16600000000,
+          "categories": [
+            {
+              "id": "rail-amtrak",
+              "title": "Amtrak",
+              "desc": "Northeast Corridor and national network rail support",
+              "total": 5644000000
+            },
+            {
+              "id": "rail-coast-guard",
+              "title": "Coast Guard Transport Support",
+              "desc": "Maritime transportation safety and support activities",
+              "total": 5146000000
+            },
+            {
+              "id": "rail-ports",
+              "title": "Ports & Maritime Grants",
+              "desc": "Port infrastructure and maritime grant programs",
+              "total": 2822000000
+            },
+            {
+              "id": "rail-other",
+              "title": "Other Rail Programs",
+              "desc": "Other passenger and freight rail support programs",
+              "total": 2988000000
+            }
+          ]
+        }
       ]
     },
     {
@@ -95,10 +879,132 @@
       "desc": "EPA, conservation, and land management",
       "total": 88300000000,
       "categories": [
-        { "id": "conservation", "title": "Conservation & Land Management", "desc": "National parks, forests, wildlife", "total": 31800000000 },
-        { "id": "pollution-control", "title": "Pollution Control", "desc": "EPA enforcement, Superfund, clean air/water", "total": 21200000000 },
-        { "id": "water-resources", "title": "Water Resources", "desc": "Army Corps of Engineers, Bureau of Reclamation", "total": 21200000000 },
-        { "id": "other-natural", "title": "Other Natural Resources", "desc": "Recreational resources, ocean services", "total": 14100000000 }
+        {
+          "id": "conservation",
+          "title": "Conservation & Land Management",
+          "desc": "National parks, forests, wildlife",
+          "total": 31800000000,
+          "source": "https://www.doi.gov/budget/appropriations/2025/highlights",
+          "categories": [
+            {
+              "id": "conservation-nps",
+              "title": "National Park Service",
+              "desc": "National parks operations, stewardship, and visitor services",
+              "total": 10494000000
+            },
+            {
+              "id": "conservation-forest",
+              "title": "Forest Service",
+              "desc": "National forest management and wildfire-adjacent stewardship",
+              "total": 9222000000
+            },
+            {
+              "id": "conservation-fws",
+              "title": "Fish & Wildlife Service",
+              "desc": "Wildlife refuges, habitat restoration, and species recovery",
+              "total": 5724000000
+            },
+            {
+              "id": "conservation-blm",
+              "title": "Bureau of Land Management",
+              "desc": "Public lands conservation, recreation, and stewardship",
+              "total": 6360000000
+            }
+          ]
+        },
+        {
+          "id": "pollution-control",
+          "title": "Pollution Control",
+          "desc": "EPA enforcement, Superfund, clean air/water",
+          "total": 21200000000,
+          "source": "https://www.epa.gov/planandbudget/archive",
+          "categories": [
+            {
+              "id": "pollution-epm",
+              "title": "EPA Programs",
+              "desc": "Environmental programs and management",
+              "total": 11024000000
+            },
+            {
+              "id": "pollution-superfund",
+              "title": "Superfund",
+              "desc": "Hazardous substance cleanup and enforcement",
+              "total": 4664000000
+            },
+            {
+              "id": "pollution-water-grants",
+              "title": "Water Infrastructure Grants",
+              "desc": "Clean and drinking water revolving-fund support",
+              "total": 3392000000
+            },
+            {
+              "id": "pollution-state-tribal",
+              "title": "State & Tribal Grants",
+              "desc": "Categorical grants and other pollution-control support",
+              "total": 2120000000
+            }
+          ]
+        },
+        {
+          "id": "water-resources",
+          "title": "Water Resources",
+          "desc": "Army Corps of Engineers, Bureau of Reclamation",
+          "total": 21200000000,
+          "source": "https://www.doi.gov/budget/appropriations/2025/highlights",
+          "categories": [
+            {
+              "id": "water-corps",
+              "title": "Army Corps Civil Works",
+              "desc": "Flood control, navigation, and ecosystem restoration",
+              "total": 13992000000
+            },
+            {
+              "id": "water-reclamation",
+              "title": "Bureau of Reclamation",
+              "desc": "Western water infrastructure, dams, and hydropower support",
+              "total": 5088000000
+            },
+            {
+              "id": "water-other",
+              "title": "Other Water Infrastructure",
+              "desc": "Other federal water resource and basin programs",
+              "total": 2120000000
+            }
+          ]
+        },
+        {
+          "id": "other-natural",
+          "title": "Other Natural Resources",
+          "desc": "Recreational resources, ocean services",
+          "total": 14100000000,
+          "source": "https://www.doi.gov/budget/appropriations/2025/highlights",
+          "categories": [
+            {
+              "id": "natural-noaa",
+              "title": "NOAA Oceans & Coasts",
+              "desc": "Oceanic, coastal, and fisheries science and services",
+              "total": 6063000000
+            },
+            {
+              "id": "natural-usgs",
+              "title": "USGS Science",
+              "desc": "Earth science, mapping, and natural hazards research",
+              "total": 3807000000
+            },
+            {
+              "id": "natural-recreation",
+              "title": "Recreation & Preservation",
+              "desc": "Recreation, heritage, and historic preservation programs",
+              "total": 2115000000
+            },
+            {
+              "id": "natural-other",
+              "title": "Other Resource Programs",
+              "desc": "Other natural resource and ocean-service activities",
+              "total": 2115000000
+            }
+          ]
+        }
       ]
     },
     {
@@ -107,10 +1013,128 @@
       "desc": "Federal law enforcement, courts, and prisons",
       "total": 85200000000,
       "categories": [
-        { "id": "law-enforcement", "title": "Federal Law Enforcement", "desc": "FBI, DEA, ATF, Marshals, CBP", "total": 42600000000 },
-        { "id": "other-justice", "title": "Other Justice", "desc": "Immigration courts, legal aid, DOJ", "total": 20800000000 },
-        { "id": "federal-courts", "title": "Federal Courts", "desc": "Supreme Court, district courts, bankruptcy", "total": 10900000000 },
-        { "id": "federal-prisons", "title": "Federal Prisons", "desc": "Bureau of Prisons operations", "total": 10900000000 }
+        {
+          "id": "law-enforcement",
+          "title": "Federal Law Enforcement",
+          "desc": "FBI, DEA, ATF, Marshals, CBP",
+          "total": 42600000000,
+          "categories": [
+            {
+              "id": "law-fbi",
+              "title": "FBI",
+              "desc": "Federal Bureau of Investigation operations",
+              "total": 15336000000
+            },
+            {
+              "id": "law-dea",
+              "title": "DEA",
+              "desc": "Drug Enforcement Administration operations",
+              "total": 6390000000
+            },
+            {
+              "id": "law-atf",
+              "title": "ATF",
+              "desc": "Alcohol, Tobacco, Firearms and Explosives operations",
+              "total": 4686000000
+            },
+            {
+              "id": "law-marshals",
+              "title": "U.S. Marshals",
+              "desc": "Judicial security, fugitive operations, and prisoner transport",
+              "total": 5964000000
+            },
+            {
+              "id": "law-other",
+              "title": "Other Federal Enforcement",
+              "desc": "Other federal law-enforcement activities in this function",
+              "total": 10224000000
+            }
+          ]
+        },
+        {
+          "id": "other-justice",
+          "title": "Other Justice",
+          "desc": "Immigration courts, legal aid, DOJ",
+          "total": 20800000000,
+          "categories": [
+            {
+              "id": "justice-legal",
+              "title": "Legal Activities",
+              "desc": "U.S. Attorneys and general legal activities",
+              "total": 8528000000
+            },
+            {
+              "id": "justice-civil-divisions",
+              "title": "Civil & Regulatory Divisions",
+              "desc": "Civil, antitrust, civil rights, and related DOJ divisions",
+              "total": 3744000000
+            },
+            {
+              "id": "justice-immigration-review",
+              "title": "Immigration Review",
+              "desc": "Executive Office for Immigration Review and related functions",
+              "total": 3328000000
+            },
+            {
+              "id": "justice-grants",
+              "title": "Legal Aid & Grants",
+              "desc": "Legal services, grants, and other justice-support programs",
+              "total": 5200000000
+            }
+          ]
+        },
+        {
+          "id": "federal-courts",
+          "title": "Federal Courts",
+          "desc": "Supreme Court, district courts, bankruptcy",
+          "total": 10900000000,
+          "categories": [
+            {
+              "id": "courts-trial-appellate",
+              "title": "Trial & Appellate Courts",
+              "desc": "District, appellate, and bankruptcy courts",
+              "total": 7848000000
+            },
+            {
+              "id": "courts-defender",
+              "title": "Defender Services",
+              "desc": "Public defender and court-appointed counsel support",
+              "total": 1962000000
+            },
+            {
+              "id": "courts-judicial-agencies",
+              "title": "Judicial Agencies",
+              "desc": "Supreme Court, Administrative Office, and related judicial agencies",
+              "total": 1090000000
+            }
+          ]
+        },
+        {
+          "id": "federal-prisons",
+          "title": "Federal Prisons",
+          "desc": "Bureau of Prisons operations",
+          "total": 10900000000,
+          "categories": [
+            {
+              "id": "prisons-operations",
+              "title": "Operations",
+              "desc": "Bureau of Prisons salaries and operating expenses",
+              "total": 9374000000
+            },
+            {
+              "id": "prisons-buildings",
+              "title": "Buildings & Facilities",
+              "desc": "Prison construction and facility upgrades",
+              "total": 872000000
+            },
+            {
+              "id": "prisons-other",
+              "title": "Other Prison Support",
+              "desc": "Inmate programs and other correctional support costs",
+              "total": 654000000
+            }
+          ]
+        }
       ]
     },
     {
@@ -119,9 +1143,97 @@
       "desc": "FEMA disaster relief, community grants",
       "total": 84500000000,
       "categories": [
-        { "id": "disaster-relief", "title": "Disaster Relief", "desc": "FEMA emergency management and recovery", "total": 56300000000 },
-        { "id": "community-grants", "title": "Community Development", "desc": "CDBG, economic development grants", "total": 16100000000 },
-        { "id": "regional-dev", "title": "Regional Development", "desc": "Appalachian, Delta, and tribal programs", "total": 12100000000 }
+        {
+          "id": "disaster-relief",
+          "title": "Disaster Relief",
+          "desc": "FEMA emergency management and recovery",
+          "total": 56300000000,
+          "categories": [
+            {
+              "id": "disaster-drf",
+              "title": "Disaster Relief Fund",
+              "desc": "Response and recovery for major disasters",
+              "total": 43914000000
+            },
+            {
+              "id": "disaster-preparedness",
+              "title": "Preparedness Grants",
+              "desc": "Preparedness and emergency-management grants",
+              "total": 6756000000
+            },
+            {
+              "id": "disaster-flood",
+              "title": "Flood Mitigation & Insurance",
+              "desc": "Flood insurance, mitigation, and resilience programs",
+              "total": 5630000000
+            }
+          ]
+        },
+        {
+          "id": "community-grants",
+          "title": "Community Development",
+          "desc": "CDBG, economic development grants",
+          "total": 16100000000,
+          "source": "https://www.hud.gov/sites/dfiles/CFO/documents/2025-Budget-in-Brief-Final.pdf",
+          "categories": [
+            {
+              "id": "community-cdbg",
+              "title": "CDBG",
+              "desc": "Community Development Block Grants",
+              "total": 6440000000
+            },
+            {
+              "id": "community-home",
+              "title": "HOME",
+              "desc": "HOME Investment Partnerships and affordable housing support",
+              "total": 3703000000
+            },
+            {
+              "id": "community-eda",
+              "title": "EDA Grants",
+              "desc": "Economic Development Administration grants",
+              "total": 2737000000
+            },
+            {
+              "id": "community-other",
+              "title": "Other Community Grants",
+              "desc": "Other local development and revitalization grants",
+              "total": 3220000000
+            }
+          ]
+        },
+        {
+          "id": "regional-dev",
+          "title": "Regional Development",
+          "desc": "Appalachian, Delta, and tribal programs",
+          "total": 12100000000,
+          "categories": [
+            {
+              "id": "regional-appalachia",
+              "title": "Appalachian Region",
+              "desc": "Appalachian Regional Commission programs",
+              "total": 2178000000
+            },
+            {
+              "id": "regional-delta",
+              "title": "Delta Region",
+              "desc": "Delta Regional Authority and similar place-based support",
+              "total": 847000000
+            },
+            {
+              "id": "regional-tribal",
+              "title": "Tribal Community Programs",
+              "desc": "Tribal economic development and community infrastructure",
+              "total": 5445000000
+            },
+            {
+              "id": "regional-other",
+              "title": "Other Regional Programs",
+              "desc": "Other regional commissions and development programs",
+              "total": 3630000000
+            }
+          ]
+        }
       ]
     },
     {
@@ -130,11 +1242,163 @@
       "desc": "Federal education, workforce training, and social services",
       "total": 69200000000,
       "categories": [
-        { "id": "k12-education", "title": "K-12 Education", "desc": "Title I, IDEA, and other K-12 programs", "total": 25000000000 },
-        { "id": "social-services", "title": "Social Services", "desc": "Head Start, child care, social services block grant", "total": 22000000000 },
-        { "id": "training-employment", "title": "Training & Employment", "desc": "Job Corps, workforce development", "total": 10000000000 },
-        { "id": "student-aid", "title": "Student Financial Assistance", "desc": "Pell Grants, student loans (net subsidy cost)", "total": 8000000000 },
-        { "id": "other-education", "title": "Other Education", "desc": "Higher education, research, libraries", "total": 4200000000 }
+        {
+          "id": "k12-education",
+          "title": "K-12 Education",
+          "desc": "Title I, IDEA, and other K-12 programs",
+          "total": 25000000000,
+          "source": "https://www.ed.gov/about/overview/budget/budget25/index.html?src=ct",
+          "categories": [
+            {
+              "id": "k12-title1",
+              "title": "Title I",
+              "desc": "Aid for schools serving low-income students",
+              "total": 10750000000
+            },
+            {
+              "id": "k12-idea",
+              "title": "IDEA",
+              "desc": "Special education grants under IDEA",
+              "total": 10500000000
+            },
+            {
+              "id": "k12-impact-aid",
+              "title": "Impact Aid",
+              "desc": "Support for districts affected by federal activity",
+              "total": 2000000000
+            },
+            {
+              "id": "k12-other",
+              "title": "Other K-12 Grants",
+              "desc": "Other elementary and secondary education grants",
+              "total": 1750000000
+            }
+          ]
+        },
+        {
+          "id": "social-services",
+          "title": "Social Services",
+          "desc": "Head Start, child care, social services block grant",
+          "total": 22000000000,
+          "categories": [
+            {
+              "id": "social-head-start",
+              "title": "Head Start",
+              "desc": "Early childhood education and family services",
+              "total": 9680000000
+            },
+            {
+              "id": "social-ccdf",
+              "title": "Child Care",
+              "desc": "Child Care and Development Fund support",
+              "total": 7920000000
+            },
+            {
+              "id": "social-ssbg",
+              "title": "SSBG",
+              "desc": "Social Services Block Grant",
+              "total": 2640000000
+            },
+            {
+              "id": "social-other",
+              "title": "Other Family Services",
+              "desc": "Other child welfare and family service programs",
+              "total": 1760000000
+            }
+          ]
+        },
+        {
+          "id": "training-employment",
+          "title": "Training & Employment",
+          "desc": "Job Corps, workforce development",
+          "total": 10000000000,
+          "categories": [
+            {
+              "id": "workforce-wioa",
+              "title": "WIOA Grants",
+              "desc": "Workforce Innovation and Opportunity Act formula grants",
+              "total": 4400000000
+            },
+            {
+              "id": "workforce-job-corps",
+              "title": "Job Corps",
+              "desc": "Residential education and training for young adults",
+              "total": 2700000000
+            },
+            {
+              "id": "workforce-apprenticeship",
+              "title": "Apprenticeship & Youth",
+              "desc": "Apprenticeship, youth, and reentry workforce initiatives",
+              "total": 1200000000
+            },
+            {
+              "id": "workforce-other",
+              "title": "Other Workforce Programs",
+              "desc": "Other employment and training services",
+              "total": 1700000000
+            }
+          ]
+        },
+        {
+          "id": "student-aid",
+          "title": "Student Financial Assistance",
+          "desc": "Pell Grants, student loans (net subsidy cost)",
+          "total": 8000000000,
+          "source": "https://www.ed.gov/about/overview/budget/budget25/index.html?src=ct",
+          "categories": [
+            {
+              "id": "aid-pell",
+              "title": "Pell Grants",
+              "desc": "Need-based Pell Grant aid",
+              "total": 5520000000
+            },
+            {
+              "id": "aid-campus",
+              "title": "Campus-Based Aid",
+              "desc": "Federal Work-Study and supplemental grants",
+              "total": 800000000
+            },
+            {
+              "id": "aid-loans",
+              "title": "Loan Subsidy & Admin",
+              "desc": "Student loan subsidy costs and aid administration",
+              "total": 1680000000
+            }
+          ]
+        },
+        {
+          "id": "other-education",
+          "title": "Other Education",
+          "desc": "Higher education, research, libraries",
+          "total": 4200000000,
+          "source": "https://www.ed.gov/about/overview/budget/budget25/index.html?src=ct",
+          "categories": [
+            {
+              "id": "education-research",
+              "title": "Research & Evaluation",
+              "desc": "Education research, statistics, and evaluation",
+              "total": 1008000000
+            },
+            {
+              "id": "education-libraries",
+              "title": "Libraries & Museums",
+              "desc": "Institute of Museum and Library Services and similar support",
+              "total": 798000000
+            },
+            {
+              "id": "education-higher-ed",
+              "title": "Higher Education Support",
+              "desc": "Minority-serving institutions and other higher-ed programs",
+              "total": 1428000000
+            },
+            {
+              "id": "education-other",
+              "title": "Other Education Support",
+              "desc": "Other education and cultural support programs",
+              "total": 966000000
+            }
+          ]
+        }
       ]
     },
     {
@@ -143,9 +1407,87 @@
       "desc": "Farm programs, crop insurance, and rural development",
       "total": 49300000000,
       "categories": [
-        { "id": "farm-subsidies", "title": "Farm Income Stabilization", "desc": "Crop insurance, commodity programs", "total": 32400000000 },
-        { "id": "rural-development", "title": "Rural Development", "desc": "Rural housing, utilities, business programs", "total": 10400000000 },
-        { "id": "ag-research", "title": "Agricultural Research", "desc": "USDA research and extension", "total": 6500000000 }
+        {
+          "id": "farm-subsidies",
+          "title": "Farm Income Stabilization",
+          "desc": "Crop insurance, commodity programs",
+          "total": 32400000000,
+          "source": "https://www.usda.gov/about-usda/general-information/staff-offices/office-budget-and-program-analysis/congressional-justifications/2025-usda-budget-explanatory-notes",
+          "categories": [
+            {
+              "id": "farm-crop-insurance",
+              "title": "Crop Insurance",
+              "desc": "Premium support and indemnities through federal crop insurance",
+              "total": 15228000000
+            },
+            {
+              "id": "farm-commodity",
+              "title": "Commodity Programs",
+              "desc": "Commodity support and farm safety-net programs",
+              "total": 11340000000
+            },
+            {
+              "id": "farm-conservation",
+              "title": "Conservation Support",
+              "desc": "Working-lands conservation and related farm support",
+              "total": 5832000000
+            }
+          ]
+        },
+        {
+          "id": "rural-development",
+          "title": "Rural Development",
+          "desc": "Rural housing, utilities, business programs",
+          "total": 10400000000,
+          "source": "https://www.usda.gov/about-usda/general-information/staff-offices/office-budget-and-program-analysis/congressional-justifications/2025-usda-budget-explanatory-notes",
+          "categories": [
+            {
+              "id": "rural-housing",
+              "title": "Rural Housing",
+              "desc": "Single-family, multifamily, and rental housing programs",
+              "total": 5408000000
+            },
+            {
+              "id": "rural-utilities",
+              "title": "Rural Utilities",
+              "desc": "Water, broadband, and electric infrastructure support",
+              "total": 3016000000
+            },
+            {
+              "id": "rural-business",
+              "title": "Rural Business",
+              "desc": "Rural business and cooperative development",
+              "total": 1976000000
+            }
+          ]
+        },
+        {
+          "id": "ag-research",
+          "title": "Agricultural Research",
+          "desc": "USDA research and extension",
+          "total": 6500000000,
+          "source": "https://www.usda.gov/about-usda/general-information/staff-offices/office-budget-and-program-analysis/congressional-justifications/2025-usda-budget-explanatory-notes",
+          "categories": [
+            {
+              "id": "ag-ars",
+              "title": "ARS",
+              "desc": "Agricultural Research Service research programs",
+              "total": 2990000000
+            },
+            {
+              "id": "ag-nifa",
+              "title": "NIFA & Extension",
+              "desc": "Research grants, extension, and higher-education support",
+              "total": 2535000000
+            },
+            {
+              "id": "ag-other-science",
+              "title": "Other USDA Science",
+              "desc": "Other agricultural science and data programs",
+              "total": 975000000
+            }
+          ]
+        }
       ]
     },
     {
@@ -154,9 +1496,96 @@
       "desc": "Foreign aid, diplomacy, and international programs",
       "total": 45200000000,
       "categories": [
-        { "id": "foreign-aid", "title": "Foreign Economic Aid", "desc": "USAID, development assistance", "total": 20400000000 },
-        { "id": "state-dept", "title": "Diplomacy", "desc": "State Department operations, embassies", "total": 13100000000 },
-        { "id": "military-aid", "title": "Foreign Military Aid", "desc": "Security assistance to allies", "total": 11700000000 }
+        {
+          "id": "foreign-aid",
+          "title": "Foreign Economic Aid",
+          "desc": "USAID, development assistance",
+          "total": 20400000000,
+          "categories": [
+            {
+              "id": "aid-humanitarian",
+              "title": "Humanitarian Assistance",
+              "desc": "Refugee, food, and emergency humanitarian aid",
+              "total": 6936000000
+            },
+            {
+              "id": "aid-health",
+              "title": "Global Health",
+              "desc": "Global health security and disease-response assistance",
+              "total": 4896000000
+            },
+            {
+              "id": "aid-development",
+              "title": "Development Assistance",
+              "desc": "Development finance and bilateral assistance",
+              "total": 5304000000
+            },
+            {
+              "id": "aid-other-economic",
+              "title": "MCC & Other Aid",
+              "desc": "Millennium Challenge Corporation and other economic aid",
+              "total": 3264000000
+            }
+          ]
+        },
+        {
+          "id": "state-dept",
+          "title": "Diplomacy",
+          "desc": "State Department operations, embassies",
+          "total": 13100000000,
+          "categories": [
+            {
+              "id": "state-diplomatic",
+              "title": "Diplomatic Programs",
+              "desc": "Embassy operations, diplomacy, and foreign service support",
+              "total": 6681000000
+            },
+            {
+              "id": "state-security",
+              "title": "Embassy Security & Construction",
+              "desc": "Embassy security, construction, and maintenance",
+              "total": 3668000000
+            },
+            {
+              "id": "state-consular",
+              "title": "Consular & Border Security",
+              "desc": "Consular affairs and border-security support",
+              "total": 1572000000
+            },
+            {
+              "id": "state-other",
+              "title": "Other State Operations",
+              "desc": "Other State Department administration and support",
+              "total": 1179000000
+            }
+          ]
+        },
+        {
+          "id": "military-aid",
+          "title": "Foreign Military Aid",
+          "desc": "Security assistance to allies",
+          "total": 11700000000,
+          "categories": [
+            {
+              "id": "mil-aid-fmf",
+              "title": "Foreign Military Financing",
+              "desc": "Grants for allies to purchase U.S. defense equipment",
+              "total": 8307000000
+            },
+            {
+              "id": "mil-aid-peacekeeping",
+              "title": "Peacekeeping & Security",
+              "desc": "Peacekeeping and broader security-assistance programs",
+              "total": 2340000000
+            },
+            {
+              "id": "mil-aid-training",
+              "title": "Training & Other Aid",
+              "desc": "IMET and other military training support",
+              "total": 1053000000
+            }
+          ]
+        }
       ]
     },
     {
@@ -165,9 +1594,104 @@
       "desc": "NASA, NSF, and general science programs",
       "total": 42100000000,
       "categories": [
-        { "id": "nasa", "title": "NASA", "desc": "Space exploration and aeronautics", "total": 25100000000 },
-        { "id": "nsf", "title": "National Science Foundation", "desc": "Fundamental research and education", "total": 9000000000 },
-        { "id": "other-science", "title": "Other Science Programs", "desc": "DOE science, NOAA research", "total": 8000000000 }
+        {
+          "id": "nasa",
+          "title": "NASA",
+          "desc": "Space exploration and aeronautics",
+          "total": 25100000000,
+          "source": "https://www.nasa.gov/fy-2025-budget-request/",
+          "categories": [
+            {
+              "id": "nasa-science",
+              "title": "Science",
+              "desc": "Earth, planetary, heliophysics, and astrophysics missions",
+              "total": 7530000000
+            },
+            {
+              "id": "nasa-exploration",
+              "title": "Exploration Systems",
+              "desc": "Artemis, deep-space systems, and human exploration",
+              "total": 7279000000
+            },
+            {
+              "id": "nasa-space-ops",
+              "title": "Space Operations",
+              "desc": "ISS, launch services, and mission operations",
+              "total": 6526000000
+            },
+            {
+              "id": "nasa-tech",
+              "title": "Space Technology",
+              "desc": "Advanced technology development and demonstrations",
+              "total": 2008000000
+            },
+            {
+              "id": "nasa-aero-support",
+              "title": "Aeronautics & Support",
+              "desc": "Aeronautics research plus safety, security, and mission support",
+              "total": 1757000000
+            }
+          ]
+        },
+        {
+          "id": "nsf",
+          "title": "National Science Foundation",
+          "desc": "Fundamental research and education",
+          "total": 9000000000,
+          "source": "https://www.nsf.gov/about/budget/fy2025",
+          "categories": [
+            {
+              "id": "nsf-rra",
+              "title": "Research & Related Activities",
+              "desc": "Core science and engineering research funding",
+              "total": 6480000000
+            },
+            {
+              "id": "nsf-stem",
+              "title": "STEM Education",
+              "desc": "Education and human resources programs",
+              "total": 1080000000
+            },
+            {
+              "id": "nsf-mrefc",
+              "title": "Major Research Equipment",
+              "desc": "Major research equipment and facilities construction",
+              "total": 990000000
+            },
+            {
+              "id": "nsf-operations",
+              "title": "Agency Operations",
+              "desc": "Operations, administration, and the inspector general",
+              "total": 450000000
+            }
+          ]
+        },
+        {
+          "id": "other-science",
+          "title": "Other Science Programs",
+          "desc": "DOE science, NOAA research",
+          "total": 8000000000,
+          "categories": [
+            {
+              "id": "science-doe",
+              "title": "DOE Office of Science",
+              "desc": "Energy science, national labs, and basic research",
+              "total": 4080000000
+            },
+            {
+              "id": "science-noaa",
+              "title": "NOAA Research",
+              "desc": "Climate, oceans, and weather research programs",
+              "total": 2160000000
+            },
+            {
+              "id": "science-other-federal",
+              "title": "Other Federal Science",
+              "desc": "USGS and other smaller federal science programs",
+              "total": 1760000000
+            }
+          ]
+        }
       ]
     },
     {
@@ -176,10 +1700,135 @@
       "desc": "Executive, legislative, fiscal operations",
       "total": 36300000000,
       "categories": [
-        { "id": "fiscal-operations", "title": "Fiscal Operations", "desc": "IRS, Treasury operations, tax collection", "total": 15900000000 },
-        { "id": "other-general", "title": "Other General Government", "desc": "OPM, GSA, personnel management", "total": 7900000000 },
-        { "id": "legislative", "title": "Legislative Branch", "desc": "Congress, GAO, CBO, Library of Congress", "total": 6800000000 },
-        { "id": "executive", "title": "Executive Office", "desc": "White House, OMB, and executive offices", "total": 5700000000 }
+        {
+          "id": "fiscal-operations",
+          "title": "Fiscal Operations",
+          "desc": "IRS, Treasury operations, tax collection",
+          "total": 15900000000,
+          "source": "https://home.treasury.gov/about/budget-financial-reporting-planning-and-performance/budget-requestannual-performance-plan-and-reports/congressional-justification/fy-2025-congressional-justification",
+          "categories": [
+            {
+              "id": "fiscal-irs",
+              "title": "IRS",
+              "desc": "Tax administration, enforcement, and taxpayer services",
+              "total": 11448000000
+            },
+            {
+              "id": "fiscal-service",
+              "title": "Fiscal Service",
+              "desc": "Debt financing, payment systems, and accounting operations",
+              "total": 1908000000
+            },
+            {
+              "id": "fiscal-treasury-do",
+              "title": "Treasury Departmental Offices",
+              "desc": "Departmental offices, sanctions, and financial intelligence",
+              "total": 1590000000
+            },
+            {
+              "id": "fiscal-other",
+              "title": "Other Fiscal Agencies",
+              "desc": "Other Treasury fiscal and financial oversight activities",
+              "total": 954000000
+            }
+          ]
+        },
+        {
+          "id": "other-general",
+          "title": "Other General Government",
+          "desc": "OPM, GSA, personnel management",
+          "total": 7900000000,
+          "categories": [
+            {
+              "id": "general-gsa",
+              "title": "GSA",
+              "desc": "Federal buildings, procurement, and shared services",
+              "total": 3081000000
+            },
+            {
+              "id": "general-opm",
+              "title": "OPM",
+              "desc": "Federal workforce management and civil service administration",
+              "total": 2133000000
+            },
+            {
+              "id": "general-election-civil",
+              "title": "Election & Civil Agencies",
+              "desc": "Election administration and smaller civil agencies",
+              "total": 1106000000
+            },
+            {
+              "id": "general-other",
+              "title": "Other General Government",
+              "desc": "Other government-wide management and support activities",
+              "total": 1580000000
+            }
+          ]
+        },
+        {
+          "id": "legislative",
+          "title": "Legislative Branch",
+          "desc": "Congress, GAO, CBO, Library of Congress",
+          "total": 6800000000,
+          "categories": [
+            {
+              "id": "leg-house-senate",
+              "title": "Congressional Operations",
+              "desc": "House, Senate, and joint legislative operations",
+              "total": 3128000000
+            },
+            {
+              "id": "leg-library",
+              "title": "Library of Congress",
+              "desc": "Library of Congress and associated services",
+              "total": 1020000000
+            },
+            {
+              "id": "leg-gao",
+              "title": "GAO",
+              "desc": "Government Accountability Office",
+              "total": 952000000
+            },
+            {
+              "id": "leg-other",
+              "title": "Capitol Complex & Other",
+              "desc": "Capitol Police, Architect, CBO, and other legislative support",
+              "total": 1700000000
+            }
+          ]
+        },
+        {
+          "id": "executive",
+          "title": "Executive Office",
+          "desc": "White House, OMB, and executive offices",
+          "total": 5700000000,
+          "categories": [
+            {
+              "id": "exec-eop",
+              "title": "Executive Office",
+              "desc": "Executive Office of the President and support offices",
+              "total": 3078000000
+            },
+            {
+              "id": "exec-omb",
+              "title": "OMB",
+              "desc": "Office of Management and Budget",
+              "total": 912000000
+            },
+            {
+              "id": "exec-white-house",
+              "title": "White House",
+              "desc": "White House Office and Executive Residence",
+              "total": 456000000
+            },
+            {
+              "id": "exec-other",
+              "title": "NSC & Other Offices",
+              "desc": "National Security Council and other executive offices",
+              "total": 1254000000
+            }
+          ]
+        }
       ]
     },
     {
@@ -188,9 +1837,96 @@
       "desc": "DOE programs, strategic petroleum reserve",
       "total": 20900000000,
       "categories": [
-        { "id": "energy-supply", "title": "Energy Supply", "desc": "Renewable energy, nuclear, fossil R&D", "total": 10500000000 },
-        { "id": "energy-conservation", "title": "Energy Conservation", "desc": "Efficiency programs, weatherization", "total": 6300000000 },
-        { "id": "strategic-reserve", "title": "Strategic Petroleum Reserve", "desc": "SPR maintenance and operations", "total": 4100000000 }
+        {
+          "id": "energy-supply",
+          "title": "Energy Supply",
+          "desc": "Renewable energy, nuclear, fossil R&D",
+          "total": 10500000000,
+          "categories": [
+            {
+              "id": "energy-clean",
+              "title": "Clean Energy Deployment",
+              "desc": "Clean energy demonstration and deployment support",
+              "total": 3570000000
+            },
+            {
+              "id": "energy-nuclear",
+              "title": "Nuclear Energy",
+              "desc": "Advanced nuclear and fuel-cycle programs",
+              "total": 2520000000
+            },
+            {
+              "id": "energy-fossil",
+              "title": "Fossil & Carbon Management",
+              "desc": "Fossil energy research and carbon-management programs",
+              "total": 1890000000
+            },
+            {
+              "id": "energy-grid",
+              "title": "Grid & Other Supply",
+              "desc": "Grid resilience and other energy-supply programs",
+              "total": 2520000000
+            }
+          ]
+        },
+        {
+          "id": "energy-conservation",
+          "title": "Energy Conservation",
+          "desc": "Efficiency programs, weatherization",
+          "total": 6300000000,
+          "categories": [
+            {
+              "id": "conserve-weatherization",
+              "title": "Weatherization & State Programs",
+              "desc": "State and local efficiency programs including weatherization",
+              "total": 1701000000
+            },
+            {
+              "id": "conserve-federal",
+              "title": "Federal Energy Management",
+              "desc": "Efficiency programs for federal facilities and operations",
+              "total": 1008000000
+            },
+            {
+              "id": "conserve-rd",
+              "title": "Efficiency R&D",
+              "desc": "Building, industrial, and vehicle efficiency research",
+              "total": 2016000000
+            },
+            {
+              "id": "conserve-other",
+              "title": "Other Conservation",
+              "desc": "Other conservation and consumer energy-efficiency efforts",
+              "total": 1575000000
+            }
+          ]
+        },
+        {
+          "id": "strategic-reserve",
+          "title": "Strategic Petroleum Reserve",
+          "desc": "SPR maintenance and operations",
+          "total": 4100000000,
+          "categories": [
+            {
+              "id": "spr-core",
+              "title": "Strategic Petroleum Reserve",
+              "desc": "Core petroleum reserve storage and management",
+              "total": 3444000000
+            },
+            {
+              "id": "spr-northeast",
+              "title": "Northeast Reserves",
+              "desc": "Regional gasoline and home heating oil reserves",
+              "total": 246000000
+            },
+            {
+              "id": "spr-sites",
+              "title": "Site Operations & Cleanup",
+              "desc": "Site operations, maintenance, and environmental work",
+              "total": 410000000
+            }
+          ]
+        }
       ]
     },
     {
@@ -199,8 +1935,58 @@
       "desc": "Government-wide offsets including employer retirement contributions and Commerce & Housing Credit",
       "total": -178900000000,
       "categories": [
-        { "id": "offsetting-receipts", "title": "Offsetting Receipts", "desc": "Employer share of employee retirement, rents and royalties", "total": -150300000000 },
-        { "id": "commerce-housing", "title": "Commerce & Housing Credit", "desc": "SBA, FHA, Fannie/Freddie, postal service (net negative)", "total": -28600000000 }
+        {
+          "id": "offsetting-receipts",
+          "title": "Offsetting Receipts",
+          "desc": "Employer share of employee retirement, rents and royalties",
+          "total": -150300000000,
+          "categories": [
+            {
+              "id": "offset-retirement",
+              "title": "Retirement Contributions",
+              "desc": "Employer retirement contributions received by federal trust funds",
+              "total": -81162000000
+            },
+            {
+              "id": "offset-rents",
+              "title": "Rents & Royalties",
+              "desc": "Energy, mineral, and other rents and royalties",
+              "total": -42084000000
+            },
+            {
+              "id": "offset-other",
+              "title": "Other Receipts",
+              "desc": "Spectrum, user fees, and other government-wide offsetting receipts",
+              "total": -27054000000
+            }
+          ]
+        },
+        {
+          "id": "commerce-housing",
+          "title": "Commerce & Housing Credit",
+          "desc": "SBA, FHA, Fannie/Freddie, postal service (net negative)",
+          "total": -28600000000,
+          "categories": [
+            {
+              "id": "credit-fha",
+              "title": "FHA & Ginnie Mae",
+              "desc": "Negative subsidy from housing credit programs",
+              "total": -15730000000
+            },
+            {
+              "id": "credit-sba",
+              "title": "SBA Credit Programs",
+              "desc": "Credit reestimates and offsets in SBA lending programs",
+              "total": -5720000000
+            },
+            {
+              "id": "credit-other",
+              "title": "Other Credit Offsets",
+              "desc": "GSE, postal, and other credit-related offsetting receipts",
+              "total": -7150000000
+            }
+          ]
+        }
       ]
     }
   ]
