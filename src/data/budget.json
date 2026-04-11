@@ -2,7 +2,7 @@
   "id": "federal-budget",
   "title": "U.S. Federal Budget",
   "desc": "How the federal government plans to spend money in fiscal year 2025",
-  "total": 7010000000000,
+  "total": 7188900000000,
   "source": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/",
   "categories": [
     {
@@ -1924,66 +1924,6 @@
               "title": "Site Operations & Cleanup",
               "desc": "Site operations, maintenance, and environmental work",
               "total": 410000000
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "undistributed-offsets",
-      "title": "Undistributed Offsetting Receipts",
-      "desc": "Negative entries that reduce total spending by counting government-wide receipts and credit offsets",
-      "total": -178900000000,
-      "categories": [
-        {
-          "id": "offsetting-receipts",
-          "title": "Offsetting Receipts",
-          "desc": "Government-wide collections like retirement contributions, rents, and royalties that offset spending",
-          "total": -150300000000,
-          "categories": [
-            {
-              "id": "offset-retirement",
-              "title": "Retirement Contributions",
-              "desc": "Employer retirement contributions received by federal trust funds",
-              "total": -81162000000
-            },
-            {
-              "id": "offset-rents",
-              "title": "Rents & Royalties",
-              "desc": "Energy, mineral, and other rents and royalties",
-              "total": -42084000000
-            },
-            {
-              "id": "offset-other",
-              "title": "Other Receipts",
-              "desc": "Spectrum, user fees, and other government-wide offsetting receipts",
-              "total": -27054000000
-            }
-          ]
-        },
-        {
-          "id": "commerce-housing",
-          "title": "Commerce & Housing Credit",
-          "desc": "Net negative credit subsidy and reestimates from housing, business, and related lending programs",
-          "total": -28600000000,
-          "categories": [
-            {
-              "id": "credit-fha",
-              "title": "FHA & Ginnie Mae",
-              "desc": "Negative subsidy from housing credit programs",
-              "total": -15730000000
-            },
-            {
-              "id": "credit-sba",
-              "title": "SBA Credit Programs",
-              "desc": "Credit reestimates and offsets in SBA lending programs",
-              "total": -5720000000
-            },
-            {
-              "id": "credit-other",
-              "title": "Other Credit Offsets",
-              "desc": "GSE, postal, and other credit-related offsetting receipts",
-              "total": -7150000000
             }
           ]
         }

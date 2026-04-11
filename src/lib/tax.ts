@@ -44,7 +44,8 @@ export function computeFederalTax(grossIncome: number): number {
 // FY 2025 actuals from Treasury Monthly Treasury Statement (Table 9)
 // Source: https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/
 const TOTAL_FEDERAL_REVENUE = 5_234_600_000_000;
-const TOTAL_FEDERAL_SPENDING = 7_010_000_000_000;
+// Display total excludes a set of government-wide offsets to keep the spending view easier to read.
+const TOTAL_FEDERAL_SPENDING = 7_188_900_000_000;
 
 export function computeUserShare(userTax: number, categoryTotal: number): number {
   return (userTax / TOTAL_FEDERAL_REVENUE) * categoryTotal;
