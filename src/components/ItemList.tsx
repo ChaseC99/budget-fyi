@@ -12,6 +12,9 @@ interface ItemListProps {
   direction: NavDirection;
   onSelect: (node: BudgetNode) => void;
   getAmount: (total: number) => number;
+  onPreviewStart?: (node: BudgetNode) => void;
+  onPreviewEnd?: () => void;
+  selectedNodeId?: string;
 }
 
 const SLIDE = 80;
@@ -31,7 +34,17 @@ const variants = {
   }),
 };
 
-export function ItemList({ node, parentIndex, depth, direction, onSelect, getAmount }: ItemListProps) {
+export function ItemList({
+  node,
+  parentIndex,
+  depth,
+  direction,
+  onSelect,
+  getAmount,
+  onPreviewStart,
+  onPreviewEnd,
+  selectedNodeId,
+}: ItemListProps) {
   const categories = node.categories ?? [];
   const sorted = [...categories].sort((a, b) => b.total - a.total);
 
@@ -54,19 +67,25 @@ export function ItemList({ node, parentIndex, depth, direction, onSelect, getAmo
               ? getCategoryColor(originalIndex)
               : getChildColor(parentIndex ?? 0, originalIndex, categories.length);
           const hasChildren = cat.categories && cat.categories.length > 0;
+          const isSelected = cat.id === selectedNodeId;
           const amount = getAmount(cat.total);
 
           return (
             <div
               key={cat.id}
-              className={`${styles.row} ${!hasChildren ? styles.noChildren : ""}`}
+              className={`${styles.row} ${isSelected ? styles.selected : ""}`}
               onClick={() => onSelect(cat)}
+              onMouseEnter={() => onPreviewStart?.(cat)}
+              onMouseLeave={() => onPreviewEnd?.()}
+              onFocus={() => onPreviewStart?.(cat)}
+              onBlur={() => onPreviewEnd?.()}
               onKeyDown={(e) => {
                 if (e.key === "Enter" || e.key === " ") onSelect(cat);
               }}
               tabIndex={0}
               role="button"
               aria-label={`${cat.title}: ${formatCurrency(amount)}`}
+              aria-pressed={isSelected}
             >
               <span className={styles.dot} style={{ backgroundColor: color }} />
               <span className={styles.title}>{cat.title}</span>

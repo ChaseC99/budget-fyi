@@ -1,5 +1,5 @@
-import { useState, useCallback, useMemo, useRef } from "react";
-import { AnimatePresence } from "motion/react";
+import { useState, useCallback, useMemo, useRef, useEffect } from "react";
+import { AnimatePresence, motion } from "motion/react";
 import type { BudgetNode } from "../data/types";
 import budgetData from "../data/budget.json";
 import { useBudgetNavigation } from "../hooks/useBudgetNavigation";
@@ -16,6 +16,8 @@ const rootNode = budgetData as BudgetNode;
 export function BudgetExplorer() {
   const [income, setIncome] = useState(0);
   const [tickerItems] = useState(() => createLeafTickerSample(rootNode));
+  const [previewNode, setPreviewNode] = useState<BudgetNode | null>(null);
+  const [selectedLeaf, setSelectedLeaf] = useState<BudgetNode | null>(null);
   const donutRef = useRef<DonutChartHandle>(null);
   const { current, parent, drillDown, goBack, navigateToNode, depth, isRoot, direction } =
     useBudgetNavigation(rootNode);
@@ -52,6 +54,9 @@ export function BudgetExplorer() {
   );
 
   const centerAmount = isRoot && hasIncome ? representedSpending : getAmount(current.total);
+  const displayNode = previewNode ?? selectedLeaf ?? current;
+  const isPreviewingChild = previewNode !== null && previewNode.id !== current.id;
+  const isLeafSelected = selectedLeaf !== null;
 
   // Find the index of the current node in its parent's categories (for child coloring)
   const parentIndex = useMemo(() => {
@@ -59,11 +64,34 @@ export function BudgetExplorer() {
     return parent.categories.findIndex((c) => c.id === current.id);
   }, [parent, current]);
 
+  useEffect(() => {
+    setPreviewNode(null);
+    setSelectedLeaf(null);
+  }, [current.id]);
+
   const handleItemSelect = useCallback((child: BudgetNode) => {
-    donutRef.current?.selectNode(child);
+    if (child.categories && child.categories.length > 0) {
+      setSelectedLeaf(null);
+      setPreviewNode(null);
+      donutRef.current?.selectNode(child);
+      return;
+    }
+
+    setPreviewNode(null);
+    setSelectedLeaf((selected) => (selected?.id === child.id ? null : child));
+  }, []);
+
+  const handlePreviewStart = useCallback((node: BudgetNode) => {
+    setPreviewNode(node);
+  }, []);
+
+  const handlePreviewEnd = useCallback(() => {
+    setPreviewNode(null);
   }, []);
 
   const handleTickerSelect = useCallback((item: (typeof tickerItems)[number]) => {
+    setPreviewNode(null);
+    setSelectedLeaf(null);
     navigateToNode(item.parentId);
   }, [navigateToNode]);
 
@@ -83,6 +111,8 @@ export function BudgetExplorer() {
           centerAmount={centerAmount}
           centerLabel={isRoot ? (hasIncome ? "your contribution" : "total spending") : current.title}
           centerBreakdownItems={centerBreakdownItems}
+          onPreviewStart={handlePreviewStart}
+          onPreviewEnd={handlePreviewEnd}
         />
       </div>
 
@@ -103,6 +133,28 @@ export function BudgetExplorer() {
         </AnimatePresence>
       </div>
 
+      <div className={styles.contextCard} aria-live="polite">
+        <div className={styles.contextEyebrow}>
+          {isPreviewingChild
+            ? `About ${current.title}` 
+            : `About ${displayNode.title}` 
+          }
+        </div>
+        <AnimatePresence mode="wait" initial={false}>
+          <motion.div
+            key={displayNode.id}
+            className={styles.contextBody}
+            initial={{ opacity: 0, y: 6 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -6 }}
+            transition={{ duration: 0.2, ease: "easeOut" }}
+            title={displayNode.desc}
+          >
+            {displayNode.desc}
+          </motion.div>
+        </AnimatePresence>
+      </div>
+
       <div className={styles.divider} />
 
       <div className={styles.receiptNav}>
@@ -118,6 +170,9 @@ export function BudgetExplorer() {
         direction={direction}
         onSelect={handleItemSelect}
         getAmount={getAmount}
+        onPreviewStart={handlePreviewStart}
+        onPreviewEnd={handlePreviewEnd}
+        selectedNodeId={selectedLeaf?.id}
       />
     </div>
   );

@@ -1,20 +1,20 @@
 {
   "id": "federal-budget",
   "title": "U.S. Federal Budget",
-  "desc": "FY 2025 federal outlays",
+  "desc": "How the federal government plans to spend money in fiscal year 2025",
   "total": 7010000000000,
   "source": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/",
   "categories": [
     {
       "id": "health",
       "title": "Health",
-      "desc": "Medicare, Medicaid, and other health programs",
+      "desc": "Federal health spending, led by Medicare, Medicaid, marketplace aid, and public health agencies",
       "total": 1975600000000,
       "categories": [
         {
           "id": "medicare",
           "title": "Medicare",
-          "desc": "Health insurance for seniors and disabled",
+          "desc": "Insurance benefits and administration for seniors and people with qualifying disabilities",
           "total": 996700000000,
           "categories": [
             {
@@ -46,7 +46,7 @@
         {
           "id": "medicaid",
           "title": "Medicaid",
-          "desc": "Health coverage for low-income individuals",
+          "desc": "Joint federal-state health coverage for low-income families, seniors, and people with disabilities",
           "total": 734500000000,
           "categories": [
             {
@@ -78,7 +78,7 @@
         {
           "id": "marketplace-subsidies",
           "title": "Marketplace Subsidies",
-          "desc": "ACA premium tax credits and cost-sharing",
+          "desc": "ACA exchange subsidies that lower premiums and out-of-pocket costs",
           "total": 137100000000,
           "categories": [
             {
@@ -104,7 +104,7 @@
         {
           "id": "other-health",
           "title": "Other Health Programs",
-          "desc": "SAMHSA, CDC, NIH, Indian Health Service, and other agencies",
+          "desc": "Public health agencies, research, mental health programs, and Tribal health services",
           "total": 85800000000,
           "categories": [
             {
@@ -142,7 +142,7 @@
         {
           "id": "chip",
           "title": "CHIP",
-          "desc": "Children's Health Insurance Program",
+          "desc": "Federal support that helps states insure children above Medicaid eligibility",
           "total": 21500000000,
           "categories": [
             {
@@ -170,13 +170,13 @@
     {
       "id": "social-security",
       "title": "Social Security",
-      "desc": "Old-Age, Survivors, and Disability Insurance",
+      "desc": "Cash benefits for retirees, survivors, and disabled workers through the Social Security system",
       "total": 1580700000000,
       "categories": [
         {
           "id": "oasi",
           "title": "Old-Age & Survivors Insurance",
-          "desc": "Retirement and survivor benefits",
+          "desc": "Monthly benefits for retirees plus survivor support for spouses, children, and other family members",
           "total": 1413200000000,
           "categories": [
             {
@@ -208,7 +208,7 @@
         {
           "id": "disability-insurance",
           "title": "Disability Insurance",
-          "desc": "Benefits for disabled workers",
+          "desc": "Income support for workers and dependents when a qualifying disability prevents work",
           "total": 167500000000,
           "categories": [
             {
@@ -236,13 +236,13 @@
     {
       "id": "net-interest",
       "title": "Net Interest",
-      "desc": "Interest on federal debt",
+      "desc": "What the government pays to service federal debt after trust-fund offsets",
       "total": 970400000000,
       "categories": [
         {
           "id": "interest-public-debt",
           "title": "Interest on Public Debt",
-          "desc": "Interest payments to bondholders",
+          "desc": "Interest owed to investors and institutions that hold Treasury securities",
           "total": 1090700000000,
           "categories": [
             {
@@ -268,7 +268,7 @@
         {
           "id": "interest-offsets",
           "title": "Interest Received by Trust Funds",
-          "desc": "Offsetting intragovernmental interest",
+          "desc": "Interest credited to federal trust funds that partially offsets gross debt costs",
           "total": -120300000000,
           "categories": [
             {
@@ -296,13 +296,13 @@
     {
       "id": "national-defense",
       "title": "National Defense",
-      "desc": "Department of Defense and related activities",
+      "desc": "Military operations, nuclear forces, and other defense-wide national security spending",
       "total": 916600000000,
       "categories": [
         {
           "id": "dod-military",
           "title": "DoD Military Programs",
-          "desc": "Operations, procurement, R&D, personnel",
+          "desc": "Core Pentagon spending for readiness, troops, weapons, military construction, and research",
           "total": 866200000000,
           "source": "https://comptroller.defense.gov/Budget-Materials/Budget2025/",
           "categories": [
@@ -341,7 +341,7 @@
         {
           "id": "atomic-energy",
           "title": "Atomic Energy Defense",
-          "desc": "Nuclear weapons and naval reactors",
+          "desc": "Nuclear weapons stewardship, naval reactors, and cleanup of defense nuclear sites",
           "total": 33600000000,
           "source": "https://comptroller.defense.gov/Budget-Materials/Budget2025/",
           "categories": [
@@ -374,7 +374,7 @@
         {
           "id": "other-defense",
           "title": "Other Defense Activities",
-          "desc": "Intelligence, defense-related activities",
+          "desc": "Defense-wide agencies, intelligence support, and smaller national security accounts",
           "total": 16800000000,
           "source": "https://comptroller.defense.gov/Budget-Materials/Budget2025/",
           "categories": [
@@ -403,13 +403,13 @@
     {
       "id": "income-security",
       "title": "Income Security",
-      "desc": "Safety net and assistance programs",
+      "desc": "Cash aid, tax credits, food aid, housing help, and unemployment support for households",
       "total": 701600000000,
       "categories": [
         {
           "id": "child-tax-credit",
           "title": "Child Tax Credit",
-          "desc": "Tax credit for families with children",
+          "desc": "Tax relief for families with children, much of it delivered through refunds",
           "total": 159800000000,
           "categories": [
             {
@@ -435,7 +435,7 @@
         {
           "id": "snap",
           "title": "SNAP (Food Stamps)",
-          "desc": "Supplemental Nutrition Assistance Program",
+          "desc": "Nutrition assistance that helps low-income households buy groceries",
           "total": 146700000000,
           "categories": [
             {
@@ -461,7 +461,7 @@
         {
           "id": "other-income-security",
           "title": "Other Income Security",
-          "desc": "TANF, foster care, and other programs",
+          "desc": "Family assistance, foster care, utility help, and other anti-poverty support",
           "total": 108700000000,
           "categories": [
             {
@@ -499,7 +499,7 @@
         {
           "id": "earned-income-credit",
           "title": "Earned Income Tax Credit",
-          "desc": "Refundable tax credit for low-income workers",
+          "desc": "Refundable tax credit that boosts earnings for lower-income workers",
           "total": 89100000000,
           "categories": [
             {
@@ -519,7 +519,7 @@
         {
           "id": "housing-assistance",
           "title": "Housing Assistance",
-          "desc": "Section 8, public housing, and related",
+          "desc": "Federal rental assistance and housing support for low-income households",
           "total": 89100000000,
           "source": "https://www.hud.gov/sites/dfiles/CFO/documents/2025-Budget-in-Brief-Final.pdf",
           "categories": [
@@ -552,7 +552,7 @@
         {
           "id": "ssi",
           "title": "Supplemental Security Income",
-          "desc": "Income support for aged, blind, and disabled",
+          "desc": "Cash assistance for low-income seniors and people with disabilities",
           "total": 65000000000,
           "categories": [
             {
@@ -584,7 +584,7 @@
         {
           "id": "unemployment",
           "title": "Unemployment Compensation",
-          "desc": "Federal share of unemployment insurance",
+          "desc": "Federal costs tied to unemployment benefits, administration, and reemployment services",
           "total": 43200000000,
           "categories": [
             {
@@ -612,13 +612,13 @@
     {
       "id": "veterans",
       "title": "Veterans Benefits",
-      "desc": "Benefits and services for veterans",
+      "desc": "Cash benefits, health care, education, and support services for veterans and their families",
       "total": 377200000000,
       "categories": [
         {
           "id": "veterans-compensation",
           "title": "Disability Compensation",
-          "desc": "Payments for service-connected disabilities",
+          "desc": "Monthly compensation and survivor payments tied to service-connected disabilities",
           "total": 187500000000,
           "source": "https://department.va.gov/administrations-and-offices/management/budget/",
           "categories": [
@@ -645,7 +645,7 @@
         {
           "id": "veterans-health",
           "title": "Veterans Health Care",
-          "desc": "VA hospital and outpatient care",
+          "desc": "VA medical care delivered in hospitals, clinics, and community settings",
           "total": 126400000000,
           "source": "https://department.va.gov/administrations-and-offices/management/budget/",
           "categories": [
@@ -678,7 +678,7 @@
         {
           "id": "veterans-other",
           "title": "Other Veterans Benefits",
-          "desc": "Pensions, housing, burial, and other",
+          "desc": "Housing, memorial, insurance, pension, and other non-medical veteran support",
           "total": 33300000000,
           "source": "https://department.va.gov/administrations-and-offices/management/budget/",
           "categories": [
@@ -711,7 +711,7 @@
         {
           "id": "veterans-education",
           "title": "Education & Vocational Rehab",
-          "desc": "GI Bill and training programs",
+          "desc": "Tuition, training, and career-transition support for veterans",
           "total": 30000000000,
           "source": "https://department.va.gov/administrations-and-offices/management/budget/",
           "categories": [
@@ -740,13 +740,13 @@
     {
       "id": "transportation",
       "title": "Transportation",
-      "desc": "Highways, transit, aviation, and rail",
+      "desc": "Federal support for roads, transit, aviation, passenger rail, and maritime infrastructure",
       "total": 145800000000,
       "categories": [
         {
           "id": "highways",
           "title": "Highways",
-          "desc": "Federal-aid highways and bridges",
+          "desc": "Formula funding and grants for highways, bridges, safety, and related road programs",
           "total": 74600000000,
           "categories": [
             {
@@ -778,7 +778,7 @@
         {
           "id": "air-transport",
           "title": "Air Transportation",
-          "desc": "FAA operations, airports, air traffic control",
+          "desc": "FAA operations, airport grants, air traffic systems, and aviation safety",
           "total": 31200000000,
           "categories": [
             {
@@ -810,7 +810,7 @@
         {
           "id": "mass-transit",
           "title": "Mass Transit",
-          "desc": "Federal Transit Administration grants",
+          "desc": "Federal grants that help local agencies run, repair, and expand public transit",
           "total": 23400000000,
           "categories": [
             {
@@ -842,7 +842,7 @@
         {
           "id": "rail-water",
           "title": "Rail & Water Transport",
-          "desc": "Amtrak, maritime, Coast Guard transport",
+          "desc": "Passenger rail, ports, and maritime transportation support",
           "total": 16600000000,
           "categories": [
             {
@@ -876,13 +876,13 @@
     {
       "id": "natural-resources",
       "title": "Natural Resources & Environment",
-      "desc": "EPA, conservation, and land management",
+      "desc": "Conservation, pollution cleanup, water projects, and environmental science",
       "total": 88300000000,
       "categories": [
         {
           "id": "conservation",
           "title": "Conservation & Land Management",
-          "desc": "National parks, forests, wildlife",
+          "desc": "Stewardship of parks, forests, wildlife refuges, and other public lands",
           "total": 31800000000,
           "source": "https://www.doi.gov/budget/appropriations/2025/highlights",
           "categories": [
@@ -915,7 +915,7 @@
         {
           "id": "pollution-control",
           "title": "Pollution Control",
-          "desc": "EPA enforcement, Superfund, clean air/water",
+          "desc": "EPA programs that enforce standards and clean up air, water, and hazardous waste",
           "total": 21200000000,
           "source": "https://www.epa.gov/planandbudget/archive",
           "categories": [
@@ -948,7 +948,7 @@
         {
           "id": "water-resources",
           "title": "Water Resources",
-          "desc": "Army Corps of Engineers, Bureau of Reclamation",
+          "desc": "Dams, waterways, flood control, and other federal water infrastructure projects",
           "total": 21200000000,
           "source": "https://www.doi.gov/budget/appropriations/2025/highlights",
           "categories": [
@@ -975,7 +975,7 @@
         {
           "id": "other-natural",
           "title": "Other Natural Resources",
-          "desc": "Recreational resources, ocean services",
+          "desc": "Ocean services, earth science, recreation, and other resource programs",
           "total": 14100000000,
           "source": "https://www.doi.gov/budget/appropriations/2025/highlights",
           "categories": [
@@ -1010,13 +1010,13 @@
     {
       "id": "justice",
       "title": "Administration of Justice",
-      "desc": "Federal law enforcement, courts, and prisons",
+      "desc": "Federal policing, courts, prisons, and other justice-system operations",
       "total": 85200000000,
       "categories": [
         {
           "id": "law-enforcement",
           "title": "Federal Law Enforcement",
-          "desc": "FBI, DEA, ATF, Marshals, CBP",
+          "desc": "Major federal investigative and enforcement agencies plus related operations",
           "total": 42600000000,
           "categories": [
             {
@@ -1054,7 +1054,7 @@
         {
           "id": "other-justice",
           "title": "Other Justice",
-          "desc": "Immigration courts, legal aid, DOJ",
+          "desc": "DOJ legal work, immigration courts, grants, and other justice support",
           "total": 20800000000,
           "categories": [
             {
@@ -1086,7 +1086,7 @@
         {
           "id": "federal-courts",
           "title": "Federal Courts",
-          "desc": "Supreme Court, district courts, bankruptcy",
+          "desc": "Operations of the Supreme Court, lower courts, and defender services",
           "total": 10900000000,
           "categories": [
             {
@@ -1112,7 +1112,7 @@
         {
           "id": "federal-prisons",
           "title": "Federal Prisons",
-          "desc": "Bureau of Prisons operations",
+          "desc": "Running federal prisons, facilities, and inmate support programs",
           "total": 10900000000,
           "categories": [
             {
@@ -1140,13 +1140,13 @@
     {
       "id": "community-development",
       "title": "Community & Regional Development",
-      "desc": "FEMA disaster relief, community grants",
+      "desc": "Disaster response plus grants aimed at local recovery and regional growth",
       "total": 84500000000,
       "categories": [
         {
           "id": "disaster-relief",
           "title": "Disaster Relief",
-          "desc": "FEMA emergency management and recovery",
+          "desc": "FEMA disaster response, recovery, preparedness, and flood resilience programs",
           "total": 56300000000,
           "categories": [
             {
@@ -1172,7 +1172,7 @@
         {
           "id": "community-grants",
           "title": "Community Development",
-          "desc": "CDBG, economic development grants",
+          "desc": "Block grants and targeted funding for housing, revitalization, and local growth",
           "total": 16100000000,
           "source": "https://www.hud.gov/sites/dfiles/CFO/documents/2025-Budget-in-Brief-Final.pdf",
           "categories": [
@@ -1205,7 +1205,7 @@
         {
           "id": "regional-dev",
           "title": "Regional Development",
-          "desc": "Appalachian, Delta, and tribal programs",
+          "desc": "Place-based grants for Appalachian, Delta, Tribal, and similar regions",
           "total": 12100000000,
           "categories": [
             {
@@ -1239,13 +1239,13 @@
     {
       "id": "education",
       "title": "Education & Social Services",
-      "desc": "Federal education, workforce training, and social services",
+      "desc": "Federal education aid, workforce programs, and social services for children and families",
       "total": 69200000000,
       "categories": [
         {
           "id": "k12-education",
           "title": "K-12 Education",
-          "desc": "Title I, IDEA, and other K-12 programs",
+          "desc": "Formula and targeted grants that support public schools and special education",
           "total": 25000000000,
           "source": "https://www.ed.gov/about/overview/budget/budget25/index.html?src=ct",
           "categories": [
@@ -1278,7 +1278,7 @@
         {
           "id": "social-services",
           "title": "Social Services",
-          "desc": "Head Start, child care, social services block grant",
+          "desc": "Early childhood, child care, and family-service programs",
           "total": 22000000000,
           "categories": [
             {
@@ -1310,7 +1310,7 @@
         {
           "id": "training-employment",
           "title": "Training & Employment",
-          "desc": "Job Corps, workforce development",
+          "desc": "Job training and workforce programs for youth and adults",
           "total": 10000000000,
           "categories": [
             {
@@ -1342,7 +1342,7 @@
         {
           "id": "student-aid",
           "title": "Student Financial Assistance",
-          "desc": "Pell Grants, student loans (net subsidy cost)",
+          "desc": "College aid through Pell Grants, campus aid, and student-loan subsidy costs",
           "total": 8000000000,
           "source": "https://www.ed.gov/about/overview/budget/budget25/index.html?src=ct",
           "categories": [
@@ -1369,7 +1369,7 @@
         {
           "id": "other-education",
           "title": "Other Education",
-          "desc": "Higher education, research, libraries",
+          "desc": "Research, libraries, higher-ed support, and smaller education programs",
           "total": 4200000000,
           "source": "https://www.ed.gov/about/overview/budget/budget25/index.html?src=ct",
           "categories": [
@@ -1404,13 +1404,13 @@
     {
       "id": "agriculture",
       "title": "Agriculture",
-      "desc": "Farm programs, crop insurance, and rural development",
+      "desc": "Farm safety-net payments, rural development, and USDA research",
       "total": 49300000000,
       "categories": [
         {
           "id": "farm-subsidies",
           "title": "Farm Income Stabilization",
-          "desc": "Crop insurance, commodity programs",
+          "desc": "Farm safety-net programs that cushion crop losses and commodity price swings",
           "total": 32400000000,
           "source": "https://www.usda.gov/about-usda/general-information/staff-offices/office-budget-and-program-analysis/congressional-justifications/2025-usda-budget-explanatory-notes",
           "categories": [
@@ -1437,7 +1437,7 @@
         {
           "id": "rural-development",
           "title": "Rural Development",
-          "desc": "Rural housing, utilities, business programs",
+          "desc": "Housing, utility, broadband, and business support for rural communities",
           "total": 10400000000,
           "source": "https://www.usda.gov/about-usda/general-information/staff-offices/office-budget-and-program-analysis/congressional-justifications/2025-usda-budget-explanatory-notes",
           "categories": [
@@ -1464,7 +1464,7 @@
         {
           "id": "ag-research",
           "title": "Agricultural Research",
-          "desc": "USDA research and extension",
+          "desc": "USDA science, extension, and research grants that support food and farm systems",
           "total": 6500000000,
           "source": "https://www.usda.gov/about-usda/general-information/staff-offices/office-budget-and-program-analysis/congressional-justifications/2025-usda-budget-explanatory-notes",
           "categories": [
@@ -1493,13 +1493,13 @@
     {
       "id": "international-affairs",
       "title": "International Affairs",
-      "desc": "Foreign aid, diplomacy, and international programs",
+      "desc": "Foreign assistance, diplomacy, and security support abroad",
       "total": 45200000000,
       "categories": [
         {
           "id": "foreign-aid",
           "title": "Foreign Economic Aid",
-          "desc": "USAID, development assistance",
+          "desc": "Humanitarian relief, development, and global health assistance overseas",
           "total": 20400000000,
           "categories": [
             {
@@ -1531,7 +1531,7 @@
         {
           "id": "state-dept",
           "title": "Diplomacy",
-          "desc": "State Department operations, embassies",
+          "desc": "Embassies, diplomatic operations, and consular support run by the State Department",
           "total": 13100000000,
           "categories": [
             {
@@ -1563,7 +1563,7 @@
         {
           "id": "military-aid",
           "title": "Foreign Military Aid",
-          "desc": "Security assistance to allies",
+          "desc": "Security assistance that helps allies buy equipment and build defense capacity",
           "total": 11700000000,
           "categories": [
             {
@@ -1591,13 +1591,13 @@
     {
       "id": "science-space",
       "title": "Science, Space & Technology",
-      "desc": "NASA, NSF, and general science programs",
+      "desc": "Civilian research and space programs across NASA, NSF, and other agencies",
       "total": 42100000000,
       "categories": [
         {
           "id": "nasa",
           "title": "NASA",
-          "desc": "Space exploration and aeronautics",
+          "desc": "Space science, human exploration, mission operations, and aeronautics research",
           "total": 25100000000,
           "source": "https://www.nasa.gov/fy-2025-budget-request/",
           "categories": [
@@ -1636,7 +1636,7 @@
         {
           "id": "nsf",
           "title": "National Science Foundation",
-          "desc": "Fundamental research and education",
+          "desc": "Basic research, STEM education, and research infrastructure grants",
           "total": 9000000000,
           "source": "https://www.nsf.gov/about/budget/fy2025",
           "categories": [
@@ -1669,7 +1669,7 @@
         {
           "id": "other-science",
           "title": "Other Science Programs",
-          "desc": "DOE science, NOAA research",
+          "desc": "Civilian science spending outside NASA and NSF, including DOE and NOAA",
           "total": 8000000000,
           "categories": [
             {
@@ -1697,13 +1697,13 @@
     {
       "id": "general-government",
       "title": "General Government",
-      "desc": "Executive, legislative, fiscal operations",
+      "desc": "Core operations of Treasury, Congress, the White House, and government-wide management agencies",
       "total": 36300000000,
       "categories": [
         {
           "id": "fiscal-operations",
           "title": "Fiscal Operations",
-          "desc": "IRS, Treasury operations, tax collection",
+          "desc": "Tax collection, debt management, payments, and other Treasury operations",
           "total": 15900000000,
           "source": "https://home.treasury.gov/about/budget-financial-reporting-planning-and-performance/budget-requestannual-performance-plan-and-reports/congressional-justification/fy-2025-congressional-justification",
           "categories": [
@@ -1736,7 +1736,7 @@
         {
           "id": "other-general",
           "title": "Other General Government",
-          "desc": "OPM, GSA, personnel management",
+          "desc": "Government-wide management, buildings, procurement, and civil-service support",
           "total": 7900000000,
           "categories": [
             {
@@ -1768,7 +1768,7 @@
         {
           "id": "legislative",
           "title": "Legislative Branch",
-          "desc": "Congress, GAO, CBO, Library of Congress",
+          "desc": "Congressional operations and support agencies like GAO, CBO, and the Library of Congress",
           "total": 6800000000,
           "categories": [
             {
@@ -1800,7 +1800,7 @@
         {
           "id": "executive",
           "title": "Executive Office",
-          "desc": "White House, OMB, and executive offices",
+          "desc": "White House and Executive Office units that support presidential management and policy",
           "total": 5700000000,
           "categories": [
             {
@@ -1834,13 +1834,13 @@
     {
       "id": "energy",
       "title": "Energy",
-      "desc": "DOE programs, strategic petroleum reserve",
+      "desc": "Civilian energy programs for supply, efficiency, and strategic fuel reserves",
       "total": 20900000000,
       "categories": [
         {
           "id": "energy-supply",
           "title": "Energy Supply",
-          "desc": "Renewable energy, nuclear, fossil R&D",
+          "desc": "DOE support for power technologies, grid resilience, and energy production research",
           "total": 10500000000,
           "categories": [
             {
@@ -1872,7 +1872,7 @@
         {
           "id": "energy-conservation",
           "title": "Energy Conservation",
-          "desc": "Efficiency programs, weatherization",
+          "desc": "Efficiency and weatherization programs that lower energy use and costs",
           "total": 6300000000,
           "categories": [
             {
@@ -1904,7 +1904,7 @@
         {
           "id": "strategic-reserve",
           "title": "Strategic Petroleum Reserve",
-          "desc": "SPR maintenance and operations",
+          "desc": "Storage, maintenance, and cleanup tied to the federal emergency oil reserve",
           "total": 4100000000,
           "categories": [
             {
@@ -1932,13 +1932,13 @@
     {
       "id": "undistributed-offsets",
       "title": "Undistributed Offsetting Receipts",
-      "desc": "Government-wide offsets including employer retirement contributions and Commerce & Housing Credit",
+      "desc": "Negative entries that reduce total spending by counting government-wide receipts and credit offsets",
       "total": -178900000000,
       "categories": [
         {
           "id": "offsetting-receipts",
           "title": "Offsetting Receipts",
-          "desc": "Employer share of employee retirement, rents and royalties",
+          "desc": "Government-wide collections like retirement contributions, rents, and royalties that offset spending",
           "total": -150300000000,
           "categories": [
             {
@@ -1964,7 +1964,7 @@
         {
           "id": "commerce-housing",
           "title": "Commerce & Housing Credit",
-          "desc": "SBA, FHA, Fannie/Freddie, postal service (net negative)",
+          "desc": "Net negative credit subsidy and reestimates from housing, business, and related lending programs",
           "total": -28600000000,
           "categories": [
             {

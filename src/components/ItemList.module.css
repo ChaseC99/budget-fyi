@@ -24,6 +24,14 @@
   background-color: #f8f8fc;
 }
 
+.selected {
+  background-color: #f3f4ff;
+}
+
+.selected:hover {
+  background-color: #eef0ff;
+}
+
 .row:last-child {
   border-bottom: none;
 }
@@ -71,8 +79,4 @@
   min-width: 36px;
   white-space: nowrap;
   text-align: right;
-}
-
-.noChildren {
-  cursor: default;
 }

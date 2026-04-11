@@ -49,3 +49,34 @@
   padding: 0 4px;
   overflow: hidden;
 }
+
+.contextCard {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #fcfcfd 0%, #f7f8fb 100%);
+  box-shadow: 0 8px 24px rgb(15 23 42 / 0.04);
+}
+
+.contextEyebrow {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #6b7280;
+}
+
+.contextBody {
+  font-size: 0.94rem;
+  line-height: 1.45;
+  color: #374151;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}

@@ -23,6 +23,8 @@ interface DonutChartProps {
   centerAmount: number;
   centerLabel: string;
   centerBreakdownItems?: { label: string; value: number; tooltip?: string }[];
+  onPreviewStart?: (node: BudgetNode) => void;
+  onPreviewEnd?: () => void;
 }
 
 export interface DonutChartHandle {
@@ -249,7 +251,17 @@ function isDarkColor(color: string): boolean {
 
 export const DonutChart = forwardRef<DonutChartHandle, DonutChartProps>(
   function DonutChart(
-    { node, parentIndex, depth, onSelect, centerAmount, centerLabel, centerBreakdownItems },
+    {
+      node,
+      parentIndex,
+      depth,
+      onSelect,
+      centerAmount,
+      centerLabel,
+      centerBreakdownItems,
+      onPreviewStart,
+      onPreviewEnd,
+    },
     ref,
   ) {
     const wrapperRef = useRef<HTMLDivElement>(null);
@@ -355,6 +367,11 @@ export const DonutChart = forwardRef<DonutChartHandle, DonutChartProps>(
           const match = arcs.find((arcDatum) => arcDatum.node.id === child.id);
           if (!match) return;
 
+          if (!child.categories?.length) {
+            onSelect(child);
+            return;
+          }
+
           const color =
             depth === 0
               ? getCategoryColor(match.index)
@@ -404,6 +421,14 @@ export const DonutChart = forwardRef<DonutChartHandle, DonutChartProps>(
                   const color = getArcColor(arcDatum);
                   const hasChildren = (arcDatum.node.categories?.length ?? 0) > 0;
                   const isSplitting = currentPhase === "splitting";
+                  const handleSelect = () => {
+                    if (hasChildren) {
+                      startExpand(arcDatum.node, color, arcDatum.startAngle, arcDatum.endAngle);
+                      return;
+                    }
+
+                    onSelect(arcDatum.node);
+                  };
 
                   return (
                     <motion.path
@@ -422,25 +447,25 @@ export const DonutChart = forwardRef<DonutChartHandle, DonutChartProps>(
                       onAnimationComplete={
                         isSplitting && i === arcs.length - 1 ? onSplitDone : undefined
                       }
-                      onClick={() =>
-                        startExpand(arcDatum.node, color, arcDatum.startAngle, arcDatum.endAngle)
-                      }
+                      onClick={handleSelect}
+                      onMouseEnter={() => onPreviewStart?.(arcDatum.node)}
+                      onMouseLeave={() => onPreviewEnd?.()}
+                      onFocus={() => onPreviewStart?.(arcDatum.node)}
+                      onBlur={() => onPreviewEnd?.()}
                       onKeyDown={(e) => {
                         if (e.key === "Enter" || e.key === " ") {
-                          startExpand(arcDatum.node, color, arcDatum.startAngle, arcDatum.endAngle);
+                          handleSelect();
                         }
                       }}
                       tabIndex={0}
                       role="button"
                       aria-label={`${arcDatum.node.title}: ${arcDatum.node.total}`}
                       style={{
-                        cursor: hasChildren ? "pointer" : "default",
+                        cursor: "pointer",
                         outline: "none",
                       }}
-                      whileHover={
-                        hasChildren ? { scale: 1.04, transition: { duration: 0.15 } } : undefined
-                      }
-                      whileTap={hasChildren ? { scale: 0.97 } : undefined}
+                      whileHover={{ scale: 1.04, transition: { duration: 0.15 } }}
+                      whileTap={{ scale: 0.97 }}
                     />
                   );
                 })}
