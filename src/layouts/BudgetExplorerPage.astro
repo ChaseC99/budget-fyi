@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import { BudgetExplorer } from "../components/BudgetExplorer";
+import { SiteHeader } from "../components/SiteHeader";
 ---
 
 <html lang="en">
@@ -15,6 +16,7 @@ import { BudgetExplorer } from "../components/BudgetExplorer";
     <title>budget.fyi — Where Your Tax Dollars Go</title>
   </head>
   <body>
+    <SiteHeader />
     <BudgetExplorer client:load />
   </body>
 </html>

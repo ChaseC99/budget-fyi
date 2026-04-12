@@ -111,9 +111,7 @@ export function BudgetExplorer() {
 
   return (
     <div className={styles.explorer}>
-      <IncomeInput
-        onIncomeChange={setIncome}
-      />
+      <IncomeInput onIncomeChange={setIncome} />
 
       <div className={styles.chartSlot}>
         <DonutChart
