@@ -23,8 +23,6 @@ interface DonutChartProps {
   centerAmount: number;
   centerLabel: string;
   centerBreakdownItems?: { label: string; value: number; tooltip?: string }[];
-  onPreviewStart?: (node: BudgetNode) => void;
-  onPreviewEnd?: () => void;
 }
 
 export interface DonutChartHandle {
@@ -259,8 +257,6 @@ export const DonutChart = forwardRef<DonutChartHandle, DonutChartProps>(
       centerAmount,
       centerLabel,
       centerBreakdownItems,
-      onPreviewStart,
-      onPreviewEnd,
     },
     ref,
   ) {
@@ -448,10 +444,6 @@ export const DonutChart = forwardRef<DonutChartHandle, DonutChartProps>(
                         isSplitting && i === arcs.length - 1 ? onSplitDone : undefined
                       }
                       onClick={handleSelect}
-                      onMouseEnter={() => onPreviewStart?.(arcDatum.node)}
-                      onMouseLeave={() => onPreviewEnd?.()}
-                      onFocus={() => onPreviewStart?.(arcDatum.node)}
-                      onBlur={() => onPreviewEnd?.()}
                       onKeyDown={(e) => {
                         if (e.key === "Enter" || e.key === " ") {
                           handleSelect();

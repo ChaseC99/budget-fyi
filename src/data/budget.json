@@ -1,7 +1,8 @@
 {
   "id": "federal-budget",
   "title": "U.S. Federal Budget",
-  "desc": "How the federal government plans to spend money in fiscal year 2025",
+  "desc": "How the government spent your money in 2025",
+  "details": "This is the full picture of how the federal government spent money in 2025. It brings the biggest parts of the budget together in one place so you can see where the money went. If you enter your income, the app also gives you a rough estimate of how much of that spending your taxes supported.",
   "total": 7188900000000,
   "source": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/",
   "categories": [
@@ -21,27 +22,32 @@
               "id": "medicare-part-a",
               "title": "Part A",
               "desc": "Hospital insurance and inpatient care",
-              "total": 398680000000
+              "total": 398680000000,
+              "details": "This is the money the federal government spends on hospital insurance and inpatient care. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
             },
             {
               "id": "medicare-part-b",
               "title": "Part B",
               "desc": "Physician, outpatient, and related services",
-              "total": 448515000000
+              "total": 448515000000,
+              "details": "This is the money the federal government spends on physician, outpatient, and related services. It pays for the day-to-day work needed to keep this part of government or the program running. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
             },
             {
               "id": "medicare-part-d",
               "title": "Part D",
               "desc": "Prescription drug benefit",
-              "total": 129571000000
+              "total": 129571000000,
+              "details": "This is the money the federal government spends on prescription drug benefit. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
             },
             {
               "id": "medicare-admin",
               "title": "Administration & Other",
               "desc": "Program administration and other Medicare spending",
-              "total": 19934000000
+              "total": 19934000000,
+              "details": "This is the money needed to run Medicare behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
             }
-          ]
+          ],
+          "details": "This is the federal health insurance program for older adults and some people with disabilities. It helps pay for hospital stays, doctor visits, prescription drugs, and other care through different parts of the program. The total here depends mostly on how many people are enrolled, what care they use, and how much that care costs."
         },
         {
           "id": "medicaid",
@@ -53,27 +59,32 @@
               "id": "medicaid-acute",
               "title": "Acute Care",
               "desc": "Hospital, physician, and other acute-care services",
-              "total": 403975000000
+              "total": 403975000000,
+              "details": "This is the money the federal government spends on hospital, physician, and other acute-care services. It pays for the day-to-day work needed to keep this part of government or the program running. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
             },
             {
               "id": "medicaid-ltss",
-              "title": "Long-Term Care",
+              "title": "Long Term Care",
               "desc": "Long-term services and supports",
-              "total": 205660000000
+              "total": 205660000000,
+              "details": "This is the money the federal government spends on long-term services and supports. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
             },
             {
               "id": "medicaid-duals",
               "title": "Dual Eligibles & Premiums",
               "desc": "Medicare premiums and other support for dual-eligible enrollees",
-              "total": 73450000000
+              "total": 73450000000,
+              "details": "This is the money the federal government spends on medicare premiums and other support for dual-eligible enrollees. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
             },
             {
               "id": "medicaid-admin",
               "title": "Administration & Other",
               "desc": "State administration, program integrity, and other Medicaid costs",
-              "total": 51415000000
+              "total": 51415000000,
+              "details": "This is the money needed to run Medicaid behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
             }
-          ]
+          ],
+          "details": "This is the joint federal-state health coverage program for people with low incomes and many people with disabilities or long-term care needs. It helps pay for doctor visits, hospital care, nursing care, and other medical services. The total here depends mostly on enrollment, the mix of services people use, and the cost of care."
         },
         {
           "id": "marketplace-subsidies",
@@ -85,21 +96,25 @@
               "id": "aca-ptc",
               "title": "Premium Tax Credits",
               "desc": "Advance premium tax credits for exchange plans",
-              "total": 126132000000
+              "total": 126132000000,
+              "details": "This is the money the federal government spends on advance premium tax credits for exchange plans. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
             },
             {
               "id": "aca-csr",
               "title": "Cost-Sharing Reductions",
               "desc": "Cost-sharing assistance for eligible enrollees",
-              "total": 6855000000
+              "total": 6855000000,
+              "details": "This is the money the federal government spends on cost-sharing assistance for eligible enrollees. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
             },
             {
               "id": "aca-bhp",
               "title": "Basic Health Program & Other",
               "desc": "Basic Health Program payments and related marketplace support",
-              "total": 4113000000
+              "total": 4113000000,
+              "details": "This bucket groups smaller basic health program & other programs that still add up to real spending. It usually pulls together smaller costs in this area that are real parts of the budget even if they are not well known on their own. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
             }
-          ]
+          ],
+          "details": "This part of the budget covers ACA exchange subsidies that lower premiums and out-of-pocket costs. That includes things like Premium Tax Credits, Cost-Sharing Reductions, and Basic Health Program & Other. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
         },
         {
           "id": "other-health",
@@ -111,33 +126,39 @@
               "id": "nih",
               "title": "NIH",
               "desc": "Biomedical research through the National Institutes of Health",
-              "total": 33462000000
+              "total": 33462000000,
+              "details": "This is the money the federal government spends on biomedical research through the national institutes of health. In practice, it supports research, testing, labs, missions, or technology work in this area. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
             },
             {
               "id": "cdc",
               "title": "CDC",
               "desc": "Disease surveillance, preparedness, and prevention",
-              "total": 9438000000
+              "total": 9438000000,
+              "details": "This is the money the federal government spends on disease surveillance, preparedness, and prevention. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
             },
             {
               "id": "indian-health",
               "title": "Indian Health Service",
               "desc": "Health services for Tribal communities",
-              "total": 6864000000
+              "total": 6864000000,
+              "details": "This is the money the federal government spends on health services for tribal communities. It pays for the day-to-day work needed to keep this part of government or the program running. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
             },
             {
               "id": "samhsa",
               "title": "SAMHSA",
               "desc": "Mental health and substance-use services",
-              "total": 7722000000
+              "total": 7722000000,
+              "details": "This is the money the federal government spends on mental health and substance-use services. It pays for the day-to-day work needed to keep this part of government or the program running. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
             },
             {
               "id": "other-hhs-health",
               "title": "Other Public Health",
               "desc": "Other HHS public health agencies and programs",
-              "total": 28314000000
+              "total": 28314000000,
+              "details": "This bucket groups smaller public health programs that still add up to real spending. It usually pulls together smaller costs in this area that are real parts of the budget even if they are not well known on their own. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
             }
-          ]
+          ],
+          "details": "This part of the budget covers public health agencies, research, mental health programs, and tribal health services. That includes things like NIH, CDC, and Indian Health Service, and other related programs. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
         },
         {
           "id": "chip",
@@ -149,23 +170,28 @@
               "id": "chip-grants",
               "title": "State CHIP Grants",
               "desc": "Federal matching grants for state CHIP coverage",
-              "total": 20640000000
+              "total": 20640000000,
+              "details": "This is the money the federal government spends on federal matching grants for state CHIP coverage. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
             },
             {
               "id": "chip-quality",
               "title": "Quality & Outreach",
               "desc": "Quality, outreach, and enrollment support",
-              "total": 430000000
+              "total": 430000000,
+              "details": "This is the money the federal government spends on quality, outreach, and enrollment support. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
             },
             {
               "id": "chip-admin",
               "title": "Administration",
               "desc": "Program administration and oversight",
-              "total": 430000000
+              "total": 430000000,
+              "details": "This is the money needed to run CHIP behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
             }
-          ]
+          ],
+          "details": "This part of the budget covers federal support that helps states insure children above medicaid eligibility. That includes things like State CHIP Grants, Quality & Outreach, and Administration. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
         }
-      ]
+      ],
+      "details": "This is the big bucket for federal health spending. It includes programs like Medicare, Medicaid, marketplace subsidies, and public health agencies. Most of the money here goes toward health coverage and medical care, while a smaller share supports research, oversight, and public health work."
     },
     {
       "id": "social-security",
@@ -183,27 +209,32 @@
               "id": "oasi-retired",
               "title": "Retired Workers",
               "desc": "Monthly retirement benefits for retired workers",
-              "total": 1116428000000
+              "total": 1116428000000,
+              "details": "This is the part of Social Security most people think of as retirement benefits. About 50 million retired workers get a check every month. The amount someone receives depends mostly on how much they earned over their working years and the age when they start claiming benefits."
             },
             {
               "id": "oasi-family",
               "title": "Spouses & Children",
               "desc": "Benefits for spouses and dependent children",
-              "total": 98924000000
+              "total": 98924000000,
+              "details": "This is the money the federal government spends on benefits for spouses and dependent children. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The amount spent here mostly depends on how many people qualify and the size of the monthly benefits they receive."
             },
             {
               "id": "oasi-survivors",
               "title": "Survivor Benefits",
               "desc": "Benefits for surviving spouses and children",
-              "total": 183716000000
+              "total": 183716000000,
+              "details": "This is the money the federal government spends on benefits for surviving spouses and children. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The amount spent here mostly depends on how many people qualify and the size of the monthly benefits they receive."
             },
             {
               "id": "oasi-admin",
               "title": "Administration",
               "desc": "Administrative costs of the retirement and survivors program",
-              "total": 14132000000
+              "total": 14132000000,
+              "details": "This is the money needed to run Old-Age & Survivors Insurance behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
             }
-          ]
+          ],
+          "details": "This part of the budget covers monthly benefits for retirees plus survivor support for spouses, children, and other family members. That includes things like Retired Workers, Spouses & Children, and Survivor Benefits, and other related programs. The amount spent here mostly depends on how many people qualify and the size of the monthly benefits they receive."
         },
         {
           "id": "disability-insurance",
@@ -215,23 +246,28 @@
               "id": "di-disabled-workers",
               "title": "Disabled Workers",
               "desc": "Benefits for disabled insured workers",
-              "total": 137350000000
+              "total": 137350000000,
+              "details": "This is the money the federal government spends on benefits for disabled insured workers. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The amount spent here mostly depends on how many people qualify and the size of the monthly benefits they receive."
             },
             {
               "id": "di-dependents",
               "title": "Dependents",
               "desc": "Benefits for spouses and children of disabled workers",
-              "total": 28475000000
+              "total": 28475000000,
+              "details": "This is the money the federal government spends on benefits for spouses and children of disabled workers. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The amount spent here mostly depends on how many people qualify and the size of the monthly benefits they receive."
             },
             {
               "id": "di-admin",
               "title": "Administration",
               "desc": "Administrative costs of the disability insurance program",
-              "total": 1675000000
+              "total": 1675000000,
+              "details": "This is the money needed to run Disability Insurance behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
             }
-          ]
+          ],
+          "details": "This part of the budget covers income support for workers and dependents when a qualifying disability prevents work. That includes things like Disabled Workers, Dependents, and Administration. The amount spent here mostly depends on how many people qualify and the size of the monthly benefits they receive."
         }
-      ]
+      ],
+      "details": "This is the part of the budget that sends monthly Social Security benefits to retirees, survivors, and disabled workers. It also covers the smaller amount needed to run those programs. Most of the spending here is driven by how many people qualify and the size of the benefits they receive."
     },
     {
       "id": "net-interest",
@@ -249,21 +285,25 @@
               "id": "interest-marketable",
               "title": "Marketable Treasuries",
               "desc": "Interest on notes, bonds, and bills held by the public",
-              "total": 1036165000000
+              "total": 1036165000000,
+              "details": "This is the interest the government pays on notes, bonds, and bills held by the public. This is not a program people sign up for. It is a financing cost the government owes because it has borrowed money. The cost here mainly moves with the size of the national debt, interest rates, and inflation."
             },
             {
               "id": "interest-savings",
               "title": "Savings Bonds & Other",
               "desc": "Interest on savings securities and other debt instruments",
-              "total": 21814000000
+              "total": 21814000000,
+              "details": "This is the interest the government pays on savings securities and other debt instruments. This is not a program people sign up for. It is a financing cost the government owes because it has borrowed money. The cost here mainly moves with the size of the national debt, interest rates, and inflation."
             },
             {
               "id": "interest-tips",
               "title": "Inflation Adjustments",
               "desc": "Inflation compensation and related debt adjustments",
-              "total": 32721000000
+              "total": 32721000000,
+              "details": "This is the money the federal government spends on inflation compensation and related debt adjustments. This is not a program people sign up for. It is a financing cost the government owes because it has borrowed money. The cost here mainly moves with the size of the national debt, interest rates, and inflation."
             }
-          ]
+          ],
+          "details": "This part of the budget covers interest owed to investors and institutions that hold treasury securities. That includes things like Marketable Treasuries, Savings Bonds & Other, and Inflation Adjustments. The cost here mainly moves with the size of the national debt, interest rates, and inflation."
         },
         {
           "id": "interest-offsets",
@@ -275,23 +315,28 @@
               "id": "interest-oasdi",
               "title": "Social Security Trust Funds",
               "desc": "Interest received by the OASDI trust funds",
-              "total": -57744000000
+              "total": -57744000000,
+              "details": "This is the interest the government credits to the OASDI trust funds. This is not a program people sign up for. It is a financing cost the government owes because it has borrowed money. The amount here depends on how much these trust funds hold in Treasury securities and the interest credited to them."
             },
             {
               "id": "interest-medicare",
               "title": "Medicare Trust Funds",
               "desc": "Interest received by Medicare trust funds",
-              "total": -36090000000
+              "total": -36090000000,
+              "details": "This is the interest the government credits to medicare trust funds. This is not a program people sign up for. It is a financing cost the government owes because it has borrowed money. The amount here depends on how much these trust funds hold in Treasury securities and the interest credited to them."
             },
             {
               "id": "interest-other-trust",
               "title": "Civil Service & Other Trust Funds",
               "desc": "Interest received by other federal trust funds",
-              "total": -26466000000
+              "total": -26466000000,
+              "details": "This is the interest the government credits to other federal trust funds. This is not a program people sign up for. It is a financing cost the government owes because it has borrowed money. The amount here depends on how much these trust funds hold in Treasury securities and the interest credited to them."
             }
-          ]
+          ],
+          "details": "This part of the budget covers interest credited to federal trust funds that partially offsets gross debt costs. That includes things like Social Security Trust Funds, Medicare Trust Funds, and Civil Service & Other Trust Funds. The amount here depends on how much these trust funds hold in Treasury securities and the interest credited to them."
         }
-      ]
+      ],
+      "details": "This is the cost of carrying the federal debt. It is money the government owes to bondholders and other holders of Treasury securities, after backing out interest credited to certain trust funds. The size of this cost depends mostly on how much the government has borrowed, interest rates, and inflation."
     },
     {
       "id": "national-defense",
@@ -303,6 +348,7 @@
           "id": "dod-military",
           "title": "DoD Military Programs",
           "desc": "Core Pentagon spending for readiness, troops, weapons, military construction, and research",
+          "details": "This is the main pot of Pentagon spending. It covers troop pay, training, weapons, military construction, and the everyday cost of running the armed forces. The total here depends mostly on force size, operations, procurement plans, and the defense priorities lawmakers choose to fund.",
           "total": 866200000000,
           "source": "https://comptroller.defense.gov/Budget-Materials/Budget2025/",
           "categories": [
@@ -310,31 +356,36 @@
               "id": "dod-om",
               "title": "Operations & Maintenance",
               "desc": "Training, readiness, sustainment, and day-to-day operations",
-              "total": 337818000000
+              "total": 337818000000,
+              "details": "This is the money the federal government spends on training, readiness, sustainment, and day-to-day operations. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here mainly depends on troop levels, pay tables, and the cost of benefits for service members and their families."
             },
             {
               "id": "dod-milpers",
               "title": "Military Personnel",
               "desc": "Pay, allowances, and benefits for service members",
-              "total": 164578000000
+              "total": 164578000000,
+              "details": "This is the money the federal government spends on pay, allowances, and benefits for service members. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The amount here mostly depends on force size, operations, procurement plans, and the defense priorities lawmakers choose to fund."
             },
             {
               "id": "dod-procurement",
               "title": "Procurement",
               "desc": "Weapons systems, equipment, and related acquisitions",
-              "total": 173240000000
+              "total": 173240000000,
+              "details": "This is the money the federal government spends on weapons systems, equipment, and related acquisitions. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The amount here mostly depends on force size, operations, procurement plans, and the defense priorities lawmakers choose to fund."
             },
             {
               "id": "dod-rdte",
               "title": "RDT&E",
               "desc": "Research, development, test, and evaluation",
-              "total": 147254000000
+              "total": 147254000000,
+              "details": "This is the money the federal government spends on research, development, test, and evaluation. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
             },
             {
               "id": "dod-milcon",
               "title": "Military Construction & Housing",
               "desc": "Military construction, family housing, and other support accounts",
-              "total": 43310000000
+              "total": 43310000000,
+              "details": "This is the money the federal government spends on military construction, family housing, and other support accounts. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The amount here mostly depends on force size, operations, procurement plans, and the defense priorities lawmakers choose to fund."
             }
           ]
         },
@@ -349,27 +400,32 @@
               "id": "atomic-weapons",
               "title": "Weapons Activities",
               "desc": "NNSA nuclear weapons stockpile and modernization work",
-              "total": 19488000000
+              "total": 19488000000,
+              "details": "This is the money the federal government spends on NNSA nuclear weapons stockpile and modernization work. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here mostly depends on force size, operations, procurement plans, and the defense priorities lawmakers choose to fund."
             },
             {
               "id": "atomic-naval",
               "title": "Naval Reactors",
               "desc": "Reactors and propulsion for the Navy nuclear fleet",
-              "total": 3696000000
+              "total": 3696000000,
+              "details": "This is the money the federal government spends on reactors and propulsion for the navy nuclear fleet. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here mostly depends on force size, operations, procurement plans, and the defense priorities lawmakers choose to fund."
             },
             {
               "id": "atomic-cleanup",
               "title": "Defense Environmental Cleanup",
               "desc": "Cleanup of legacy nuclear weapons sites",
-              "total": 8064000000
+              "total": 8064000000,
+              "details": "This is the money the federal government spends on cleanup of legacy nuclear weapons sites. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here mostly depends on force size, operations, procurement plans, and the defense priorities lawmakers choose to fund."
             },
             {
               "id": "atomic-other",
               "title": "Other Nuclear Security",
               "desc": "Safeguards, security, and other defense nuclear programs",
-              "total": 2352000000
+              "total": 2352000000,
+              "details": "This is the money the federal government spends on safeguards, security, and other defense nuclear programs. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here mostly depends on force size, operations, procurement plans, and the defense priorities lawmakers choose to fund."
             }
-          ]
+          ],
+          "details": "This part of the budget covers nuclear weapons stewardship, naval reactors, and cleanup of defense nuclear sites. That includes things like Weapons Activities, Naval Reactors, and Defense Environmental Cleanup, and other related programs. The amount here mostly depends on force size, operations, procurement plans, and the defense priorities lawmakers choose to fund."
         },
         {
           "id": "other-defense",
@@ -382,23 +438,28 @@
               "id": "other-defense-support",
               "title": "Defense-Wide Support",
               "desc": "Defense-wide support agencies and command support",
-              "total": 5880000000
+              "total": 5880000000,
+              "details": "This is the money the federal government spends on defense-wide support agencies and command support. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here mostly depends on force size, operations, procurement plans, and the defense priorities lawmakers choose to fund."
             },
             {
               "id": "other-defense-intel",
               "title": "Intelligence & Security",
               "desc": "Defense intelligence and related security activities",
-              "total": 6720000000
+              "total": 6720000000,
+              "details": "This is the money the federal government spends on defense intelligence and related security activities. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here mostly depends on force size, operations, procurement plans, and the defense priorities lawmakers choose to fund."
             },
             {
               "id": "other-defense-related",
               "title": "Other Defense Activities",
               "desc": "Selective service, support funds, and other defense-related programs",
-              "total": 4200000000
+              "total": 4200000000,
+              "details": "This is the money the federal government spends on selective service, support funds, and other defense-related programs. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here mostly depends on force size, operations, procurement plans, and the defense priorities lawmakers choose to fund."
             }
-          ]
+          ],
+          "details": "This part of the budget covers defense-wide agencies, intelligence support, and smaller national security accounts. That includes things like Defense-Wide Support, Intelligence & Security, and Other Defense Activities. The amount here mostly depends on force size, operations, procurement plans, and the defense priorities lawmakers choose to fund."
         }
-      ]
+      ],
+      "details": "This is the big bucket for military and national security spending. It includes the armed forces, nuclear weapons work, and other defense-wide activities that support national security. The total here depends mostly on force size, operations, procurement plans, and the broader defense budget set by Congress."
     },
     {
       "id": "income-security",
@@ -416,21 +477,25 @@
               "id": "ctc-refundable",
               "title": "Refundable CTC",
               "desc": "Refundable child tax credit payments",
-              "total": 140624000000
+              "total": 140624000000,
+              "details": "This is the money the federal government spends on refundable child tax credit payments. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The total here mostly depends on how many households qualify and how large their credits or refunds are."
             },
             {
               "id": "ctc-nonrefundable",
               "title": "Nonrefundable CTC",
               "desc": "Offsetting tax liability through the nonrefundable portion",
-              "total": 15980000000
+              "total": 15980000000,
+              "details": "This is the money the federal government spends on offsetting tax liability through the nonrefundable portion. In everyday terms, this is one of the line items that makes the broader category work in real life. The total here mostly depends on how many households qualify and how large their credits or refunds are."
             },
             {
               "id": "ctc-admin",
               "title": "Administration",
               "desc": "IRS administration and compliance associated with the credit",
-              "total": 3196000000
+              "total": 3196000000,
+              "details": "This is the money needed to run Child Tax Credit behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
             }
-          ]
+          ],
+          "details": "This is the tax credit that helps families with children keep more of their income. It usually shows up by reducing a tax bill, increasing a refund, or both. The total here depends on how many families qualify and how large their credits are under the current rules."
         },
         {
           "id": "snap",
@@ -442,21 +507,25 @@
               "id": "snap-benefits",
               "title": "Food Benefits",
               "desc": "Monthly nutrition benefits delivered to households",
-              "total": 137898000000
+              "total": 137898000000,
+              "details": "This is the money the federal government spends on monthly nutrition benefits delivered to households. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
             },
             {
               "id": "snap-admin",
               "title": "State Administration",
               "desc": "State administrative and systems costs",
-              "total": 7335000000
+              "total": 7335000000,
+              "details": "This is the money needed to run SNAP (Food Stamps) behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
             },
             {
               "id": "snap-et",
               "title": "Employment & Training",
               "desc": "SNAP employment and training support",
-              "total": 1467000000
+              "total": 1467000000,
+              "details": "This is the money the federal government spends on SNAP employment and training support. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The total here mostly depends on how many households qualify and how large their credits or refunds are."
             }
-          ]
+          ],
+          "details": "This is the program many people still call food stamps. It helps lower-income households buy groceries each month through an electronic benefit card. The total here depends mostly on how many households qualify and how large their monthly food benefits are."
         },
         {
           "id": "other-income-security",
@@ -468,33 +537,39 @@
               "id": "income-tanf",
               "title": "TANF",
               "desc": "Temporary Assistance for Needy Families block grants",
-              "total": 27175000000
+              "total": 27175000000,
+              "details": "This is the money the federal government spends on temporary assistance for needy families block grants. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The total here mostly depends on how many households qualify and how large their credits or refunds are."
             },
             {
               "id": "income-foster",
               "title": "Foster Care & Adoption",
               "desc": "Foster care, adoption assistance, and guardianship support",
-              "total": 23914000000
+              "total": 23914000000,
+              "details": "This is the money the federal government spends on foster care, adoption assistance, and guardianship support. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The total here mostly depends on how many households qualify and how large their credits or refunds are."
             },
             {
               "id": "income-liheap",
               "title": "Energy & Utility Aid",
               "desc": "Low Income Home Energy Assistance and similar support",
-              "total": 15218000000
+              "total": 15218000000,
+              "details": "This is the money the federal government spends on low income home energy assistance and similar support. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The total here mostly depends on how many households qualify and how large their credits or refunds are."
             },
             {
               "id": "income-child-support",
               "title": "Child Support Enforcement",
               "desc": "Federal child support and family support enforcement",
-              "total": 11957000000
+              "total": 11957000000,
+              "details": "This is the money the federal government spends on federal child support and family support enforcement. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The total here mostly depends on how many households qualify and how large their credits or refunds are."
             },
             {
               "id": "income-other",
               "title": "Other Assistance",
               "desc": "Other family support and safety-net programs",
-              "total": 30436000000
+              "total": 30436000000,
+              "details": "This bucket groups smaller assistance programs that still add up to real spending. It usually pulls together smaller costs in this area that are real parts of the budget even if they are not well known on their own. The total here mostly depends on how many households qualify and how large their credits or refunds are."
             }
-          ]
+          ],
+          "details": "This part of the budget covers family assistance, foster care, utility help, and other anti-poverty support. That includes things like TANF, Foster Care & Adoption, and Energy & Utility Aid, and other related programs. The total here mostly depends on how many households qualify and how large their credits or refunds are."
         },
         {
           "id": "earned-income-credit",
@@ -506,20 +581,24 @@
               "id": "eitc-refundable",
               "title": "Refundable EITC",
               "desc": "Refundable earned income credit payments",
-              "total": 85536000000
+              "total": 85536000000,
+              "details": "This is the money the federal government spends on refundable earned income credit payments. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The total here mostly depends on how many households qualify and how large their credits or refunds are."
             },
             {
               "id": "eitc-admin",
               "title": "Administration & Compliance",
               "desc": "IRS administration and compliance associated with the EITC",
-              "total": 3564000000
+              "total": 3564000000,
+              "details": "This is the money needed to run Earned Income Tax Credit behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
             }
-          ]
+          ],
+          "details": "This part of the budget covers refundable tax credit that boosts earnings for lower-income workers. That includes things like Refundable EITC and Administration & Compliance. The total here mostly depends on how many households qualify and how large their credits or refunds are."
         },
         {
           "id": "housing-assistance",
           "title": "Housing Assistance",
           "desc": "Federal rental assistance and housing support for low-income households",
+          "details": "This part of the budget helps lower-income households afford rent and stay housed. It includes vouchers, project-based subsidies, public housing, and other housing support. The total here depends mostly on how many households get help, local housing costs, and the rules of each program.",
           "total": 89100000000,
           "source": "https://www.hud.gov/sites/dfiles/CFO/documents/2025-Budget-in-Brief-Final.pdf",
           "categories": [
@@ -527,25 +606,29 @@
               "id": "housing-vouchers",
               "title": "Housing Choice Vouchers",
               "desc": "Tenant-based rental assistance vouchers",
-              "total": 40095000000
+              "total": 40095000000,
+              "details": "This is the money the federal government spends on tenant-based rental assistance vouchers. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The total here mostly depends on how many households qualify and how large their credits or refunds are."
             },
             {
               "id": "housing-pbra",
               "title": "Project-Based Rental Assistance",
               "desc": "Project-based Section 8 rental assistance",
-              "total": 24057000000
+              "total": 24057000000,
+              "details": "This is the money the federal government spends on project-based section 8 rental assistance. In everyday terms, this is one of the line items that makes the broader category work in real life. The total here mostly depends on how many households qualify and how large their credits or refunds are."
             },
             {
               "id": "housing-public",
               "title": "Public Housing",
               "desc": "Public housing operating and capital support",
-              "total": 17820000000
+              "total": 17820000000,
+              "details": "This is the money the federal government spends on public housing operating and capital support. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The total here mostly depends on how many households qualify and how large their credits or refunds are."
             },
             {
               "id": "housing-homeless",
               "title": "Homelessness & Other Aid",
               "desc": "Homeless assistance grants and other HUD rental support",
-              "total": 7128000000
+              "total": 7128000000,
+              "details": "This is the money the federal government spends on homeless assistance grants and other HUD rental support. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The total here mostly depends on how many households qualify and how large their credits or refunds are."
             }
           ]
         },
@@ -559,27 +642,32 @@
               "id": "ssi-disabled-adults",
               "title": "Disabled Adults",
               "desc": "Benefits for disabled adult recipients",
-              "total": 44850000000
+              "total": 44850000000,
+              "details": "This is the money the federal government spends on benefits for disabled adult recipients. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The total here mostly depends on how many households qualify and how large their credits or refunds are."
             },
             {
               "id": "ssi-disabled-children",
               "title": "Disabled Children",
               "desc": "Benefits for eligible disabled children",
-              "total": 9100000000
+              "total": 9100000000,
+              "details": "This is the money the federal government spends on benefits for eligible disabled children. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The total here mostly depends on how many households qualify and how large their credits or refunds are."
             },
             {
               "id": "ssi-aged-blind",
               "title": "Aged & Blind",
               "desc": "Benefits for aged and blind recipients",
-              "total": 9750000000
+              "total": 9750000000,
+              "details": "This is the money the federal government spends on benefits for aged and blind recipients. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The total here mostly depends on how many households qualify and how large their credits or refunds are."
             },
             {
               "id": "ssi-admin",
               "title": "Administration",
               "desc": "Administrative costs and related program support",
-              "total": 1300000000
+              "total": 1300000000,
+              "details": "This is the money needed to run Supplemental Security Income behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
             }
-          ]
+          ],
+          "details": "This part of the budget covers cash assistance for low-income seniors and people with disabilities. That includes things like Disabled Adults, Disabled Children, and Aged & Blind, and other related programs. The total here mostly depends on how many households qualify and how large their credits or refunds are."
         },
         {
           "id": "unemployment",
@@ -591,23 +679,28 @@
               "id": "ui-regular",
               "title": "Regular Benefits",
               "desc": "Benefit payments under regular unemployment programs",
-              "total": 30240000000
+              "total": 30240000000,
+              "details": "This is the money the federal government spends on benefit payments under regular unemployment programs. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The total here mostly depends on how many households qualify and how large their credits or refunds are."
             },
             {
               "id": "ui-admin",
               "title": "Administration & Reemployment",
               "desc": "State administration, staffing, and reemployment services",
-              "total": 6912000000
+              "total": 6912000000,
+              "details": "This is the money needed to run Unemployment Compensation behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
             },
             {
               "id": "ui-extended",
               "title": "Extended & Other UI",
               "desc": "Extended benefits and other federal unemployment activities",
-              "total": 6048000000
+              "total": 6048000000,
+              "details": "This is the money the federal government spends on extended benefits and other federal unemployment activities. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The total here mostly depends on how many households qualify and how large their credits or refunds are."
             }
-          ]
+          ],
+          "details": "This is the money needed to run Income Security behind the scenes. It covers the staff, systems, oversight, and other support needed to keep Income Security running. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
         }
-      ]
+      ],
+      "details": "This part of the budget helps households cover basic needs and get through hard times. It includes tax credits, food aid, housing support, unemployment benefits, and other programs that put money or services in people's hands. The total here depends mostly on who qualifies, how many people use the programs, and the rules that set benefit levels."
     },
     {
       "id": "veterans",
@@ -626,21 +719,25 @@
               "id": "va-disability",
               "title": "Disability Compensation",
               "desc": "Monthly disability compensation for veterans",
-              "total": 161250000000
+              "total": 161250000000,
+              "details": "This is the money the federal government spends on monthly disability compensation for veterans. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The amount spent here mostly depends on how many people qualify and the size of the monthly benefits they receive."
             },
             {
               "id": "va-dic",
               "title": "Survivor Benefits",
               "desc": "Dependency and indemnity compensation for survivors",
-              "total": 16875000000
+              "total": 16875000000,
+              "details": "This is the money the federal government spends on dependency and indemnity compensation for survivors. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The amount spent here mostly depends on how many people qualify and the size of the monthly benefits they receive."
             },
             {
               "id": "va-comp-other",
               "title": "Other Compensation",
               "desc": "Smaller compensation-related benefits and support",
-              "total": 9375000000
+              "total": 9375000000,
+              "details": "This is the money the federal government spends on smaller compensation-related benefits and support. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The amount spent here mostly depends on how many people qualify and the size of the monthly benefits they receive."
             }
-          ]
+          ],
+          "details": "This part of the budget covers monthly compensation and survivor payments tied to service-connected disabilities. That includes things like Disability Compensation, Survivor Benefits, and Other Compensation. The amount spent here mostly depends on how many people qualify and the size of the monthly benefits they receive."
         },
         {
           "id": "veterans-health",
@@ -653,27 +750,32 @@
               "id": "va-medical-services",
               "title": "Medical Services",
               "desc": "Hospital, outpatient, and clinical care delivered by VA",
-              "total": 70784000000
+              "total": 70784000000,
+              "details": "This is the money the federal government spends on hospital, outpatient, and clinical care delivered by VA. It pays for the day-to-day work needed to keep this part of government or the program running. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
             },
             {
               "id": "va-community-care",
               "title": "Community Care",
               "desc": "Care purchased from non-VA providers",
-              "total": 29072000000
+              "total": 29072000000,
+              "details": "This is the money the federal government spends on care purchased from non-VA providers. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
             },
             {
               "id": "va-support",
               "title": "Support & Compliance",
               "desc": "Administrative support, IT, logistics, and compliance",
-              "total": 13904000000
+              "total": 13904000000,
+              "details": "This is the money needed to run Veterans Health Care behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
             },
             {
               "id": "va-facilities",
               "title": "Medical Facilities",
               "desc": "Facility operations, maintenance, and capital support",
-              "total": 12640000000
+              "total": 12640000000,
+              "details": "This is the money the federal government spends on facility operations, maintenance, and capital support. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
             }
-          ]
+          ],
+          "details": "This part of the budget covers VA medical care delivered in hospitals, clinics, and community settings. That includes things like Medical Services, Community Care, and Support & Compliance, and other related programs. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
         },
         {
           "id": "veterans-other",
@@ -686,27 +788,32 @@
               "id": "va-housing",
               "title": "Housing & Homelessness",
               "desc": "Housing loans, housing grants, and homelessness support",
-              "total": 10323000000
+              "total": 10323000000,
+              "details": "This is the money the federal government spends on housing loans, housing grants, and homelessness support. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
             },
             {
               "id": "va-burial",
               "title": "Burial & Memorial",
               "desc": "National cemeteries and burial services",
-              "total": 5661000000
+              "total": 5661000000,
+              "details": "This is the money the federal government spends on the National cemeteries and burial services. It pays for the day-to-day work needed to keep this part of government or the program running. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
             },
             {
               "id": "va-insurance",
               "title": "Insurance & Indemnities",
               "desc": "Veterans insurance programs and indemnity support",
-              "total": 3330000000
+              "total": 3330000000,
+              "details": "This is the money the federal government spends on veterans insurance programs and indemnity support. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
             },
             {
               "id": "va-other-services",
               "title": "Other Services",
               "desc": "Other veterans services and departmental administration",
-              "total": 13986000000
+              "total": 13986000000,
+              "details": "This is the money needed to run Other Veterans Benefits behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
             }
-          ]
+          ],
+          "details": "This part of the budget covers housing, memorial, insurance, pension, and other non-medical veteran support. That includes things like Housing & Homelessness, Burial & Memorial, and Insurance & Indemnities, and other related programs. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
         },
         {
           "id": "veterans-education",
@@ -719,23 +826,28 @@
               "id": "va-gi-bill",
               "title": "GI Bill",
               "desc": "Post-9/11 GI Bill tuition, housing, and training support",
-              "total": 22800000000
+              "total": 22800000000,
+              "details": "This is the money the federal government spends on post-9/11 GI bill tuition, housing, and training support. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
             },
             {
               "id": "va-vre",
               "title": "Vocational Rehab",
               "desc": "Veteran Readiness and Employment services",
-              "total": 4500000000
+              "total": 4500000000,
+              "details": "This is the money the federal government spends on veteran readiness and employment services. It pays for the day-to-day work needed to keep this part of government or the program running. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
             },
             {
               "id": "va-education-other",
               "title": "Other Education Benefits",
               "desc": "Other education and training benefits for veterans",
-              "total": 2700000000
+              "total": 2700000000,
+              "details": "This is the money the federal government spends on other education and training benefits for veterans. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
             }
-          ]
+          ],
+          "details": "This part of the budget covers tuition, training, and career-transition support for veterans. That includes things like GI Bill, Vocational Rehab, and Other Education Benefits. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
         }
-      ]
+      ],
+      "details": "This part of the budget supports veterans and their families. It includes disability payments, health care, education benefits, housing help, and other services tied to military service. The total here mostly depends on how many veterans use these programs and how expensive that care and support is to provide."
     },
     {
       "id": "transportation",
@@ -753,27 +865,32 @@
               "id": "highways-formula",
               "title": "Formula Grants",
               "desc": "Federal-aid highway formula programs for states",
-              "total": 46252000000
+              "total": 46252000000,
+              "details": "This is the money the federal government spends on federal-aid highway formula programs for states. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             },
             {
               "id": "highways-bridges",
               "title": "Bridge Programs",
               "desc": "Bridge replacement and rehabilitation programs",
-              "total": 13428000000
+              "total": 13428000000,
+              "details": "This is the money the federal government spends on bridge replacement and rehabilitation programs. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             },
             {
               "id": "highways-safety",
               "title": "Safety Programs",
               "desc": "Highway safety and freight-related programs",
-              "total": 7460000000
+              "total": 7460000000,
+              "details": "This is the money the federal government spends on highway safety and freight-related programs. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             },
             {
               "id": "highways-other",
               "title": "Other Highway Programs",
               "desc": "Other FHWA programs and administration",
-              "total": 7460000000
+              "total": 7460000000,
+              "details": "This is the money needed to run Highways behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
             }
-          ]
+          ],
+          "details": "This part of the budget covers formula funding and grants for highways, bridges, safety, and related road programs. That includes things like Formula Grants, Bridge Programs, and Safety Programs, and other related programs. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
         },
         {
           "id": "air-transport",
@@ -785,27 +902,32 @@
               "id": "air-faa-ops",
               "title": "FAA Operations",
               "desc": "Air traffic control and FAA operations",
-              "total": 13728000000
+              "total": 13728000000,
+              "details": "This is the money the federal government spends on air traffic control and FAA operations. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             },
             {
               "id": "air-facilities",
               "title": "Facilities & Equipment",
               "desc": "Capital systems, equipment, and technology for the FAA",
-              "total": 7488000000
+              "total": 7488000000,
+              "details": "This is the money the federal government spends on capital systems, equipment, and technology for the FAA. In practice, it supports research, testing, labs, missions, or technology work in this area. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
             },
             {
               "id": "air-airports",
               "title": "Airport Grants",
               "desc": "Airport Improvement Program and related grants",
-              "total": 7800000000
+              "total": 7800000000,
+              "details": "This is the money the federal government spends on airport improvement program and related grants. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             },
             {
               "id": "air-other",
               "title": "Other Aviation Programs",
               "desc": "Safety oversight, research, and other aviation support",
-              "total": 2184000000
+              "total": 2184000000,
+              "details": "This is the money needed to run Air Transportation behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
             }
-          ]
+          ],
+          "details": "This part of the budget covers FAA operations, airport grants, air traffic systems, and aviation safety. That includes things like FAA Operations, Facilities & Equipment, and Airport Grants, and other related programs. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
         },
         {
           "id": "mass-transit",
@@ -817,27 +939,32 @@
               "id": "transit-formula",
               "title": "Formula Grants",
               "desc": "Urban and rural transit formula grants",
-              "total": 13572000000
+              "total": 13572000000,
+              "details": "This is the money the federal government spends on urban and rural transit formula grants. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             },
             {
               "id": "transit-capital",
               "title": "Capital Investment Grants",
               "desc": "Capital construction for major transit projects",
-              "total": 5850000000
+              "total": 5850000000,
+              "details": "This is the money the federal government spends on capital construction for major transit projects. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             },
             {
               "id": "transit-good-repair",
               "title": "Bus & State of Good Repair",
               "desc": "Bus purchases and repair-focused formula support",
-              "total": 2808000000
+              "total": 2808000000,
+              "details": "This is the money the federal government spends on bus purchases and repair-focused formula support. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             },
             {
               "id": "transit-other",
               "title": "Other Transit Programs",
               "desc": "Transit safety, administration, and other grants",
-              "total": 1170000000
+              "total": 1170000000,
+              "details": "This is the money needed to run Mass Transit behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
             }
-          ]
+          ],
+          "details": "This part of the budget covers federal grants that help local agencies run, repair, and expand public transit. That includes things like Formula Grants, Capital Investment Grants, and Bus & State of Good Repair, and other related programs. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
         },
         {
           "id": "rail-water",
@@ -849,29 +976,35 @@
               "id": "rail-amtrak",
               "title": "Amtrak",
               "desc": "Northeast Corridor and national network rail support",
-              "total": 5644000000
+              "total": 5644000000,
+              "details": "This is the money the federal government spends on northeast corridor and national network rail support. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             },
             {
               "id": "rail-coast-guard",
               "title": "Coast Guard Transport Support",
               "desc": "Maritime transportation safety and support activities",
-              "total": 5146000000
+              "total": 5146000000,
+              "details": "This is the money the federal government spends on maritime transportation safety and support activities. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             },
             {
               "id": "rail-ports",
               "title": "Ports & Maritime Grants",
               "desc": "Port infrastructure and maritime grant programs",
-              "total": 2822000000
+              "total": 2822000000,
+              "details": "This is the money the federal government spends on port infrastructure and maritime grant programs. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             },
             {
               "id": "rail-other",
               "title": "Other Rail Programs",
               "desc": "Other passenger and freight rail support programs",
-              "total": 2988000000
+              "total": 2988000000,
+              "details": "This is the money the federal government spends on other passenger and freight rail support programs. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             }
-          ]
+          ],
+          "details": "This part of the budget covers passenger rail, ports, and maritime transportation support. That includes things like Amtrak, Coast Guard Transport Support, and Ports & Maritime Grants, and other related programs. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
         }
-      ]
+      ],
+      "details": "This is the part of the budget that helps pay for how people and goods move around the country. It includes roads, bridges, airports, transit, rail, ports, and other transportation systems. The amount spent here depends mostly on grant formulas, project costs, and the transportation priorities lawmakers decide to fund."
     },
     {
       "id": "natural-resources",
@@ -890,27 +1023,32 @@
               "id": "conservation-nps",
               "title": "National Park Service",
               "desc": "National parks operations, stewardship, and visitor services",
-              "total": 10494000000
+              "total": 10494000000,
+              "details": "This is the money the federal government spends on the National parks operations, stewardship, and visitor services. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here mostly depends on staffing, workload, contracts, and the cost of keeping the program running day to day."
             },
             {
               "id": "conservation-forest",
               "title": "Forest Service",
               "desc": "National forest management and wildfire-adjacent stewardship",
-              "total": 9222000000
+              "total": 9222000000,
+              "details": "This is the money the federal government spends on the National forest management and wildfire-adjacent stewardship. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here mostly depends on staffing, workload, contracts, and the cost of keeping the program running day to day."
             },
             {
               "id": "conservation-fws",
               "title": "Fish & Wildlife Service",
               "desc": "Wildlife refuges, habitat restoration, and species recovery",
-              "total": 5724000000
+              "total": 5724000000,
+              "details": "This is the money the federal government spends on wildlife refuges, habitat restoration, and species recovery. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here mostly depends on staffing, workload, contracts, and the cost of keeping the program running day to day."
             },
             {
               "id": "conservation-blm",
               "title": "Bureau of Land Management",
               "desc": "Public lands conservation, recreation, and stewardship",
-              "total": 6360000000
+              "total": 6360000000,
+              "details": "This is the money the federal government spends on public lands conservation, recreation, and stewardship. In everyday terms, this is one of the line items that makes the broader category work in real life. How much gets spent here mostly depends on the size of the underlying program and the choices lawmakers make each year."
             }
-          ]
+          ],
+          "details": "This part of the budget covers stewardship of parks, forests, wildlife refuges, and other public lands. That includes things like National Park Service, Forest Service, and Fish & Wildlife Service, and other related programs. How much gets spent here mostly depends on the size of the underlying program and the choices lawmakers make each year."
         },
         {
           "id": "pollution-control",
@@ -923,27 +1061,32 @@
               "id": "pollution-epm",
               "title": "EPA Programs",
               "desc": "Environmental programs and management",
-              "total": 11024000000
+              "total": 11024000000,
+              "details": "This is the money the federal government spends on environmental programs and management. In everyday terms, this is one of the line items that makes the broader category work in real life. How much gets spent here mostly depends on the size of the underlying program and the choices lawmakers make each year."
             },
             {
               "id": "pollution-superfund",
               "title": "Superfund",
               "desc": "Hazardous substance cleanup and enforcement",
-              "total": 4664000000
+              "total": 4664000000,
+              "details": "This is the money the federal government spends on hazardous substance cleanup and enforcement. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here mostly depends on staffing, workload, contracts, and the cost of keeping the program running day to day."
             },
             {
               "id": "pollution-water-grants",
               "title": "Water Infrastructure Grants",
               "desc": "Clean and drinking water revolving-fund support",
-              "total": 3392000000
+              "total": 3392000000,
+              "details": "This is the money the federal government spends on clean and drinking water revolving-fund support. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             },
             {
               "id": "pollution-state-tribal",
               "title": "State & Tribal Grants",
               "desc": "Categorical grants and other pollution-control support",
-              "total": 2120000000
+              "total": 2120000000,
+              "details": "This is the money the federal government spends on categorical grants and other pollution-control support. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             }
-          ]
+          ],
+          "details": "This part of the budget covers EPA programs that enforce standards and clean up air, water, and hazardous waste. That includes things like EPA Programs, Superfund, and Water Infrastructure Grants, and other related programs. How much gets spent here mostly depends on the size of the underlying program and the choices lawmakers make each year."
         },
         {
           "id": "water-resources",
@@ -956,21 +1099,25 @@
               "id": "water-corps",
               "title": "Army Corps Civil Works",
               "desc": "Flood control, navigation, and ecosystem restoration",
-              "total": 13992000000
+              "total": 13992000000,
+              "details": "This is the money the federal government spends on flood control, navigation, and ecosystem restoration. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             },
             {
               "id": "water-reclamation",
               "title": "Bureau of Reclamation",
               "desc": "Western water infrastructure, dams, and hydropower support",
-              "total": 5088000000
+              "total": 5088000000,
+              "details": "This is the money the federal government spends on western water infrastructure, dams, and hydropower support. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             },
             {
               "id": "water-other",
               "title": "Other Water Infrastructure",
               "desc": "Other federal water resource and basin programs",
-              "total": 2120000000
+              "total": 2120000000,
+              "details": "This is the money the federal government spends on other federal water resource and basin programs. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             }
-          ]
+          ],
+          "details": "This part of the budget covers dams, waterways, flood control, and other federal water infrastructure projects. That includes things like Army Corps Civil Works, Bureau of Reclamation, and Other Water Infrastructure. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
         },
         {
           "id": "other-natural",
@@ -983,29 +1130,35 @@
               "id": "natural-noaa",
               "title": "NOAA Oceans & Coasts",
               "desc": "Oceanic, coastal, and fisheries science and services",
-              "total": 6063000000
+              "total": 6063000000,
+              "details": "This is the money the federal government spends on oceanic, coastal, and fisheries science and services. In practice, it supports research, testing, labs, missions, or technology work in this area. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
             },
             {
               "id": "natural-usgs",
               "title": "USGS Science",
               "desc": "Earth science, mapping, and natural hazards research",
-              "total": 3807000000
+              "total": 3807000000,
+              "details": "This is the money the federal government spends on earth science, mapping, and natural hazards research. In practice, it supports research, testing, labs, missions, or technology work in this area. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
             },
             {
               "id": "natural-recreation",
               "title": "Recreation & Preservation",
               "desc": "Recreation, heritage, and historic preservation programs",
-              "total": 2115000000
+              "total": 2115000000,
+              "details": "This is the money the federal government spends on recreation, heritage, and historic preservation programs. In everyday terms, this is one of the line items that makes the broader category work in real life. How much gets spent here mostly depends on the size of the underlying program and the choices lawmakers make each year."
             },
             {
               "id": "natural-other",
               "title": "Other Resource Programs",
               "desc": "Other natural resource and ocean-service activities",
-              "total": 2115000000
+              "total": 2115000000,
+              "details": "This is the money the federal government spends on other natural resource and ocean-service activities. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here mostly depends on staffing, workload, contracts, and the cost of keeping the program running day to day."
             }
-          ]
+          ],
+          "details": "This part of the budget covers ocean services, earth science, recreation, and other resource programs. That includes things like NOAA Oceans & Coasts, USGS Science, and Recreation & Preservation, and other related programs. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
         }
-      ]
+      ],
+      "details": "This part of the budget covers public lands, environmental protection, and water projects. It includes national parks, forests, wildlife, pollution control, and other work tied to natural resources and the environment. The total here depends on what programs and projects the government chooses to run, maintain, or build."
     },
     {
       "id": "justice",
@@ -1023,33 +1176,39 @@
               "id": "law-fbi",
               "title": "FBI",
               "desc": "Federal Bureau of Investigation operations",
-              "total": 15336000000
+              "total": 15336000000,
+              "details": "This is the money the federal government spends on federal bureau of investigation operations. It pays for investigations, casework, court operations, detention, or other public safety work in this area. The amount here mostly depends on staffing, caseloads, facilities, and the scale of the work the agency is expected to handle."
             },
             {
               "id": "law-dea",
               "title": "DEA",
               "desc": "Drug Enforcement Administration operations",
-              "total": 6390000000
+              "total": 6390000000,
+              "details": "This is the money the federal government spends on drug enforcement administration operations. It pays for investigations, casework, court operations, detention, or other public safety work in this area. The amount here mostly depends on staffing, caseloads, facilities, and the scale of the work the agency is expected to handle."
             },
             {
               "id": "law-atf",
               "title": "ATF",
               "desc": "Alcohol, Tobacco, Firearms and Explosives operations",
-              "total": 4686000000
+              "total": 4686000000,
+              "details": "This is the money the federal government spends on alcohol, tobacco, firearms and explosives operations. It pays for investigations, casework, court operations, detention, or other public safety work in this area. The amount here mostly depends on staffing, caseloads, facilities, and the scale of the work the agency is expected to handle."
             },
             {
               "id": "law-marshals",
               "title": "U.S. Marshals",
               "desc": "Judicial security, fugitive operations, and prisoner transport",
-              "total": 5964000000
+              "total": 5964000000,
+              "details": "This is the money the federal government spends on judicial security, fugitive operations, and prisoner transport. It pays for investigations, casework, court operations, detention, or other public safety work in this area. The amount here mostly depends on staffing, caseloads, facilities, and the scale of the work the agency is expected to handle."
             },
             {
               "id": "law-other",
               "title": "Other Federal Enforcement",
               "desc": "Other federal law-enforcement activities in this function",
-              "total": 10224000000
+              "total": 10224000000,
+              "details": "This is the money the federal government spends on other federal law-enforcement activities in this function. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here mostly depends on staffing, caseloads, facilities, and the scale of the work the agency is expected to handle."
             }
-          ]
+          ],
+          "details": "This part of the budget covers major federal investigative and enforcement agencies plus related operations. It brings together the agencies and offices that investigate cases, enforce laws, run courts, or manage detention. The amount here mostly depends on staffing, caseloads, facilities, and the scale of the work the agency is expected to handle."
         },
         {
           "id": "other-justice",
@@ -1061,27 +1220,32 @@
               "id": "justice-legal",
               "title": "Legal Activities",
               "desc": "U.S. Attorneys and general legal activities",
-              "total": 8528000000
+              "total": 8528000000,
+              "details": "This is the money the federal government spends on U.S. attorneys and general legal activities. It pays for investigations, casework, court operations, detention, or other public safety work in this area. The amount here mostly depends on staffing, caseloads, facilities, and the scale of the work the agency is expected to handle."
             },
             {
               "id": "justice-civil-divisions",
               "title": "Civil & Regulatory Divisions",
               "desc": "Civil, antitrust, civil rights, and related DOJ divisions",
-              "total": 3744000000
+              "total": 3744000000,
+              "details": "This is the money the federal government spends on civil, antitrust, civil rights, and related DOJ divisions. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             },
             {
               "id": "justice-immigration-review",
               "title": "Immigration Review",
               "desc": "Executive Office for Immigration Review and related functions",
-              "total": 3328000000
+              "total": 3328000000,
+              "details": "This is the money the federal government spends on the Executive Office for Immigration Review and related functions. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
             },
             {
               "id": "justice-grants",
               "title": "Legal Aid & Grants",
               "desc": "Legal services, grants, and other justice-support programs",
-              "total": 5200000000
+              "total": 5200000000,
+              "details": "This is the money the federal government spends on legal services, grants, and other justice-support programs. It pays for investigations, casework, court operations, detention, or other public safety work in this area. The amount here mostly depends on staffing, caseloads, facilities, and the scale of the work the agency is expected to handle."
             }
-          ]
+          ],
+          "details": "This part of the budget covers DOJ legal work, immigration courts, grants, and other justice support. It brings together the agencies and offices that investigate cases, enforce laws, run courts, or manage detention. The amount here mostly depends on staffing, caseloads, facilities, and the scale of the work the agency is expected to handle."
         },
         {
           "id": "federal-courts",
@@ -1093,21 +1257,25 @@
               "id": "courts-trial-appellate",
               "title": "Trial & Appellate Courts",
               "desc": "District, appellate, and bankruptcy courts",
-              "total": 7848000000
+              "total": 7848000000,
+              "details": "This is the money the federal government spends on district, appellate, and bankruptcy courts. It pays for investigations, casework, court operations, detention, or other public safety work in this area. The amount here mostly depends on staffing, caseloads, facilities, and the scale of the work the agency is expected to handle."
             },
             {
               "id": "courts-defender",
               "title": "Defender Services",
               "desc": "Public defender and court-appointed counsel support",
-              "total": 1962000000
+              "total": 1962000000,
+              "details": "This is the money the federal government spends on public defender and court-appointed counsel support. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             },
             {
               "id": "courts-judicial-agencies",
               "title": "Judicial Agencies",
               "desc": "Supreme Court, Administrative Office, and related judicial agencies",
-              "total": 1090000000
+              "total": 1090000000,
+              "details": "This is the money the federal government spends on supreme court, administrative office, and related judicial agencies. It pays for investigations, casework, court operations, detention, or other public safety work in this area. The amount here mostly depends on staffing, caseloads, facilities, and the scale of the work the agency is expected to handle."
             }
-          ]
+          ],
+          "details": "This part of the budget covers operations of the supreme court, lower courts, and defender services. It brings together the agencies and offices that investigate cases, enforce laws, run courts, or manage detention. The amount here mostly depends on staffing, caseloads, facilities, and the scale of the work the agency is expected to handle."
         },
         {
           "id": "federal-prisons",
@@ -1119,23 +1287,28 @@
               "id": "prisons-operations",
               "title": "Operations",
               "desc": "Bureau of Prisons salaries and operating expenses",
-              "total": 9374000000
+              "total": 9374000000,
+              "details": "This is the money the federal government spends on the Bureau of Prisons salaries and operating expenses. It pays for investigations, casework, court operations, detention, or other public safety work in this area. The amount here mostly depends on staffing, caseloads, facilities, and the scale of the work the agency is expected to handle."
             },
             {
               "id": "prisons-buildings",
               "title": "Buildings & Facilities",
               "desc": "Prison construction and facility upgrades",
-              "total": 872000000
+              "total": 872000000,
+              "details": "This is the money the federal government spends on prison construction and facility upgrades. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             },
             {
               "id": "prisons-other",
               "title": "Other Prison Support",
               "desc": "Inmate programs and other correctional support costs",
-              "total": 654000000
+              "total": 654000000,
+              "details": "This bucket groups smaller prison support programs that still add up to real spending. It usually pulls together smaller costs in this area that are real parts of the budget even if they are not well known on their own. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             }
-          ]
+          ],
+          "details": "This part of the budget covers running federal prisons, facilities, and inmate support programs. It brings together the agencies and offices that investigate cases, enforce laws, run courts, or manage detention. The amount here mostly depends on staffing, caseloads, facilities, and the scale of the work the agency is expected to handle."
         }
-      ]
+      ],
+      "details": "This is the part of the budget that pays for federal law enforcement, courts, and prisons. It covers agencies that investigate crimes, prosecute cases, run the court system, and house federal inmates. The amount spent here mostly depends on staffing, caseloads, facilities, and the scale of the work those agencies are expected to handle."
     },
     {
       "id": "community-development",
@@ -1153,21 +1326,25 @@
               "id": "disaster-drf",
               "title": "Disaster Relief Fund",
               "desc": "Response and recovery for major disasters",
-              "total": 43914000000
+              "total": 43914000000,
+              "details": "This is the money the federal government spends on response and recovery for major disasters. In everyday terms, this is one of the line items that makes the broader category work in real life. The total here mostly depends on the grant formulas or award decisions and how much money lawmakers put into the program."
             },
             {
               "id": "disaster-preparedness",
               "title": "Preparedness Grants",
               "desc": "Preparedness and emergency-management grants",
-              "total": 6756000000
+              "total": 6756000000,
+              "details": "This is the money the federal government spends on preparedness and emergency-management grants. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The total here mostly depends on the grant formulas or award decisions and how much money lawmakers put into the program."
             },
             {
               "id": "disaster-flood",
               "title": "Flood Mitigation & Insurance",
               "desc": "Flood insurance, mitigation, and resilience programs",
-              "total": 5630000000
+              "total": 5630000000,
+              "details": "This is the money the federal government spends on flood insurance, mitigation, and resilience programs. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The total here mostly depends on the grant formulas or award decisions and how much money lawmakers put into the program."
             }
-          ]
+          ],
+          "details": "This part of the budget covers FEMA disaster response, recovery, preparedness, and flood resilience programs. That includes things like Disaster Relief Fund, Preparedness Grants, and Flood Mitigation & Insurance. The total here mostly depends on the grant formulas or award decisions and how much money lawmakers put into the program."
         },
         {
           "id": "community-grants",
@@ -1180,27 +1357,32 @@
               "id": "community-cdbg",
               "title": "CDBG",
               "desc": "Community Development Block Grants",
-              "total": 6440000000
+              "total": 6440000000,
+              "details": "This is the money the federal government spends on community development block grants. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
             },
             {
               "id": "community-home",
               "title": "HOME",
               "desc": "HOME Investment Partnerships and affordable housing support",
-              "total": 3703000000
+              "total": 3703000000,
+              "details": "This is the money the federal government spends on HOME investment partnerships and affordable housing support. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             },
             {
               "id": "community-eda",
               "title": "EDA Grants",
               "desc": "Economic Development Administration grants",
-              "total": 2737000000
+              "total": 2737000000,
+              "details": "This is the money the federal government spends on economic development administration grants. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
             },
             {
               "id": "community-other",
               "title": "Other Community Grants",
               "desc": "Other local development and revitalization grants",
-              "total": 3220000000
+              "total": 3220000000,
+              "details": "This is the money the federal government spends on other local development and revitalization grants. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
             }
-          ]
+          ],
+          "details": "This part of the budget covers block grants and targeted funding for housing, revitalization, and local growth. It covers the offices and agencies that help the federal government plan, manage, and carry out its basic work. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
         },
         {
           "id": "regional-dev",
@@ -1212,29 +1394,35 @@
               "id": "regional-appalachia",
               "title": "Appalachian Region",
               "desc": "Appalachian Regional Commission programs",
-              "total": 2178000000
+              "total": 2178000000,
+              "details": "This is the money the federal government spends on appalachian regional commission programs. In practice, it supports research, testing, labs, missions, or technology work in this area. The total here mostly depends on the grant formulas or award decisions and how much money lawmakers put into the program."
             },
             {
               "id": "regional-delta",
               "title": "Delta Region",
               "desc": "Delta Regional Authority and similar place-based support",
-              "total": 847000000
+              "total": 847000000,
+              "details": "This is the money the federal government spends on delta regional authority and similar place-based support. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             },
             {
               "id": "regional-tribal",
               "title": "Tribal Community Programs",
               "desc": "Tribal economic development and community infrastructure",
-              "total": 5445000000
+              "total": 5445000000,
+              "details": "This is the money the federal government spends on tribal economic development and community infrastructure. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
             },
             {
               "id": "regional-other",
               "title": "Other Regional Programs",
               "desc": "Other regional commissions and development programs",
-              "total": 3630000000
+              "total": 3630000000,
+              "details": "This is the money the federal government spends on other regional commissions and development programs. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
             }
-          ]
+          ],
+          "details": "This part of the budget covers place-based grants for appalachian, delta, tribal, and similar regions. It covers the offices and agencies that help the federal government plan, manage, and carry out its basic work. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
         }
-      ]
+      ],
+      "details": "This part of the budget helps communities recover, rebuild, and invest in local development. It includes disaster relief, housing and development grants, and regional programs meant to strengthen local economies. Spending here can swing from year to year depending on disasters, project choices, and how much aid Congress provides."
     },
     {
       "id": "education",
@@ -1253,27 +1441,32 @@
               "id": "k12-title1",
               "title": "Title I",
               "desc": "Aid for schools serving low-income students",
-              "total": 10750000000
+              "total": 10750000000,
+              "details": "This is the money the federal government spends on aid for schools serving low-income students. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             },
             {
               "id": "k12-idea",
               "title": "IDEA",
               "desc": "Special education grants under IDEA",
-              "total": 10500000000
+              "total": 10500000000,
+              "details": "This is the money the federal government spends on special education grants under IDEA. It pays for investigations, casework, court operations, detention, or other public safety work in this area. The amount here mostly depends on staffing, caseloads, facilities, and the scale of the work the agency is expected to handle."
             },
             {
               "id": "k12-impact-aid",
               "title": "Impact Aid",
               "desc": "Support for districts affected by federal activity",
-              "total": 2000000000
+              "total": 2000000000,
+              "details": "This is the money the federal government spends on support for districts affected by federal activity. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             },
             {
               "id": "k12-other",
               "title": "Other K-12 Grants",
               "desc": "Other elementary and secondary education grants",
-              "total": 1750000000
+              "total": 1750000000,
+              "details": "This is the money the federal government spends on other elementary and secondary education grants. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             }
-          ]
+          ],
+          "details": "This part of the budget covers formula and targeted grants that support public schools and special education. That includes things like Title I, IDEA, and Impact Aid, and other related programs. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
         },
         {
           "id": "social-services",
@@ -1285,27 +1478,32 @@
               "id": "social-head-start",
               "title": "Head Start",
               "desc": "Early childhood education and family services",
-              "total": 9680000000
+              "total": 9680000000,
+              "details": "This is the money the federal government spends on early childhood education and family services. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here mostly depends on staffing, workload, contracts, and the cost of keeping the program running day to day."
             },
             {
               "id": "social-ccdf",
               "title": "Child Care",
               "desc": "Child Care and Development Fund support",
-              "total": 7920000000
+              "total": 7920000000,
+              "details": "This is the money the federal government spends on child care and development fund support. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
             },
             {
               "id": "social-ssbg",
               "title": "SSBG",
               "desc": "Social Services Block Grant",
-              "total": 2640000000
+              "total": 2640000000,
+              "details": "This is the money the federal government spends on social services block grant. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The total here mostly depends on the grant formulas or award decisions and how much money lawmakers put into the program."
             },
             {
               "id": "social-other",
               "title": "Other Family Services",
               "desc": "Other child welfare and family service programs",
-              "total": 1760000000
+              "total": 1760000000,
+              "details": "This is the money the federal government spends on other child welfare and family service programs. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here mostly depends on staffing, workload, contracts, and the cost of keeping the program running day to day."
             }
-          ]
+          ],
+          "details": "This part of the budget covers early childhood, child care, and family-service programs. That includes things like Head Start, Child Care, and SSBG, and other related programs. The amount here mostly depends on staffing, workload, contracts, and the cost of keeping the program running day to day."
         },
         {
           "id": "training-employment",
@@ -1317,27 +1515,32 @@
               "id": "workforce-wioa",
               "title": "WIOA Grants",
               "desc": "Workforce Innovation and Opportunity Act formula grants",
-              "total": 4400000000
+              "total": 4400000000,
+              "details": "This is the money the federal government spends on workforce innovation and opportunity act formula grants. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             },
             {
               "id": "workforce-job-corps",
               "title": "Job Corps",
               "desc": "Residential education and training for young adults",
-              "total": 2700000000
+              "total": 2700000000,
+              "details": "This is the money the federal government spends on residential education and training for young adults. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here mostly depends on staffing, workload, contracts, and the cost of keeping the program running day to day."
             },
             {
               "id": "workforce-apprenticeship",
               "title": "Apprenticeship & Youth",
               "desc": "Apprenticeship, youth, and reentry workforce initiatives",
-              "total": 1200000000
+              "total": 1200000000,
+              "details": "This is the money the federal government spends on apprenticeship, youth, and reentry workforce initiatives. In everyday terms, this is one of the line items that makes the broader category work in real life. How much gets spent here mostly depends on the size of the underlying program and the choices lawmakers make each year."
             },
             {
               "id": "workforce-other",
               "title": "Other Workforce Programs",
               "desc": "Other employment and training services",
-              "total": 1700000000
+              "total": 1700000000,
+              "details": "This is the money the federal government spends on other employment and training services. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here mostly depends on staffing, workload, contracts, and the cost of keeping the program running day to day."
             }
-          ]
+          ],
+          "details": "This part of the budget covers job training and workforce programs for youth and adults. That includes things like WIOA Grants, Job Corps, and Apprenticeship & Youth, and other related programs. The amount here mostly depends on staffing, workload, contracts, and the cost of keeping the program running day to day."
         },
         {
           "id": "student-aid",
@@ -1350,21 +1553,25 @@
               "id": "aid-pell",
               "title": "Pell Grants",
               "desc": "Need-based Pell Grant aid",
-              "total": 5520000000
+              "total": 5520000000,
+              "details": "This is the money the federal government spends on need-based pell grant aid. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The total here mostly depends on the grant formulas or award decisions and how much money lawmakers put into the program."
             },
             {
               "id": "aid-campus",
               "title": "Campus-Based Aid",
               "desc": "Federal Work-Study and supplemental grants",
-              "total": 800000000
+              "total": 800000000,
+              "details": "This is the money the federal government spends on federal work-study and supplemental grants. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The total here mostly depends on the grant formulas or award decisions and how much money lawmakers put into the program."
             },
             {
               "id": "aid-loans",
               "title": "Loan Subsidy & Admin",
               "desc": "Student loan subsidy costs and aid administration",
-              "total": 1680000000
+              "total": 1680000000,
+              "details": "This is the money needed to run Student Financial Assistance behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
             }
-          ]
+          ],
+          "details": "This part of the budget covers college aid through pell grants, campus aid, and student-loan subsidy costs. That includes things like Pell Grants, Campus-Based Aid, and Loan Subsidy & Admin. The total here mostly depends on the grant formulas or award decisions and how much money lawmakers put into the program."
         },
         {
           "id": "other-education",
@@ -1377,29 +1584,35 @@
               "id": "education-research",
               "title": "Research & Evaluation",
               "desc": "Education research, statistics, and evaluation",
-              "total": 1008000000
+              "total": 1008000000,
+              "details": "This is the money the federal government spends on education research, statistics, and evaluation. In practice, it supports research, testing, labs, missions, or technology work in this area. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
             },
             {
               "id": "education-libraries",
               "title": "Libraries & Museums",
               "desc": "Institute of Museum and Library Services and similar support",
-              "total": 798000000
+              "total": 798000000,
+              "details": "This is the money the federal government spends on institute of museum and library services and similar support. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             },
             {
               "id": "education-higher-ed",
               "title": "Higher Education Support",
               "desc": "Minority-serving institutions and other higher-ed programs",
-              "total": 1428000000
+              "total": 1428000000,
+              "details": "This is the money the federal government spends on minority-serving institutions and other higher-ed programs. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             },
             {
               "id": "education-other",
               "title": "Other Education Support",
               "desc": "Other education and cultural support programs",
-              "total": 966000000
+              "total": 966000000,
+              "details": "This bucket groups smaller education support programs that still add up to real spending. It usually pulls together smaller costs in this area that are real parts of the budget even if they are not well known on their own. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             }
-          ]
+          ],
+          "details": "This part of the budget covers research, libraries, higher-ed support, and smaller education programs. That includes things like Research & Evaluation, Libraries & Museums, and Higher Education Support, and other related programs. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
         }
-      ]
+      ],
+      "details": "This part of the budget supports schools, students, workers, and family services. It includes K-12 aid, child care and early childhood programs, job training, student aid, and other education support. The amount spent here depends mostly on who qualifies, how many people are served, and which grants and programs lawmakers fund."
     },
     {
       "id": "agriculture",
@@ -1418,21 +1631,25 @@
               "id": "farm-crop-insurance",
               "title": "Crop Insurance",
               "desc": "Premium support and indemnities through federal crop insurance",
-              "total": 15228000000
+              "total": 15228000000,
+              "details": "This is the money the federal government spends on premium support and indemnities through federal crop insurance. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             },
             {
               "id": "farm-commodity",
               "title": "Commodity Programs",
               "desc": "Commodity support and farm safety-net programs",
-              "total": 11340000000
+              "total": 11340000000,
+              "details": "This is the money the federal government spends on commodity support and farm safety-net programs. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             },
             {
               "id": "farm-conservation",
               "title": "Conservation Support",
               "desc": "Working-lands conservation and related farm support",
-              "total": 5832000000
+              "total": 5832000000,
+              "details": "This is the money the federal government spends on working-lands conservation and related farm support. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             }
-          ]
+          ],
+          "details": "This part of the budget covers farm safety-net programs that cushion crop losses and commodity price swings. That includes things like Crop Insurance, Commodity Programs, and Conservation Support. How much gets spent here mostly depends on the size of the underlying program and the choices lawmakers make each year."
         },
         {
           "id": "rural-development",
@@ -1445,21 +1662,25 @@
               "id": "rural-housing",
               "title": "Rural Housing",
               "desc": "Single-family, multifamily, and rental housing programs",
-              "total": 5408000000
+              "total": 5408000000,
+              "details": "This is the money the federal government spends on single-family, multifamily, and rental housing programs. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             },
             {
               "id": "rural-utilities",
               "title": "Rural Utilities",
               "desc": "Water, broadband, and electric infrastructure support",
-              "total": 3016000000
+              "total": 3016000000,
+              "details": "This is the money the federal government spends on water, broadband, and electric infrastructure support. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             },
             {
               "id": "rural-business",
               "title": "Rural Business",
               "desc": "Rural business and cooperative development",
-              "total": 1976000000
+              "total": 1976000000,
+              "details": "This is the money the federal government spends on rural business and cooperative development. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
             }
-          ]
+          ],
+          "details": "This part of the budget covers housing, utility, broadband, and business support for rural communities. It covers the offices and agencies that help the federal government plan, manage, and carry out its basic work. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
         },
         {
           "id": "ag-research",
@@ -1472,23 +1693,28 @@
               "id": "ag-ars",
               "title": "ARS",
               "desc": "Agricultural Research Service research programs",
-              "total": 2990000000
+              "total": 2990000000,
+              "details": "This is the money the federal government spends on agricultural research service research programs. In practice, it supports research, testing, labs, missions, or technology work in this area. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
             },
             {
               "id": "ag-nifa",
               "title": "NIFA & Extension",
               "desc": "Research grants, extension, and higher-education support",
-              "total": 2535000000
+              "total": 2535000000,
+              "details": "This is the money the federal government spends on research grants, extension, and higher-education support. In practice, it supports research, testing, labs, missions, or technology work in this area. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
             },
             {
               "id": "ag-other-science",
               "title": "Other USDA Science",
               "desc": "Other agricultural science and data programs",
-              "total": 975000000
+              "total": 975000000,
+              "details": "This is the money the federal government spends on other agricultural science and data programs. In practice, it supports research, testing, labs, missions, or technology work in this area. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
             }
-          ]
+          ],
+          "details": "This part of the budget covers USDA science, extension, and research grants that support food and farm systems. That includes things like ARS, NIFA & Extension, and Other USDA Science. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
         }
-      ]
+      ],
+      "details": "This part of the budget supports farms, rural communities, and agricultural research. It includes crop insurance, commodity programs, rural development, and science tied to food and farming. The total here depends on farm conditions, program rules, and the projects or grants Congress chooses to support."
     },
     {
       "id": "international-affairs",
@@ -1506,27 +1732,32 @@
               "id": "aid-humanitarian",
               "title": "Humanitarian Assistance",
               "desc": "Refugee, food, and emergency humanitarian aid",
-              "total": 6936000000
+              "total": 6936000000,
+              "details": "This is the money the federal government spends on refugee, food, and emergency humanitarian aid. In practice, this money supports aid programs, embassy work, training, security help, or other U.S. activities overseas. The total here depends on world events, foreign policy priorities, and how much Congress chooses to provide."
             },
             {
               "id": "aid-health",
               "title": "Global Health",
               "desc": "Global health security and disease-response assistance",
-              "total": 4896000000
+              "total": 4896000000,
+              "details": "This is the money the federal government spends on global health security and disease-response assistance. In practice, this money supports aid programs, embassy work, training, security help, or other U.S. activities overseas. The total here depends on world events, foreign policy priorities, and how much Congress chooses to provide."
             },
             {
               "id": "aid-development",
               "title": "Development Assistance",
               "desc": "Development finance and bilateral assistance",
-              "total": 5304000000
+              "total": 5304000000,
+              "details": "This is the money the federal government spends on development finance and bilateral assistance. In practice, this money supports aid programs, embassy work, training, security help, or other U.S. activities overseas. The total here depends on world events, foreign policy priorities, and how much Congress chooses to provide."
             },
             {
               "id": "aid-other-economic",
               "title": "MCC & Other Aid",
               "desc": "Millennium Challenge Corporation and other economic aid",
-              "total": 3264000000
+              "total": 3264000000,
+              "details": "This is the money the federal government spends on millennium challenge corporation and other economic aid. In practice, this money supports aid programs, embassy work, training, security help, or other U.S. activities overseas. The total here depends on world events, foreign policy priorities, and how much Congress chooses to provide."
             }
-          ]
+          ],
+          "details": "This part of the budget covers humanitarian relief, development, and global health assistance overseas. It brings together diplomatic operations, aid programs, or security support that the United States provides overseas. The total here depends on world events, foreign policy priorities, and how much Congress chooses to provide."
         },
         {
           "id": "state-dept",
@@ -1538,27 +1769,32 @@
               "id": "state-diplomatic",
               "title": "Diplomatic Programs",
               "desc": "Embassy operations, diplomacy, and foreign service support",
-              "total": 6681000000
+              "total": 6681000000,
+              "details": "This is the money the federal government spends on embassy operations, diplomacy, and foreign service support. In practice, this money supports aid programs, embassy work, training, security help, or other U.S. activities overseas. The total here depends on world events, foreign policy priorities, and how much Congress chooses to provide."
             },
             {
               "id": "state-security",
               "title": "Embassy Security & Construction",
               "desc": "Embassy security, construction, and maintenance",
-              "total": 3668000000
+              "total": 3668000000,
+              "details": "This is the money the federal government spends on embassy security, construction, and maintenance. In practice, this money supports aid programs, embassy work, training, security help, or other U.S. activities overseas. The total here depends on world events, foreign policy priorities, and how much Congress chooses to provide."
             },
             {
               "id": "state-consular",
               "title": "Consular & Border Security",
               "desc": "Consular affairs and border-security support",
-              "total": 1572000000
+              "total": 1572000000,
+              "details": "This is the money the federal government spends on consular affairs and border-security support. In practice, this money supports aid programs, embassy work, training, security help, or other U.S. activities overseas. The total here depends on world events, foreign policy priorities, and how much Congress chooses to provide."
             },
             {
               "id": "state-other",
               "title": "Other State Operations",
               "desc": "Other State Department administration and support",
-              "total": 1179000000
+              "total": 1179000000,
+              "details": "This is the money needed to run Diplomacy behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
             }
-          ]
+          ],
+          "details": "This part of the budget covers embassies, diplomatic operations, and consular support run by the state department. It brings together diplomatic operations, aid programs, or security support that the United States provides overseas. The total here depends on world events, foreign policy priorities, and how much Congress chooses to provide."
         },
         {
           "id": "military-aid",
@@ -1570,23 +1806,28 @@
               "id": "mil-aid-fmf",
               "title": "Foreign Military Financing",
               "desc": "Grants for allies to purchase U.S. defense equipment",
-              "total": 8307000000
+              "total": 8307000000,
+              "details": "This is the money the federal government spends on grants for allies to purchase U.S. defense equipment. In practice, this money supports aid programs, embassy work, training, security help, or other U.S. activities overseas. The total here depends on world events, foreign policy priorities, and how much Congress chooses to provide."
             },
             {
               "id": "mil-aid-peacekeeping",
               "title": "Peacekeeping & Security",
               "desc": "Peacekeeping and broader security-assistance programs",
-              "total": 2340000000
+              "total": 2340000000,
+              "details": "This is the money the federal government spends on peacekeeping and broader security-assistance programs. In practice, this money supports aid programs, embassy work, training, security help, or other U.S. activities overseas. The total here depends on world events, foreign policy priorities, and how much Congress chooses to provide."
             },
             {
               "id": "mil-aid-training",
               "title": "Training & Other Aid",
               "desc": "IMET and other military training support",
-              "total": 1053000000
+              "total": 1053000000,
+              "details": "This is the money the federal government spends on IMET and other military training support. In practice, this money supports aid programs, embassy work, training, security help, or other U.S. activities overseas. The total here depends on world events, foreign policy priorities, and how much Congress chooses to provide."
             }
-          ]
+          ],
+          "details": "This part of the budget covers security assistance that helps allies buy equipment and build defense capacity. It brings together diplomatic operations, aid programs, or security support that the United States provides overseas. The total here depends on world events, foreign policy priorities, and how much Congress chooses to provide."
         }
-      ]
+      ],
+      "details": "This part of the budget covers diplomacy, foreign aid, and security support overseas. It includes humanitarian relief, development assistance, embassy operations, and military aid to partners. The total here depends on world events, foreign policy priorities, and how much Congress decides to provide."
     },
     {
       "id": "science-space",
@@ -1598,6 +1839,7 @@
           "id": "nasa",
           "title": "NASA",
           "desc": "Space science, human exploration, mission operations, and aeronautics research",
+          "details": "This is NASA's slice of the federal budget. It pays for space science, human exploration, mission operations, new technology, and aeronautics research. The total here depends on which missions, launches, and research efforts lawmakers choose to fund.",
           "total": 25100000000,
           "source": "https://www.nasa.gov/fy-2025-budget-request/",
           "categories": [
@@ -1605,31 +1847,36 @@
               "id": "nasa-science",
               "title": "Science",
               "desc": "Earth, planetary, heliophysics, and astrophysics missions",
-              "total": 7530000000
+              "total": 7530000000,
+              "details": "This is the money the federal government spends on earth, planetary, heliophysics, and astrophysics missions. In practice, it supports research, testing, labs, missions, or technology work in this area. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
             },
             {
               "id": "nasa-exploration",
               "title": "Exploration Systems",
               "desc": "Artemis, deep-space systems, and human exploration",
-              "total": 7279000000
+              "total": 7279000000,
+              "details": "This is the money the federal government spends on artemis, deep-space systems, and human exploration. In everyday terms, this is one of the line items that makes the broader category work in real life. How much gets spent here mostly depends on the size of the underlying program and the choices lawmakers make each year."
             },
             {
               "id": "nasa-space-ops",
               "title": "Space Operations",
               "desc": "ISS, launch services, and mission operations",
-              "total": 6526000000
+              "total": 6526000000,
+              "details": "This is the money the federal government spends on ISS, launch services, and mission operations. In practice, it supports research, testing, labs, missions, or technology work in this area. The total here mostly depends on the projects selected, the equipment or facilities involved, and annual funding decisions."
             },
             {
               "id": "nasa-tech",
               "title": "Space Technology",
               "desc": "Advanced technology development and demonstrations",
-              "total": 2008000000
+              "total": 2008000000,
+              "details": "This is the money the federal government spends on advanced technology development and demonstrations. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
             },
             {
               "id": "nasa-aero-support",
               "title": "Aeronautics & Support",
               "desc": "Aeronautics research plus safety, security, and mission support",
-              "total": 1757000000
+              "total": 1757000000,
+              "details": "This is the money the federal government spends on aeronautics research plus safety, security, and mission support. In practice, it supports research, testing, labs, missions, or technology work in this area. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
             }
           ]
         },
@@ -1644,27 +1891,32 @@
               "id": "nsf-rra",
               "title": "Research & Related Activities",
               "desc": "Core science and engineering research funding",
-              "total": 6480000000
+              "total": 6480000000,
+              "details": "This is the money the federal government spends on core science and engineering research funding. In practice, it supports research, testing, labs, missions, or technology work in this area. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
             },
             {
               "id": "nsf-stem",
               "title": "STEM Education",
               "desc": "Education and human resources programs",
-              "total": 1080000000
+              "total": 1080000000,
+              "details": "This is the money the federal government spends on education and human resources programs. In everyday terms, this is one of the line items that makes the broader category work in real life. The total here mostly depends on the grant formulas or award decisions and how much money lawmakers put into the program."
             },
             {
               "id": "nsf-mrefc",
               "title": "Major Research Equipment",
               "desc": "Major research equipment and facilities construction",
-              "total": 990000000
+              "total": 990000000,
+              "details": "This is the money the federal government spends on major research equipment and facilities construction. In practice, it supports research, testing, labs, missions, or technology work in this area. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
             },
             {
               "id": "nsf-operations",
               "title": "Agency Operations",
               "desc": "Operations, administration, and the inspector general",
-              "total": 450000000
+              "total": 450000000,
+              "details": "This is the money needed to run National Science Foundation behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
             }
-          ]
+          ],
+          "details": "This part of the budget covers basic research, STEM education, and research infrastructure grants. That includes things like Research & Related Activities, STEM Education, and Major Research Equipment, and other related programs. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
         },
         {
           "id": "other-science",
@@ -1676,23 +1928,28 @@
               "id": "science-doe",
               "title": "DOE Office of Science",
               "desc": "Energy science, national labs, and basic research",
-              "total": 4080000000
+              "total": 4080000000,
+              "details": "This is the money the federal government spends on energy science, national labs, and basic research. In practice, it supports research, testing, labs, missions, or technology work in this area. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
             },
             {
               "id": "science-noaa",
               "title": "NOAA Research",
               "desc": "Climate, oceans, and weather research programs",
-              "total": 2160000000
+              "total": 2160000000,
+              "details": "This is the money the federal government spends on climate, oceans, and weather research programs. In practice, it supports research, testing, labs, missions, or technology work in this area. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
             },
             {
               "id": "science-other-federal",
               "title": "Other Federal Science",
               "desc": "USGS and other smaller federal science programs",
-              "total": 1760000000
+              "total": 1760000000,
+              "details": "This is the money the federal government spends on USGS and other smaller federal science programs. In practice, it supports research, testing, labs, missions, or technology work in this area. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
             }
-          ]
+          ],
+          "details": "This part of the budget covers civilian science spending outside NASA and NSF, including DOE and NOAA. That includes things like DOE Office of Science, NOAA Research, and Other Federal Science. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
         }
-      ]
+      ],
+      "details": "This part of the budget pays for civilian science and space programs. It includes NASA, the National Science Foundation, and other research done across the federal government. The total here depends mostly on which missions, facilities, and research efforts lawmakers choose to fund."
     },
     {
       "id": "general-government",
@@ -1711,27 +1968,32 @@
               "id": "fiscal-irs",
               "title": "IRS",
               "desc": "Tax administration, enforcement, and taxpayer services",
-              "total": 11448000000
+              "total": 11448000000,
+              "details": "This is the money needed to run Fiscal Operations behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
             },
             {
               "id": "fiscal-service",
               "title": "Fiscal Service",
               "desc": "Debt financing, payment systems, and accounting operations",
-              "total": 1908000000
+              "total": 1908000000,
+              "details": "This is the money the federal government spends on debt financing, payment systems, and accounting operations. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
             },
             {
               "id": "fiscal-treasury-do",
               "title": "Treasury Departmental Offices",
               "desc": "Departmental offices, sanctions, and financial intelligence",
-              "total": 1590000000
+              "total": 1590000000,
+              "details": "This is the money the federal government spends on departmental offices, sanctions, and financial intelligence. This is not a program people sign up for. It is a financing cost the government owes because it has borrowed money. How much gets spent here mostly depends on the size of the underlying program and the choices lawmakers make each year."
             },
             {
               "id": "fiscal-other",
               "title": "Other Fiscal Agencies",
               "desc": "Other Treasury fiscal and financial oversight activities",
-              "total": 954000000
+              "total": 954000000,
+              "details": "This is the money the federal government spends on other treasury fiscal and financial oversight activities. This is not a program people sign up for. It is a financing cost the government owes because it has borrowed money. How much gets spent here mostly depends on the size of the underlying program and the choices lawmakers make each year."
             }
-          ]
+          ],
+          "details": "This part of the budget covers tax collection, debt management, payments, and other treasury operations. That includes things like IRS, Fiscal Service, and Treasury Departmental Offices, and other related programs. How much gets spent here mostly depends on the size of the underlying program and the choices lawmakers make each year."
         },
         {
           "id": "other-general",
@@ -1743,27 +2005,32 @@
               "id": "general-gsa",
               "title": "GSA",
               "desc": "Federal buildings, procurement, and shared services",
-              "total": 3081000000
+              "total": 3081000000,
+              "details": "This is the money the federal government spends on federal buildings, procurement, and shared services. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
             },
             {
               "id": "general-opm",
               "title": "OPM",
               "desc": "Federal workforce management and civil service administration",
-              "total": 2133000000
+              "total": 2133000000,
+              "details": "This is the money the federal government spends on federal workforce management and civil service administration. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
             },
             {
               "id": "general-election-civil",
               "title": "Election & Civil Agencies",
               "desc": "Election administration and smaller civil agencies",
-              "total": 1106000000
+              "total": 1106000000,
+              "details": "This is the money needed to run Other General Government behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
             },
             {
               "id": "general-other",
               "title": "Other General Government",
               "desc": "Other government-wide management and support activities",
-              "total": 1580000000
+              "total": 1580000000,
+              "details": "This bucket groups smaller general government programs that still add up to real spending. It usually pulls together smaller costs in this area that are real parts of the budget even if they are not well known on their own. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             }
-          ]
+          ],
+          "details": "This part of the budget covers government-wide management, buildings, procurement, and civil-service support. That includes things like GSA, OPM, and Election & Civil Agencies, and other related programs. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
         },
         {
           "id": "legislative",
@@ -1775,27 +2042,32 @@
               "id": "leg-house-senate",
               "title": "Congressional Operations",
               "desc": "House, Senate, and joint legislative operations",
-              "total": 3128000000
+              "total": 3128000000,
+              "details": "This is the money the federal government spends on house, senate, and joint legislative operations. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
             },
             {
               "id": "leg-library",
               "title": "Library of Congress",
               "desc": "Library of Congress and associated services",
-              "total": 1020000000
+              "total": 1020000000,
+              "details": "This is the money the federal government spends on the Library of Congress and associated services. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
             },
             {
               "id": "leg-gao",
               "title": "GAO",
               "desc": "Government Accountability Office",
-              "total": 952000000
+              "total": 952000000,
+              "details": "This is the money the federal government spends on the Government Accountability Office. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
             },
             {
               "id": "leg-other",
               "title": "Capitol Complex & Other",
               "desc": "Capitol Police, Architect, CBO, and other legislative support",
-              "total": 1700000000
+              "total": 1700000000,
+              "details": "This is the money the federal government spends on capitol police, architect, CBO, and other legislative support. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
             }
-          ]
+          ],
+          "details": "This part of the budget covers congressional operations and support agencies like GAO, CBO, and the library of congress. It covers the offices and agencies that help the federal government plan, manage, and carry out its basic work. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
         },
         {
           "id": "executive",
@@ -1807,29 +2079,35 @@
               "id": "exec-eop",
               "title": "Executive Office",
               "desc": "Executive Office of the President and support offices",
-              "total": 3078000000
+              "total": 3078000000,
+              "details": "This is the money the federal government spends on the Executive Office of the President and support offices. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
             },
             {
               "id": "exec-omb",
               "title": "OMB",
               "desc": "Office of Management and Budget",
-              "total": 912000000
+              "total": 912000000,
+              "details": "This is the office that helps the president build the federal budget and manage executive branch priorities. It reviews agency spending plans, writes budget guidance, and helps coordinate management decisions across government. The total here mostly depends on staffing and the work needed to oversee the budget process."
             },
             {
               "id": "exec-white-house",
               "title": "White House",
               "desc": "White House Office and Executive Residence",
-              "total": 456000000
+              "total": 456000000,
+              "details": "This is the money the federal government spends on the White House Office and Executive Residence. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
             },
             {
               "id": "exec-other",
               "title": "NSC & Other Offices",
               "desc": "National Security Council and other executive offices",
-              "total": 1254000000
+              "total": 1254000000,
+              "details": "This is the money the federal government spends on the National Security Council and other executive offices. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
             }
-          ]
+          ],
+          "details": "This part of the budget covers white house and executive office units that support presidential management and policy. It covers the offices and agencies that help the federal government plan, manage, and carry out its basic work. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
         }
-      ]
+      ],
+      "details": "This is the part of the budget that keeps the federal government itself running. It includes tax collection, Treasury operations, Congress, the White House, and other agencies that manage the government's basic operations. The total here depends mostly on staffing, systems, buildings, and the work needed to run the government day to day."
     },
     {
       "id": "energy",
@@ -1847,27 +2125,32 @@
               "id": "energy-clean",
               "title": "Clean Energy Deployment",
               "desc": "Clean energy demonstration and deployment support",
-              "total": 3570000000
+              "total": 3570000000,
+              "details": "This is the money the federal government spends on clean energy demonstration and deployment support. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             },
             {
               "id": "energy-nuclear",
               "title": "Nuclear Energy",
               "desc": "Advanced nuclear and fuel-cycle programs",
-              "total": 2520000000
+              "total": 2520000000,
+              "details": "This is the money the federal government spends on advanced nuclear and fuel-cycle programs. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             },
             {
               "id": "energy-fossil",
               "title": "Fossil & Carbon Management",
               "desc": "Fossil energy research and carbon-management programs",
-              "total": 1890000000
+              "total": 1890000000,
+              "details": "This is the money the federal government spends on fossil energy research and carbon-management programs. In practice, it supports research, testing, labs, missions, or technology work in this area. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
             },
             {
               "id": "energy-grid",
               "title": "Grid & Other Supply",
               "desc": "Grid resilience and other energy-supply programs",
-              "total": 2520000000
+              "total": 2520000000,
+              "details": "This bucket groups smaller grid & other supply programs that still add up to real spending. It usually pulls together smaller costs in this area that are real parts of the budget even if they are not well known on their own. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             }
-          ]
+          ],
+          "details": "This part of the budget covers DOE support for power technologies, grid resilience, and energy production research. That includes things like Clean Energy Deployment, Nuclear Energy, and Fossil & Carbon Management, and other related programs. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
         },
         {
           "id": "energy-conservation",
@@ -1879,27 +2162,32 @@
               "id": "conserve-weatherization",
               "title": "Weatherization & State Programs",
               "desc": "State and local efficiency programs including weatherization",
-              "total": 1701000000
+              "total": 1701000000,
+              "details": "This is the money the federal government spends on state and local efficiency programs including weatherization. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here mostly depends on which projects, facilities, and energy priorities the government chooses to support."
             },
             {
               "id": "conserve-federal",
               "title": "Federal Energy Management",
               "desc": "Efficiency programs for federal facilities and operations",
-              "total": 1008000000
+              "total": 1008000000,
+              "details": "This is the money the federal government spends on efficiency programs for federal facilities and operations. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
             },
             {
               "id": "conserve-rd",
               "title": "Efficiency R&D",
               "desc": "Building, industrial, and vehicle efficiency research",
-              "total": 2016000000
+              "total": 2016000000,
+              "details": "This is the money the federal government spends on building, industrial, and vehicle efficiency research. In practice, it supports research, testing, labs, missions, or technology work in this area. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
             },
             {
               "id": "conserve-other",
               "title": "Other Conservation",
               "desc": "Other conservation and consumer energy-efficiency efforts",
-              "total": 1575000000
+              "total": 1575000000,
+              "details": "This bucket groups smaller conservation programs that still add up to real spending. It usually pulls together smaller costs in this area that are real parts of the budget even if they are not well known on their own. The amount here mostly depends on which projects, facilities, and energy priorities the government chooses to support."
             }
-          ]
+          ],
+          "details": "This part of the budget covers efficiency and weatherization programs that lower energy use and costs. That includes things like Weatherization & State Programs, Federal Energy Management, and Efficiency R&D, and other related programs. The amount here mostly depends on which projects, facilities, and energy priorities the government chooses to support."
         },
         {
           "id": "strategic-reserve",
@@ -1911,23 +2199,28 @@
               "id": "spr-core",
               "title": "Strategic Petroleum Reserve",
               "desc": "Core petroleum reserve storage and management",
-              "total": 3444000000
+              "total": 3444000000,
+              "details": "This is the money the federal government spends on core petroleum reserve storage and management. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here mostly depends on which projects, facilities, and energy priorities the government chooses to support."
             },
             {
               "id": "spr-northeast",
               "title": "Northeast Reserves",
               "desc": "Regional gasoline and home heating oil reserves",
-              "total": 246000000
+              "total": 246000000,
+              "details": "This is the money the federal government spends on regional gasoline and home heating oil reserves. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The total here mostly depends on the grant formulas or award decisions and how much money lawmakers put into the program."
             },
             {
               "id": "spr-sites",
               "title": "Site Operations & Cleanup",
               "desc": "Site operations, maintenance, and environmental work",
-              "total": 410000000
+              "total": 410000000,
+              "details": "This is the money the federal government spends on site operations, maintenance, and environmental work. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here mostly depends on which projects, facilities, and energy priorities the government chooses to support."
             }
-          ]
+          ],
+          "details": "This part of the budget covers storage, maintenance, and cleanup tied to the federal emergency oil reserve. That includes things like Strategic Petroleum Reserve, Northeast Reserves, and Site Operations & Cleanup. The amount here mostly depends on which projects, facilities, and energy priorities the government chooses to support."
         }
-      ]
+      ],
+      "details": "This part of the budget covers civilian energy programs and the federal oil reserve. It includes work on energy supply, efficiency, grid resilience, and the Strategic Petroleum Reserve. The amount spent here depends on which projects, facilities, and energy priorities the government chooses to support."
     }
   ]
 }

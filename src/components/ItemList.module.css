@@ -10,18 +10,30 @@
 }
 
 .row {
+  appearance: none;
   display: grid;
   grid-template-columns: auto minmax(0, 2.5fr) minmax(12px, 1fr) auto auto;
   column-gap: 8px;
+  width: 100%;
   min-width: 0;
   padding: 10px 16px;
   cursor: pointer;
+  border: 0;
   border-bottom: 1px solid #f0f0f0;
+  background: transparent;
   transition: background-color 0.15s;
+  text-align: left;
+  font: inherit;
+  color: inherit;
 }
 
 .row:hover {
   background-color: #f8f8fc;
+}
+
+.row:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: -2px;
 }
 
 .selected {

@@ -7,6 +7,7 @@ import styles from "./ItemList.module.css";
 
 interface ItemListProps {
   node: BudgetNode;
+  overallTotal: number;
   parentIndex?: number;
   depth: number;
   direction: NavDirection;
@@ -36,6 +37,7 @@ const variants = {
 
 export function ItemList({
   node,
+  overallTotal,
   parentIndex,
   depth,
   direction,
@@ -71,19 +73,15 @@ export function ItemList({
           const amount = getAmount(cat.total);
 
           return (
-            <div
+            <button
               key={cat.id}
+              type="button"
               className={`${styles.row} ${isSelected ? styles.selected : ""}`}
               onClick={() => onSelect(cat)}
               onMouseEnter={() => onPreviewStart?.(cat)}
               onMouseLeave={() => onPreviewEnd?.()}
               onFocus={() => onPreviewStart?.(cat)}
               onBlur={() => onPreviewEnd?.()}
-              onKeyDown={(e) => {
-                if (e.key === "Enter" || e.key === " ") onSelect(cat);
-              }}
-              tabIndex={0}
-              role="button"
               aria-label={`${cat.title}: ${formatCurrency(amount)}`}
               aria-pressed={isSelected}
             >
@@ -92,9 +90,9 @@ export function ItemList({
               <span className={styles.leader} />
               <span className={styles.amount}>{formatCurrency(amount)}</span>
               <span className={styles.percent}>
-                {formatPercent(cat.total, node.total)}
+                {formatPercent(cat.total, overallTotal)}
               </span>
-            </div>
+            </button>
           );
         })}
       </motion.div>

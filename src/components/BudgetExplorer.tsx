@@ -16,8 +16,8 @@ const rootNode = budgetData as BudgetNode;
 export function BudgetExplorer() {
   const [income, setIncome] = useState(0);
   const [tickerItems] = useState(() => createLeafTickerSample(rootNode));
-  const [previewNode, setPreviewNode] = useState<BudgetNode | null>(null);
   const [selectedLeaf, setSelectedLeaf] = useState<BudgetNode | null>(null);
+  const [isAboutExpanded, setIsAboutExpanded] = useState(false);
   const donutRef = useRef<DonutChartHandle>(null);
   const { current, parent, drillDown, goBack, navigateToNode, depth, isRoot, direction } =
     useBudgetNavigation(rootNode);
@@ -54,9 +54,21 @@ export function BudgetExplorer() {
   );
 
   const centerAmount = isRoot && hasIncome ? representedSpending : getAmount(current.total);
-  const displayNode = previewNode ?? selectedLeaf ?? current;
-  const isPreviewingChild = previewNode !== null && previewNode.id !== current.id;
-  const isLeafSelected = selectedLeaf !== null;
+  const displayNode = selectedLeaf ?? current;
+  const aboutSummary = displayNode.desc;
+  const aboutDetails = displayNode.details ?? displayNode.desc;
+  const hasAdditionalDetails = aboutDetails !== aboutSummary;
+  const sourceLabel = useMemo(() => {
+    if (!displayNode.source) {
+      return null;
+    }
+
+    try {
+      return new URL(displayNode.source).hostname.replace(/^www\./, "");
+    } catch {
+      return displayNode.source;
+    }
+  }, [displayNode.source]);
 
   // Find the index of the current node in its parent's categories (for child coloring)
   const parentIndex = useMemo(() => {
@@ -65,32 +77,34 @@ export function BudgetExplorer() {
   }, [parent, current]);
 
   useEffect(() => {
-    setPreviewNode(null);
     setSelectedLeaf(null);
+  }, [current.id]);
+
+  useEffect(() => {
+    setIsAboutExpanded(false);
   }, [current.id]);
 
   const handleItemSelect = useCallback((child: BudgetNode) => {
     if (child.categories && child.categories.length > 0) {
       setSelectedLeaf(null);
-      setPreviewNode(null);
       donutRef.current?.selectNode(child);
       return;
     }
 
-    setPreviewNode(null);
     setSelectedLeaf((selected) => (selected?.id === child.id ? null : child));
   }, []);
 
-  const handlePreviewStart = useCallback((node: BudgetNode) => {
-    setPreviewNode(node);
-  }, []);
+  const handleDonutSelect = useCallback((child: BudgetNode) => {
+    if (child.categories && child.categories.length > 0) {
+      setSelectedLeaf(null);
+      drillDown(child);
+      return;
+    }
 
-  const handlePreviewEnd = useCallback(() => {
-    setPreviewNode(null);
-  }, []);
+    setSelectedLeaf((selected) => (selected?.id === child.id ? null : child));
+  }, [drillDown]);
 
   const handleTickerSelect = useCallback((item: (typeof tickerItems)[number]) => {
-    setPreviewNode(null);
     setSelectedLeaf(null);
     navigateToNode(item.parentId);
   }, [navigateToNode]);
@@ -107,12 +121,10 @@ export function BudgetExplorer() {
           node={current}
           parentIndex={parentIndex}
           depth={depth}
-          onSelect={drillDown}
+          onSelect={handleDonutSelect}
           centerAmount={centerAmount}
           centerLabel={isRoot ? (hasIncome ? "your contribution" : "total spending") : current.title}
           centerBreakdownItems={centerBreakdownItems}
-          onPreviewStart={handlePreviewStart}
-          onPreviewEnd={handlePreviewEnd}
         />
       </div>
 
@@ -134,24 +146,61 @@ export function BudgetExplorer() {
       </div>
 
       <div className={styles.contextCard} aria-live="polite">
-        <div className={styles.contextEyebrow}>
-          {isPreviewingChild
-            ? `About ${current.title}` 
-            : `About ${displayNode.title}` 
-          }
-        </div>
-        <AnimatePresence mode="wait" initial={false}>
-          <motion.div
-            key={displayNode.id}
-            className={styles.contextBody}
-            initial={{ opacity: 0, y: 6 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -6 }}
-            transition={{ duration: 0.2, ease: "easeOut" }}
-            title={displayNode.desc}
-          >
-            {displayNode.desc}
-          </motion.div>
+        <button
+          type="button"
+          className={styles.contextToggle}
+          onClick={() => setIsAboutExpanded((expanded) => !expanded)}
+          aria-expanded={isAboutExpanded}
+        >
+          <div className={styles.contextHeader}>
+            <div className={styles.contextEyebrow}>
+              {`About ${displayNode.title}`}
+            </div>
+            <span
+              className={`${styles.contextHintIcon} ${isAboutExpanded ? styles.contextHintIconExpanded : ""}`}
+              aria-hidden="true"
+            />
+          </div>
+          <AnimatePresence mode="wait" initial={false}>
+            <motion.div
+              key={displayNode.id}
+              className={styles.contextBody}
+              initial={{ opacity: 0, y: -6 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 6 }}
+              transition={{ duration: 0.2, ease: "easeOut" }}
+              title={aboutSummary}
+            >
+              {aboutSummary}
+            </motion.div>
+          </AnimatePresence>
+        </button>
+        <AnimatePresence initial={false}>
+          {isAboutExpanded ? (
+            <motion.div
+              className={styles.contextExpanded}
+              initial={{ opacity: 0, y: -4 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 4 }}
+              transition={{ duration: 0.18, ease: "easeOut" }}
+            >
+              {hasAdditionalDetails ? (
+                <div className={styles.contextDetails} title={aboutDetails}>
+                  {aboutDetails}
+                </div>
+              ) : null}
+              {displayNode.source ? (
+                <motion.a
+                  className={styles.contextSource}
+                  href={displayNode.source}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {sourceLabel ? `Source: ${sourceLabel}` : "View source data"}
+                </motion.a>
+              ) : null}
+            </motion.div>
+          ) : null}
         </AnimatePresence>
       </div>
 
@@ -165,13 +214,12 @@ export function BudgetExplorer() {
 
       <ItemList
         node={current}
+        overallTotal={rootNode.total}
         parentIndex={parentIndex}
         depth={depth}
         direction={direction}
         onSelect={handleItemSelect}
         getAmount={getAmount}
-        onPreviewStart={handlePreviewStart}
-        onPreviewEnd={handlePreviewEnd}
         selectedNodeId={selectedLeaf?.id}
       />
     </div>

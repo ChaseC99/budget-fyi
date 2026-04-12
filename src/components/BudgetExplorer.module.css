@@ -41,7 +41,7 @@
 }
 
 .backSlot {
-  width: 100%;
+  width: 100vw;
   max-width: 480px;
   min-height: 32px;
   display: flex;
@@ -55,12 +55,39 @@
   max-width: 480px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
   padding: 12px 14px;
   border: 1px solid #e5e7eb;
   border-radius: 14px;
   background: linear-gradient(180deg, #fcfcfd 0%, #f7f8fb 100%);
   box-shadow: 0 8px 24px rgb(15 23 42 / 0.04);
+}
+
+.contextToggle {
+  appearance: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  color: inherit;
+  cursor: pointer;
+}
+
+.contextToggle:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 4px;
+  border-radius: 10px;
+}
+
+.contextHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
 }
 
 .contextEyebrow {
@@ -71,6 +98,21 @@
   color: #6b7280;
 }
 
+.contextHintIcon {
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  margin-top: 2px;
+  border-right: 2px solid #2563eb;
+  border-bottom: 2px solid #2563eb;
+  transform: rotate(45deg);
+  transition: transform 0.18s ease;
+}
+
+.contextHintIconExpanded {
+  transform: rotate(-135deg);
+}
+
 .contextBody {
   font-size: 0.94rem;
   line-height: 1.45;
@@ -79,4 +121,30 @@
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+}
+
+.contextExpanded {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 4px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.contextDetails {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: #4b5563;
+}
+
+.contextSource {
+  align-self: flex-start;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+.contextSource:hover {
+  text-decoration: underline;
 }
