@@ -1,0 +1,31 @@
+---
+import type { GetStaticPaths } from "astro";
+import type { BudgetNode } from "../data/types";
+import budgetData from "../data/budget.json";
+import BudgetExplorerPage from "../layouts/BudgetExplorerPage.astro";
+
+export const getStaticPaths: GetStaticPaths = () => {
+  const rootNode = budgetData as BudgetNode;
+  const paths: string[] = [];
+
+  function walk(node: BudgetNode, segments: string[]) {
+    for (const child of node.categories ?? []) {
+      if (!child.categories?.length) {
+        continue;
+      }
+
+      const nextSegments = [...segments, child.id];
+      paths.push(nextSegments.join("/"));
+      walk(child, nextSegments);
+    }
+  }
+
+  walk(rootNode, []);
+
+  return paths.map((slug) => ({
+    params: { slug },
+  }));
+};
+---
+
+<BudgetExplorerPage />
