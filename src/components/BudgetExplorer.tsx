@@ -54,6 +54,12 @@ export function BudgetExplorer() {
   );
 
   const centerAmount = isRoot && hasIncome ? representedSpending : getAmount(current.total);
+  const selectedCenterItem = selectedLeaf
+    ? {
+        amount: getAmount(selectedLeaf.total),
+        label: selectedLeaf.title,
+      }
+    : undefined;
   const displayNode = selectedLeaf ?? current;
   const aboutSummary = displayNode.desc;
   const aboutDetails = displayNode.details ?? displayNode.desc;
@@ -122,6 +128,7 @@ export function BudgetExplorer() {
           onSelect={handleDonutSelect}
           centerAmount={centerAmount}
           centerLabel={isRoot ? (hasIncome ? "your contribution" : "total spending") : current.title}
+          selectedCenterItem={selectedCenterItem}
           centerBreakdownItems={centerBreakdownItems}
         />
       </div>

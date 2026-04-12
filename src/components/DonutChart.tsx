@@ -22,6 +22,7 @@ interface DonutChartProps {
   onSelect: (node: BudgetNode) => void;
   centerAmount: number;
   centerLabel: string;
+  selectedCenterItem?: { amount: number; label: string };
   centerBreakdownItems?: { label: string; value: number; tooltip?: string }[];
 }
 
@@ -110,7 +111,7 @@ function computeLayout(containerWidth: number): ChartLayout {
 
 function splitLabelToLineCount(title: string, targetLineCount: number): string[] {
   const normalized = title.trim().replace(/\s+/g, " ");
-  if (targetLineCount <= 1 || normalized.length <= 14) return [normalized];
+  if (targetLineCount <= 1) return [normalized];
 
   const words = normalized.split(" ");
   if (words.length === 1) return [normalized];
@@ -185,6 +186,7 @@ function fitDirectLabel(
   const availableHeight = radialThickness - 6;
   const normalized = title.trim().replace(/\s+/g, " ");
   const words = normalized.split(" ");
+  const canFitOnOneLine = normalized.length <= 24;
   const prefersThreeLines = normalized.length > 18 || words.length >= 3;
   const fontSizes: number[] = [];
 
@@ -201,7 +203,11 @@ function fitDirectLabel(
   }
 
   for (const fontSize of fontSizes) {
-    const lineCounts = prefersThreeLines ? [3, 2] : [2, 3];
+    const lineCounts = prefersThreeLines
+      ? [3, 2]
+      : canFitOnOneLine
+        ? [1, 2, 3]
+        : [2, 1, 3];
 
     for (const lineCount of lineCounts) {
       const lines = splitLabelToLineCount(title, lineCount);
@@ -256,6 +262,7 @@ export const DonutChart = forwardRef<DonutChartHandle, DonutChartProps>(
       onSelect,
       centerAmount,
       centerLabel,
+      selectedCenterItem,
       centerBreakdownItems,
     },
     ref,
@@ -509,6 +516,7 @@ export const DonutChart = forwardRef<DonutChartHandle, DonutChartProps>(
         <CenterLabel
           amount={centerAmount}
           label={centerLabel}
+          selectedItem={selectedCenterItem}
           breakdownItems={centerBreakdownItems}
         />
       </div>
