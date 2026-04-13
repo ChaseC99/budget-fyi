@@ -1,40 +1,67 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useCallback } from "react";
+import { computeFederalTax } from "../lib/tax";
 import styles from "./IncomeInput.module.css";
 
 interface IncomeInputProps {
-  onIncomeChange: (income: number) => void;
+  onTaxChange: (tax: number) => void;
 }
 
-const STORAGE_KEY = "budget-fyi-income";
+type InputMode = "income" | "taxBill";
 
-export function IncomeInput({ onIncomeChange }: IncomeInputProps) {
-  const [inputValue, setInputValue] = useState("");
+function formatCurrencyValue(value: number): string {
+  return value > 0 ? value.toLocaleString("en-US") : "";
+}
 
-  useEffect(() => {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    if (saved) {
-      const parsed = parseInt(saved, 10);
-      if (!isNaN(parsed) && parsed > 0) {
-        onIncomeChange(parsed);
-        setInputValue(parsed.toLocaleString("en-US"));
-      }
-    }
-  }, [onIncomeChange]);
+export function IncomeInput({ onTaxChange }: IncomeInputProps) {
+  const [mode, setMode] = useState<InputMode>("income");
+  const [incomeValue, setIncomeValue] = useState("");
+  const [taxBillValue, setTaxBillValue] = useState("");
 
-  const handleChange = useCallback(
+  const handleIncomeChange = useCallback(
     (e: React.ChangeEvent<HTMLInputElement>) => {
       const raw = e.target.value.replace(/[^0-9]/g, "");
       const num = parseInt(raw, 10) || 0;
-      setInputValue(num > 0 ? num.toLocaleString("en-US") : "");
-      onIncomeChange(num);
-      if (num > 0) {
-        localStorage.setItem(STORAGE_KEY, String(num));
-      } else {
-        localStorage.removeItem(STORAGE_KEY);
+
+      setIncomeValue(formatCurrencyValue(num));
+      if (mode === "income") {
+        onTaxChange(computeFederalTax(num));
       }
     },
-    [onIncomeChange],
+    [mode, onTaxChange],
   );
+
+  const handleTaxBillChange = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      const raw = e.target.value.replace(/[^0-9]/g, "");
+      const num = parseInt(raw, 10) || 0;
+
+      setTaxBillValue(formatCurrencyValue(num));
+      if (mode === "taxBill") {
+        onTaxChange(num);
+      }
+    },
+    [mode, onTaxChange],
+  );
+
+  const handleModeToggle = useCallback(() => {
+    const nextMode: InputMode = mode === "income" ? "taxBill" : "income";
+    const nextIncome = parseInt(incomeValue.replace(/[^0-9]/g, ""), 10) || 0;
+    const nextTaxBill = parseInt(taxBillValue.replace(/[^0-9]/g, ""), 10) || 0;
+
+    setMode(nextMode);
+    onTaxChange(nextMode === "income" ? computeFederalTax(nextIncome) : nextTaxBill);
+  }, [incomeValue, mode, onTaxChange, taxBillValue]);
+
+  const isIncomeMode = mode === "income";
+  const inputValue = isIncomeMode ? incomeValue : taxBillValue;
+  const placeholder = isIncomeMode ? "100,000" : "15,000";
+  const ariaLabel = isIncomeMode ? "Enter your annual income" : "Enter your exact federal tax bill";
+  const helperText = isIncomeMode
+    ? "Enter your income to estimate your share of the bill."
+    : "Enter your exact tax bill to see your share of the bill.";
+  const toggleText = isIncomeMode
+    ? "or enter your exact tax bill"
+    : "or estimate taxes from your income";
 
   return (
     <div className={styles.container}>
@@ -45,12 +72,17 @@ export function IncomeInput({ onIncomeChange }: IncomeInputProps) {
           type="text"
           inputMode="numeric"
           value={inputValue}
-          onChange={handleChange}
-          placeholder="100,000"
-          aria-label="Enter your annual income"
+          onChange={isIncomeMode ? handleIncomeChange : handleTaxBillChange}
+          placeholder={placeholder}
+          aria-label={ariaLabel}
         />
       </div>
-      <div className={styles.helperText}>Enter your income to see your share of the bill.</div>
+      <div className={styles.helperText}>
+        {helperText}
+        <button type="button" className={styles.modeToggle} onClick={handleModeToggle}>
+          {toggleText}
+        </button>
+      </div>
     </div>
   );
 }

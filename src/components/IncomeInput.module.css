@@ -65,6 +65,26 @@
   text-align: center;
 }
 
+.modeToggle {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  font: inherit;
+  font-size: 0.85rem;
+  color: #2563eb;
+  cursor: pointer;
+}
+
+.modeToggle:hover {
+  color: #1d4ed8;
+}
+
+.modeToggle:focus-visible {
+  outline: 2px solid #93c5fd;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
 @media (max-width: 480px) {
   .container {
     gap: 8px;

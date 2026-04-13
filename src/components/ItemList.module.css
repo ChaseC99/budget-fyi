@@ -12,7 +12,7 @@
 .row {
   appearance: none;
   display: grid;
-  grid-template-columns: auto minmax(0, 2.5fr) minmax(12px, 1fr) auto auto;
+  grid-template-columns: auto minmax(0, 1fr) auto auto;
   column-gap: 8px;
   width: 100%;
   min-width: 0;
@@ -57,22 +57,29 @@
   margin-top: 0.35rem;
 }
 
+.labelGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
 .title {
   min-width: 0;
   font-size: 0.875rem;
   color: #1a1a2e;
   line-height: 1.35;
-  white-space: normal;
+  white-space: nowrap;
   overflow: hidden;
-  text-overflow: unset;
-  overflow-wrap: anywhere;
+  text-overflow: ellipsis;
 }
 
 .leader {
+  flex: 1 1 auto;
   border-bottom: 1px dotted #d1d5db;
   min-width: 0;
-  align-self: start;
-  margin-top: 0.75rem;
+  align-self: center;
+  transform: translateY(1px);
 }
 
 .amount {

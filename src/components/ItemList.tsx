@@ -86,8 +86,10 @@ export function ItemList({
               aria-pressed={isSelected}
             >
               <span className={styles.dot} style={{ backgroundColor: color }} />
-              <span className={styles.title}>{cat.title}</span>
-              <span className={styles.leader} />
+              <span className={styles.labelGroup}>
+                <span className={styles.title}>{cat.title}</span>
+                <span className={styles.leader} />
+              </span>
               <span className={styles.amount}>{formatCurrency(amount)}</span>
               <span className={styles.percent}>
                 {formatPercent(cat.total, overallTotal)}

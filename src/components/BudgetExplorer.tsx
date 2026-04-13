@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "motion/react";
 import type { BudgetNode } from "../data/types";
 import budgetData from "../data/budget.json";
 import { useBudgetNavigation } from "../hooks/useBudgetNavigation";
-import { computeFederalTax, computeUserShare, computeUserShareOfTotal } from "../lib/tax";
+import { computeUserShare, computeUserShareOfTotal } from "../lib/tax";
 import { DonutChart, type DonutChartHandle } from "./DonutChart";
 import { ItemList } from "./ItemList";
 import { BackNav } from "./BackNav";
@@ -14,7 +14,7 @@ import styles from "./BudgetExplorer.module.css";
 const rootNode = budgetData as BudgetNode;
 
 export function BudgetExplorer() {
-  const [income, setIncome] = useState(0);
+  const [userTax, setUserTax] = useState(0);
   const [tickerItems] = useState(() => createLeafTickerSample(rootNode));
   const [selectedLeaf, setSelectedLeaf] = useState<BudgetNode | null>(null);
   const [isAboutExpanded, setIsAboutExpanded] = useState(false);
@@ -22,11 +22,10 @@ export function BudgetExplorer() {
   const { current, parent, drillDown, goBack, navigateToNode, depth, isRoot, direction } =
     useBudgetNavigation(rootNode);
 
-  const hasIncome = income > 0;
-  const userTax = useMemo(() => (hasIncome ? computeFederalTax(income) : 0), [income, hasIncome]);
+  const hasContribution = userTax > 0;
   const representedSpending = useMemo(
-    () => (hasIncome ? computeUserShareOfTotal(userTax) : 0),
-    [userTax, hasIncome],
+    () => (hasContribution ? computeUserShareOfTotal(userTax) : 0),
+    [userTax, hasContribution],
   );
   const additionalDebt = useMemo(
     () => Math.max(0, representedSpending - userTax),
@@ -34,7 +33,7 @@ export function BudgetExplorer() {
   );
   const centerBreakdownItems = useMemo(
     () =>
-      isRoot && hasIncome
+      isRoot && hasContribution
         ? [
             { label: "Taxes", value: userTax },
             {
@@ -45,15 +44,15 @@ export function BudgetExplorer() {
             },
           ]
         : undefined,
-    [additionalDebt, hasIncome, isRoot, userTax],
+    [additionalDebt, hasContribution, isRoot, userTax],
   );
 
   const getAmount = useCallback(
-    (total: number) => (hasIncome ? computeUserShare(userTax, total) : total),
-    [userTax, hasIncome],
+    (total: number) => (hasContribution ? computeUserShare(userTax, total) : total),
+    [userTax, hasContribution],
   );
 
-  const centerAmount = isRoot && hasIncome ? representedSpending : getAmount(current.total);
+  const centerAmount = isRoot && hasContribution ? representedSpending : getAmount(current.total);
   const selectedCenterItem = selectedLeaf
     ? {
         amount: getAmount(selectedLeaf.total),
@@ -117,7 +116,7 @@ export function BudgetExplorer() {
 
   return (
     <div className={styles.explorer}>
-      <IncomeInput onIncomeChange={setIncome} />
+      <IncomeInput onTaxChange={setUserTax} />
 
       <div className={styles.chartSlot}>
         <DonutChart
@@ -127,7 +126,7 @@ export function BudgetExplorer() {
           depth={depth}
           onSelect={handleDonutSelect}
           centerAmount={centerAmount}
-          centerLabel={isRoot ? (hasIncome ? "your contribution" : "total spending") : current.title}
+          centerLabel={isRoot ? (hasContribution ? "your contribution" : "total spending") : current.title}
           selectedCenterItem={selectedCenterItem}
           centerBreakdownItems={centerBreakdownItems}
         />
