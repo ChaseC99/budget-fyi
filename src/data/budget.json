@@ -3,7 +3,7 @@
   "title": "U.S. Federal Budget",
   "desc": "How the government spent your money in 2025",
   "details": "This is the full picture of how the federal government spent money in 2025. It brings the biggest parts of the budget together in one place so you can see where the money went. If you enter your income, the app also gives you a rough estimate of how much of that spending your taxes supported.",
-  "total": 7188900000000,
+  "total": 7010000000000,
   "source": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/",
   "categories": [
     {
@@ -11,151 +11,194 @@
       "title": "Health",
       "desc": "Federal health spending, led by Medicare, Medicaid, marketplace aid, and public health agencies",
       "total": 1975600000000,
+      "details": "This is the big bucket for federal health spending. It includes programs like Medicare, Medicaid, marketplace subsidies, and public health agencies. Most of the money here goes toward health coverage and medical care, while a smaller share supports research, oversight, and public health work.",
       "categories": [
         {
           "id": "medicare",
           "title": "Medicare",
           "desc": "Insurance benefits and administration for seniors and people with qualifying disabilities",
-          "total": 996700000000,
+          "source": "https://fiscaldata.treasury.gov/static-data/published-reports/mts/MonthlyTreasuryStatement_202509.pdf",
+          "details": "This is the federal health insurance program for older adults and some people with disabilities. It helps pay for hospital stays, doctor visits, prescription drugs, and other care through different parts of the program. The total cost is offset by about -$200 billion in premiums, state payments, drug manufacturer rebates, and other offsets that reduce the net cost to taxpayers.",
+          "total": 997000000000,
           "categories": [
             {
               "id": "medicare-part-a",
-              "title": "Part A",
+              "title": "Hospital Insurance (Part A)",
               "desc": "Hospital insurance and inpatient care",
-              "total": 398680000000,
-              "details": "This is the money the federal government spends on hospital insurance and inpatient care. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
+              "source": "https://www.cms.gov/oact/tr/2025",
+              "total": 457000000000,
+              "details": "Pays for inpatient hospital stays, skilled nursing facility care (limited time), hospice, and some home health. If a patient breaks a hip and needs surgery plus 2 weeks of rehab at a nursing facility, Part A covers that."
             },
             {
               "id": "medicare-part-b",
-              "title": "Part B",
+              "title": "Medical Insurance (Part B)",
               "desc": "Physician, outpatient, and related services",
-              "total": 448515000000,
-              "details": "This is the money the federal government spends on physician, outpatient, and related services. It pays for the day-to-day work needed to keep this part of government or the program running. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
+              "total": 569000000000,
+              "source": "https://www.cms.gov/oact/tr/2025",
+              "details": "Pays for doctor visits, outpatient hospital care, lab tests, preventive screenings (mammograms, colonoscopies), durable medical equipment (wheelchairs, oxygen), and physician-administered drugs (like chemotherapy infusions)."
             },
             {
               "id": "medicare-part-d",
-              "title": "Part D",
+              "title": "Prescription Drug Benefit (Part D)",
               "desc": "Prescription drug benefit",
-              "total": 129571000000,
+              "source": "https://www.cms.gov/oact/tr/2025",
+              "total": 157000000000,
               "details": "This is the money the federal government spends on prescription drug benefit. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
             },
             {
               "id": "medicare-admin",
               "title": "Administration & Other",
               "desc": "Program administration and other Medicare spending",
-              "total": 19934000000,
-              "details": "This is the money needed to run Medicare behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
+              "total": 15000000000,
+              "source": "https://www.cms.gov/oact/tr/2025",
+              "details": "This is the money needed to run Medicare behind the scenes. It pays for staff, computer systems, oversight, customer service, Medicare Integrity Program, and other behind-the-scenes work. "
             }
-          ],
-          "details": "This is the federal health insurance program for older adults and some people with disabilities. It helps pay for hospital stays, doctor visits, prescription drugs, and other care through different parts of the program. The total here depends mostly on how many people are enrolled, what care they use, and how much that care costs."
+          ]
         },
         {
           "id": "medicaid",
           "title": "Medicaid",
           "desc": "Joint federal-state health coverage for low-income families, seniors, and people with disabilities",
-          "total": 734500000000,
+          "details": "Federal matching funds sent to states to reimburse them for covered medical services and administration. This pays for health coverage for ~70 million enrollees. The numbers in this section are estimates of the federal share of Medicaid spending, which is about 60% of the total cost.",
+          "source": "https://fiscaldata.treasury.gov/static-data/published-reports/mts/MonthlyTreasuryStatement_202509.pdf",
+          "total": 669000000000,
           "categories": [
+            {
+              "id": "medicaid-mco",
+              "title": "Managed Care",
+              "desc": "Medicaid managed care payments to health plans",
+              "source": "https://www.healthmanagement.com/blog/tracking-medicaids-growth-ffy-2025-spending-and-t-msis-data-provide-insights-on-managed-care-spending/",
+              "total": 353400000000,
+              "details": "Instead of paying doctors and hospitals directly for every single service, the federal government pays a private health insurance company a fixed monthly amount for each Medicaid enrollee. The insurance company then handles all the care for that person.  The theory is that a health plan has an incentive to keep people healthy (preventive care, managing chronic conditions), therefore reducing costs and improving care because they pocket the savings if enrollees stay out of the hospital."
+            },
             {
               "id": "medicaid-acute",
               "title": "Acute Care",
-              "desc": "Hospital, physician, and other acute-care services",
-              "total": 403975000000,
-              "details": "This is the money the federal government spends on hospital, physician, and other acute-care services. It pays for the day-to-day work needed to keep this part of government or the program running. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
+              "desc": "Fee-for-Service (FFS) Acute Care",
+              "source": "https://www.congress.gov/crs-product/IF10322",
+              "total": 106000000000,
+              "details": "The government pays a provider directly for each specific service delivered. One doctor visit = one payment. One surgery = one payment. No middleman health plan involved."
             },
             {
               "id": "medicaid-ltss",
               "title": "Long Term Care",
-              "desc": "Long-term services and supports",
-              "total": 205660000000,
-              "details": "This is the money the federal government spends on long-term services and supports. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
+              "desc": "Long-term services and supports (LTSS)",
+              "source": "https://www.congress.gov/crs-product/R42640",
+              "total": 118000000000,
+              "details": "Care for people who can't fully care for themselves due to age, disability, or chronic illness. This includes nursing facility and home- and community-based services. Medicare does not cover long-term nursing home stays beyond 100 days, so Medicaid is the primary payer of long-term care in the US."
             },
             {
               "id": "medicaid-duals",
-              "title": "Dual Eligibles & Premiums",
+              "title": "Dual Eligibles",
               "desc": "Medicare premiums and other support for dual-eligible enrollees",
-              "total": 73450000000,
-              "details": "This is the money the federal government spends on medicare premiums and other support for dual-eligible enrollees. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
+              "source": "https://www.macpac.gov/medicaid-101/spending/",
+              "total": 62400000000,
+              "details": "About 12 million Americans are enrolled in both Medicare and Medicaid simultaneously. Medicare is their primary insurance (it pays first), but it still has significant out-of-pocket costs — premiums, deductibles, and copays. Medicaid covers those gaps. Mostly elderly people who outlived their savings, and non-elderly people with significant disabilities (like those on SSI). They represent about 15% of Medicaid enrollment but a disproportionately large share of spending because they tend to be the sickest and most expensive enrollees."
             },
             {
               "id": "medicaid-admin",
               "title": "Administration & Other",
               "desc": "State administration, program integrity, and other Medicaid costs",
-              "total": 51415000000,
-              "details": "This is the money needed to run Medicaid behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
+              "total": 25000000000,
+              "source": "https://www.macpac.gov/wp-content/uploads/2026/01/EXHIBIT-16.-Medicaid-Spending-by-State-Category-and-Source-of-Funds-FY-2024.pdf",
+              "details": "This is the money needed to run Medicaid behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. Typically matched by the states at 50%."
             }
-          ],
-          "details": "This is the joint federal-state health coverage program for people with low incomes and many people with disabilities or long-term care needs. It helps pay for doctor visits, hospital care, nursing care, and other medical services. The total here depends mostly on enrollment, the mix of services people use, and the cost of care."
+          ]
         },
         {
           "id": "marketplace-subsidies",
           "title": "Marketplace Subsidies",
           "desc": "ACA exchange subsidies that lower premiums and out-of-pocket costs",
+          "details": "This part of the budget covers ACA exchange subsidies that lower premiums and out-of-pocket costs. That includes things like Premium Tax Credits, Cost-Sharing Reductions, and Basic Health Program & Other.",
           "total": 137100000000,
           "categories": [
             {
               "id": "aca-ptc",
               "title": "Premium Tax Credits",
               "desc": "Advance premium tax credits for exchange plans",
-              "total": 126132000000,
-              "details": "This is the money the federal government spends on advance premium tax credits for exchange plans. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
+              "source": "https://www.cbo.gov/publication/62022",
+              "total": 107000000000,
+              "details": "The core subsidy. Paid directly to insurers each month on behalf of enrollees. Covers the gap between what a plan costs and what a household can afford to pay (capped as a % of income). In 2025, 22.4 million enrollees (92% of all marketplace participants) received advance premium tax credits."
             },
             {
               "id": "aca-csr",
               "title": "Cost-Sharing Reductions",
               "desc": "Cost-sharing assistance for eligible enrollees",
+              "source": "https://www.congress.gov/crs-product/R44425",
               "total": 6855000000,
-              "details": "This is the money the federal government spends on cost-sharing assistance for eligible enrollees. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
+              "details": "Reduces what low-income silver-plan enrollees pay out-of-pocket (deductibles, copays, coinsurance). Available to households earning 100-250% of the federal poverty level (FPL) who enroll in silver plans. CSRs help defray cost-sharing costs (deductibles, copays, and coinsurance) for enrollees in silver plans — separate from PTCs, which subsidize premiums."
             },
             {
               "id": "aca-bhp",
               "title": "Basic Health Program & Other",
               "desc": "Basic Health Program payments and related marketplace support",
+              "source": "https://www.cbo.gov/system/files/2026-02/60523-2026-02-premium-tax-credit.pdf",
               "total": 4113000000,
-              "details": "This bucket groups smaller basic health program & other programs that still add up to real spending. It usually pulls together smaller costs in this area that are real parts of the budget even if they are not well known on their own. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
+              "details": "Lets states create a coverage option for people earning 138–200% FPL who would otherwise be eligible for marketplace plans. Federal funding to each state equals 95% of the amount in subsidies for which enrollees would otherwise have been eligible through a marketplace."
             }
-          ],
-          "details": "This part of the budget covers ACA exchange subsidies that lower premiums and out-of-pocket costs. That includes things like Premium Tax Credits, Cost-Sharing Reductions, and Basic Health Program & Other. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
+          ]
         },
         {
-          "id": "other-health",
-          "title": "Other Health Programs",
+          "id": "health-agencies",
+          "title": "Other Health Agencies",
           "desc": "Public health agencies, research, mental health programs, and Tribal health services",
-          "total": 85800000000,
+          "total": 96334000000,
           "categories": [
             {
               "id": "nih",
               "title": "NIH",
-              "desc": "Biomedical research through the National Institutes of Health",
-              "total": 33462000000,
-              "details": "This is the money the federal government spends on biomedical research through the national institutes of health. In practice, it supports research, testing, labs, missions, or technology work in this area. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
+              "desc": "National Institutes of Health biomedical research",
+              "source": "https://fiscaldata.treasury.gov/static-data/published-reports/mts/MonthlyTreasuryStatement_202509.pdf",
+              "total": 47341000000,
+              "details": "This pays for research grants, labs, and clinical trials. It supports studies that led to new treatments for cancer, heart disease, and diabetes so patients nationwide can access better medicines."
             },
             {
               "id": "cdc",
               "title": "CDC",
-              "desc": "Disease surveillance, preparedness, and prevention",
-              "total": 9438000000,
-              "details": "This is the money the federal government spends on disease surveillance, preparedness, and prevention. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
+              "desc": "Center for Disease Control surveillance, preparedness, and prevention",
+              "source": "https://fiscaldata.treasury.gov/static-data/published-reports/mts/MonthlyTreasuryStatement_202509.pdf",
+              "total": 11405000000,
+              "details": "The CDC does disease tracking, vaccine programs, and outbreak response teams. It helps local health departments stop flu, COVID, and other illnesses before they spread to families."
             },
             {
               "id": "indian-health",
               "title": "Indian Health Service",
               "desc": "Health services for Tribal communities",
-              "total": 6864000000,
-              "details": "This is the money the federal government spends on health services for tribal communities. It pays for the day-to-day work needed to keep this part of government or the program running. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
+              "source": "https://fiscaldata.treasury.gov/static-data/published-reports/mts/MonthlyTreasuryStatement_202509.pdf",
+              "total": 8344000000,
+              "details": "This pays for hospitals, clinics, and health services for American Indian and Alaska Native communities. It covers check-ups, emergency care, and diabetes treatment so patients can get care closer to home."
             },
             {
               "id": "samhsa",
               "title": "SAMHSA",
-              "desc": "Mental health and substance-use services",
-              "total": 7722000000,
-              "details": "This is the money the federal government spends on mental health and substance-use services. It pays for the day-to-day work needed to keep this part of government or the program running. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
+              "desc": "Substance Abuse and Mental Health Services Administration",
+              "source": "https://www.samhsa.gov/sites/default/files/samhsa-fy-2025-cj.pdf",
+              "total": 8100000000,
+              "details": "This pays for mental health and substance use treatment programs. It supports counseling and recovery services so people with addiction or depression can get help in their communities."
             },
             {
-              "id": "other-hhs-health",
-              "title": "Other Public Health",
-              "desc": "Other HHS public health agencies and programs",
-              "total": 28314000000,
-              "details": "This bucket groups smaller public health programs that still add up to real spending. It usually pulls together smaller costs in this area that are real parts of the budget even if they are not well known on their own. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
+              "id": "fda",
+              "title": "FDA",
+              "desc": "Food and Drug Administration",
+              "source": "https://www.fda.gov/media/176923/download#:~:text=The%20FY%202025%20Budget%20provides,$3.5%20billion%20in%20user%20fees.",
+              "total": 3700000000,
+              "details": "This pays for food and drug safety inspections and reviews. It ensures medicines and groceries on store shelves meet safety standards and protect families from unsafe products. An additional $3.5 billion in user fees comes from the industries the FDA regulates, which helps fund their work without relying solely on taxpayer dollars."
+            },
+            {
+              "id": "hrsa",
+              "title": "HRSA",
+              "desc": "Health Resources and Services Administration",
+              "source": "https://www.hrsa.gov/about/budget",
+              "total": 17075000000,
+              "details": "This pays for community health centers and workforce training. It helps underserved areas have doctors and nurses for prenatal care and chronic disease management."
+            },
+            {
+              "id": "ahrq",
+              "title": "AHRQ",
+              "desc": "Agency for Healthcare Research and Quality",
+              "source": "https://www.congress.gov/crs-product/R44136",
+              "total": 369000000,
+              "details": "The federal agency charged with supporting research designed to improve the quality of health care, increase the efficiency of its delivery, and broaden access to health services. In addition, AHRQ is required to disseminate its research findings to health care providers, payers, and consumers, among others"
             }
           ],
           "details": "This part of the budget covers public health agencies, research, mental health programs, and tribal health services. That includes things like NIH, CDC, and Indian Health Service, and other related programs. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
@@ -163,75 +206,116 @@
         {
           "id": "chip",
           "title": "CHIP",
-          "desc": "Federal support that helps states insure children above Medicaid eligibility",
-          "total": 21500000000,
+          "desc": "Children's Health Insurance Program",
+          "details": "Federal support that helps states insure children above Medicaid eligibility. States contribute an additional $6 billion. This covers around 9.5 million children.",
+          "source": "https://www.macpac.gov/topic/chip/",
+          "total": 17300000000,
           "categories": [
             {
               "id": "chip-grants",
               "title": "State CHIP Grants",
               "desc": "Federal matching grants for state CHIP coverage",
-              "total": 20640000000,
-              "details": "This is the money the federal government spends on federal matching grants for state CHIP coverage. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
+              "source": "https://www.medicaid.gov/chip/financing",
+              "total": 16500000000,
+              "details": "The core of CHIP: federal matching dollars states use to pay doctors, hospitals, and health plans for children's care. Covers checkups, vaccines, dental, vision, emergency care, and prescriptions. It covers around 9.5 million children in families that earn too much for Medicaid but still need help affording coverage."
             },
             {
               "id": "chip-quality",
               "title": "Quality & Outreach",
               "desc": "Quality, outreach, and enrollment support",
-              "total": 430000000,
-              "details": "This is the money the federal government spends on quality, outreach, and enrollment support. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
+              "source": "https://www.congress.gov/crs-product/R43949",
+              "total": 48000000,
+              "details": "Discretionary grants to states, nonprofits, and community organizations to find and enroll eligible children who aren't yet covered. The Bipartisan Budget Act of 2018 provided $48M for FY2024–2027 (~$12M/year)."
             },
             {
               "id": "chip-admin",
               "title": "Administration",
               "desc": "Program administration and oversight",
-              "total": 430000000,
-              "details": "This is the money needed to run CHIP behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
+              "source": "https://www.macpac.gov/news/macpac-releases-latest-edition-of-macstats-medicaid-and-chip-data-book/",
+              "total": 870000000,
+              "details": "This is the money needed to run CHIP behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. An additional $350 million came from the states."
             }
-          ],
-          "details": "This part of the budget covers federal support that helps states insure children above medicaid eligibility. That includes things like State CHIP Grants, Quality & Outreach, and Administration. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
+          ]
         }
-      ],
-      "details": "This is the big bucket for federal health spending. It includes programs like Medicare, Medicaid, marketplace subsidies, and public health agencies. Most of the money here goes toward health coverage and medical care, while a smaller share supports research, oversight, and public health work."
+      ]
     },
     {
       "id": "social-security",
       "title": "Social Security",
       "desc": "Cash benefits for retirees, survivors, and disabled workers through the Social Security system",
-      "total": 1580700000000,
+      "source": "https://www.ssa.gov/finance/2025/Highlights%20of%20Financial%20Position.pdf",
+      "total": 1645700000000,
       "categories": [
         {
           "id": "oasi",
           "title": "Old-Age & Survivors Insurance",
           "desc": "Monthly benefits for retirees plus survivor support for spouses, children, and other family members",
-          "total": 1413200000000,
+          "source": "https://www.ssa.gov/finance/2025/Highlights%20of%20Financial%20Position.pdf",
+          "total": 1423200000000,
           "categories": [
             {
               "id": "oasi-retired",
               "title": "Retired Workers",
-              "desc": "Monthly retirement benefits for retired workers",
-              "total": 1116428000000,
+              "desc": "Monthly checks for retired workers",
+              "total": 1332900000000,
+              "source": "https://www.ssa.gov/OACT/FACTS/fs2025_12.pdf",
               "details": "This is the part of Social Security most people think of as retirement benefits. About 50 million retired workers get a check every month. The amount someone receives depends mostly on how much they earned over their working years and the age when they start claiming benefits."
             },
             {
-              "id": "oasi-family",
-              "title": "Spouses & Children",
-              "desc": "Benefits for spouses and dependent children",
-              "total": 98924000000,
-              "details": "This is the money the federal government spends on benefits for spouses and dependent children. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The amount spent here mostly depends on how many people qualify and the size of the monthly benefits they receive."
+              "id": "oasi-spouses-retired",
+              "title": "Spouses of Retired Workers",
+              "desc": "Monthly benefits for spouses of retired workers",
+              "total": 24600000000,
+              "source": "https://www.ssa.gov/OACT/FACTS/fs2025_12.pdf",
+              "details": "Monthly checks to about 2.1 million spouses (mostly wives who earned less or didn't work outside the home). This helps couples where one partner had little or no earnings history still have household income in retirement."
             },
             {
-              "id": "oasi-survivors",
-              "title": "Survivor Benefits",
-              "desc": "Benefits for surviving spouses and children",
-              "total": 183716000000,
-              "details": "This is the money the federal government spends on benefits for surviving spouses and children. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The amount spent here mostly depends on how many people qualify and the size of the monthly benefits they receive."
+              "id": "oasi-children-retired",
+              "title": "Children of Retired Workers",
+              "desc": "Monthly benefits for children of retired workers",
+              "total": 8400000000,
+              "source": "https://www.ssa.gov/OACT/FACTS/fs2025_12.pdf",
+              "details": "Monthly checks go to minor or disabled adult children of retirees, including cases like grandparents raising grandchildren or adult children disabled since childhood. Approximately 735,000 recipients."
+            },
+            {
+              "id": "oasi-survivors-aged-parents",
+              "title": "Survivors - Aged Widow(er)s and Parents",
+              "desc": "Monthly survivor benefits for aged widow(er)s and parents",
+              "total": 81200000000,
+              "source": "https://www.ssa.gov/OACT/FACTS/fs2025_12.pdf",
+              "details": "Monthly checks go to surviving spouses, mostly widows age 60+, helping prevent a total loss of household income after a worker dies. Approximately 3.5 million recipients."
+            },
+            {
+              "id": "oasi-survivors-children",
+              "title": "Survivors - Children of Deceased Workers",
+              "desc": "Monthly survivor benefits for children of deceased workers",
+              "total": 28700000000,
+              "source": "https://www.ssa.gov/OACT/FACTS/fs2025_12.pdf",
+              "details": "Monthly checks go to approximately 2.0 million recipients children whose parent died, supporting housing, food, and school supplies."
+            },
+            {
+              "id": "oasi-survivors-widowed-parents",
+              "title": "Survivors - Widowed Mothers/Fathers",
+              "desc": "Monthly survivor benefits for widowed mothers and fathers",
+              "total": 1600000000,
+              "source": "https://www.ssa.gov/OACT/FACTS/fs2025_12.pdf",
+              "details": "Monthly checks go to surviving parents caring for a deceased worker's child under 16, allowing reduced work hours or caregiving at home. Approximately 99,000 recipients."
+            },
+            {
+              "id": "oasi-survivors-disabled-widows",
+              "title": "Survivors - Disabled Widow(er)s",
+              "desc": "Monthly survivor benefits for disabled widow(er)s ages 50-59",
+              "total": 2200000000,
+              "source": "https://www.ssa.gov/OACT/FACTS/fs2025_12.pdf",
+              "details": "Monthly checks go to disabled surviving spouses ages 50-59, supporting people facing both bereavement and disability. Approximately 191,000 recipients."
             },
             {
               "id": "oasi-admin",
-              "title": "Administration",
-              "desc": "Administrative costs of the retirement and survivors program",
-              "total": 14132000000,
-              "details": "This is the money needed to run Old-Age & Survivors Insurance behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
+              "title": "OASI Administrative Costs",
+              "desc": "SSA operations and claims processing for OASI",
+              "total": 5600000000,
+              "source": "https://www.ssa.gov/finance/2025/Highlights%20of%20Financial%20Position.pdf",
+              "details": "This covers SSA staff, field offices, call center operations, IT systems, and claims processing. SSA operating expenses across programs are about 0.8% of benefits paid, one of the lowest admin-cost ratios of any large benefit program."
             }
           ],
           "details": "This part of the budget covers monthly benefits for retirees plus survivor support for spouses, children, and other family members. That includes things like Retired Workers, Spouses & Children, and Survivor Benefits, and other related programs. The amount spent here mostly depends on how many people qualify and the size of the monthly benefits they receive."
@@ -240,31 +324,93 @@
           "id": "disability-insurance",
           "title": "Disability Insurance",
           "desc": "Income support for workers and dependents when a qualifying disability prevents work",
-          "total": 167500000000,
+          "source": "https://www.ssa.gov/finance/2025/Highlights%20of%20Financial%20Position.pdf",
+          "total": 156800000000,
           "categories": [
             {
               "id": "di-disabled-workers",
               "title": "Disabled Workers",
               "desc": "Benefits for disabled insured workers",
-              "total": 137350000000,
-              "details": "This is the money the federal government spends on benefits for disabled insured workers. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The amount spent here mostly depends on how many people qualify and the size of the monthly benefits they receive."
+              "source": "https://www.ssa.gov/oact/tr/2025/III_A_cyoper.html",
+              "total": 148000000000,
+              "details": "Monthly cash payments to ~7.2 million disabled workers. This is the primary income source for people unable to work due to a serious medical condition — paying rent, utilities, food, and medication."
             },
             {
               "id": "di-dependents",
               "title": "Dependents",
               "desc": "Benefits for spouses and children of disabled workers",
-              "total": 28475000000,
-              "details": "This is the money the federal government spends on benefits for spouses and children of disabled workers. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The amount spent here mostly depends on how many people qualify and the size of the monthly benefits they receive."
+              "source": "https://www.ssa.gov/policy/docs/statcomps/di_asr/2024/sect01a.html",
+              "total": 7800000000,
+              "details": "Monthly checks go to spouses and children of disabled workers, providing financial support when a worker is unable to work due to a disability."
             },
             {
               "id": "di-admin",
               "title": "Administration",
               "desc": "Administrative costs of the disability insurance program",
-              "total": 1675000000,
-              "details": "This is the money needed to run Disability Insurance behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
+              "source": "https://www.ssa.gov/news/en/press/releases/2025-06-18.html",
+              "total": 1000000000,
+              "details": "Covers ~58,000 SSA employees, 1,500+ field offices, disability determination services in all 50 states, and continuing disability reviews."
             }
           ],
-          "details": "This part of the budget covers income support for workers and dependents when a qualifying disability prevents work. That includes things like Disabled Workers, Dependents, and Administration. The amount spent here mostly depends on how many people qualify and the size of the monthly benefits they receive."
+          "details": "This part of the budget covers income support for workers and dependents when a qualifying disability prevents work. That includes things like Disabled Workers, Dependents, and Administration."
+        },
+        {
+          "id": "ssi",
+          "title": "Supplemental Security Income",
+          "desc": "Cash assistance for low-income seniors and people with disabilities",
+          "source": "https://www.ssa.gov/finance/2025/Highlights%20of%20Financial%20Position.pdf",
+          "total": 67100000000,
+          "categories": [
+            {
+              "id": "ssi-disabled-adults",
+              "title": "Disabled Adults",
+              "desc": "Benefits for disabled adult recipients",
+              "source": "https://www.ssa.gov/policy/docs/statcomps/supplement/2025/7a.pdf",
+              "total": 43540000000,
+              "details": "Monthly cash for working-age adults who can't hold a job due to severe physical or mental disabilities — covers rent, food, bus fare. About 60% have a mental health diagnosis."
+            },
+            {
+              "id": "ssi-disabled-children",
+              "title": "Disabled Children",
+              "desc": "Benefits for eligible disabled children",
+              "source": "https://www.ssa.gov/policy/docs/statcomps/supplement/2025/7a.pdf",
+              "total": 8700000000,
+              "details": "Cash for families raising children with severe disabilities (autism, intellectual disabilities, other serious conditions). Helps cover costs of care, therapy co-pays, specialized food/clothing. Kids get higher average payments because their families typically have little other income."
+            },
+            {
+              "id": "ssi-aged",
+              "title": "Aged",
+              "desc": "Benefits for aged recipients",
+              "source": "https://www.ssa.gov/policy/docs/statcomps/supplement/2025/7a.pdf",
+              "total": 20526000000,
+              "details": "These are people who originally qualified as disabled before turning 65. SSI still classifies them as \"disabled\" even after 65."
+            },
+            {
+              "id": "ssi-blind",
+              "title": "Blind",
+              "desc": "Benefits for blind recipients",
+              "source": "https://www.ssa.gov/policy/docs/statcomps/supplement/2025/7a.pdf",
+              "total": 62000000,
+              "details": "Monthly cash for people with statutory blindness (20/200 vision or worse). A very small share of the program. Blind recipients have slightly higher work-incentive thresholds."
+            },
+            {
+              "id": "ssi-admin",
+              "title": "Administration",
+              "desc": "Administrative costs and related program support",
+              "source": "https://www.ssa.gov/budget/assets/materials/2026/2026SSI.pdf",
+              "total": 3200000000,
+              "details": "Pays SSA field office staff who process applications, state Disability Determination Services (DDS) workers who review medical evidence, rent on ~1,200 field offices, the national 800-number, and IT systems. This is how applications get decided."
+            },
+            {
+              "id": "ssi-integrity",
+              "title": "Program Integrity",
+              "desc": "Efforts to prevent and recover improper payments",
+              "source": "https://www.ssa.gov/budget/assets/materials/2026/2026SSI.pdf",
+              "total": 1400000000,
+              "details": "Funds continuing disability reviews (CDRs) and redeterminations to verify recipients still qualify. Catches overpayments and prevents fraud. SSA estimates these reviews save roughly $9 for every $1 spent."
+            }
+          ],
+          "details": "This part of the budget covers cash assistance for low-income seniors and people with disabilities. That includes things like Disabled Adults, Disabled Children, and Aged & Blind, and other related programs. The total here mostly depends on how many households qualify and how large their credits or refunds are."
         }
       ],
       "details": "This is the part of the budget that sends monthly Social Security benefits to retirees, survivors, and disabled workers. It also covers the smaller amount needed to run those programs. Most of the spending here is driven by how many people qualify and the size of the benefits they receive."
@@ -465,7 +611,7 @@
       "id": "income-security",
       "title": "Income Security",
       "desc": "Cash aid, tax credits, food aid, housing help, and unemployment support for households",
-      "total": 701600000000,
+      "total": 636600000000,
       "categories": [
         {
           "id": "child-tax-credit",
@@ -631,43 +777,6 @@
               "details": "This is the money the federal government spends on homeless assistance grants and other HUD rental support. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The total here mostly depends on how many households qualify and how large their credits or refunds are."
             }
           ]
-        },
-        {
-          "id": "ssi",
-          "title": "Supplemental Security Income",
-          "desc": "Cash assistance for low-income seniors and people with disabilities",
-          "total": 65000000000,
-          "categories": [
-            {
-              "id": "ssi-disabled-adults",
-              "title": "Disabled Adults",
-              "desc": "Benefits for disabled adult recipients",
-              "total": 44850000000,
-              "details": "This is the money the federal government spends on benefits for disabled adult recipients. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The total here mostly depends on how many households qualify and how large their credits or refunds are."
-            },
-            {
-              "id": "ssi-disabled-children",
-              "title": "Disabled Children",
-              "desc": "Benefits for eligible disabled children",
-              "total": 9100000000,
-              "details": "This is the money the federal government spends on benefits for eligible disabled children. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The total here mostly depends on how many households qualify and how large their credits or refunds are."
-            },
-            {
-              "id": "ssi-aged-blind",
-              "title": "Aged & Blind",
-              "desc": "Benefits for aged and blind recipients",
-              "total": 9750000000,
-              "details": "This is the money the federal government spends on benefits for aged and blind recipients. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The total here mostly depends on how many households qualify and how large their credits or refunds are."
-            },
-            {
-              "id": "ssi-admin",
-              "title": "Administration",
-              "desc": "Administrative costs and related program support",
-              "total": 1300000000,
-              "details": "This is the money needed to run Supplemental Security Income behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
-            }
-          ],
-          "details": "This part of the budget covers cash assistance for low-income seniors and people with disabilities. That includes things like Disabled Adults, Disabled Children, and Aged & Blind, and other related programs. The total here mostly depends on how many households qualify and how large their credits or refunds are."
         },
         {
           "id": "unemployment",
@@ -853,13 +962,17 @@
       "id": "transportation",
       "title": "Transportation",
       "desc": "Federal support for roads, transit, aviation, passenger rail, and maritime infrastructure",
+      "details": "This is the overall federal investment in moving people and goods. It pays for road repairs so families can drive safely to work or school, airport improvements so flights are on time, bus and train grants so workers can commute affordably, and port maintenance so groceries and clothes stay affordable by keeping supply chains running.",
+      "source": "https://www.transportation.gov/sites/dot.gov/files/2026-01/US_DOT_FY2025_AFR.pdf",
       "total": 145800000000,
       "categories": [
         {
           "id": "highways",
           "title": "Highways",
-          "desc": "Formula funding and grants for highways, bridges, safety, and related road programs",
-          "total": 74600000000,
+          "desc": "Funding and grants for highways, bridges, safety, and related road programs",
+          "details": "This is the largest part of federal transportation spending. It mainly funds grants sent to states for building, repairing, and improving roads, bridges, and highways. Most of the money goes out as Federal-aid Highways grants that states then spend on actual construction projects. This pays for concrete and asphalt to fix potholes and cracked roads, replacing old bridges, and adding safety features like better lighting or guardrails to reduce crashes.",
+          "source": "https://crsreports.congress.gov/product/pdf/R/R48596",
+          "total": 78400000000,
           "categories": [
             {
               "id": "highways-formula",
@@ -889,8 +1002,7 @@
               "total": 7460000000,
               "details": "This is the money needed to run Highways behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
             }
-          ],
-          "details": "This part of the budget covers formula funding and grants for highways, bridges, safety, and related road programs. That includes things like Formula Grants, Bridge Programs, and Safety Programs, and other related programs. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+          ]
         },
         {
           "id": "air-transport",
@@ -1003,8 +1115,7 @@
           ],
           "details": "This part of the budget covers passenger rail, ports, and maritime transportation support. That includes things like Amtrak, Coast Guard Transport Support, and Ports & Maritime Grants, and other related programs. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
         }
-      ],
-      "details": "This is the part of the budget that helps pay for how people and goods move around the country. It includes roads, bridges, airports, transit, rail, ports, and other transportation systems. The amount spent here depends mostly on grant formulas, project costs, and the transportation priorities lawmakers decide to fund."
+      ]
     },
     {
       "id": "natural-resources",
