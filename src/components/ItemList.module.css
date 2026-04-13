@@ -59,27 +59,29 @@
 
 .labelGroup {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 8px;
   min-width: 0;
 }
 
 .title {
+  flex: 0 1 auto;
+  max-inline-size: 68%;
   min-width: 0;
   font-size: 0.875rem;
   color: #1a1a2e;
   line-height: 1.35;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: normal;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
 }
 
 .leader {
   flex: 1 1 auto;
   border-bottom: 1px dotted #d1d5db;
   min-width: 0;
-  align-self: center;
-  transform: translateY(1px);
+  align-self: flex-start;
+  margin-top: 0.72rem;
 }
 
 .amount {
