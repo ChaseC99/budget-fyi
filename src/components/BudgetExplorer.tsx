@@ -2,6 +2,7 @@ import { useState, useCallback, useMemo, useRef, useEffect } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import type { BudgetNode } from "../data/types";
 import budgetData from "../data/budget.json";
+import { formatCurrency } from "../lib/format";
 import { useBudgetNavigation } from "../hooks/useBudgetNavigation";
 import { computeUserShare, computeUserShareOfTotal } from "../lib/tax";
 import { DonutChart, type DonutChartHandle } from "./DonutChart";
@@ -13,11 +14,83 @@ import styles from "./BudgetExplorer.module.css";
 
 const rootNode = budgetData as BudgetNode;
 
+function getSourceLabel(source?: string) {
+  if (!source) {
+    return null;
+  }
+
+  try {
+    return new URL(source).hostname.replace(/^www\./, "");
+  } catch {
+    return source;
+  }
+}
+
+interface NotableExpenseCardProps {
+  node: BudgetNode;
+  amount: number;
+  isExpanded: boolean;
+  onToggle: () => void;
+}
+
+function NotableExpenseCard({ node, amount, isExpanded, onToggle }: NotableExpenseCardProps) {
+  const sourceLabel = getSourceLabel(node.source);
+  const details = node.details ?? node.desc;
+  const hasAdditionalDetails = details !== node.desc;
+
+  return (
+    <div className={styles.notableCard}>
+      <button
+        type="button"
+        className={styles.notableToggle}
+        onClick={onToggle}
+        aria-expanded={isExpanded}
+      >
+        <div className={styles.notableTitleRow}>
+          <div className={styles.notableTitle}>{node.title}</div>
+          <div className={styles.notableAmount}>{formatCurrency(amount)}</div>
+        </div>
+        <div className={styles.notableSummary} title={node.desc}>{node.desc}</div>
+      </button>
+      <AnimatePresence initial={false}>
+        {isExpanded ? (
+          <motion.div
+            className={styles.notableExpanded}
+            initial={{ opacity: 0, y: -4 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 4 }}
+            transition={{ duration: 0.18, ease: "easeOut" }}
+          >
+            {hasAdditionalDetails ? (
+              <div className={styles.notableDetails} title={details}>
+                {details}
+              </div>
+            ) : null}
+            {node.source ? (
+              <motion.a
+                className={styles.contextSource}
+                href={node.source}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {sourceLabel ? `Source: ${sourceLabel}` : "View source data"}
+              </motion.a>
+            ) : null}
+          </motion.div>
+        ) : null}
+      </AnimatePresence>
+    </div>
+  );
+}
+
 export function BudgetExplorer() {
   const [userTax, setUserTax] = useState(0);
   const [tickerItems] = useState(() => createLeafTickerSample(rootNode));
   const [selectedLeaf, setSelectedLeaf] = useState<BudgetNode | null>(null);
   const [isAboutExpanded, setIsAboutExpanded] = useState(false);
+  const [expandedNotableId, setExpandedNotableId] = useState<string | null>(null);
+  const [isNotableInfoPinned, setIsNotableInfoPinned] = useState(false);
+  const [isNotableInfoHovered, setIsNotableInfoHovered] = useState(false);
   const expandAboutOnTickerNav = useRef(false);
   const donutRef = useRef<DonutChartHandle>(null);
   const { current, parent, drillDown, goBack, navigateToNode, depth, isRoot, direction } =
@@ -64,17 +137,8 @@ export function BudgetExplorer() {
   const aboutSummary = displayNode.desc;
   const aboutDetails = displayNode.details ?? displayNode.desc;
   const hasAdditionalDetails = aboutDetails !== aboutSummary;
-  const sourceLabel = useMemo(() => {
-    if (!displayNode.source) {
-      return null;
-    }
-
-    try {
-      return new URL(displayNode.source).hostname.replace(/^www\./, "");
-    } catch {
-      return displayNode.source;
-    }
-  }, [displayNode.source]);
+  const sourceLabel = useMemo(() => getSourceLabel(displayNode.source), [displayNode.source]);
+  const notableExpenses = current.notableExpenses ?? [];
 
   // Find the index of the current node in its parent's categories (for child coloring)
   const parentIndex = useMemo(() => {
@@ -84,6 +148,12 @@ export function BudgetExplorer() {
 
   useEffect(() => {
     setSelectedLeaf(null);
+  }, [current.id]);
+
+  useEffect(() => {
+    setExpandedNotableId(null);
+    setIsNotableInfoPinned(false);
+    setIsNotableInfoHovered(false);
   }, [current.id]);
 
   useEffect(() => {
@@ -121,6 +191,7 @@ export function BudgetExplorer() {
     expandAboutOnTickerNav.current = true;
     navigateToNode(item.parentId);
   }, [navigateToNode]);
+  const isNotableInfoVisible = isNotableInfoPinned || isNotableInfoHovered;
 
   return (
     <div className={styles.explorer}>
@@ -234,6 +305,65 @@ export function BudgetExplorer() {
         getAmount={getAmount}
         selectedNodeId={selectedLeaf?.id}
       />
+
+      {notableExpenses.length > 0 ? (
+        <>
+          <div className={styles.divider} />
+          <div className={styles.notableSection}>
+            <div className={styles.notableHeaderRow}>
+              <div className={styles.receiptHeader}>Notable Expenses</div>
+              <div
+                className={styles.notableInfoWrapper}
+                onMouseEnter={() => setIsNotableInfoHovered(true)}
+                onMouseLeave={() => setIsNotableInfoHovered(false)}
+              >
+                <button
+                  type="button"
+                  className={styles.notableInfoButton}
+                  aria-label="About notable expenses"
+                  aria-expanded={isNotableInfoVisible}
+                  onFocus={() => setIsNotableInfoHovered(true)}
+                  onBlur={() => setIsNotableInfoHovered(false)}
+                  onClick={() => setIsNotableInfoPinned((pinned) => !pinned)}
+                >
+                  i
+                </button>
+                <AnimatePresence initial={false}>
+                  {isNotableInfoVisible ? (
+                    <motion.div
+                      className={styles.notableTooltip}
+                      initial={{ opacity: 0, y: -4 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -4 }}
+                      transition={{ duration: 0.16, ease: "easeOut" }}
+                      role="tooltip"
+                    >
+                      These callouts spotlight notable expenses that don&apos;t fit neatly into a
+                      single category. The cost may be distributed across multiple parts of the
+                      budget.
+                    </motion.div>
+                  ) : null}
+                </AnimatePresence>
+              </div>
+            </div>
+            <div className={styles.notableList}>
+              {notableExpenses.map((expense) => (
+                <NotableExpenseCard
+                  key={expense.id}
+                  node={expense}
+                  amount={getAmount(expense.total)}
+                  isExpanded={expandedNotableId === expense.id}
+                  onToggle={() =>
+                    setExpandedNotableId((currentExpanded) =>
+                      currentExpanded === expense.id ? null : expense.id,
+                    )
+                  }
+                />
+              ))}
+            </div>
+          </div>
+        </>
+      ) : null}
     </div>
   );
 }

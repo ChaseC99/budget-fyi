@@ -2164,6 +2164,24 @@
           "details": "This is NASA's slice of the federal budget. It pays for space science, human exploration, mission operations, new technology, and aeronautics research. The total here depends on which missions, launches, and research efforts lawmakers choose to fund.",
           "total": 25100000000,
           "source": "https://www.nasa.gov/fy-2025-budget-request/",
+          "notableExpenses": [
+            {
+              "id": "artemis-campaign",
+              "title": "Artemis Campaign",
+              "desc": "NASA's flagship lunar return effort, bringing together the systems and missions aimed at sending astronauts back to the Moon.",
+              "details": "The FY2025 NASA budget request includes $7.8 billion for the Artemis campaign. This is a curated mission-level highlight rather than a receipt subtotal: it reflects the Moon-return effort people recognize by name, spanning work associated with SLS, Orion, lunar mission planning, and related exploration systems, while the receipt below stays organized by NASA appropriations accounts like Exploration Systems and Space Operations.",
+              "total": 7800000000,
+              "source": "https://www.nasa.gov/fy-2025-budget-request/"
+            },
+            {
+              "id": "iss",
+              "title": "International Space Station",
+              "desc": "NASA funding to keep the ISS operating in orbit while supporting research and the transition to commercial low-Earth-orbit destinations.",
+              "details": "NASA's FY2025 budget request includes $1.2696 billion for the International Space Station. The request breaks that into about $1.009 billion for continuous ISS operations, support for extension through retirement in 2030, and transition planning for commercial low-Earth-orbit destinations, plus about $261 million for research and technology demonstrations carried out on the station.",
+              "total": 1269600000,
+              "source": "https://www.nasa.gov/wp-content/uploads/2024/04/fy-2025-budget-request-summary-updated.pdf"
+            }
+          ],
           "categories": [
             {
               "id": "nasa-science",
