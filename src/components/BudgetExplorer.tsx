@@ -18,6 +18,7 @@ export function BudgetExplorer() {
   const [tickerItems] = useState(() => createLeafTickerSample(rootNode));
   const [selectedLeaf, setSelectedLeaf] = useState<BudgetNode | null>(null);
   const [isAboutExpanded, setIsAboutExpanded] = useState(false);
+  const expandAboutOnTickerNav = useRef(false);
   const donutRef = useRef<DonutChartHandle>(null);
   const { current, parent, drillDown, goBack, navigateToNode, depth, isRoot, direction } =
     useBudgetNavigation(rootNode);
@@ -86,6 +87,12 @@ export function BudgetExplorer() {
   }, [current.id]);
 
   useEffect(() => {
+    if (expandAboutOnTickerNav.current) {
+      setIsAboutExpanded(true);
+      expandAboutOnTickerNav.current = false;
+      return;
+    }
+
     setIsAboutExpanded(false);
   }, [current.id]);
 
@@ -111,6 +118,7 @@ export function BudgetExplorer() {
 
   const handleTickerSelect = useCallback((item: (typeof tickerItems)[number]) => {
     setSelectedLeaf(null);
+    expandAboutOnTickerNav.current = true;
     navigateToNode(item.parentId);
   }, [navigateToNode]);
 
