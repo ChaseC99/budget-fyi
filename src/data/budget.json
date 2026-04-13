@@ -1,8 +1,8 @@
 {
   "id": "federal-budget",
   "title": "U.S. Federal Budget",
-  "desc": "How the government spent your money in 2025",
-  "details": "This is the full picture of how the federal government spent money in 2025. It brings the biggest parts of the budget together in one place so you can see where the money went. If you enter your income, the app also gives you a rough estimate of how much of that spending your taxes supported.",
+  "desc": "How the government spends your money",
+  "details": "This is the full picture of how the federal government spends money in 2025. It brings the biggest parts of the budget together in one place so you can see where the money went. If you enter your income, the app also gives you a rough estimate of how much of that spending your taxes supported.",
   "total": 7010000000000,
   "source": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/",
   "categories": [
@@ -425,76 +425,33 @@
           "id": "interest-public-debt",
           "title": "Interest on Public Debt",
           "desc": "Interest owed to investors and institutions that hold Treasury securities",
-          "total": 1090700000000,
-          "categories": [
-            {
-              "id": "interest-marketable",
-              "title": "Marketable Treasuries",
-              "desc": "Interest on notes, bonds, and bills held by the public",
-              "total": 1036165000000,
-              "details": "This is the interest the government pays on notes, bonds, and bills held by the public. This is not a program people sign up for. It is a financing cost the government owes because it has borrowed money. The cost here mainly moves with the size of the national debt, interest rates, and inflation."
-            },
-            {
-              "id": "interest-savings",
-              "title": "Savings Bonds & Other",
-              "desc": "Interest on savings securities and other debt instruments",
-              "total": 21814000000,
-              "details": "This is the interest the government pays on savings securities and other debt instruments. This is not a program people sign up for. It is a financing cost the government owes because it has borrowed money. The cost here mainly moves with the size of the national debt, interest rates, and inflation."
-            },
-            {
-              "id": "interest-tips",
-              "title": "Inflation Adjustments",
-              "desc": "Inflation compensation and related debt adjustments",
-              "total": 32721000000,
-              "details": "This is the money the federal government spends on inflation compensation and related debt adjustments. This is not a program people sign up for. It is a financing cost the government owes because it has borrowed money. The cost here mainly moves with the size of the national debt, interest rates, and inflation."
-            }
-          ],
-          "details": "This part of the budget covers interest owed to investors and institutions that hold treasury securities. That includes things like Marketable Treasuries, Savings Bonds & Other, and Inflation Adjustments. The cost here mainly moves with the size of the national debt, interest rates, and inflation."
+          "total": 1200000000000,
+          "source": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/",
+          "details": "This part of the budget covers interest owed to investors and institutions that hold treasury securities. That includes things like Marketable Treasuries, Savings Bonds & Other, and Inflation Adjustments."
         },
         {
           "id": "interest-offsets",
           "title": "Interest Received by Trust Funds",
           "desc": "Interest credited to federal trust funds that partially offsets gross debt costs",
           "total": -120300000000,
-          "categories": [
-            {
-              "id": "interest-oasdi",
-              "title": "Social Security Trust Funds",
-              "desc": "Interest received by the OASDI trust funds",
-              "total": -57744000000,
-              "details": "This is the interest the government credits to the OASDI trust funds. This is not a program people sign up for. It is a financing cost the government owes because it has borrowed money. The amount here depends on how much these trust funds hold in Treasury securities and the interest credited to them."
-            },
-            {
-              "id": "interest-medicare",
-              "title": "Medicare Trust Funds",
-              "desc": "Interest received by Medicare trust funds",
-              "total": -36090000000,
-              "details": "This is the interest the government credits to medicare trust funds. This is not a program people sign up for. It is a financing cost the government owes because it has borrowed money. The amount here depends on how much these trust funds hold in Treasury securities and the interest credited to them."
-            },
-            {
-              "id": "interest-other-trust",
-              "title": "Civil Service & Other Trust Funds",
-              "desc": "Interest received by other federal trust funds",
-              "total": -26466000000,
-              "details": "This is the interest the government credits to other federal trust funds. This is not a program people sign up for. It is a financing cost the government owes because it has borrowed money. The amount here depends on how much these trust funds hold in Treasury securities and the interest credited to them."
-            }
-          ],
-          "details": "This part of the budget covers interest credited to federal trust funds that partially offsets gross debt costs. That includes things like Social Security Trust Funds, Medicare Trust Funds, and Civil Service & Other Trust Funds. The amount here depends on how much these trust funds hold in Treasury securities and the interest credited to them."
+          "source": "https://www.fiscal.treasury.gov/files/reports-statements/combined-statement/cs2025/outlay.pdf",
+          "details": "We made a little bit of money from federal trust funds that partially offsets gross debt costs. That includes things like Social Security Trust Funds, Medicare Trust Funds, and Civil Service & Other Trust Funds. The amount here depends on how much these trust funds hold in Treasury securities and the interest credited to them."
         }
       ],
-      "details": "This is the cost of carrying the federal debt. It is money the government owes to bondholders and other holders of Treasury securities, after backing out interest credited to certain trust funds. The size of this cost depends mostly on how much the government has borrowed, interest rates, and inflation."
+      "details": "The US Government spends more money than it earns, so it takes on debt to cover the difference. We have to pay interest on this debt. It is money the government owes to bondholders and other holders of Treasury securities. This number is slightly lower due to credit earned from trust funds."
     },
     {
       "id": "national-defense",
       "title": "National Defense",
       "desc": "Military operations, nuclear forces, and other defense-wide national security spending",
+      "source": "https://www.fiscal.treasury.gov/files/reports-statements/combined-statement/cs2025/outlay.pdf",
       "total": 916600000000,
       "categories": [
         {
           "id": "dod-military",
           "title": "DoD Military Programs",
           "desc": "Core Pentagon spending for readiness, troops, weapons, military construction, and research",
-          "details": "This is the main pot of Pentagon spending. It covers troop pay, training, weapons, military construction, and the everyday cost of running the armed forces. The total here depends mostly on force size, operations, procurement plans, and the defense priorities lawmakers choose to fund.",
+          "details": "This is the main pot of Pentagon spending. It covers troop pay, training, weapons, military construction, and the everyday cost of running the armed forces.",
           "total": 866200000000,
           "source": "https://comptroller.defense.gov/Budget-Materials/Budget2025/",
           "categories": [
@@ -502,36 +459,41 @@
               "id": "dod-om",
               "title": "Operations & Maintenance",
               "desc": "Training, readiness, sustainment, and day-to-day operations",
+              "source": "https://www.congress.gov/crs-product/IN12425",
               "total": 337818000000,
-              "details": "This is the money the federal government spends on training, readiness, sustainment, and day-to-day operations. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here mainly depends on troop levels, pay tables, and the cost of benefits for service members and their families."
+              "details": "This is the money the federal government spends on training, readiness, sustainment, and day-to-day operations. Fuel for ships and aircraft, base utilities, feeding troops, maintaining equipment, training exercises, depot repairs, the Defense Health Program. It pays for the day-to-day work needed to keep this part of government or the program running."
             },
             {
               "id": "dod-milpers",
               "title": "Military Personnel",
               "desc": "Pay, allowances, and benefits for service members",
-              "total": 164578000000,
-              "details": "This is the money the federal government spends on pay, allowances, and benefits for service members. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The amount here mostly depends on force size, operations, procurement plans, and the defense priorities lawmakers choose to fund."
+              "source": "https://www.congress.gov/crs-product/IN12447",
+              "total": 185000000000,
+              "details": "This is the money the federal government spends on pay, allowances, and benefits for service members. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. Covers about 1.28 million active-duty troops and 770,000 reservists."
             },
             {
               "id": "dod-procurement",
               "title": "Procurement",
               "desc": "Weapons systems, equipment, and related acquisitions",
-              "total": 173240000000,
-              "details": "This is the money the federal government spends on weapons systems, equipment, and related acquisitions. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The amount here mostly depends on force size, operations, procurement plans, and the defense priorities lawmakers choose to fund."
+              "source": "https://www.cbo.gov/publication/61017",
+              "total": 168000000000,
+              "details": "This is the money the federal government spends on weapons systems, equipment, and related acquisitions. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. It covers things like new ships, planes, munitions, spare parts, upgrades, and more."
             },
             {
               "id": "dod-rdte",
               "title": "RDT&E",
               "desc": "Research, development, test, and evaluation",
-              "total": 147254000000,
-              "details": "This is the money the federal government spends on research, development, test, and evaluation. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
+              "source": "https://www.cbo.gov/publication/61017",
+              "total": 143000000000,
+              "details": "This is the money the federal government spends on research, development, test, and evaluation. Paying scientists and engineers to invent the next generation of weapons — hypersonic missiles, AI-enabled drones, next-gen aircraft (like the B-21 bomber now entering service), and cyber warfare tools. Roughly 44% of acquisition spending goes to R&D rather than buying finished hardware."
             },
             {
               "id": "dod-milcon",
               "title": "Military Construction & Housing",
               "desc": "Military construction, family housing, and other support accounts",
-              "total": 43310000000,
-              "details": "This is the money the federal government spends on military construction, family housing, and other support accounts. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The amount here mostly depends on force size, operations, procurement plans, and the defense priorities lawmakers choose to fund."
+              "source": "https://www.congress.gov/crs-product/IN12447",
+              "total": 16000000000,
+              "details": "This is the money the federal government spends on military construction, family housing, and other support accounts. A single new barracks complex on a major installation can cost $100M+."
             }
           ]
         },
@@ -539,36 +501,40 @@
           "id": "atomic-energy",
           "title": "Atomic Energy Defense",
           "desc": "Nuclear weapons stewardship, naval reactors, and cleanup of defense nuclear sites",
-          "total": 33600000000,
-          "source": "https://comptroller.defense.gov/Budget-Materials/Budget2025/",
+          "total": 33000000000,
+          "source": "https://www.energy.gov/sites/default/files/2024-03/doe-fy-2025-budget-in-brief-v2.pdf",
           "categories": [
             {
               "id": "atomic-weapons",
               "title": "Weapons Activities",
               "desc": "NNSA nuclear weapons stockpile and modernization work",
-              "total": 19488000000,
-              "details": "This is the money the federal government spends on NNSA nuclear weapons stockpile and modernization work. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here mostly depends on force size, operations, procurement plans, and the defense priorities lawmakers choose to fund."
+              "source": "https://www.energy.gov/sites/default/files/2024-03/doe-fy-2025-budget-in-brief-v2.pdf",
+              "total": 19900000000,
+              "details": "This is the money the federal government spends on NNSA nuclear weapons stockpile and modernization work. Maintains and modernizes the U.S. nuclear warhead stockpile — design, production, testing (via simulation), and infrastructure at labs and plants."
             },
             {
               "id": "atomic-naval",
               "title": "Naval Reactors",
               "desc": "Reactors and propulsion for the Navy nuclear fleet",
-              "total": 3696000000,
-              "details": "This is the money the federal government spends on reactors and propulsion for the navy nuclear fleet. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here mostly depends on force size, operations, procurement plans, and the defense priorities lawmakers choose to fund."
+              "source": "https://www.energy.gov/sites/default/files/2024-03/doe-fy-2025-budget-in-brief-v2.pdf",
+              "total": 2100000000,
+              "details": "This is the money the federal government spends on reactors and propulsion for the navy nuclear fleet. Designs, builds, and maintains nuclear reactors that power the Navy's submarines and aircraft carriers."
             },
             {
               "id": "atomic-cleanup",
               "title": "Defense Environmental Cleanup",
               "desc": "Cleanup of legacy nuclear weapons sites",
-              "total": 8064000000,
-              "details": "This is the money the federal government spends on cleanup of legacy nuclear weapons sites. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here mostly depends on force size, operations, procurement plans, and the defense priorities lawmakers choose to fund."
+              "total": 8482000000,
+              "source": "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-6-em.pdf",
+              "details": "cleaning up radioactive and chemical contamination left behind from Cold War nuclear weapons production. The Department of Energy manages the work across 16 sites nationwide — most notably the Hanford Site in Washington and Savannah River Site in South Carolina, which together hold nearly 90 million gallons of radioactive liquid waste in aging underground tanks. Total estimated cleanup costs exceed $377 billion, with full completion not expected until the 2060s or later."
             },
             {
-              "id": "atomic-other",
-              "title": "Other Nuclear Security",
-              "desc": "Safeguards, security, and other defense nuclear programs",
-              "total": 2352000000,
-              "details": "This is the money the federal government spends on safeguards, security, and other defense nuclear programs. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here mostly depends on force size, operations, procurement plans, and the defense priorities lawmakers choose to fund."
+              "id": "atomic-dnn",
+              "title": "Defense Nuclear Nonproliferation",
+              "desc": "Preventing nuclear proliferation and securing nuclear materials worldwide",
+              "total": 2500000000,
+              "source": "https://www.energy.gov/sites/default/files/2024-03/doe-fy-2025-budget-in-brief-v2.pdf",
+              "details": "Keeps nuclear materials out of terrorists' hands worldwide; responds to radiological incidents; nuclear counterterrorism."
             }
           ],
           "details": "This part of the budget covers nuclear weapons stewardship, naval reactors, and cleanup of defense nuclear sites. That includes things like Weapons Activities, Naval Reactors, and Defense Environmental Cleanup, and other related programs. The amount here mostly depends on force size, operations, procurement plans, and the defense priorities lawmakers choose to fund."
@@ -577,32 +543,35 @@
           "id": "other-defense",
           "title": "Other Defense Activities",
           "desc": "Defense-wide agencies, intelligence support, and smaller national security accounts",
-          "total": 16800000000,
+          "total": 11000000000,
           "source": "https://comptroller.defense.gov/Budget-Materials/Budget2025/",
           "categories": [
             {
-              "id": "other-defense-support",
-              "title": "Defense-Wide Support",
-              "desc": "Defense-wide support agencies and command support",
+              "id": "fbi",
+              "title": "FBI",
+              "desc": "Federal Bureau of Investigation counterterrorism, intelligence, and national security work",
               "total": 5880000000,
-              "details": "This is the money the federal government spends on defense-wide support agencies and command support. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here mostly depends on force size, operations, procurement plans, and the defense priorities lawmakers choose to fund."
+              "source": "https://www.fbi.gov/news/speeches-and-testimony/federal-bureau-of-investigation-budget-request-for-fiscal-year-2025",
+              "details": "This is not the FBI's full budget - only the defense-designated share. Catching foreign spies, protecting classified information, disrupting foreign influence operations inside the U.S., economic espionage investigations, and the National Counterintelligence Task Force."
             },
             {
-              "id": "other-defense-intel",
-              "title": "Intelligence & Security",
-              "desc": "Defense intelligence and related security activities",
-              "total": 6720000000,
-              "details": "This is the money the federal government spends on defense intelligence and related security activities. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here mostly depends on force size, operations, procurement plans, and the defense priorities lawmakers choose to fund."
+              "id": "cisa",
+              "title": "CISA",
+              "desc": "Cybersecurity & Infrastructure Security Agency focusing on federal network defense and critical infrastructure protection",
+              "total": 3000000000,
+              "source": "https://www.congress.gov/crs-product/R48074",
+              "details": "Protecting federal networks, power grids, water systems, and financial infrastructure from nation-state cyberattacks. Includes deploying endpoint detection tools across federal agencies, cybersecurity grants to states, and responding to incidents."
             },
             {
               "id": "other-defense-related",
               "title": "Other Defense Activities",
               "desc": "Selective service, support funds, and other defense-related programs",
-              "total": 4200000000,
-              "details": "This is the money the federal government spends on selective service, support funds, and other defense-related programs. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here mostly depends on force size, operations, procurement plans, and the defense priorities lawmakers choose to fund."
+              "total": 2000000000,
+              "source": "https://www.congress.gov/crs-product/IN12535",
+              "details": "National Intelligence Program activities coded to civilian agencies, defense-related portions of the National Security Division at DOJ, defense production activities, and other small programs across agencies that OMB classifies under national defense but don't fit in 051 or 053."
             }
           ],
-          "details": "This part of the budget covers defense-wide agencies, intelligence support, and smaller national security accounts. That includes things like Defense-Wide Support, Intelligence & Security, and Other Defense Activities. The amount here mostly depends on force size, operations, procurement plans, and the defense priorities lawmakers choose to fund."
+          "details": "This part of the budget covers defense-wide agencies, intelligence support, and smaller national security accounts. That includes things like Defense-Wide Support, Intelligence & Security, and Other Defense Activities."
         }
       ],
       "details": "This is the big bucket for military and national security spending. It includes the armed forces, nuclear weapons work, and other defense-wide activities that support national security. The total here depends mostly on force size, operations, procurement plans, and the broader defense budget set by Congress."
@@ -614,167 +583,180 @@
       "total": 636600000000,
       "categories": [
         {
+          "id": "federal-employment-retirement",
+          "title": "Federal Employee Retirement & Disability",
+          "desc": "Pensions and disability benefits for federal civilian employees and retirees",
+          "source": "https://www.opm.gov/about-us/fy-2025-congressional-budget-justification-and-annual-performance-plan/earned-benefits-trust-funds/",
+          "total": 196000000000,
+          "details": "Pension checks for ~2.8 million retired federal civilian workers under CSRS and FERS systems. A retired federal worker with 30 years of service might receive ~$2,500-$4,000/month from this fund."
+        },
+        {
           "id": "child-tax-credit",
           "title": "Child Tax Credit",
           "desc": "Tax relief for families with children, much of it delivered through refunds",
-          "total": 159800000000,
-          "categories": [
-            {
-              "id": "ctc-refundable",
-              "title": "Refundable CTC",
-              "desc": "Refundable child tax credit payments",
-              "total": 140624000000,
-              "details": "This is the money the federal government spends on refundable child tax credit payments. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The total here mostly depends on how many households qualify and how large their credits or refunds are."
-            },
-            {
-              "id": "ctc-nonrefundable",
-              "title": "Nonrefundable CTC",
-              "desc": "Offsetting tax liability through the nonrefundable portion",
-              "total": 15980000000,
-              "details": "This is the money the federal government spends on offsetting tax liability through the nonrefundable portion. In everyday terms, this is one of the line items that makes the broader category work in real life. The total here mostly depends on how many households qualify and how large their credits or refunds are."
-            },
-            {
-              "id": "ctc-admin",
-              "title": "Administration",
-              "desc": "IRS administration and compliance associated with the credit",
-              "total": 3196000000,
-              "details": "This is the money needed to run Child Tax Credit behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
-            }
-          ],
+          "source": "https://www.congress.gov/crs-product/R41873",
+          "total": 60000000000,
           "details": "This is the tax credit that helps families with children keep more of their income. It usually shows up by reducing a tax bill, increasing a refund, or both. The total here depends on how many families qualify and how large their credits are under the current rules."
         },
         {
           "id": "snap",
           "title": "SNAP (Food Stamps)",
           "desc": "Nutrition assistance that helps low-income households buy groceries",
-          "total": 146700000000,
-          "categories": [
-            {
-              "id": "snap-benefits",
-              "title": "Food Benefits",
-              "desc": "Monthly nutrition benefits delivered to households",
-              "total": 137898000000,
-              "details": "This is the money the federal government spends on monthly nutrition benefits delivered to households. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
-            },
-            {
-              "id": "snap-admin",
-              "title": "State Administration",
-              "desc": "State administrative and systems costs",
-              "total": 7335000000,
-              "details": "This is the money needed to run SNAP (Food Stamps) behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
-            },
-            {
-              "id": "snap-et",
-              "title": "Employment & Training",
-              "desc": "SNAP employment and training support",
-              "total": 1467000000,
-              "details": "This is the money the federal government spends on SNAP employment and training support. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The total here mostly depends on how many households qualify and how large their credits or refunds are."
-            }
-          ],
-          "details": "This is the program many people still call food stamps. It helps lower-income households buy groceries each month through an electronic benefit card. The total here depends mostly on how many households qualify and how large their monthly food benefits are."
+          "total": 102000000000,
+          "source": "https://usafacts.org/answers/how-much-does-the-federal-government-spend-on-snap-every-year/country/united-states/",
+          "details": "Grocery benefits for ~42 million Americans. Average benefit is ~$6/person/day. A family of 3 with low income receives roughly $700 - $800/month to spend at supermarkets."
         },
         {
           "id": "other-income-security",
           "title": "Other Income Security",
           "desc": "Family assistance, foster care, utility help, and other anti-poverty support",
-          "total": 108700000000,
+          "total": 92890000000,
           "categories": [
             {
               "id": "income-tanf",
               "title": "TANF",
               "desc": "Temporary Assistance for Needy Families block grants",
-              "total": 27175000000,
-              "details": "This is the money the federal government spends on temporary assistance for needy families block grants. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The total here mostly depends on how many households qualify and how large their credits or refunds are."
+              "total": 16500000000,
+              "details": "A fixed federal block grant to states, unchanged since 1997. States use funds for cash payments to poor families, job training, child care, and other services. The basic federal grant is $16.5B/year. A single parent with 2 children might receive $400-$800/month in cash depending on the state — though only about 1 in 4 poor families eligible for TANF actually receives cash assistance today."
+            },
+            {
+              "id": "income-child-nutrition",
+              "title": "Child Nutrition Programs",
+              "desc": "School meals and child nutrition programs such as school lunch, breakfast, summer EBT, WIC, and CACFP",
+              "total": 33000000000,
+              "source": "https://www.congress.gov/crs-product/R46234",
+              "details": "Feeds children at school and in child care settings. The National School Lunch Program covers a free or reduced-price meal (~$4.50/lunch) for eligible kids daily. The School Breakfast Program, Summer EBT ($40/child/month in summer), and WIC (grocery benefits for pregnant women and infants) are included here. FY2025 funding held at FY2024 levels (~$33.3B) under a full-year continuing resolution."
+            },
+            {
+              "id": "ccdf",
+              "title": "Child Care & Development Fund",
+              "desc": "Federal support for child care subsidies and early childhood programs",
+              "total": 12300000000,
+              "source": "https://www.federalregister.gov/documents/2026/01/05/2025-24272/restoring-flexibility-in-the-child-care-and-development-fund-ccdf",
+              "details": "Subsidizes child care for low-income working families with children under 13. States distribute funds mostly as vouchers — a family earning $30,000/year might pay $150/month for child care that costs $1,200/month, with the federal subsidy covering the rest. FY2025 enacted CCDF funding was $12.30 billion. Serves ~1.4 million children/month."
             },
             {
               "id": "income-foster",
               "title": "Foster Care & Adoption",
               "desc": "Foster care, adoption assistance, and guardianship support",
-              "total": 23914000000,
-              "details": "This is the money the federal government spends on foster care, adoption assistance, and guardianship support. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The total here mostly depends on how many households qualify and how large their credits or refunds are."
+              "total": 10000000000,
+              "source": "https://www.congress.gov/crs_external_products/IF/PDF/IF10590/IF10590.51.pdf",
+              "details": "Reimburses states for the cost of housing children in foster care — payments to foster parents, group homes, and relatives caring for children removed from unsafe homes. Also funds adoption assistance payments to families who adopt children from foster care. Title IV-E for foster care accounts for ~$4B and adoption assistance ~$3B of ACF Children's Bureau grants; remaining funds cover related support. ~343,000 children were in foster care on any given day in FY2023."
             },
             {
-              "id": "income-liheap",
-              "title": "Energy & Utility Aid",
-              "desc": "Low Income Home Energy Assistance and similar support",
-              "total": 15218000000,
-              "details": "This is the money the federal government spends on low income home energy assistance and similar support. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The total here mostly depends on how many households qualify and how large their credits or refunds are."
+              "id": "liheap",
+              "title": "Energy Assistance",
+              "desc": "Low Income Home Energy Assistance Program (LIHEAP)",
+              "total": 4100000000,
+              "source": "https://acf.gov/ocs/policy-guidance/liheap-dcl-2025-01-first-funding-release-ffy-2025",
+              "details": "Helps low-income households pay heating and cooling bills. Funds go to states as a block grant; states pay utility companies directly on behalf of eligible households. In a cold-weather state, a qualifying family might receive $400-$800 in winter heating help. FY2025 released $3.7B in October 2024 + $401.5M in a final May 2025 release. Only ~1 in 6 eligible households is served due to funding limits."
             },
             {
-              "id": "income-child-support",
-              "title": "Child Support Enforcement",
-              "desc": "Federal child support and family support enforcement",
-              "total": 11957000000,
-              "details": "This is the money the federal government spends on federal child support and family support enforcement. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The total here mostly depends on how many households qualify and how large their credits or refunds are."
+              "id": "income-refugee",
+              "title": "Refugee Assistance",
+              "desc": "Refugee resettlement and assistance programs",
+              "total": 3000000000,
+              "source": "https://acf.gov/sites/default/files/documents/olab/fy-2025-congressional-justification.pdf",
+              "details": "Cash and medical assistance (Refugee Cash Assistance, Refugee Medical Assistance) plus support services (job training, ESL, resettlement services) for newly arrived refugees, asylees, and certain victims of human trafficking. Supports ~100,000 individuals in recent years."
+            },
+            {
+              "id": "pbgc",
+              "title": "Pension Bailout Fund",
+              "total": 5000000000,
+              "desc": "Pension Benefit Guaranty Corporation insurance for private-sector defined benefit pension plans",
+              "source": "https://www.pbgc.gov/sites/default/files/documents/pbgc-annual-report-2025.pdf",
+              "details": "A federally appropriated fund — separate from PBGC's self-funded insurance programs — to bail out financially troubled multiemployer pension plans (union pension funds) before they go insolvent. PBGC distributes these congressionally appropriated funds to eligible plans so retirees don't see their pensions cut."
             },
             {
               "id": "income-other",
               "title": "Other Assistance",
-              "desc": "Other family support and safety-net programs",
-              "total": 30436000000,
-              "details": "This bucket groups smaller assistance programs that still add up to real spending. It usually pulls together smaller costs in this area that are real parts of the budget even if they are not well known on their own. The total here mostly depends on how many households qualify and how large their credits or refunds are."
+              "desc": "Administrative costs and other safety-net programs",
+              "total": 9000000000,
+              "source": "https://www.fiscal.treasury.gov/files/reports-statements/combined-statement/cs2025/outlay.pdf",
+              "details": "Costs of running the SSA administration, UI adminstration, and other other smaller safet-net programs like Railroad Retirement Board, SSA R&D, tribal prgrams, etc."
             }
           ],
-          "details": "This part of the budget covers family assistance, foster care, utility help, and other anti-poverty support. That includes things like TANF, Foster Care & Adoption, and Energy & Utility Aid, and other related programs. The total here mostly depends on how many households qualify and how large their credits or refunds are."
+          "details": "This part of the budget covers family assistance, foster care, utility help, and other anti-poverty support. That includes things like TANF, Foster Care & Adoption, and Energy & Utility Aid, and other related programs."
         },
         {
           "id": "earned-income-credit",
           "title": "Earned Income Tax Credit",
           "desc": "Refundable tax credit that boosts earnings for lower-income workers",
-          "total": 89100000000,
-          "categories": [
-            {
-              "id": "eitc-refundable",
-              "title": "Refundable EITC",
-              "desc": "Refundable earned income credit payments",
-              "total": 85536000000,
-              "details": "This is the money the federal government spends on refundable earned income credit payments. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The total here mostly depends on how many households qualify and how large their credits or refunds are."
-            },
-            {
-              "id": "eitc-admin",
-              "title": "Administration & Compliance",
-              "desc": "IRS administration and compliance associated with the EITC",
-              "total": 3564000000,
-              "details": "This is the money needed to run Earned Income Tax Credit behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
-            }
-          ],
-          "details": "This part of the budget covers refundable tax credit that boosts earnings for lower-income workers. That includes things like Refundable EITC and Administration & Compliance. The total here mostly depends on how many households qualify and how large their credits or refunds are."
+          "source": "https://www.irs.gov/credits-deductions/individuals/earned-income-tax-credit/eitc-reports-and-statistics",
+          "total": 70000000000,
+          "details": "A wage supplement for low- and moderate-income workers, paid as a tax refund. The entire EITC is refundable — the government writes a check even if you owe $0 in taxes. ~24 million workers and families; average payment ~$2,894 per household. Lifts ~4.4 million people above the poverty line annually, including 2.3 million children."
         },
         {
           "id": "housing-assistance",
           "title": "Housing Assistance",
           "desc": "Federal rental assistance and housing support for low-income households",
-          "details": "This part of the budget helps lower-income households afford rent and stay housed. It includes vouchers, project-based subsidies, public housing, and other housing support. The total here depends mostly on how many households get help, local housing costs, and the rules of each program.",
+          "details": "This part of the budget helps lower-income households afford rent and stay housed. It includes vouchers, project-based subsidies, public housing, and other housing support.",
           "total": 89100000000,
-          "source": "https://www.hud.gov/sites/dfiles/CFO/documents/2025-Budget-in-Brief-Final.pdf",
+          "source": "https://www.congress.gov/crs-product/R47999",
           "categories": [
             {
               "id": "housing-vouchers",
               "title": "Housing Choice Vouchers",
-              "desc": "Tenant-based rental assistance vouchers",
-              "total": 40095000000,
-              "details": "This is the money the federal government spends on tenant-based rental assistance vouchers. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The total here mostly depends on how many households qualify and how large their credits or refunds are."
+              "desc": "Section 8 tenant-based rental assistance vouchers",
+              "source": "https://www.hud.gov/sites/dfiles/CFO/documents/FY_2026_Congressional_Justification_E-File.pdf",
+              "total": 36100000000,
+              "details": "Pays private landlords the difference between 30% of a tenant's income and the local market rent. Approximately 2.3 million families hold vouchers. The $36B includes $6B in emergency-designated funding needed to cover rising rents nationwide."
             },
             {
               "id": "housing-pbra",
               "title": "Project-Based Rental Assistance",
-              "desc": "Project-based Section 8 rental assistance",
-              "total": 24057000000,
-              "details": "This is the money the federal government spends on project-based section 8 rental assistance. In everyday terms, this is one of the line items that makes the broader category work in real life. The total here mostly depends on how many households qualify and how large their credits or refunds are."
+              "desc": "Section 8 project-based rental assistance",
+              "source": "https://www.hud.gov/sites/dfiles/CFO/documents/FY_2026_Congressional_Justification_E-File.pdf",
+              "total": 16900000000,
+              "details": "Subsidizes rent in specific privately-owned apartment buildings under long-term HUD contracts. Unlike vouchers, the subsidy is tied to the unit — if you leave, you lose it. Covers ~1.2 million households. Owners receive guaranteed payment; tenants pay 30% of income. Many of these are elderly or disabled-housing properties."
             },
             {
               "id": "housing-public",
               "title": "Public Housing",
               "desc": "Public housing operating and capital support",
-              "total": 17820000000,
-              "details": "This is the money the federal government spends on public housing operating and capital support. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The total here mostly depends on how many households qualify and how large their credits or refunds are."
+              "source": "https://www.hud.gov/sites/dfiles/CFO/documents/FY_2026_Congressional_Justification_E-File.pdf",
+              "total": 8800000000,
+              "details": "Keeps ~856,000 public housing units operational across ~3,000 local housing authorities. $5.5B covers day-to-day operations (heat, maintenance, staff); $3.2B covers capital repairs (roofs, elevators, plumbing). Without these funds, 1.7 million residents — 73% of whom are extremely low-income — would face unsafe or uninhabitable conditions."
             },
             {
               "id": "housing-homeless",
-              "title": "Homelessness & Other Aid",
+              "title": "Homelessness Aid",
               "desc": "Homeless assistance grants and other HUD rental support",
-              "total": 7128000000,
-              "details": "This is the money the federal government spends on homeless assistance grants and other HUD rental support. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The total here mostly depends on how many households qualify and how large their credits or refunds are."
+              "source": "https://www.hud.gov/sites/dfiles/CFO/documents/FY_2026_Congressional_Justification_E-File.pdf",
+              "total": 4100000000,
+              "details": "Funds the local networks of shelters, rapid rehousing programs, and permanent supportive housing across the country. Continuum of Care ($3.5B) funds permanent housing with services for people with disabilities; Emergency Solutions Grants ($290M) fund street outreach and short-term shelter. In 2024, HUD counted ~770,000 people experiencing homelessness on a single night."
+            },
+            {
+              "id": "housing-other",
+              "title": "Other Housing Support",
+              "desc": "Other smaller housing assistance programs, such as section 202/811",
+              "source": "https://www.hud.gov/sites/dfiles/CFO/documents/FY_2026_Congressional_Justification_E-File.pdf",
+              "total": 2100000000,
+              "details": "Provides capital advances and project rental assistance to build and operate affordable housing for low-income seniors and people with disabilities. Section 202 supports senior housing; Section 811 supports housing for people with disabilities. These programs fund the construction and operation of affordable housing units, often with on-site services."
+            },
+            {
+              "id": "cdbg",
+              "title": "Community Development Block Grants",
+              "desc": "CDBG grants for community development and affordable housing projects",
+              "source": "https://www.hud.gov/sites/dfiles/CFO/documents/FY_2026_Congressional_Justification_E-File.pdf",
+              "total": 15300000000,
+              "details": "Formula grants to ~1,200 cities, counties, and states for local housing rehab, infrastructure, and services for low-income residents. Regular CDBG is $3.3B; FY2025 also included $12B in disaster recovery funds for 2023-2024 major disasters. A city might use CDBG to fix deteriorating rental housing or build accessible ramps for disabled residents." 
+            },
+            {
+              "id": "home-investment-partnerships",
+              "title": "HOME Investment Partnerships",
+              "desc": "HOME grants for affordable housing development and rehabilitation",
+              "source": "https://www.hud.gov/sites/dfiles/CFO/documents/FY_2026_Congressional_Justification_E-File.pdf",
+              "total": 1250000000,
+              "details": "Block grants to states and localities to build, buy, or rehab affordable rental or ownership housing. A state might use HOME to fund a nonprofit building 50 affordable apartments or provide down payment assistance to a first-time homebuyer at 60% of area median income."
+            },
+            {
+              "id": "ihbg-icdbg",
+              "title": "Native American Housing Programs",
+              "desc": "Indian Housing Block Grants and related support for tribal housing",
+              "source": "https://www.hud.gov/sites/dfiles/CFO/documents/FY_2026_Congressional_Justification_E-File.pdf",
+              "total": 1340000000,
+              "details": "Formula and competitive grants to ~570 federally recognized tribes for affordable housing construction, rehab, and operations in Indian Country. Native American communities face some of the most severe housing shortages in the country — overcrowding rates on reservations can exceed 15x the national average."
             }
           ]
         },
@@ -782,338 +764,489 @@
           "id": "unemployment",
           "title": "Unemployment Compensation",
           "desc": "Federal costs tied to unemployment benefits, administration, and reemployment services",
+          "source": "https://www.congress.gov/crs_external_products/IF/PDF/IF10336/IF10336.11.pdf",
           "total": 43200000000,
-          "categories": [
-            {
-              "id": "ui-regular",
-              "title": "Regular Benefits",
-              "desc": "Benefit payments under regular unemployment programs",
-              "total": 30240000000,
-              "details": "This is the money the federal government spends on benefit payments under regular unemployment programs. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The total here mostly depends on how many households qualify and how large their credits or refunds are."
-            },
-            {
-              "id": "ui-admin",
-              "title": "Administration & Reemployment",
-              "desc": "State administration, staffing, and reemployment services",
-              "total": 6912000000,
-              "details": "This is the money needed to run Unemployment Compensation behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
-            },
-            {
-              "id": "ui-extended",
-              "title": "Extended & Other UI",
-              "desc": "Extended benefits and other federal unemployment activities",
-              "total": 6048000000,
-              "details": "This is the money the federal government spends on extended benefits and other federal unemployment activities. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The total here mostly depends on how many households qualify and how large their credits or refunds are."
-            }
-          ],
-          "details": "This is the money needed to run Income Security behind the scenes. It covers the staff, systems, oversight, and other support needed to keep Income Security running. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
+          "details": "Temporary wage replacement for workers who lose jobs through no fault of their own. In FY2025, states paid roughly $37.7 billion in benefits. The average weekly benefit nationally is ~$450-$500 — enough to cover rent and utilities for a few weeks while someone searches for a new job."
         }
       ],
-      "details": "This part of the budget helps households cover basic needs and get through hard times. It includes tax credits, food aid, housing support, unemployment benefits, and other programs that put money or services in people's hands. The total here depends mostly on who qualifies, how many people use the programs, and the rules that set benefit levels."
+      "details": "This part of the budget helps households cover basic needs and get through hard times. It includes tax credits, food aid, housing support, unemployment benefits, and other programs that put money or services in people's hands."
     },
     {
       "id": "veterans",
       "title": "Veterans Benefits",
-      "desc": "Cash benefits, health care, education, and support services for veterans and their families",
-      "total": 377200000000,
+      "desc": "Cash benefits, health care, education, and support services for veterans and their families — administered by the U.S. Department of Veterans Affairs (VA)",
+      "total": 400900000000,
+      "source": "https://department.va.gov/wp-content/uploads/2025/06/2026-Budget-in-Brief.pdf",
       "categories": [
         {
           "id": "veterans-compensation",
-          "title": "Disability Compensation",
-          "desc": "Monthly compensation and survivor payments tied to service-connected disabilities",
-          "total": 187500000000,
-          "source": "https://department.va.gov/administrations-and-offices/management/budget/",
+          "title": "Disability Compensation & Pensions",
+          "desc": "Monthly cash payments to veterans with service-connected disabilities, low-income elderly or disabled veterans, and surviving family members",
+          "total": 212553000000,
+          "source": "https://www.congress.gov/crs-product/R48608",
+          "note": "Total budgetary resources in the Compensation and Pensions account for FY2025, per CRS R48608. Includes $182.31B in advance appropriations plus $30.24B in supplemental funding enacted in P.L. 119-4 to cover PACT Act-driven claims growth.",
           "categories": [
             {
               "id": "va-disability",
               "title": "Disability Compensation",
-              "desc": "Monthly disability compensation for veterans",
-              "total": 161250000000,
-              "details": "This is the money the federal government spends on monthly disability compensation for veterans. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The amount spent here mostly depends on how many people qualify and the size of the monthly benefits they receive."
+              "desc": "Monthly tax-free payments to veterans whose injuries, illnesses, or conditions are linked to their military service",
+              "total": 195000000000,
+              "source": "https://department.va.gov/wp-content/uploads/2025/06/2026-Budget-in-Brief.pdf",
+              "details": "This money pays monthly, tax-free disability checks to veterans whose health conditions — from hearing loss and PTSD to missing limbs and cancer — are linked to their time in the military. In FY2025, about 7 million veterans and survivors received these payments. Monthly amounts range from about $175 (10% disability rating) to over $3,750 (100% rating), and go up further if the veteran has dependents. Spending has surged since 2022 because the PACT Act expanded eligibility to veterans exposed to burn pits, Agent Orange, radiation, and other toxins — adding hundreds of thousands of new claimants."
+            },
+            {
+              "id": "va-pension",
+              "title": "Veterans Pension",
+              "desc": "Needs-based monthly payments to low-income wartime veterans who are elderly or permanently disabled",
+              "total": 3100000000,
+              "source": "https://department.va.gov/wp-content/uploads/2025/06/2026-Budget-in-Brief.pdf",
+              "details": "This money pays monthly checks to wartime veterans who are 65 or older, or permanently and totally disabled, and whose income falls below a set threshold. In FY2025, about 200,000 veterans and survivors receive pension benefits. Unlike disability compensation, pension is income-based — not tied to a service-connected condition. It helps elderly veterans on fixed incomes cover everyday costs like housing and food."
             },
             {
               "id": "va-dic",
-              "title": "Survivor Benefits",
-              "desc": "Dependency and indemnity compensation for survivors",
-              "total": 16875000000,
-              "details": "This is the money the federal government spends on dependency and indemnity compensation for survivors. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The amount spent here mostly depends on how many people qualify and the size of the monthly benefits they receive."
+              "title": "Dependency & Indemnity Compensation (DIC)",
+              "desc": "Monthly payments to surviving spouses and dependent children of veterans who died from a service-connected condition",
+              "total": 10000000000,
+              "source": "https://www.congress.gov/crs-product/R48608",
+              "details": "This money supports the surviving spouses and children of veterans who died because of a service-connected injury or illness. In 2025, VA is working to streamline the DIC claims process for survivors. A surviving spouse with one dependent child receives roughly $1,600–$1,800 per month. Payments are tax-free and continue until remarriage (for spouses) or adulthood (for children)."
             },
             {
               "id": "va-comp-other",
-              "title": "Other Compensation",
-              "desc": "Smaller compensation-related benefits and support",
-              "total": 9375000000,
-              "details": "This is the money the federal government spends on smaller compensation-related benefits and support. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The amount spent here mostly depends on how many people qualify and the size of the monthly benefits they receive."
+              "title": "Burial Allowances & Clothing Allowance",
+              "desc": "One-time burial expense reimbursements and annual clothing allowance for veterans with prosthetics or certain disabilities",
+              "total": 4453000000,
+              "source": "https://www.congress.gov/crs-product/R48608",
+              "details": "Two small but meaningful programs live here. The burial allowance reimburses families up to $796–$2,000 for funeral costs when a veteran dies from a service-connected cause or while receiving VA care. The clothing allowance (about $950/year) helps veterans whose service-connected conditions damage their clothing due to prosthetics, braces, or skin medication. Small checks, but they matter to families dealing with loss or daily disability challenges."
             }
-          ],
-          "details": "This part of the budget covers monthly compensation and survivor payments tied to service-connected disabilities. That includes things like Disability Compensation, Survivor Benefits, and Other Compensation. The amount spent here mostly depends on how many people qualify and the size of the monthly benefits they receive."
+          ]
         },
         {
           "id": "veterans-health",
           "title": "Veterans Health Care",
-          "desc": "VA medical care delivered in hospitals, clinics, and community settings",
-          "total": 126400000000,
-          "source": "https://department.va.gov/administrations-and-offices/management/budget/",
+          "desc": "Medical care for enrolled veterans delivered through VA hospitals, community clinics, and private-sector providers — the largest integrated health care system in the United States",
+          "total": 150500000000,
+          "source": "https://department.va.gov/wp-content/uploads/2025/06/2026-Budget-in-Brief.pdf",
           "categories": [
             {
               "id": "va-medical-services",
               "title": "Medical Services",
-              "desc": "Hospital, outpatient, and clinical care delivered by VA",
-              "total": 70784000000,
-              "details": "This is the money the federal government spends on hospital, outpatient, and clinical care delivered by VA. It pays for the day-to-day work needed to keep this part of government or the program running. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
+              "desc": "Direct VA care: hospital stays, outpatient visits, mental health treatment, prescriptions, and specialist services at VA medical centers and clinics",
+              "total": 81013000000,
+              "source": "https://department.va.gov/wp-content/uploads/2025/06/2026-Budget-in-Brief.pdf",
+              "details": "This is the core of VA's health system — paying for care at VA's 170+ medical centers and 1,000+ outpatient clinics across the country. It covers inpatient hospital stays, primary care, mental health counseling, surgery, prescriptions, women's health, and long-term care. In FY2025, more than 9 million veterans are enrolled and roughly 7.5 million receive care. The TEF adds a large chunk here to cover care for veterans exposed to burn pits, Agent Orange, and other toxic substances under the 2022 PACT Act."
             },
             {
               "id": "va-community-care",
               "title": "Community Care",
-              "desc": "Care purchased from non-VA providers",
-              "total": 29072000000,
-              "details": "This is the money the federal government spends on care purchased from non-VA providers. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
+              "desc": "Reimbursements to private doctors, hospitals, and specialists when VA cannot provide timely or local care",
+              "total": 38249000000,
+              "source": "https://department.va.gov/wp-content/uploads/2025/06/2026-Budget-in-Brief.pdf",
+              "details": "When a veteran can't get an appointment at a VA facility within a reasonable time, or lives too far away, VA pays private doctors, hospitals, and specialists to provide care instead. This program has grown sharply — from $22.5B in FY2024 to $38.2B in FY2025 — driven by the MISSION Act (2018), which expanded eligibility for community care, and by PACT Act veterans entering the system. For many rural veterans, this is their primary way of receiving VA-covered medical care."
             },
             {
               "id": "va-support",
-              "title": "Support & Compliance",
-              "desc": "Administrative support, IT, logistics, and compliance",
-              "total": 13904000000,
-              "details": "This is the money needed to run Veterans Health Care behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
+              "title": "Medical Support & Compliance",
+              "desc": "Administrative operations, human resources, compliance, and support staff that keep VA's health system running",
+              "total": 11719000000,
+              "source": "https://department.va.gov/wp-content/uploads/2025/06/2026-Budget-in-Brief.pdf",
+              "details": "This pays for the back-office operations of VA's health system: billing and coding staff, HR, finance, compliance officers, facilities management support, and the customer service teams that help veterans navigate appointments and benefits. Without this infrastructure, the clinical care in other line items wouldn't function. It includes mental health crisis line staffing and outreach operations."
             },
             {
               "id": "va-facilities",
               "title": "Medical Facilities",
-              "desc": "Facility operations, maintenance, and capital support",
-              "total": 12640000000,
-              "details": "This is the money the federal government spends on facility operations, maintenance, and capital support. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
+              "desc": "Operations, maintenance, and capital upkeep of VA's hospital campuses and clinic buildings",
+              "total": 9548000000,
+              "source": "https://department.va.gov/wp-content/uploads/2025/06/2026-Budget-in-Brief.pdf",
+              "details": "VA operates 153 million square feet of physical space across 16,025 acres — one of the largest federal real estate portfolios. This line funds routine maintenance, repairs, utilities, and smaller capital projects at VA hospitals and clinics. It also covers leases for community-based outpatient clinics and Vet Centers. Deferred maintenance has been a long-standing challenge: GAO and VA's own inspector general have flagged aging infrastructure at many facilities."
             }
-          ],
-          "details": "This part of the budget covers VA medical care delivered in hospitals, clinics, and community settings. That includes things like Medical Services, Community Care, and Support & Compliance, and other related programs. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
+          ]
         },
         {
-          "id": "veterans-other",
-          "title": "Other Veterans Benefits",
-          "desc": "Housing, memorial, insurance, pension, and other non-medical veteran support",
-          "total": 33300000000,
-          "source": "https://department.va.gov/administrations-and-offices/management/budget/",
+          "id": "veterans-tef",
+          "title": "Toxic Exposures Fund (PACT Act)",
+          "desc": "Mandatory fund created by the 2022 PACT Act to cover the additional costs of health care and benefits for veterans exposed to burn pits, Agent Orange, radiation, and other toxic substances",
+          "total": 30455000000,
+          "source": "https://department.va.gov/wp-content/uploads/2025/06/2026-Budget-in-Brief.pdf",
+          "note": "TEF spending is already allocated to specific accounts (Medical Services, Community Care, VBA admin, IT) in the combined appropriation table. It is shown here separately to highlight its significance and rapid growth. Costs were $20B in FY2024, $30.4B in FY2025, and projected at $52.6B in FY2026.",
           "categories": [
             {
-              "id": "va-housing",
-              "title": "Housing & Homelessness",
-              "desc": "Housing loans, housing grants, and homelessness support",
-              "total": 10323000000,
-              "details": "This is the money the federal government spends on housing loans, housing grants, and homelessness support. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
+              "id": "tef-medical",
+              "title": "TEF Medical Care",
+              "desc": "Health care costs for veterans with toxic exposure conditions, above the FY2021 baseline",
+              "total": 27578000000,
+              "source": "https://department.va.gov/wp-content/uploads/2025/06/2026-Budget-in-Brief.pdf",
+              "details": "The PACT Act of 2022 is the largest expansion of VA health care in 30 years. It established presumptive service connections for dozens of conditions — meaning veterans no longer have to prove a specific toxic substance caused their illness. This covers veterans who were near burn pits in Iraq and Afghanistan, exposed to Agent Orange in Vietnam, or worked around radiation during Cold War nuclear tests. VA uses this fund to pay medical costs above what it was already spending in 2021, keeping toxic-exposure care from crowding out other veterans' health budgets."
             },
             {
-              "id": "va-burial",
-              "title": "Burial & Memorial",
-              "desc": "National cemeteries and burial services",
-              "total": 5661000000,
-              "details": "This is the money the federal government spends on the National cemeteries and burial services. It pays for the day-to-day work needed to keep this part of government or the program running. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
-            },
-            {
-              "id": "va-insurance",
-              "title": "Insurance & Indemnities",
-              "desc": "Veterans insurance programs and indemnity support",
-              "total": 3330000000,
-              "details": "This is the money the federal government spends on veterans insurance programs and indemnity support. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
-            },
-            {
-              "id": "va-other-services",
-              "title": "Other Services",
-              "desc": "Other veterans services and departmental administration",
-              "total": 13986000000,
-              "details": "This is the money needed to run Other Veterans Benefits behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
+              "id": "tef-vba",
+              "title": "TEF Benefits Administration & IT",
+              "desc": "Claims processing staff and technology to handle the surge in PACT Act disability claims",
+              "total": 2877000000,
+              "source": "https://department.va.gov/wp-content/uploads/2025/06/2026-Budget-in-Brief.pdf",
+              "details": "The PACT Act added hundreds of thousands of new claimants to VA's disability system almost overnight. This money pays for the VBA staff, claims adjudicators, and technology upgrades needed to process those claims — including the VA's AI-assisted claims tools. Without this investment, wait times for disability decisions would spike even further."
             }
-          ],
-          "details": "This part of the budget covers housing, memorial, insurance, pension, and other non-medical veteran support. That includes things like Housing & Homelessness, Burial & Memorial, and Insurance & Indemnities, and other related programs. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
+          ]
         },
         {
           "id": "veterans-education",
           "title": "Education & Vocational Rehab",
-          "desc": "Tuition, training, and career-transition support for veterans",
-          "total": 30000000000,
-          "source": "https://department.va.gov/administrations-and-offices/management/budget/",
+          "desc": "Tuition, housing stipends, job training, and career-transition support for veterans and qualifying dependents — funded through the Readjustment Benefits mandatory account",
+          "total": 18264000000,
+          "source": "https://www.congress.gov/crs-product/R48608",
           "categories": [
             {
               "id": "va-gi-bill",
-              "title": "GI Bill",
-              "desc": "Post-9/11 GI Bill tuition, housing, and training support",
-              "total": 22800000000,
-              "details": "This is the money the federal government spends on post-9/11 GI bill tuition, housing, and training support. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
+              "title": "Post-9/11 GI Bill (Chapter 33)",
+              "desc": "Tuition payments, monthly housing allowances, and books/supplies stipends for veterans who served after September 10, 2001",
+              "total": 12000000000,
+              "source": "https://www.congress.gov/crs-product/R48608",
+              "details": "This pays college tuition directly to schools (up to the in-state public rate), a monthly housing allowance based on local housing costs (often $1,500–$3,000/month in major cities), and a $1,000/year books-and-supplies stipend. Veterans can also transfer unused benefits to a spouse or child. In FY2025, over 1.1 million veterans and dependents use VA education programs. Spending jumped in FY2025 partly due to the Rudisill v. McDonough Supreme Court ruling, which expanded concurrent use of Post-9/11 and Montgomery GI Bill benefits."
             },
             {
               "id": "va-vre",
-              "title": "Vocational Rehab",
-              "desc": "Veteran Readiness and Employment services",
-              "total": 4500000000,
-              "details": "This is the money the federal government spends on veteran readiness and employment services. It pays for the day-to-day work needed to keep this part of government or the program running. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
+              "title": "Veteran Readiness & Employment (VR&E)",
+              "desc": "Individualized career counseling, job training, and support services for veterans with service-connected disabilities",
+              "total": 2500000000,
+              "source": "https://department.va.gov/wp-content/uploads/2025/06/2026-Budget-in-Brief.pdf",
+              "details": "VR&E (formerly called Vocational Rehabilitation) helps veterans with disabilities that affect their ability to work. A VA counselor creates an individualized plan — which could mean paying for college, a trade program, on-the-job training, or running a small business. In FY2025, VA supports more than 189,000 veterans through this program. It also covers employment services for veterans who have a job but need help keeping it due to disability."
+            },
+            {
+              "id": "va-adaptive-grants",
+              "title": "Adaptive Housing & Auto Grants",
+              "desc": "One-time grants to modify homes and vehicles for veterans with severe service-connected disabilities",
+              "total": 1764000000,
+              "source": "https://www.congress.gov/crs-product/R48608",
+              "details": "Veterans who lost limbs or have other severe physical disabilities can receive grants to make their homes wheelchair-accessible (ramps, wider doorways, accessible bathrooms) or to purchase and modify vehicles with hand controls. The Specially Adapted Housing (SAH) grant can be up to ~$117,000; the Special Housing Adaptation (SHA) grant up to ~$23,000. These are one-time awards that can mean the difference between independence and needing full-time assisted living."
             },
             {
               "id": "va-education-other",
               "title": "Other Education Benefits",
-              "desc": "Other education and training benefits for veterans",
-              "total": 2700000000,
-              "details": "This is the money the federal government spends on other education and training benefits for veterans. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
+              "desc": "Montgomery GI Bill, Survivors' & Dependents' Education Assistance, VET TEC (tech training), and other education programs",
+              "total": 2000000000,
+              "source": "https://www.congress.gov/crs-product/R48608",
+              "details": "Covers the older Montgomery GI Bill (active duty and selected reserve), which provides a monthly education stipend; the Survivors' and Dependents' Educational Assistance (DEA) program for family members of veterans with permanent service-connected disabilities; and VET TEC, a pilot program that pays for high-tech coding bootcamps and IT training. These serve different eras of veterans and family members not covered by the Post-9/11 GI Bill."
             }
-          ],
-          "details": "This part of the budget covers tuition, training, and career-transition support for veterans. That includes things like GI Bill, Vocational Rehab, and Other Education Benefits. The amount spent here mostly depends on how many people are covered, what care they use, and how much that care costs."
+          ]
+        },
+        {
+          "id": "veterans-homelessness",
+          "title": "Veteran Homelessness Programs",
+          "desc": "Prevention, transitional housing, permanent supportive housing, and employment services to help veterans avoid or exit homelessness",
+          "total": 3200000000,
+          "source": "https://www.va.gov/HOMELESS/featuredarticles/Where-Does-the-Money-Go.asp",
+          "categories": [
+            {
+              "id": "va-hud-vash",
+              "title": "HUD-VASH (Housing Vouchers)",
+              "desc": "Rental vouchers paired with VA case management for the most vulnerable homeless veterans",
+              "total": 500000000,
+              "source": "https://www.va.gov/HOMELESS/featuredarticles/Where-Does-the-Money-Go.asp",
+              "details": "HUD-VASH combines a HUD rental voucher (similar to Section 8) with VA case management services. A veteran uses the voucher to rent a private apartment at below-market cost, and a VA social worker provides ongoing support — helping with mental health, substance use, employment, and staying housed. It's one of the most evidence-backed interventions for chronic homelessness. Cities that have effectively 'ended' veteran homelessness (like Houston) relied heavily on this model."
+            },
+            {
+              "id": "va-ssvf",
+              "title": "Supportive Services for Veteran Families (SSVF)",
+              "desc": "Grants to nonprofits providing rapid rehousing and homelessness prevention for at-risk veterans and families",
+              "total": 659000000,
+              "source": "https://www.va.gov/HOMELESS/featuredarticles/Where-Does-the-Money-Go.asp",
+              "details": "SSVF pays grants to local nonprofits that help veterans who are either about to lose their housing (prevention) or who just became homeless and need help getting back into stable housing quickly (rapid rehousing). A veteran facing eviction might get back rent paid and a case manager to help negotiate with a landlord. One who just lost their apartment might get temporary rental assistance and help finding a new place within weeks. It's faster and cheaper than shelter-based approaches."
+            },
+            {
+              "id": "va-gpd",
+              "title": "Grant & Per Diem (GPD) — Transitional Housing",
+              "desc": "Grants to nonprofits running transitional housing programs for homeless veterans",
+              "total": 320000000,
+              "source": "https://www.va.gov/HOMELESS/featuredarticles/Where-Does-the-Money-Go.asp",
+              "details": "GPD funds community nonprofits that operate transitional housing for homeless veterans — safe places to stay while they stabilize, receive support services, and search for permanent housing. Stays typically last up to 24 months. Nonprofits receive a daily per diem rate per veteran served, plus upfront construction or renovation grants. Think of it as a network of structured halfway houses specifically designed for veterans recovering from homelessness, mental health crises, or substance use."
+            },
+            {
+              "id": "va-homeless-other",
+              "title": "Other Homelessness Services",
+              "desc": "Healthcare for homeless veterans, employment programs, domiciliary care, outreach, and the National Call Center",
+              "total": 1721000000,
+              "source": "https://www.va.gov/HOMELESS/featuredarticles/Where-Does-the-Money-Go.asp",
+              "details": "This bucket includes Health Care for Homeless Veterans (HCHV, ~$283M) — which funds street outreach and emergency shelter contracts; domiciliary care (~$259M) — residential rehab programs at VA medical centers; Compensated Work Therapy (~$232M) — helping homeless veterans build work skills; Veterans Justice Programs (~$104M) — outreach to veterans in the criminal justice system; and the National Call Center for Homeless Veterans, which runs 24/7 at 1-877-4AID-VET."
+            }
+          ]
+        },
+        {
+          "id": "veterans-nca",
+          "title": "National Cemetery Administration (NCA)",
+          "desc": "Operations and maintenance of national veterans cemeteries, grave markers, and grants to state and tribal veterans cemeteries",
+          "total": 480000000,
+          "source": "https://department.va.gov/wp-content/uploads/2025/06/2026-Budget-in-Brief.pdf",
+          "details": "NCA maintains 158 national cemeteries across the country — from Arlington National Cemetery to small rural sites. This money keeps them at 'national shrine standards': manicured grounds, headstones maintained, burial ceremonies conducted with full military honors. In FY2025, VA will inter an estimated 130,000+ veterans and eligible family members. Any veteran with an honorable discharge qualifies for burial at no cost to the family — the government covers the grave space, liner, opening and closing, and headstone."
+        },
+        {
+          "id": "veterans-insurance",
+          "title": "Veterans Insurance & Indemnities",
+          "desc": "Government life insurance programs for veterans, including the new VA Life program opened in 2023",
+          "total": 135000000,
+          "source": "https://department.va.gov/wp-content/uploads/2025/06/2026-Budget-in-Brief.pdf",
+          "details": "VA runs seven life insurance programs covering over 5.5 million veterans. The flagship is Service-Disabled Veterans Insurance (S-DVI), which provides up to $10,000 in coverage to veterans whose life insurance options are limited due to service-connected conditions. A newer program — VA Life, launched January 2023 — offers up to $40,000 in permanent whole life coverage to veterans with service-connected disabilities who can't get affordable private coverage. The federal cost here reflects government subsidies, not the total value of insurance in force."
+        },
+        {
+          "id": "veterans-admin",
+          "title": "Departmental Administration & Operations",
+          "desc": "VBA operating expenses, information technology, Electronic Health Record modernization, construction, the Board of Veterans' Appeals, and the Office of Inspector General",
+          "total": 15813000000,
+          "source": "https://department.va.gov/wp-content/uploads/2025/06/2026-Budget-in-Brief.pdf",
+          "categories": [
+            {
+              "id": "va-vba-goe",
+              "title": "VBA General Operating Expenses",
+              "desc": "Staff and systems to process disability claims, education applications, home loans, and other veteran benefits",
+              "total": 3899000000,
+              "source": "https://department.va.gov/wp-content/uploads/2025/06/2026-Budget-in-Brief.pdf",
+              "details": "This pays the roughly 25,000 VBA employees who process disability claims, education benefit applications, home loan guarantees, pension payments, and life insurance claims. In FY2023, VBA processed a record 1.98 million veteran and survivor claims. This line also funds the AI-assisted claims tools VA has been deploying to speed up decisions. When veterans complain about long waits for their disability rating, this is the budget that determines how fast the system can work."
+            },
+            {
+              "id": "va-it",
+              "title": "Information Technology",
+              "desc": "VA's enterprise IT systems, cybersecurity, and technology infrastructure serving 450,000+ employees",
+              "total": 6227000000,
+              "source": "https://department.va.gov/wp-content/uploads/2025/06/2026-Budget-in-Brief.pdf",
+              "details": "VA is one of the largest IT operators in the federal government. This covers network infrastructure, cybersecurity, veteran-facing digital services (like VA.gov, the mobile app, and online benefit portals), and the backend systems that process claims and health records. It includes ~$1.3B for the controversial Electronic Health Record Modernization (EHRM) program, which is migrating VA from its legacy VistA system to a commercial platform shared with the Department of Defense."
+            },
+            {
+              "id": "va-construction",
+              "title": "Construction & Grants",
+              "desc": "Major and minor construction projects at VA facilities, plus grants to states for veterans homes and cemeteries",
+              "total": 1653000000,
+              "source": "https://department.va.gov/wp-content/uploads/2025/06/2026-Budget-in-Brief.pdf",
+              "details": "Covers major construction projects ($961M) like new hospital buildings and parking structures; minor construction and repairs ($692M) at existing facilities; and grants to states for building or improving state veterans nursing homes ($171M) and state veterans cemeteries ($60M). Given VA's aging infrastructure, construction needs far exceed what this budget covers annually — GAO and VA's own reports consistently flag a large backlog of deferred maintenance."
+            },
+            {
+              "id": "va-bva",
+              "title": "Board of Veterans' Appeals (BVA)",
+              "desc": "Independent federal board that decides veteran appeals when VA denies a disability or benefits claim",
+              "total": 277000000,
+              "source": "https://department.va.gov/wp-content/uploads/2025/06/2026-Budget-in-Brief.pdf",
+              "details": "When VA denies or underpays a veteran's claim, the veteran can appeal to the BVA. Veterans Law Judges review the record and issue formal decisions. In recent years, the BVA has faced large backlogs as PACT Act claims surge — in FY2023 it issued over 100,000 decisions. This funding covers the judges, attorneys, and support staff who conduct those reviews. Veterans can also hire accredited attorneys or claims agents to argue their appeal, and attorney fees come out of back pay if the veteran wins."
+            },
+            {
+              "id": "va-admin-other",
+              "title": "General Administration & OIG",
+              "desc": "Secretary's office, general counsel, congressional affairs, and the independent Office of Inspector General",
+              "total": 3757000000,
+              "source": "https://department.va.gov/wp-content/uploads/2025/06/2026-Budget-in-Brief.pdf",
+              "details": "General Administration ($448M) covers the VA Secretary's office, public affairs, legislative affairs, general counsel, and financial management. The Office of Inspector General ($296M) independently investigates fraud, waste, abuse, and mismanagement across VA — it issues dozens of reports per year and refers criminal cases to the Department of Justice. The remaining balance includes the Medical Care Collections Fund ($4.4B) — where VA recovers costs from veterans' private insurance for care of non-service-connected conditions."
+            }
+          ]
         }
       ],
-      "details": "This part of the budget supports veterans and their families. It includes disability payments, health care, education benefits, housing help, and other services tied to military service. The total here mostly depends on how many veterans use these programs and how expensive that care and support is to provide."
+      "details": "The Department of Veterans Affairs supports approximately 17.9 million living veterans, their families, caregivers, and survivors. Its budget covers disability payments, health care, education benefits, housing assistance, burial services, and the infrastructure to deliver all of it. Total FY2025 spending reached ~$400.9B — significantly above the ~$368B originally enacted — driven by surging mandatory benefit costs under the 2022 PACT Act, which is the largest expansion of veterans' benefits in 30 years."
     },
     {
       "id": "transportation",
       "title": "Transportation",
-      "desc": "Federal support for roads, transit, aviation, passenger rail, and maritime infrastructure",
-      "details": "This is the overall federal investment in moving people and goods. It pays for road repairs so families can drive safely to work or school, airport improvements so flights are on time, bus and train grants so workers can commute affordably, and port maintenance so groceries and clothes stay affordable by keeping supply chains running.",
-      "source": "https://www.transportation.gov/sites/dot.gov/files/2026-01/US_DOT_FY2025_AFR.pdf",
-      "total": 145800000000,
+      "desc": "Federal investment in roads, transit, aviation, passenger rail, and maritime infrastructure",
+      "details": "This is the total federal spending on moving people and goods across America. It funds grants to states for road and bridge repairs, air traffic controllers who keep flights safe, bus and rail systems that commuters depend on, and ports that keep goods flowing. The $145.8 billion total is the actual amount paid out (outlays) in FY2025, confirmed by the U.S. Treasury. It is larger than DOT's own enacted budget ($152B) because outlays from prior-year appropriations continue to flow out — especially for multi-year highway and transit construction projects funded under the 2021 Infrastructure Investment and Jobs Act (IIJA).",
+      "source": "https://www.fiscal.treasury.gov/files/reports-statements/combined-statement/cs2025/outlay.pdf",
+      "total": 145804000000,
       "categories": [
         {
           "id": "highways",
           "title": "Highways",
-          "desc": "Funding and grants for highways, bridges, safety, and related road programs",
-          "details": "This is the largest part of federal transportation spending. It mainly funds grants sent to states for building, repairing, and improving roads, bridges, and highways. Most of the money goes out as Federal-aid Highways grants that states then spend on actual construction projects. This pays for concrete and asphalt to fix potholes and cracked roads, replacing old bridges, and adding safety features like better lighting or guardrails to reduce crashes.",
-          "source": "https://crsreports.congress.gov/product/pdf/R/R48596",
-          "total": 78400000000,
+          "desc": "Federal Highway Administration: grants for roads, bridges, safety, and emergency relief",
+          "details": "This is the largest slice of transportation spending. Almost all of it flows out as reimbursements to state DOTs for approved highway projects — states spend the money first, then invoice the federal government. FY2025 was unusual because it included $8.1 billion for the Emergency Relief Program, the single largest ER appropriation ever, largely in response to disaster-damaged highways from Hurricanes Helene and Milton. The core formula programs — which fund routine resurfacing, bridge replacements, and safety upgrades — add up to roughly $60 billion. Think of this as the money that keeps the 4 million miles of U.S. roads drivable: patching potholes, replacing crumbling bridges before they close, adding guardrails on dangerous curves.",
+          "source": "https://www.congress.gov/crs_external_products/R/PDF/R48596/R48596.2.pdf",
+          "total": 78449000000,
           "categories": [
             {
               "id": "highways-formula",
-              "title": "Formula Grants",
-              "desc": "Federal-aid highway formula programs for states",
-              "total": 46252000000,
-              "details": "This is the money the federal government spends on federal-aid highway formula programs for states. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "title": "Formula & Core Programs",
+              "desc": "IIJA formula apportionments to states: National Highway Performance, Surface Transportation Block Grant, and related programs",
+              "total": 60100000000,
+              "details": "This is the bread-and-butter of federal highway spending. Each year, the federal government calculates each state's share using statutory formulas based on lane-miles, vehicle miles traveled, and other factors, then sends the money as contract authority states can draw down. The largest programs are the National Highway Performance Program (focused on Interstate and major highways) and the Surface Transportation Block Grant Program (flexible money states can spend on almost any road). States typically put it toward resurfacing worn-out pavement, replacing structurally deficient bridges, widening bottlenecked corridors, and upgrading interchanges. The federal share is usually 80%; states contribute 20%.",
+              "source": "https://www.fhwa.dot.gov/cfo/fhwa-fy-2025_budget_508.pdf"
             },
             {
-              "id": "highways-bridges",
-              "title": "Bridge Programs",
-              "desc": "Bridge replacement and rehabilitation programs",
-              "total": 13428000000,
-              "details": "This is the money the federal government spends on bridge replacement and rehabilitation programs. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "id": "highways-emergency",
+              "title": "Emergency Relief Program",
+              "desc": "Disaster recovery funding for highways and bridges damaged by natural disasters",
+              "total": 8100000000,
+              "details": "Driven largely by road and bridge damage from Hurricanes Helene and Milton in the Southeast, the ER program reimburses states for federally eligible repair costs after presidentially declared disasters. Without ER funds, states would have to absorb catastrophic repair costs — or leave damaged highways closed for years. For context, a single major interstate closure can cost a regional economy hundreds of millions of dollars per week.",
+              "source": "https://www.congress.gov/crs_external_products/R/PDF/R48596/R48596.2.pdf"
             },
             {
-              "id": "highways-safety",
-              "title": "Safety Programs",
-              "desc": "Highway safety and freight-related programs",
-              "total": 7460000000,
-              "details": "This is the money the federal government spends on highway safety and freight-related programs. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "id": "highways-competitive",
+              "title": "Competitive & Discretionary Grants",
+              "desc": "INFRA grants, NEVI EV charging, Charging and Fueling Infrastructure, and other competitive highway programs",
+              "total": 5700000000,
+              "details": "These are competitively awarded grants for projects that states and localities apply for — unlike the formula programs that flow automatically. The biggest is the INFRA program (Nationally Significant Multimodal Freight and Highway Projects), which funds large freight corridors. Also included is the National Electric Vehicle Infrastructure (NEVI) program ($1B/year under IIJA) for highway EV charging networks, though the Trump Administration paused NEVI disbursements in early 2025. The program received far more applications than available funding — demand ran about 9x the awarded amount.",
+              "source": "https://www.congress.gov/crs_external_products/R/PDF/R48596/R48596.2.pdf"
             },
             {
-              "id": "highways-other",
-              "title": "Other Highway Programs",
-              "desc": "Other FHWA programs and administration",
-              "total": 7460000000,
-              "details": "This is the money needed to run Highways behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
+              "id": "highways-admin",
+              "title": "Administration & Federal Lands",
+              "desc": "FHWA operations, Federal Lands Transportation Program, and oversight",
+              "total": 4549000000,
+              "details": "This covers FHWA's own operating costs — the roughly 2,900 federal staff who review state project plans, conduct inspections, enforce program requirements, and process reimbursements — plus the Federal Lands Transportation Program, which funds roads, bridges, and trails on National Parks, National Forests, tribal lands, and other federally owned property. Unlike state-aid highways, roads on federal land don't have a state partner to co-fund them.",
+              "source": "https://www.fhwa.dot.gov/cfo/fhwa-fy-2025_budget_508.pdf"
             }
           ]
         },
         {
           "id": "air-transport",
-          "title": "Air Transportation",
-          "desc": "FAA operations, airport grants, air traffic systems, and aviation safety",
-          "total": 31200000000,
+          "title": "Air Transportation (FAA)",
+          "desc": "Federal Aviation Administration: air traffic control, airport grants, facilities, and safety oversight",
+          "details": "The FAA keeps roughly 45,000 flights per day moving safely through U.S. airspace. Its budget covers three main things: the people and systems that guide aircraft (air traffic controllers and their technology), grants to airports for runways and terminal improvements, and the safety certification of aircraft and airlines. In FY2025, enacted FAA funding totaled $26 billion — but does not include an additional $12.5 billion for air traffic control modernization appropriated through the 2025 reconciliation act (P.L. 119-21), which Congress passed after the January 29, 2025 Reagan National Airport midair collision.",
+          "source": "https://www.congress.gov/crs_external_products/R/PDF/R48596/R48596.2.pdf",
+          "source_label": "CRS R48596 Table 3, July 2025",
+          "total": 26017000000,
           "categories": [
             {
               "id": "air-faa-ops",
-              "title": "FAA Operations",
-              "desc": "Air traffic control and FAA operations",
-              "total": 13728000000,
-              "details": "This is the money the federal government spends on air traffic control and FAA operations. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "title": "Operations & Maintenance",
+              "desc": "Air traffic control staffing, en route centers, terminal facilities, and aviation safety oversight",
+              "total": 13483000000,
+              "details": "This is the FAA's largest account and covers the daily cost of running the U.S. air traffic control system: the roughly 14,000 air traffic controllers at 315 facilities nationwide, plus safety inspectors who certify planes and airlines. When you hear your pilot say 'cleared for takeoff,' a controller paid for under this account gave that clearance. The FAA has faced a chronic shortage of controllers — it was roughly 3,000 short of its target staffing in FY2025 — which is a major reason Congress added $12.5B in separate ATC modernization funding after the Reagan National Airport crash.",
+              "source": "https://www.congress.gov/crs_external_products/R/PDF/R48596/R48596.2.pdf"
             },
             {
               "id": "air-facilities",
               "title": "Facilities & Equipment",
-              "desc": "Capital systems, equipment, and technology for the FAA",
-              "total": 7488000000,
-              "details": "This is the money the federal government spends on capital systems, equipment, and technology for the FAA. In practice, it supports research, testing, labs, missions, or technology work in this area. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
+              "desc": "Radar systems, communications networks, automation technology, and control tower upgrades",
+              "total": 3176000000,
+              "details": "This pays for the physical infrastructure and technology behind air traffic control: radar antennas that track aircraft positions, radio systems that let controllers talk to pilots, automation software that predicts conflicts, and the buildings controllers work in. Much of this equipment is aging — some systems date to the 1970s and 1980s — which is why the post-crash reconciliation act added $12.5 billion specifically for modernization. A single radar outage can halt hundreds of flights at a major hub.",
+              "source": "https://www.congress.gov/crs_external_products/R/PDF/R48596/R48596.2.pdf"
             },
             {
               "id": "air-airports",
-              "title": "Airport Grants",
-              "desc": "Airport Improvement Program and related grants",
-              "total": 7800000000,
-              "details": "This is the money the federal government spends on airport improvement program and related grants. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "title": "Airport Improvement Program (AIP)",
+              "desc": "Capital grants for runway construction, taxiway repairs, terminal infrastructure, and safety equipment at public airports",
+              "total": 4000000000,
+              "details": "The AIP distributes grants to roughly 3,300 public-use airports for capital projects — repaving runways, extending taxiways, improving lighting and signage, upgrading fire/rescue equipment, and building or expanding terminals. Funding is distributed partly by formula (based on passenger volume and cargo) and partly through discretionary grants. Commercial airports must use AIP funds for airside projects, not retail or parking. General aviation airports — the small community airports that serve private pilots, air ambulances, and cargo — are also eligible and often more dependent on AIP than large hub airports.",
+              "source": "https://www.congress.gov/crs_external_products/R/PDF/R48596/R48596.2.pdf"
             },
             {
-              "id": "air-other",
-              "title": "Other Aviation Programs",
-              "desc": "Safety oversight, research, and other aviation support",
-              "total": 2184000000,
-              "details": "This is the money needed to run Air Transportation behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
+              "id": "air-research",
+              "title": "R&D and Other",
+              "desc": "Aviation safety R&D, NextGen modernization research, and other FAA programs",
+              "total": 5358000000,
+              "details": "Research and Engineering & Development ($280M) funds FAA's aviation safety research — testing new aircraft materials, studying wake turbulence, evaluating drone integration, and developing safer runway designs. The remainder (~$5.1B) includes IIJA advance appropriations for ATC infrastructure upgrades and smaller annual appropriations. The FY2026 request cuts R&D by 41%, reflecting the Administration's shift toward deploying modernization funding already provided in the reconciliation act rather than new research.",
+              "source": "https://www.congress.gov/crs_external_products/R/PDF/R48596/R48596.2.pdf"
             }
-          ],
-          "details": "This part of the budget covers FAA operations, airport grants, air traffic systems, and aviation safety. That includes things like FAA Operations, Facilities & Equipment, and Airport Grants, and other related programs. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+          ]
         },
         {
           "id": "mass-transit",
-          "title": "Mass Transit",
-          "desc": "Federal grants that help local agencies run, repair, and expand public transit",
-          "total": 23400000000,
+          "title": "Mass Transit (FTA)",
+          "desc": "Federal Transit Administration: grants to local agencies for buses, subways, light rail, and commuter rail",
+          "details": "The FTA does not run any transit systems directly — it funds the agencies that do. Every major transit system in the country (New York MTA, Chicago CTA, LA Metro, BART, WMATA, etc.) depends on FTA grants to buy buses, maintain rail cars, and build new lines. Without federal transit funding, most urban transit systems would face severe service cuts or fare hikes. The $20.9 billion in FY2025 is the enacted budget authority; actual outlays tend to lag as grant recipients spend down multi-year project funds.",
+          "source": "https://www.congress.gov/crs_external_products/R/PDF/R48596/R48596.2.pdf",
+          "total": 20937000000,
           "categories": [
             {
               "id": "transit-formula",
               "title": "Formula Grants",
-              "desc": "Urban and rural transit formula grants",
-              "total": 13572000000,
-              "details": "This is the money the federal government spends on urban and rural transit formula grants. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "desc": "Section 5307 urbanized area formula grants and Section 5311 rural area formula grants",
+              "total": 14600000000,
+              "details": "Formula grants are the backbone of FTA funding and flow automatically to over 1,000 transit agencies. Section 5307 covers urbanized areas (cities over 50,000 people) and funds operating costs, preventive maintenance, and capital purchases. Section 5311 covers rural and small urban areas — including tribal transit — where service is often the only transportation option for elderly residents, people with disabilities, and workers without cars. States receive the rural funds and distribute them to local providers. These grants paid for everything from replacing aging bus fleets to keeping subway lines operational.",
+              "source": "https://www.transit.dot.gov/funding/budget-performance"
             },
             {
               "id": "transit-capital",
-              "title": "Capital Investment Grants",
-              "desc": "Capital construction for major transit projects",
-              "total": 5850000000,
-              "details": "This is the money the federal government spends on capital construction for major transit projects. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "title": "Capital Investment Grants (CIG)",
+              "desc": "New Starts, Small Starts, and Core Capacity grants for major transit construction projects",
+              "total": 2200000000,
+              "details": "The Capital Investment Grant program (commonly called 'New Starts') is the federal government's main tool for funding new light rail lines, subway extensions, bus rapid transit corridors, and major capacity expansions. Projects go through a multi-year federal review process before receiving a Full Funding Grant Agreement. Examples include the LA Purple Line extension and various BRT lines across the country. The FY2025 enacted amount is $2.2 billion — far below the $5.85 billion that appeared in the original data, which was an error. Note: the House FY2026 appropriations bill proposed cutting CIG to just $54M.",
+              "source": "https://www.congress.gov/crs_external_products/R/PDF/R48596/R48596.2.pdf"
             },
             {
               "id": "transit-good-repair",
-              "title": "Bus & State of Good Repair",
-              "desc": "Bus purchases and repair-focused formula support",
-              "total": 2808000000,
-              "details": "This is the money the federal government spends on bus purchases and repair-focused formula support. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "title": "State of Good Repair & Bus Programs",
+              "desc": "Section 5337 rail state of good repair grants and Section 5339 bus and bus facilities grants",
+              "total": 3437000000,
+              "details": "Section 5337 funds rehabilitation of high-intensity rail fixed guideway systems — replacing worn rail, upgrading aging subway signals, and overhauling aging transit infrastructure that carries millions of riders daily. Section 5339 provides grants for bus purchases (including zero-emission and low-emission buses) and bus facility improvements. These programs address the massive backlog of deferred maintenance that plagues legacy transit systems like WMATA, MBTA, and the Chicago L. Unfunded backlogs at major transit agencies run into the tens of billions of dollars.",
+              "source": "https://www.transit.dot.gov/funding/budget-performance"
             },
             {
               "id": "transit-other",
-              "title": "Other Transit Programs",
-              "desc": "Transit safety, administration, and other grants",
-              "total": 1170000000,
-              "details": "This is the money needed to run Mass Transit behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
+              "title": "Other FTA Programs",
+              "desc": "Planning grants, transit safety oversight, research, and FTA administration",
+              "total": 700000000,
+              "details": "This covers FTA's own operating costs, the transit safety oversight program (which sets and enforces safety standards for rail transit systems nationwide), Metropolitan Planning grants that help cities make long-range transportation decisions, and transit research and technology programs. After a series of deadly incidents on light rail systems, Congress gave FTA stronger safety enforcement authority; these funds pay for the inspectors and auditors who use it.",
+              "source": "https://www.transit.dot.gov/funding/budget-performance"
             }
-          ],
-          "details": "This part of the budget covers federal grants that help local agencies run, repair, and expand public transit. That includes things like Formula Grants, Capital Investment Grants, and Bus & State of Good Repair, and other related programs. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+          ]
         },
         {
-          "id": "rail-water",
-          "title": "Rail & Water Transport",
-          "desc": "Passenger rail, ports, and maritime transportation support",
-          "total": 16600000000,
+          "id": "rail-maritime",
+          "title": "Rail & Maritime",
+          "desc": "Federal Railroad Administration (Amtrak + rail safety), Maritime Administration, and other rail/water programs",
+          "details": "This category covers the federal government's role in passenger rail and maritime shipping. The biggest piece is FRA, which funds Amtrak and rail safety programs — $16.1 billion in FY2025, most of it IIJA advance appropriations for Amtrak infrastructure and new rail corridors. MARAD ($1.35B) supports U.S. shipyards, port infrastructure, and the Merchant Marine Academy. Note: the original data placed Coast Guard here as a $5.1B item, but that is incorrect — Coast Guard is a DHS agency and its budget does not appear in DOT transportation outlays.",
+          "source": "https://www.congress.gov/crs_external_products/R/PDF/R48596/R48596.2.pdf",
+          "total": 17475000000,
           "categories": [
             {
               "id": "rail-amtrak",
-              "title": "Amtrak",
-              "desc": "Northeast Corridor and national network rail support",
-              "total": 5644000000,
-              "details": "This is the money the federal government spends on northeast corridor and national network rail support. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "title": "Amtrak Grants",
+              "desc": "Northeast Corridor capital grants and National Network operating/capital grants for Amtrak",
+              "total": 6800000000,
+              "details": "Amtrak receives two main federal grants: Northeast Corridor (NEC) grants fund infrastructure upgrades on the heavily traveled Boston–New York–Washington spine, which Amtrak owns but commuter railroads also use; National Network grants fund Amtrak's long-distance routes and state-supported corridor services. In FY2025 the combined Amtrak grant is approximately $6.8 billion (including IIJA advance appropriations). The FY2025 service also saw the launch of 28 new Acela high-speed trainsets capable of reaching 160 mph. Without federal support, the national long-distance network would not be financially viable.",
+              "source": "https://www.apta.com/advocacy-legislation-policy/legislative-updates-alerts/updates/president-proposes-increased-funding-for-public-transit-and-passenger-rail-in-fy-2026-budget-request/"
             },
             {
-              "id": "rail-coast-guard",
-              "title": "Coast Guard Transport Support",
-              "desc": "Maritime transportation safety and support activities",
-              "total": 5146000000,
-              "details": "This is the money the federal government spends on maritime transportation safety and support activities. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "id": "rail-fra-other",
+              "title": "Rail Safety",
+              "desc": "FRA safety oversight, Consolidated Rail Infrastructure and Safety Improvement (CRISI) grants, Federal-State Partnership grants, and crossing elimination",
+              "total": 9325000000,
+              "details": "Beyond Amtrak, FRA administers several major grant programs under IIJA. The Federal-State Partnership for Intercity Passenger Rail funds major corridor projects — like the Gateway Program expanding capacity under the Hudson River. The CRISI (Consolidated Rail Infrastructure and Safety Improvement) program funds grade crossing improvements, positive train control, and safety upgrades on freight and passenger lines. The Railroad Crossing Elimination program targets the most dangerous highway-rail intersections. FRA safety inspectors also monitor freight and passenger railroad compliance with federal safety regulations — an especially visible function after the 2023 East Palestine, Ohio derailment.",
+              "source": "https://www.congress.gov/crs_external_products/R/PDF/R48596/R48596.2.pdf"
             },
             {
-              "id": "rail-ports",
-              "title": "Ports & Maritime Grants",
-              "desc": "Port infrastructure and maritime grant programs",
-              "total": 2822000000,
-              "details": "This is the money the federal government spends on port infrastructure and maritime grant programs. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
-            },
-            {
-              "id": "rail-other",
-              "title": "Other Rail Programs",
-              "desc": "Other passenger and freight rail support programs",
-              "total": 2988000000,
-              "details": "This is the money the federal government spends on other passenger and freight rail support programs. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "id": "rail-marad",
+              "title": "Maritime Administration (MARAD)",
+              "desc": "U.S. shipyard support, port infrastructure grants, Merchant Marine Academy, and maritime workforce programs",
+              "total": 1350000000,
+              "details": "MARAD supports the commercial maritime industry and the national security mission of maintaining a U.S.-flag fleet. Key programs: the Title XI ship financing guarantee program helps U.S. shipyards finance vessel construction; the Port Infrastructure Development Program funds port capacity and resilience projects; and the U.S. Merchant Marine Academy in Kings Point, NY trains future maritime officers. MARAD also maintains the National Defense Reserve Fleet — a reserve of government-owned vessels that can be activated for military sealift. FY2026 sees a proposed increase as the Administration prioritizes domestic shipbuilding.",
+              "source": "https://www.congress.gov/crs_external_products/R/PDF/R48596/R48596.2.pdf"
             }
-          ],
-          "details": "This part of the budget covers passenger rail, ports, and maritime transportation support. That includes things like Amtrak, Coast Guard Transport Support, and Ports & Maritime Grants, and other related programs. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+          ]
+        },
+        {
+          "id": "safety-admin",
+          "title": "Safety, Oversight & Administration",
+          "desc": "NHTSA vehicle safety, FMCSA trucking safety, PHMSA pipeline/hazmat safety, and DOT departmental offices",
+          "details": "These agencies set and enforce safety standards across transportation modes. NHTSA investigates vehicle defects, issues recalls, and sets fuel economy standards — it is the agency that ordered the Takata airbag recall (the largest in automotive history). FMCSA regulates the trucking and bus industries, setting hours-of-service rules and vehicle inspection standards for the 3.5 million commercial drivers on U.S. roads. PHMSA oversees 2.8 million miles of natural gas and hazardous liquid pipelines plus dangerous goods shipments by air, rail, and highway. DOT's Office of the Secretary runs RAISE/BUILD discretionary infrastructure grants and other cross-modal programs.",
+          "source": "https://www.congress.gov/crs_external_products/R/PDF/R48596/R48596.2.pdf",
+          "total": 9286000000,
+          "categories": [
+            {
+              "id": "safety-nhtsa",
+              "title": "NHTSA",
+              "desc": "National Highway Traffic Safety Administration focuses on vehicle safety standards, defect investigations, recall enforcement, impaired driving programs, and state highway safety grants",
+              "total": 1663000000,
+              "details": "NHTSA sets Federal Motor Vehicle Safety Standards — the regulations that require airbags, seatbelts, crumple zones, and electronic stability control in every new car sold in the U.S. It also administers the 405 highway safety grant programs, which fund state programs targeting drunk driving, distracted driving, and seat belt compliance. An estimated 42,000 Americans died in motor vehicle crashes in FY2025; NHTSA's mission is to reduce that number. Its defect investigation and recall authority means it can compel automakers to fix dangerous vehicles at no cost to consumers.",
+              "source": "https://www.congress.gov/crs_external_products/R/PDF/R48596/R48596.2.pdf"
+            },
+            {
+              "id": "safety-fmcsa",
+              "title": "FMCSA",
+              "desc": "Federal Motor Carrier Safety Administration focusing on trucking and bus safety regulations, hours-of-service rules, commercial driver licensing, and roadside inspection programs",
+              "total": 1043000000,
+              "details": "FMCSA regulates the trucks and buses that move the majority of U.S. freight and millions of passengers annually. Its rules set how many hours a truck driver can be behind the wheel before mandatory rest (currently 11 hours of driving within a 14-hour window), what drugs and alcohol tests commercial drivers must pass, and what mechanical condition their vehicles must meet. State safety inspectors — partly funded by FMCSA grants — conduct roughly 3 million roadside inspections each year. Large truck crashes kill about 5,000 Americans annually; FMCSA's programs are estimated to prevent thousands of fatalities per year.",
+              "source": "https://www.congress.gov/crs_external_products/R/PDF/R48596/R48596.2.pdf"
+            },
+            {
+              "id": "safety-phmsa",
+              "title": "PHMSA",
+              "desc": "Pipeline & Hazardous Materials Safety Administration for inspections, hazardous materials transportation regulations, and incident response standards",
+              "total": 571000000,
+              "details": "PHMSA oversees the safety of 2.8 million miles of natural gas distribution and transmission pipelines and hazardous liquid pipelines carrying crude oil and refined products. It also regulates the transport of dangerous goods — explosives, flammable liquids, radioactive materials, poisons — by every mode: truck, rail, plane, and ship. Pipeline failures can be catastrophic: the 2010 San Bruno gas explosion killed 8 people; a 2016 Alabama pipeline leak caused the largest inland oil spill in the Southeast since the Deepwater Horizon. PHMSA's budget funds inspection staff, safety R&D, and state pipeline safety programs.",
+              "source": "https://www.congress.gov/crs_external_products/R/PDF/R48596/R48596.2.pdf"
+            },
+            {
+              "id": "safety-ost",
+              "title": "Office of the Secretary & Other DOT",
+              "desc": "RAISE/BUILD discretionary infrastructure grants, Essential Air Service, Build America Bureau credit programs, and DOT departmental management",
+              "total": 6009000000,
+              "details": "The Office of the Secretary (OST) administers several cross-modal programs. The RAISE (formerly BUILD, formerly TIGER) grant program ($345M in FY2025) awards competitive discretionary grants to state, local, and tribal governments for transportation infrastructure projects that have national or regional significance. The Essential Air Service program ($450M) subsidizes commercial air service to small and rural communities that otherwise would not be served. The Build America Bureau provides federal loan guarantees and credit assistance for large infrastructure projects under TIFIA and RRIF. Also included: OIG ($121M) and GLSDC ($40M).",
+              "source": "https://www.congress.gov/crs_external_products/R/PDF/R48596/R48596.2.pdf"
+            }
+          ]
         }
       ]
     },
