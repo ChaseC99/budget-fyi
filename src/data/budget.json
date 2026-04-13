@@ -1253,156 +1253,219 @@
     {
       "id": "natural-resources",
       "title": "Natural Resources & Environment",
-      "desc": "Conservation, pollution cleanup, water projects, and environmental science",
-      "total": 88300000000,
+      "desc": "Public lands, environmental protection, water projects, and natural resource stewardship",
+      "total": 88312000000,
       "categories": [
         {
           "id": "conservation",
           "title": "Conservation & Land Management",
-          "desc": "Stewardship of parks, forests, wildlife refuges, and other public lands",
-          "total": 31800000000,
-          "source": "https://www.doi.gov/budget/appropriations/2025/highlights",
+          "desc": "Stewardship of national forests, wildlife refuges, and public lands (OMB subfunction 302)",
+          "total": 28079000000,
+          "source": "https://www.congress.gov/crs-product/R48726",
           "categories": [
-            {
-              "id": "conservation-nps",
-              "title": "National Park Service",
-              "desc": "National parks operations, stewardship, and visitor services",
-              "total": 10494000000,
-              "details": "This is the money the federal government spends on the National parks operations, stewardship, and visitor services. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here mostly depends on staffing, workload, contracts, and the cost of keeping the program running day to day."
-            },
             {
               "id": "conservation-forest",
               "title": "Forest Service",
-              "desc": "National forest management and wildfire-adjacent stewardship",
-              "total": 9222000000,
-              "details": "This is the money the federal government spends on the National forest management and wildfire-adjacent stewardship. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here mostly depends on staffing, workload, contracts, and the cost of keeping the program running day to day."
+              "desc": "National forest management, wildfire suppression, and forest health",
+              "total": 9545000000,
+              "source": "https://www.congress.gov/crs-product/IF13101",
+              "details": "FY2025 appropriations of $8.6B in regular discretionary funding plus $945M in IIJA supplemental funding. Manages 193 million acres of national forests and grasslands. The largest share goes to wildfire management — paying for firefighter crews, helicopters, and firebreak construction. Also funds forest restoration after fire, invasive species removal, and recreational trail maintenance. In practical terms: if your town borders a national forest, this is what pays to thin overgrown trees to reduce fire risk, build the trail you hike on, and send wildfire crews when flames get close."
             },
             {
               "id": "conservation-fws",
               "title": "Fish & Wildlife Service",
-              "desc": "Wildlife refuges, habitat restoration, and species recovery",
-              "total": 5724000000,
-              "details": "This is the money the federal government spends on wildlife refuges, habitat restoration, and species recovery. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here mostly depends on staffing, workload, contracts, and the cost of keeping the program running day to day."
+              "desc": "Wildlife refuges, endangered species recovery, and habitat restoration",
+              "total": 4200000000,
+              "source": "https://www.doi.gov/budget/appropriations/2025/highlights",
+              "details": "Manages the 568-unit National Wildlife Refuge System (over 850 million acres). Runs the Endangered Species Act — listing threatened species, writing recovery plans, and designating critical habitat. Also distributes excise-tax-funded grants to states for wildlife and sport fish restoration (Pittman-Robertson and Dingell-Johnson Acts). In practical terms: this pays for the biologists surveying bald eagle nests, the hatchery restocking salmon in your local river, and the refuge where migratory birds stop each spring."
             },
             {
               "id": "conservation-blm",
               "title": "Bureau of Land Management",
-              "desc": "Public lands conservation, recreation, and stewardship",
-              "total": 6360000000,
-              "details": "This is the money the federal government spends on public lands conservation, recreation, and stewardship. In everyday terms, this is one of the line items that makes the broader category work in real life. How much gets spent here mostly depends on the size of the underlying program and the choices lawmakers make each year."
+              "desc": "Public lands stewardship, grazing, mining oversight, and recreation",
+              "total": 1750000000,
+              "source": "https://www.doi.gov/budget/appropriations/2025/highlights",
+              "details": "Manages roughly 245 million surface acres — more than any other federal agency — mostly in the western U.S. and Alaska. Handles grazing permits for ranchers, energy and mineral leasing, wildfire management on BLM land, and recreation areas. In practical terms: if you camp on BLM land, ride an off-road vehicle on designated trails, or a rancher grazes cattle on public rangeland near your community, this is the agency and money that manages it."
+            },
+            {
+              "id": "conservation-farm-bill",
+              "title": "Farm Bill Conservation Programs",
+              "desc": "USDA conservation programs for private farmland and ranchland",
+              "total": 12584000000,
+              "source": "https://democrats-budget.house.gov/focus-function-300-natural-resources-and-environment-0",
+              "details": "Mandatory spending authorized through the Farm Bill. Includes programs like the Conservation Reserve Program (pays farmers to take fragile cropland out of production), the Environmental Quality Incentives Program (cost-shares for farmers to install conservation practices like cover crops or stream buffers), and the Conservation Stewardship Program. In practical terms: if a farmer in your county plants cover crops to stop topsoil from washing into the local creek, or retires highly erodible hillside land to restore grassland, these programs are probably paying part of the cost."
             }
           ],
-          "details": "This part of the budget covers stewardship of parks, forests, wildlife refuges, and other public lands. That includes things like National Park Service, Forest Service, and Fish & Wildlife Service, and other related programs. How much gets spent here mostly depends on the size of the underlying program and the choices lawmakers make each year."
+          "details": "This subfunction covers the care and management of federal lands and natural habitats, plus conservation programs for private farmland. A large and growing share comes from mandatory Farm Bill conservation programs administered by USDA. The rest funds the agencies that manage forests, wildlife refuges, and public lands. The FY2025 total is estimated by applying the OMB Table 3.2 subfunction 302 share (31.8%) to the verified $88.3B total."
         },
         {
           "id": "pollution-control",
-          "title": "Pollution Control",
-          "desc": "EPA programs that enforce standards and clean up air, water, and hazardous waste",
-          "total": 21200000000,
-          "source": "https://www.epa.gov/planandbudget/archive",
+          "title": "Pollution Control & Abatement",
+          "desc": "EPA programs that enforce clean air/water standards, clean up toxic sites, and fund local water infrastructure (OMB subfunction 304)",
+          "total": 24263000000,
+          "source": "https://www.congress.gov/crs-product/IF13060",
           "categories": [
             {
               "id": "pollution-epm",
-              "title": "EPA Programs",
-              "desc": "Environmental programs and management",
-              "total": 11024000000,
-              "details": "This is the money the federal government spends on environmental programs and management. In everyday terms, this is one of the line items that makes the broader category work in real life. How much gets spent here mostly depends on the size of the underlying program and the choices lawmakers make each year."
+              "title": "EPA Environmental Programs & Management",
+              "desc": "Core EPA regulatory programs, enforcement, permitting, and research",
+              "total": 3190000000,
+              "source": "https://www.congress.gov/crs-product/IF13060",
+              "details": "FY2025 regular appropriation of ~$3.19B. This is EPA's operating budget — the money that pays the scientists who review new chemicals for safety, the inspectors who check whether factories and power plants are following pollution limits, and the staff who write and enforce rules under the Clean Air Act and Clean Water Act. In practical terms: this is why the air you breathe and the water from your tap meet safety standards. It also pays for climate research, environmental justice grants, and PFAS contamination investigations."
             },
             {
               "id": "pollution-superfund",
-              "title": "Superfund",
-              "desc": "Hazardous substance cleanup and enforcement",
-              "total": 4664000000,
-              "details": "This is the money the federal government spends on hazardous substance cleanup and enforcement. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here mostly depends on staffing, workload, contracts, and the cost of keeping the program running day to day."
+              "title": "Superfund & Hazardous Waste Cleanup",
+              "desc": "Cleaning up the nation's worst toxic contamination sites",
+              "total": 3500000000,
+              "source": "https://www.congress.gov/crs-product/IF13060",
+              "details": "Funded through regular appropriations (~$537M), the reinstated Superfund excise tax, and IIJA supplemental funds (~$3.5B over multiple years). Pays for investigation and cleanup at roughly 1,300+ Superfund National Priorities List sites — former factories, landfills, and military bases with hazardous contamination. In practical terms: if a neighborhood near you has contaminated groundwater from a shuttered industrial site, Superfund is the program that tests the soil, provides bottled water during the cleanup, removes contaminated dirt, and monitors the site for decades."
             },
             {
-              "id": "pollution-water-grants",
-              "title": "Water Infrastructure Grants",
-              "desc": "Clean and drinking water revolving-fund support",
-              "total": 3392000000,
-              "details": "This is the money the federal government spends on clean and drinking water revolving-fund support. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "id": "pollution-water-infra",
+              "title": "Water Infrastructure Grants (SRFs & IIJA)",
+              "desc": "Federal grants to states for clean water and safe drinking water systems",
+              "total": 14533000000,
+              "source": "https://www.congress.gov/crs-product/IF12950",
+              "details": "FY2025 total includes $3.04B in regular appropriations for State Revolving Funds (SRFs) plus $11.62B in IIJA advance appropriations through EPA's STAG account. States use SRF grants to make low-interest loans to local water utilities that need to upgrade treatment plants, replace lead pipes, or build stormwater systems. In practical terms: when your city replaces old lead water pipes, upgrades the sewage treatment plant to stop overflow into the river, or installs new filtration to meet drinking water standards, the money often comes from these programs."
             },
             {
               "id": "pollution-state-tribal",
-              "title": "State & Tribal Grants",
-              "desc": "Categorical grants and other pollution-control support",
-              "total": 2120000000,
-              "details": "This is the money the federal government spends on categorical grants and other pollution-control support. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "title": "State & Tribal Environmental Grants",
+              "desc": "Grants to states and tribes for air quality monitoring, water pollution control, and other environmental programs",
+              "total": 3040000000,
+              "source": "https://www.congress.gov/crs-product/R48575",
+              "details": "Includes categorical grants within the STAG account for state and tribal air quality programs (~$236M), water pollution control (Section 106), underground injection control, pesticide programs, and more. States use these to run their own environmental agencies — the front-line regulators that issue permits, inspect facilities, and monitor pollution in your community. In practical terms: the air quality monitor that tells you whether today's air is safe to breathe, or the state inspector who checks that your local factory isn't dumping into the river — those are largely paid for by these grants."
             }
           ],
-          "details": "This part of the budget covers EPA programs that enforce standards and clean up air, water, and hazardous waste. That includes things like EPA Programs, Superfund, and Water Infrastructure Grants, and other related programs. How much gets spent here mostly depends on the size of the underlying program and the choices lawmakers make each year."
+          "details": "This subfunction covers EPA's regulatory and cleanup programs plus federal grants that help states and localities protect air, water, and land from pollution. FY2025 saw a major jump in outlays — roughly triple FY2024 — driven largely by IIJA infrastructure money and Inflation Reduction Act funds flowing through EPA to states and communities. The FY2025 total is estimated by applying the OMB Table 3.2 subfunction 304 share (27.5%) to the verified $88.3B total."
         },
         {
           "id": "water-resources",
           "title": "Water Resources",
-          "desc": "Dams, waterways, flood control, and other federal water infrastructure projects",
-          "total": 21200000000,
-          "source": "https://www.doi.gov/budget/appropriations/2025/highlights",
+          "desc": "Dams, waterways, flood control, and federal water infrastructure (OMB subfunction 301)",
+          "total": 16370000000,
+          "source": "https://www.congress.gov/crs-product/R48097",
           "categories": [
             {
               "id": "water-corps",
-              "title": "Army Corps Civil Works",
-              "desc": "Flood control, navigation, and ecosystem restoration",
-              "total": 13992000000,
-              "details": "This is the money the federal government spends on flood control, navigation, and ecosystem restoration. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "title": "Army Corps of Engineers Civil Works",
+              "desc": "Flood control, navigation, ecosystem restoration, and hydropower",
+              "total": 8703000000,
+              "source": "https://www.congress.gov/crs-product/R48097",
+              "details": "FY2025 appropriation of $8.703B. The Army Corps manages roughly 700+ dams, 25,000+ miles of navigable channels, and hundreds of flood-control projects. The operations & maintenance account (~64% of total) funds day-to-day upkeep of locks, dams, and harbors that keep commercial shipping moving on the Mississippi, Ohio, and Columbia rivers. Construction funds build or upgrade flood walls, levees, and ecosystem restoration projects. In practical terms: the levee protecting your river town from flooding, the lock that lets barges carry grain to port, and the beach replenishment project protecting your coastline — those are Corps projects."
             },
             {
               "id": "water-reclamation",
               "title": "Bureau of Reclamation",
-              "desc": "Western water infrastructure, dams, and hydropower support",
-              "total": 5088000000,
-              "details": "This is the money the federal government spends on western water infrastructure, dams, and hydropower support. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "desc": "Western water supply, irrigation, dams, and hydropower",
+              "total": 1550000000,
+              "source": "https://www.congress.gov/crs-product/R46471",
+              "details": "FY2025 appropriation (est. ~$1.55B regular plus IIJA supplements). Reclamation manages water infrastructure across 17 western states — including Hoover Dam, Grand Coulee Dam, and hundreds of smaller projects. Supplies irrigation water to roughly 10 million acres of farmland and municipal/industrial water to 31 million people. In practical terms: if you live in the western U.S. and turn on your faucet, there's a good chance Reclamation built or manages the dam, canal, or pipeline that delivers your water."
             },
             {
               "id": "water-other",
-              "title": "Other Water Infrastructure",
-              "desc": "Other federal water resource and basin programs",
-              "total": 2120000000,
-              "details": "This is the money the federal government spends on other federal water resource and basin programs. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "title": "Other Water Resource Programs",
+              "desc": "Tennessee Valley Authority, other federal water and flood programs, and Farm Bill water-related conservation",
+              "total": 6117000000,
+              "source": "https://www.fiscal.treasury.gov/files/reports-statements/combined-statement/cs2025/outlay.pdf",
+              "details": "Includes other federal water resource spending that falls under subfunction 301 — Tennessee Valley Authority power and stewardship programs, smaller water project agencies, and the water-related portions of Farm Bill mandatory conservation spending (e.g., watershed programs). In practical terms: this covers the other pieces of water infrastructure the federal government funds beyond the Army Corps and Reclamation."
             }
           ],
-          "details": "This part of the budget covers dams, waterways, flood control, and other federal water infrastructure projects. That includes things like Army Corps Civil Works, Bureau of Reclamation, and Other Water Infrastructure. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+          "details": "This subfunction covers the engineering and construction side of water — the dams, levees, locks, canals, and flood-control systems the federal government builds and maintains. The Army Corps of Engineers is the dominant agency. Bureau of Reclamation handles western irrigation and water supply. The FY2025 total is estimated by applying the OMB Table 3.2 subfunction 301 share (18.5%) to the verified $88.3B total."
+        },
+        {
+          "id": "recreational-resources",
+          "title": "Recreational Resources",
+          "desc": "National parks visitor services, historic preservation, and outdoor recreation (OMB subfunction 303)",
+          "total": 7645000000,
+          "source": "https://www.congress.gov/crs-product/IF12713",
+          "categories": [
+            {
+              "id": "recreation-nps",
+              "title": "National Park Service",
+              "desc": "Operating 431 national park units, maintaining visitor facilities, and preserving cultural sites",
+              "total": 4577000000,
+              "source": "https://www.congress.gov/crs-product/IF12713",
+              "details": "FY2025 discretionary appropriation of $3.337B plus estimated $1.24B in mandatory funding (recreation fees, concession fees, Great American Outdoors Act land acquisition). The $2.894B Operation of the National Park System account pays for ranger-led programs, trail upkeep, search and rescue, and facility maintenance at all 431 units. Construction ($172M) addresses the agency's $23B deferred maintenance backlog. NPS also received ~$1.3B from the Legacy Restoration Fund for deferred maintenance (final year of GAOA authorization). In practical terms: the ranger who leads your kids on a nature walk, the maintained road into Yellowstone, the restored historic building at Gettysburg — NPS pays for all of it."
+            },
+            {
+              "id": "recreation-historic",
+              "title": "Historic Preservation Fund & Heritage Programs",
+              "desc": "Grants for state and tribal historic preservation, heritage areas, and cultural sites",
+              "total": 468000000,
+              "source": "https://www.congress.gov/crs-product/IF12713",
+              "details": "Includes the NPS Historic Preservation Fund (~$169M), National Recreation and Preservation account (~$90M), and other heritage programs. The HPF funds grants to State Historic Preservation Offices and Tribal Historic Preservation Offices, competitive grants for historically Black colleges, Save America's Treasures grants, and civil rights history sites. In practical terms: when your town restores a historic downtown building using federal matching grants, or a tribal nation preserves an ancestral cultural site, these programs often provide the funding."
+            },
+            {
+              "id": "recreation-lwcf",
+              "title": "Land & Water Conservation Fund",
+              "desc": "Land acquisition and outdoor recreation grants funded by offshore energy revenues",
+              "total": 900000000,
+              "source": "https://www.doi.gov/budget/appropriations/2025/highlights",
+              "details": "The LWCF receives $900M annually in mandatory funding (made permanent by the Great American Outdoors Act). Money is split between federal land acquisition (buying inholdings within park and refuge boundaries) and matching grants to states for local outdoor recreation — playgrounds, ball fields, boat ramps, and trails. In practical terms: if your community built a new public park or renovated a playground with a 'Land and Water Conservation Fund' sign on it, that's this program."
+            },
+            {
+              "id": "recreation-other",
+              "title": "Other Recreation Programs",
+              "desc": "Smithsonian outdoor programs, Indian arts and culture, and other recreation-related spending",
+              "total": 1700000000,
+              "source": "https://www.fiscal.treasury.gov/files/reports-statements/combined-statement/cs2025/outlay.pdf",
+              "details": "Includes other spending classified under subfunction 303 — recreation-related programs at other agencies, Gateway and Urban Park programs, Centennial Challenge matching funds, and related recreation and preservation activities. In practical terms: these are the smaller programs that support outdoor recreation, cultural preservation, and visitor services across various federal agencies."
+            }
+          ],
+          "details": "This subfunction covers the visitor-facing side of public lands — the parks you visit, the historic sites you tour, and the recreation grants that build local trails and playgrounds. The National Park Service dominates, but the Land and Water Conservation Fund and Historic Preservation Fund are significant standalone programs. The FY2025 total is estimated by applying the OMB Table 3.2 subfunction 303 share (8.7%) to the verified $88.3B total."
         },
         {
           "id": "other-natural",
           "title": "Other Natural Resources",
-          "desc": "Ocean services, earth science, recreation, and other resource programs",
-          "total": 14100000000,
+          "desc": "Ocean services, earth science, weather forecasting, and other resource programs (OMB subfunction 306)",
+          "total": 11955000000,
           "source": "https://www.doi.gov/budget/appropriations/2025/highlights",
           "categories": [
             {
               "id": "natural-noaa",
-              "title": "NOAA Oceans & Coasts",
-              "desc": "Oceanic, coastal, and fisheries science and services",
-              "total": 6063000000,
-              "details": "This is the money the federal government spends on oceanic, coastal, and fisheries science and services. In practice, it supports research, testing, labs, missions, or technology work in this area. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
+              "title": "NOAA Oceans, Coasts & Weather",
+              "desc": "Weather forecasting, ocean science, fisheries management, and coastal services",
+              "total": 6400000000,
+              "source": "https://www.congress.gov/crs-product/R48726",
+              "details": "NOAA's budget covers the National Weather Service (forecasts, hurricane warnings, tornado alerts), the National Ocean Service (coastal mapping, marine sanctuaries), fisheries science and management, satellite operations, and ocean research. In practical terms: the weather forecast on your phone, the hurricane evacuation warning that saves lives, the fishing regulations that keep commercial and recreational fisheries sustainable, and the tide charts mariners rely on — NOAA provides all of these."
             },
             {
               "id": "natural-usgs",
-              "title": "USGS Science",
-              "desc": "Earth science, mapping, and natural hazards research",
-              "total": 3807000000,
-              "details": "This is the money the federal government spends on earth science, mapping, and natural hazards research. In practice, it supports research, testing, labs, missions, or technology work in this area. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
+              "title": "USGS Earth Science",
+              "desc": "Earthquake monitoring, mapping, water resources research, and natural hazards science",
+              "total": 1400000000,
+              "source": "https://www.doi.gov/budget/appropriations/2025/highlights",
+              "details": "USGS operates the earthquake early warning system (ShakeAlert), the national network of stream gauges that monitor river levels and flood risk, the Landsat satellite program for earth observation, and the National Map. Also researches volcanic hazards, landslides, and mineral resources. In practical terms: the earthquake alert on your phone, the stream gauge data that tells your county whether the river is about to flood, and the topographic maps used by hikers and first responders — USGS provides these."
             },
             {
-              "id": "natural-recreation",
-              "title": "Recreation & Preservation",
-              "desc": "Recreation, heritage, and historic preservation programs",
-              "total": 2115000000,
-              "details": "This is the money the federal government spends on recreation, heritage, and historic preservation programs. In everyday terms, this is one of the line items that makes the broader category work in real life. How much gets spent here mostly depends on the size of the underlying program and the choices lawmakers make each year."
+              "id": "natural-mining-minerals",
+              "title": "Mining Reclamation & Mineral Programs",
+              "desc": "Abandoned mine cleanup, mineral leasing, and mine safety regulation",
+              "total": 1655000000,
+              "source": "https://www.doi.gov/budget/appropriations/2025/highlights",
+              "details": "Includes the Office of Surface Mining Reclamation and Enforcement (which cleans up abandoned coal mines and distributes fees to states for mine reclamation), mineral leasing administration, and related programs. In practical terms: if an abandoned coal mine near your town is leaking acid drainage into a stream, this program pays to plug the mine, treat the water, and restore the landscape."
             },
             {
               "id": "natural-other",
-              "title": "Other Resource Programs",
-              "desc": "Other natural resource and ocean-service activities",
-              "total": 2115000000,
-              "details": "This is the money the federal government spends on other natural resource and ocean-service activities. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here mostly depends on staffing, workload, contracts, and the cost of keeping the program running day to day."
+              "title": "Other Resource & Ocean Programs",
+              "desc": "Marine protection, coastal zone management, and other natural resource activities",
+              "total": 2500000000,
+              "source": "https://www.fiscal.treasury.gov/files/reports-statements/combined-statement/cs2025/outlay.pdf",
+              "details": "Includes remaining subfunction 306 spending: coastal zone management grants, marine mammal protection, deep-water research, international fisheries agreements, and other natural resource programs spread across multiple agencies. In practical terms: these are the smaller but still important programs that protect coastlines from erosion, fund marine biology research, manage migratory fish treaties with other countries, and support ocean exploration."
             }
           ],
-          "details": "This part of the budget covers ocean services, earth science, recreation, and other resource programs. That includes things like NOAA Oceans & Coasts, USGS Science, and Recreation & Preservation, and other related programs. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
+          "details": "This subfunction covers the science and service agencies that monitor the earth, oceans, and atmosphere, plus mining reclamation and other resource programs. NOAA is the largest component. The FY2025 total is estimated by applying the OMB Table 3.2 subfunction 306 share (13.6%) to the verified $88.3B total."
         }
       ],
-      "details": "This part of the budget covers public lands, environmental protection, and water projects. It includes national parks, forests, wildlife, pollution control, and other work tied to natural resources and the environment. The total here depends on what programs and projects the government chooses to run, maintain, or build."
+      "details": "Budget Function 300 — Natural Resources and Environment — covers public lands, environmental protection, water infrastructure, and natural resource science. FY2025 actual outlays were $88.3 billion, a 55% increase over FY2024 ($56.9B), driven primarily by Inflation Reduction Act and Bipartisan Infrastructure Law money flowing through EPA and conservation programs. The top-line total ($88,312M) is confirmed from the FY2025 Combined Statement of Receipts, Outlays, and Balances. Subfunction splits are estimated by applying OMB Historical Table 3.2 (FY2025 President's Budget) proportional shares to the actual total, since final subfunction actuals were not yet available at time of writing. Sub-agency figures use FY2025 enacted appropriations from CRS reports (appropriations ≠ outlays, but they are the best primary-source data available at the sub-agency level).",
+      "source_notes": {
+        "total_confirmed": "FY2025 Combined Statement: https://www.fiscal.treasury.gov/files/reports-statements/combined-statement/cs2025/outlay.pdf",
+        "subfunction_method": "OMB Historical Table 3.2 FY2025 estimates proportionally scaled to $88.312B actual (via GovInfo BUDGET-2025-TAB)",
+        "agency_data": "FY2025 enacted appropriations from Congressional Research Service reports (congress.gov/crs-product/). Note: appropriations (budget authority) differ from outlays. Agency outlays may differ from appropriations shown.",
+        "limitations": "Sub-agency figures are FY2025 appropriations, not final outlays. Subfunction totals are proportional estimates. Final FY2025 subfunction actuals will be published in the FY2027 President's Budget Historical Tables (expected early 2026)."
+      }
     },
     {
       "id": "justice",
@@ -1414,145 +1477,160 @@
           "id": "law-enforcement",
           "title": "Federal Law Enforcement",
           "desc": "Major federal investigative and enforcement agencies plus related operations",
-          "total": 42600000000,
+          "total": 22400000000,
           "categories": [
             {
               "id": "law-fbi",
               "title": "FBI",
               "desc": "Federal Bureau of Investigation operations",
-              "total": 15336000000,
-              "details": "This is the money the federal government spends on federal bureau of investigation operations. It pays for investigations, casework, court operations, detention, or other public safety work in this area. The amount here mostly depends on staffing, caseloads, facilities, and the scale of the work the agency is expected to handle."
+              "total": 10700000000,
+              "source": "https://crsreports.congress.gov/product/pdf/IF/IF10651",
+              "details": "The FBI is the federal government's primary law enforcement and domestic intelligence agency, with over 35,000 employees. This pays for counterterrorism, cybercrime, organized crime, and civil rights investigations across all 50 states. FY2025 appropriations were roughly $10.7 billion under the Full-Year Continuing Resolution (P.L. 119-4). About 60% of the FBI budget is classified as defense spending tied to national security and counterterrorism work."
             },
             {
               "id": "law-dea",
               "title": "DEA",
               "desc": "Drug Enforcement Administration operations",
-              "total": 6390000000,
-              "details": "This is the money the federal government spends on drug enforcement administration operations. It pays for investigations, casework, court operations, detention, or other public safety work in this area. The amount here mostly depends on staffing, caseloads, facilities, and the scale of the work the agency is expected to handle."
+              "total": 3300000000,
+              "source": "https://bidenwhitehouse.archives.gov/wp-content/uploads/2024/06/National-Drug-Control-Strategy-FY-2025-Budget-Summary.pdf",
+              "details": "The DEA enforces federal drug laws and goes after trafficking networks — cartels, fentanyl distributors, and international drug organizations. About 10,000 agents, analysts, and staff work on domestic and international cases. The FY2025 budget request was ~$3.3 billion, slightly up from the FY2024 level. The agency has one of the largest overseas footprints of any U.S. law enforcement agency."
             },
             {
               "id": "law-atf",
               "title": "ATF",
-              "desc": "Alcohol, Tobacco, Firearms and Explosives operations",
-              "total": 4686000000,
-              "details": "This is the money the federal government spends on alcohol, tobacco, firearms and explosives operations. It pays for investigations, casework, court operations, detention, or other public safety work in this area. The amount here mostly depends on staffing, caseloads, facilities, and the scale of the work the agency is expected to handle."
+              "desc": "Bureau of Alcohol, Tobacco, Firearms and Explosives operations",
+              "total": 1630000000,
+              "source": "https://www.congress.gov/crs-product/R48643",
+              "details": "ATF enforces federal firearms and explosives laws and investigates arson and illegal trafficking of guns. It runs the National Tracing Center, which helps law enforcement nationwide trace crime guns. FY2025 funding was approximately $1.63 billion under the Continuing Resolution at roughly the FY2024 enacted level. Congress has debated increasing ATF's budget significantly, with some members requesting an increase to $2 billion."
             },
             {
               "id": "law-marshals",
               "title": "U.S. Marshals",
               "desc": "Judicial security, fugitive operations, and prisoner transport",
-              "total": 5964000000,
-              "details": "This is the money the federal government spends on judicial security, fugitive operations, and prisoner transport. It pays for investigations, casework, court operations, detention, or other public safety work in this area. The amount here mostly depends on staffing, caseloads, facilities, and the scale of the work the agency is expected to handle."
+              "total": 3900000000,
+              "source": "https://www.congress.gov/crs-product/R48643",
+              "details": "The U.S. Marshals Service is the nation's oldest federal law enforcement agency. It protects federal judges and courthouses, hunts fugitives, transports federal prisoners between facilities, and manages the federal witness protection program. FY2025 funding was approximately $3.9 billion, which also covers the Federal Prisoner Detention account (a separate account that was increased to $2.236 billion under the CR)."
             },
             {
               "id": "law-other",
               "title": "Other Federal Enforcement",
-              "desc": "Other federal law-enforcement activities in this function",
-              "total": 10224000000,
-              "details": "This is the money the federal government spends on other federal law-enforcement activities in this function. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here mostly depends on staffing, caseloads, facilities, and the scale of the work the agency is expected to handle."
+              "desc": "Interagency law enforcement, COPS grants, and other enforcement activities",
+              "total": 2870000000,
+              "source": "https://www.congress.gov/crs-product/R48134",
+              "details": "This covers several smaller enforcement-related accounts within DOJ including the Interagency Crime and Drug Enforcement program, the Community Oriented Policing Services (COPS) grant program, and other law enforcement support functions. COPS grants help local police departments hire officers and implement crime-reduction strategies. These programs collectively support state, local, and tribal law enforcement partnerships."
             }
           ],
-          "details": "This part of the budget covers major federal investigative and enforcement agencies plus related operations. It brings together the agencies and offices that investigate cases, enforce laws, run courts, or manage detention. The amount here mostly depends on staffing, caseloads, facilities, and the scale of the work the agency is expected to handle."
+          "details": "This covers the major federal agencies that investigate crimes, enforce federal laws, and patrol the nation's borders. The FBI, DEA, ATF, and Marshals each have distinct missions — counterterrorism, drug enforcement, firearms crimes, and fugitive apprehension. Together they make up the front line of federal law enforcement."
         },
         {
           "id": "other-justice",
           "title": "Other Justice",
           "desc": "DOJ legal work, immigration courts, grants, and other justice support",
-          "total": 20800000000,
+          "total": 9900000000,
           "categories": [
             {
               "id": "justice-legal",
               "title": "Legal Activities",
-              "desc": "U.S. Attorneys and general legal activities",
-              "total": 8528000000,
-              "details": "This is the money the federal government spends on U.S. attorneys and general legal activities. It pays for investigations, casework, court operations, detention, or other public safety work in this area. The amount here mostly depends on staffing, caseloads, facilities, and the scale of the work the agency is expected to handle."
+              "desc": "U.S. Attorneys, general legal activities, and national security divisions",
+              "total": 2600000000,
+              "source": "https://www.congress.gov/crs-product/R48643",
+              "details": "The 94 U.S. Attorney offices across the country are the federal government's frontline prosecutors. They handle criminal cases ranging from fraud and drug trafficking to terrorism and civil rights violations, and represent the United States in civil cases. FY2025 funding was approximately $2.6 billion. This also includes the General Legal Activities account (which covers main DOJ divisions) and the National Security Division."
             },
             {
               "id": "justice-civil-divisions",
               "title": "Civil & Regulatory Divisions",
-              "desc": "Civil, antitrust, civil rights, and related DOJ divisions",
-              "total": 3744000000,
-              "details": "This is the money the federal government spends on civil, antitrust, civil rights, and related DOJ divisions. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "desc": "Civil, antitrust, civil rights, environment, and tax litigation divisions",
+              "total": 1092000000,
+              "source": "https://www.justice.gov/doj/budget-and-performance",
+              "details": "These DOJ divisions handle civil litigation where the federal government is a party — defending agencies from lawsuits, pursuing antitrust enforcement, protecting civil rights, prosecuting environmental violations, and handling tax fraud cases. They don't make arrests but win or defend hundreds of billions of dollars in cases annually. Funding reflects primarily attorney salaries and litigation costs."
             },
             {
               "id": "justice-immigration-review",
               "title": "Immigration Review",
-              "desc": "Executive Office for Immigration Review and related functions",
-              "total": 3328000000,
-              "details": "This is the money the federal government spends on the Executive Office for Immigration Review and related functions. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
+              "desc": "Executive Office for Immigration Review (immigration courts)",
+              "total": 833000000,
+              "source": "https://www.congress.gov/crs-product/R48643",
+              "details": "The Executive Office for Immigration Review (EOIR) runs the nation's immigration court system — the judges and tribunals that decide whether a non-citizen can remain in the United States. With a backlog of over 3 million pending cases, this office is under intense strain. FY2025 funding was approximately $833 million, though demand far exceeds current capacity."
             },
             {
               "id": "justice-grants",
-              "title": "Legal Aid & Grants",
-              "desc": "Legal services, grants, and other justice-support programs",
-              "total": 5200000000,
-              "details": "This is the money the federal government spends on legal services, grants, and other justice-support programs. It pays for investigations, casework, court operations, detention, or other public safety work in this area. The amount here mostly depends on staffing, caseloads, facilities, and the scale of the work the agency is expected to handle."
+              "title": "State & Local Assistance",
+              "desc": "Grants to state, local, and tribal law enforcement and victim services",
+              "total": 5375000000,
+              "source": "https://www.congress.gov/crs-product/R48134",
+              "details": "This covers DOJ grant programs that flow money to states, cities, and tribes for crime reduction, victim services, and justice improvements. It includes the State and Local Law Enforcement Assistance account, the Office on Violence Against Women, and the Juvenile Justice programs. These grants help local police hire officers, support crime victims, fund drug courts, and reduce recidivism."
             }
           ],
-          "details": "This part of the budget covers DOJ legal work, immigration courts, grants, and other justice support. It brings together the agencies and offices that investigate cases, enforce laws, run courts, or manage detention. The amount here mostly depends on staffing, caseloads, facilities, and the scale of the work the agency is expected to handle."
+          "details": "This bucket covers the legal, prosecutorial, and support side of the Justice Department — the prosecutors, immigration judges, and grant programs that back up law enforcement work. The U.S. Attorneys prosecute federal cases, immigration courts rule on deportation proceedings, and grants help communities at the local level."
         },
         {
           "id": "federal-courts",
           "title": "Federal Courts",
           "desc": "Operations of the Supreme Court, lower courts, and defender services",
-          "total": 10900000000,
+          "total": 10250000000,
           "categories": [
             {
               "id": "courts-trial-appellate",
               "title": "Trial & Appellate Courts",
-              "desc": "District, appellate, and bankruptcy courts",
-              "total": 7848000000,
-              "details": "This is the money the federal government spends on district, appellate, and bankruptcy courts. It pays for investigations, casework, court operations, detention, or other public safety work in this area. The amount here mostly depends on staffing, caseloads, facilities, and the scale of the work the agency is expected to handle."
+              "desc": "District, appellate, and bankruptcy courts — salaries, security, and operations",
+              "total": 7600000000,
+              "source": "https://www.congress.gov/crs-product/IF12625",
+              "details": "The 94 federal district courts and 12 circuit courts of appeals hear and decide federal criminal and civil cases. The FY2025 discretionary request for salaries and expenses alone was $6.4 billion, covering judges, clerks, court reporters, and security. Fees collected from court filings offset some appropriated costs. Bankruptcy courts and the Court of International Trade are also included here."
             },
             {
               "id": "courts-defender",
               "title": "Defender Services",
-              "desc": "Public defender and court-appointed counsel support",
-              "total": 1962000000,
-              "details": "This is the money the federal government spends on public defender and court-appointed counsel support. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "desc": "Federal public defenders and court-appointed private counsel for indigent defendants",
+              "total": 1800000000,
+              "source": "https://www.congress.gov/crs-product/IF12625",
+              "details": "The Sixth Amendment guarantees legal representation to anyone facing federal criminal charges who can't afford an attorney. This account funds the 81 federal public defender and community defender offices, plus compensation for private panel attorneys appointed by courts. The FY2025 request was $1.7 billion — a 16.5% increase over FY2024 driven by higher caseloads from increased prosecutions."
             },
             {
               "id": "courts-judicial-agencies",
               "title": "Judicial Agencies",
-              "desc": "Supreme Court, Administrative Office, and related judicial agencies",
-              "total": 1090000000,
-              "details": "This is the money the federal government spends on supreme court, administrative office, and related judicial agencies. It pays for investigations, casework, court operations, detention, or other public safety work in this area. The amount here mostly depends on staffing, caseloads, facilities, and the scale of the work the agency is expected to handle."
+              "desc": "Supreme Court, Administrative Office of Courts, and other judicial support",
+              "total": 850000000,
+              "source": "https://www.congress.gov/crs-product/IF12625",
+              "details": "This covers the U.S. Supreme Court ($160 million requested for FY2025), the Administrative Office of the U.S. Courts (which manages federal court operations nationwide), the Federal Judicial Center (judicial education and research), and court security. The Supreme Court's budget covers nine justices, roughly 400 employees, and the upkeep of its building on Capitol Hill."
             }
           ],
-          "details": "This part of the budget covers operations of the supreme court, lower courts, and defender services. It brings together the agencies and offices that investigate cases, enforce laws, run courts, or manage detention. The amount here mostly depends on staffing, caseloads, facilities, and the scale of the work the agency is expected to handle."
+          "details": "The federal judiciary is a separate branch of government — independent from both Congress and the executive branch. This covers the entire Article III court system from the Supreme Court down to district courts, plus the public defenders who represent those who can't afford attorneys. The judiciary's FY2025 request totaled approximately $10.25 billion ($9.4B discretionary + $852M mandatory)."
         },
         {
           "id": "federal-prisons",
           "title": "Federal Prisons",
-          "desc": "Running federal prisons, facilities, and inmate support programs",
-          "total": 10900000000,
+          "desc": "Bureau of Prisons operations, facilities, and inmate programs",
+          "total": 8650000000,
           "categories": [
             {
               "id": "prisons-operations",
               "title": "Operations",
-              "desc": "Bureau of Prisons salaries and operating expenses",
-              "total": 9374000000,
-              "details": "This is the money the federal government spends on the Bureau of Prisons salaries and operating expenses. It pays for investigations, casework, court operations, detention, or other public safety work in this area. The amount here mostly depends on staffing, caseloads, facilities, and the scale of the work the agency is expected to handle."
+              "desc": "Bureau of Prisons salaries and daily operating expenses for ~150,000 inmates",
+              "total": 8400000000,
+              "source": "https://www.congress.gov/crs-product/R48643",
+              "details": "The Bureau of Prisons (BOP) operates 122 federal prisons housing approximately 150,000 inmates. The salaries and expenses account pays for correctional officers, healthcare, food, and programs like vocational training and drug treatment (including expanded medication-assisted treatment under the First Step Act). FY2025 funding was approximately $8.4 billion, making BOP one of DOJ's largest single expenditures."
             },
             {
               "id": "prisons-buildings",
               "title": "Buildings & Facilities",
-              "desc": "Prison construction and facility upgrades",
-              "total": 872000000,
-              "details": "This is the money the federal government spends on prison construction and facility upgrades. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "desc": "Prison construction, renovation, and facility upgrades",
+              "total": 180000000,
+              "source": "https://www.congress.gov/crs-product/R48643",
+              "details": "Federal prison facilities age and deteriorate, requiring ongoing capital investment. The Buildings and Facilities account pays for major construction, renovation, and critical repairs. FY2025 funding was approximately $180 million — historically lower than need, with a maintenance backlog running into the billions. The FY2026 House bill proposed increasing this account by $100 million (+55.6%) to address the backlog."
             },
             {
               "id": "prisons-other",
               "title": "Other Prison Support",
-              "desc": "Inmate programs and other correctional support costs",
-              "total": 654000000,
-              "details": "This bucket groups smaller prison support programs that still add up to real spending. It usually pulls together smaller costs in this area that are real parts of the budget even if they are not well known on their own. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "desc": "Federal Prisoner Detention (pretrial housing in local jails) and other costs",
+              "total": 70000000,
+              "source": "https://www.congress.gov/crs-product/R48134",
+              "details": "This covers costs outside BOP's direct operations, including the Federal Prisoner Detention account, which reimburses local jails and state facilities for housing federal pretrial detainees when BOP facilities are full or unavailable. The FY2025 Continuing Resolution increased the Federal Prisoner Detention account specifically to $2.236 billion — that amount is captured above under the Marshals (who administer it), with only residual support costs here."
             }
           ],
-          "details": "This part of the budget covers running federal prisons, facilities, and inmate support programs. It brings together the agencies and offices that investigate cases, enforce laws, run courts, or manage detention. The amount here mostly depends on staffing, caseloads, facilities, and the scale of the work the agency is expected to handle."
+          "details": "The Bureau of Prisons is the federal government's prison system, housing people convicted of federal crimes — primarily drug offenses, firearms violations, immigration crimes, and white-collar fraud. It's one of the largest employers in the Justice Department. FY2025 total BOP funding was approximately $8.65 billion across all accounts."
         }
       ],
-      "details": "This is the part of the budget that pays for federal law enforcement, courts, and prisons. It covers agencies that investigate crimes, prosecute cases, run the court system, and house federal inmates. The amount spent here mostly depends on staffing, caseloads, facilities, and the scale of the work those agencies are expected to handle."
+      "details": "This is the part of the budget that pays for federal law enforcement, courts, and prisons. It covers agencies that investigate crimes, prosecute cases, run the court system, and house federal inmates. The FY2025 total of approximately $85.2 billion reflects the full Administration of Justice budget function (Function 750), funded primarily through the Full-Year Continuing Resolution (P.L. 119-4) signed March 15, 2025."
     },
     {
       "id": "community-development",
