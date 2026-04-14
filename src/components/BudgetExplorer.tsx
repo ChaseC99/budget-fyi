@@ -1,4 +1,4 @@
-import { useState, useCallback, useMemo, useRef, useEffect } from "react";
+import { Fragment, useState, useCallback, useMemo, useRef, useEffect } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import type { BudgetNode } from "../data/types";
 import budgetData from "../data/budget.json";
@@ -26,6 +26,19 @@ function getSourceLabel(source?: string) {
   }
 }
 
+function normalizeMultilineText(text?: string) {
+  return text?.replace(/\\n/g, "\n") ?? "";
+}
+
+function renderMultilineText(text: string) {
+  return normalizeMultilineText(text).split("\n").map((line, index) => (
+    <Fragment key={`${index}-${line}`}>
+      {index > 0 ? <br /> : null}
+      {line}
+    </Fragment>
+  ));
+}
+
 interface NotableExpenseCardProps {
   node: BudgetNode;
   amount: number;
@@ -35,8 +48,9 @@ interface NotableExpenseCardProps {
 
 function NotableExpenseCard({ node, amount, isExpanded, onToggle }: NotableExpenseCardProps) {
   const sourceLabel = getSourceLabel(node.source);
-  const details = node.details ?? node.desc;
-  const hasAdditionalDetails = details !== node.desc;
+  const summary = normalizeMultilineText(node.desc);
+  const details = normalizeMultilineText(node.details ?? node.desc);
+  const hasAdditionalDetails = details !== summary;
 
   return (
     <div className={styles.notableCard}>
@@ -50,7 +64,7 @@ function NotableExpenseCard({ node, amount, isExpanded, onToggle }: NotableExpen
           <div className={styles.notableTitle}>{node.title}</div>
           <div className={styles.notableAmount}>{formatCurrency(amount)}</div>
         </div>
-        <div className={styles.notableSummary} title={node.desc}>{node.desc}</div>
+        <div className={styles.notableSummary} title={summary}>{renderMultilineText(summary)}</div>
       </button>
       <AnimatePresence initial={false}>
         {isExpanded ? (
@@ -63,7 +77,7 @@ function NotableExpenseCard({ node, amount, isExpanded, onToggle }: NotableExpen
           >
             {hasAdditionalDetails ? (
               <div className={styles.notableDetails} title={details}>
-                {details}
+                {renderMultilineText(details)}
               </div>
             ) : null}
             {node.source ? (
@@ -135,8 +149,8 @@ export function BudgetExplorer() {
       }
     : undefined;
   const displayNode = selectedLeaf ?? current;
-  const aboutSummary = displayNode.desc;
-  const aboutDetails = displayNode.details ?? displayNode.desc;
+  const aboutSummary = normalizeMultilineText(displayNode.desc);
+  const aboutDetails = normalizeMultilineText(displayNode.details ?? displayNode.desc);
   const hasAdditionalDetails = aboutDetails !== aboutSummary;
   const sourceLabel = useMemo(() => getSourceLabel(displayNode.source), [displayNode.source]);
   const notableExpenses = current.notableExpenses ?? [];
@@ -268,7 +282,7 @@ export function BudgetExplorer() {
               transition={{ duration: 0.2, ease: "easeOut" }}
               title={aboutSummary}
             >
-              {aboutSummary}
+              {renderMultilineText(aboutSummary)}
             </motion.div>
           </AnimatePresence>
         </button>
@@ -283,7 +297,7 @@ export function BudgetExplorer() {
             >
               {hasAdditionalDetails ? (
                 <div className={styles.contextDetails} title={aboutDetails}>
-                  {aboutDetails}
+                  {renderMultilineText(aboutDetails)}
                 </div>
               ) : null}
               {displayNode.source ? (
