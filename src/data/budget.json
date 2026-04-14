@@ -1,8 +1,8 @@
 {
   "id": "federal-budget",
   "title": "U.S. Federal Budget",
-  "desc": "How the government spends your money",
-  "details": "This is the full picture of how the federal government spends money in 2025. It brings the biggest parts of the budget together in one place so you can see where the money went. If you enter your income, the app also gives you a rough estimate of how much of that spending your taxes supported.",
+  "desc": "Estimates based on data from various U.S. government sources.",
+  "details": "This is the full picture of how the federal government spent money in 2025.\n\nIt brings the biggest parts of the budget together in one place so you can see where the money went. The numbers are best effort estimates based on data available from the various US government agencies. Each item has a source link and description.\n\nThis should not be cited as a source for the actual budget numbers, which are complex and often debated.",
   "total": 7010000000000,
   "source": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/",
   "categories": [
