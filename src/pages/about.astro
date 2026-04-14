@@ -7,7 +7,7 @@ import { SiteHeader } from "../components/SiteHeader";
 <html lang="en">
   <head>
     <PageMetadata
-      title="About budget.fyi"
+      title="budget.fyi - About"
       description="Learn what budget.fyi is, how the income calculator works, and where the budget data comes from."
     />
   </head>
@@ -94,6 +94,10 @@ import { SiteHeader } from "../components/SiteHeader";
         </section>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <a href="https://chase.link" target="_blank" rel="noreferrer">created by chase carnaroli</a>
+    </footer>
   </body>
 </html>
 
@@ -182,6 +186,23 @@ import { SiteHeader } from "../components/SiteHeader";
     max-width: 100%;
     min-height: 780px;
     border: 0;
+  }
+
+  .site-footer {
+    display: flex;
+    justify-content: center;
+    padding: 8px 12px 14px;
+  }
+
+  .site-footer a {
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: var(--color-muted);
+    text-decoration: none;
+  }
+
+  .site-footer a:hover {
+    text-decoration: underline;
   }
 
   @media (max-width: 640px) {
