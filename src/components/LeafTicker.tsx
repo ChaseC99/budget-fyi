@@ -5,7 +5,35 @@ import { formatCurrency } from "../lib/format";
 import { getCategoryColor } from "../lib/colors";
 import styles from "./LeafTicker.module.css";
 
-const DEFAULT_SAMPLE_SIZE = 10;
+type CuratedTickerSpec =
+  | { kind: "node"; id: string; title?: string }
+  | { kind: "notable"; id: string };
+
+const CURATED_TICKER_SPECS: CuratedTickerSpec[] = [
+  { kind: "node", id: "interest-public-debt" },
+  { kind: "node", id: "recreation-historic", title: "Historic Preservation Fund" },
+  { kind: "node", id: "prisons-other" },
+  { kind: "node", id: "education-libraries" },
+  { kind: "node", id: "ag-other-science", title: "USDA Science" },
+  { kind: "notable", id: "us-army" },
+  { kind: "notable", id: "us-navy" },
+  { kind: "notable", id: "us-air-force" },
+  { kind: "notable", id: "us-space-force" },
+  { kind: "notable", id: "b21-raider" },
+  { kind: "notable", id: "columbia-class-submarine" },
+  { kind: "notable", id: "air-force-f35a-42-aircraft" },
+  { kind: "notable", id: "pact-act" },
+  { kind: "notable", id: "post-911-gi-bill" },
+  { kind: "notable", id: "brent-spence-bridge-corridor-project" },
+  { kind: "notable", id: "hurricane-helene-recovery" },
+  { kind: "notable", id: "artemis-campaign" },
+  { kind: "notable", id: "iss" },
+  { kind: "node", id: "k12-education", title: "K-12 Grants" },
+  { kind: "node", id: "social-ccdf", title: "Child Care" },
+  { kind: "node", id: "veterans-nca", title: "NCA" },
+  { kind: "node", id: "farm-crop-insurance" },
+  { kind: "node", id: "nsf", title: "National Science Foundation" },
+];
 
 export interface LeafTickerEntry {
   id: string;
@@ -15,6 +43,8 @@ export interface LeafTickerEntry {
   branchIndex: number;
   branchTitle: string;
   total: number;
+  targetId: string;
+  focusNotableId?: string;
 }
 
 interface LeafTickerProps {
@@ -23,70 +53,27 @@ interface LeafTickerProps {
   onSelect: (item: LeafTickerEntry) => void;
 }
 
-interface WalkMeta {
-  branchIndex: number;
-  branchTitle: string;
-  parentId: string;
-  parentTitle: string;
+interface LocatedNode {
+  node: BudgetNode;
+  path: BudgetNode[];
 }
 
-export function createLeafTickerSample(
-  root: BudgetNode,
-  sampleSize: number = DEFAULT_SAMPLE_SIZE,
-): LeafTickerEntry[] {
-  const entries = collectLeafTickerEntries(root);
+interface LocatedNotable {
+  notable: BudgetNode;
+  host: BudgetNode;
+  hostPath: BudgetNode[];
+}
 
-  if (entries.length <= sampleSize) {
-    return shuffle(entries);
-  }
+export function createCuratedTickerEntries(root: BudgetNode): LeafTickerEntry[] {
+  const entries = CURATED_TICKER_SPECS.flatMap((spec) => {
+    const entry = spec.kind === "node"
+      ? buildNodeEntry(root, spec)
+      : buildNotableEntry(root, spec);
 
-  const threshold = getPreferredThreshold(entries);
-  const groups = shuffle(Array.from(groupByBranch(entries).values()))
-    .map((branchEntries) => [...branchEntries].sort((a, b) => a.total - b.total));
-  const picks: LeafTickerEntry[] = [];
-  const usedIds = new Set<string>();
-  const usedParents = new Set<string>();
+    return entry ? [entry] : [];
+  });
 
-  for (let round = 0; picks.length < sampleSize; round += 1) {
-    let addedThisRound = false;
-
-    for (const group of groups) {
-      const candidate = pickBranchCandidate(group, usedIds, usedParents, threshold, round);
-
-      if (!candidate) {
-        continue;
-      }
-
-      picks.push(candidate);
-      usedIds.add(candidate.id);
-      usedParents.add(candidate.parentId);
-      addedThisRound = true;
-
-      if (picks.length === sampleSize) {
-        break;
-      }
-    }
-
-    if (!addedThisRound) {
-      break;
-    }
-  }
-
-  if (picks.length < sampleSize) {
-    const fallback = entries
-      .filter(({ id }) => !usedIds.has(id))
-      .sort((a, b) => a.total - b.total);
-
-    for (const entry of fallback) {
-      picks.push(entry);
-
-      if (picks.length === sampleSize) {
-        break;
-      }
-    }
-  }
-
-  return shuffle(picks);
+  return shuffle(entries);
 }
 
 export function LeafTicker({ items, getAmount, onSelect }: LeafTickerProps) {
@@ -155,95 +142,114 @@ export function LeafTicker({ items, getAmount, onSelect }: LeafTickerProps) {
   );
 }
 
-function collectLeafTickerEntries(root: BudgetNode): LeafTickerEntry[] {
-  const branches = root.categories ?? [];
+function buildNodeEntry(
+  root: BudgetNode,
+  spec: Extract<CuratedTickerSpec, { kind: "node" }>,
+): LeafTickerEntry | null {
+  const located = findNodePath(root, spec.id);
 
-  return branches.flatMap((branch, branchIndex) =>
-    walkLeaves(branch, {
-      branchIndex,
-      branchTitle: branch.title,
-      parentId: root.id,
-      parentTitle: root.title,
-    }),
-  );
-}
-
-function walkLeaves(node: BudgetNode, meta: WalkMeta): LeafTickerEntry[] {
-  const categories = node.categories ?? [];
-
-  if (categories.length === 0) {
-    if (node.total <= 0) {
-      return [];
-    }
-
-    return [
-      {
-        id: node.id,
-        title: node.title,
-        parentId: meta.parentId,
-        parentTitle: meta.parentTitle,
-        branchIndex: meta.branchIndex,
-        branchTitle: meta.branchTitle,
-        total: node.total,
-      },
-    ];
-  }
-
-  return categories.flatMap((child) =>
-    walkLeaves(child, {
-      branchIndex: meta.branchIndex,
-      branchTitle: meta.branchTitle,
-      parentId: node.id,
-      parentTitle: node.title,
-    }),
-  );
-}
-
-function groupByBranch(entries: LeafTickerEntry[]) {
-  const groups = new Map<number, LeafTickerEntry[]>();
-
-  for (const entry of entries) {
-    const branchEntries = groups.get(entry.branchIndex) ?? [];
-    branchEntries.push(entry);
-    groups.set(entry.branchIndex, branchEntries);
-  }
-
-  return groups;
-}
-
-function getPreferredThreshold(entries: LeafTickerEntry[]) {
-  const totals = entries.map(({ total }) => total).sort((a, b) => a - b);
-  return totals[Math.floor(totals.length * 0.75)] ?? totals[totals.length - 1] ?? Infinity;
-}
-
-function pickBranchCandidate(
-  group: LeafTickerEntry[],
-  usedIds: Set<string>,
-  usedParents: Set<string>,
-  threshold: number,
-  round: number,
-) {
-  const available = group.filter(({ id }) => !usedIds.has(id));
-
-  if (available.length === 0) {
+  if (!located) {
     return null;
   }
 
-  const withFreshParent = available.filter(({ parentId }) => !usedParents.has(parentId));
-  const basePool = withFreshParent.length > 0 ? withFreshParent : available;
-  const preferredPool = basePool.filter(({ total }) => total <= threshold);
-  const sortedBase = [...basePool].sort((a, b) => a.total - b.total);
-  const limitedPool =
-    preferredPool.length >= Math.min(3, basePool.length)
-      ? [...preferredPool].sort((a, b) => a.total - b.total)
-      : sortedBase.slice(0, Math.max(1, Math.ceil(sortedBase.length * 0.7)));
-  const bias = round === 0 ? 1.8 : 1.2;
-  const index = Math.min(
-    limitedPool.length - 1,
-    Math.floor(Math.pow(Math.random(), bias) * limitedPool.length),
-  );
+  const { node, path } = located;
+  const parent = path[path.length - 2];
 
-  return limitedPool[index] ?? limitedPool[0] ?? null;
+  if (!parent) {
+    return null;
+  }
+
+  return {
+    id: node.id,
+    title: spec.title ?? node.title,
+    parentId: parent.id,
+    parentTitle: parent.title,
+    branchIndex: getBranchIndex(root, path),
+    branchTitle: path[1]?.title ?? root.title,
+    total: node.total,
+    targetId: node.categories?.length ? node.id : parent.id,
+  };
+}
+
+function buildNotableEntry(
+  root: BudgetNode,
+  spec: Extract<CuratedTickerSpec, { kind: "notable" }>,
+): LeafTickerEntry | null {
+  const located = findNotable(root, spec.id);
+
+  if (!located) {
+    return null;
+  }
+
+  const { notable, host, hostPath } = located;
+
+  return {
+    id: notable.id,
+    title: notable.title,
+    parentId: host.id,
+    parentTitle: host.title,
+    branchIndex: getBranchIndex(root, hostPath),
+    branchTitle: hostPath[1]?.title ?? root.title,
+    total: notable.total,
+    targetId: host.id,
+    focusNotableId: notable.id,
+  };
+}
+
+function findNodePath(root: BudgetNode, targetId: string): LocatedNode | null {
+  if (root.id === targetId) {
+    return { node: root, path: [root] };
+  }
+
+  for (const child of root.categories ?? []) {
+    const located = findNodePath(child, targetId);
+
+    if (located) {
+      return {
+        node: located.node,
+        path: [root, ...located.path],
+      };
+    }
+  }
+
+  return null;
+}
+
+function findNotable(
+  root: BudgetNode,
+  targetId: string,
+  path: BudgetNode[] = [root],
+): LocatedNotable | null {
+  const notable = root.notableExpenses?.find((item) => item.id === targetId);
+
+  if (notable) {
+    return {
+      notable,
+      host: root,
+      hostPath: path,
+    };
+  }
+
+  for (const child of root.categories ?? []) {
+    const located = findNotable(child, targetId, [...path, child]);
+
+    if (located) {
+      return located;
+    }
+  }
+
+  return null;
+}
+
+function getBranchIndex(root: BudgetNode, path: BudgetNode[]) {
+  const branchId = path[1]?.id;
+
+  if (!branchId) {
+    return 0;
+  }
+
+  const branchIndex = root.categories?.findIndex((node) => node.id === branchId) ?? -1;
+  return branchIndex >= 0 ? branchIndex : 0;
 }
 
 function shuffle<T>(items: T[]) {

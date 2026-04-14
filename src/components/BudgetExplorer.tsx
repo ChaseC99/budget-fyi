@@ -9,7 +9,7 @@ import { DonutChart, type DonutChartHandle } from "./DonutChart";
 import { ItemList } from "./ItemList";
 import { BackNav } from "./BackNav";
 import { IncomeInput } from "./IncomeInput";
-import { LeafTicker, createLeafTickerSample } from "./LeafTicker";
+import { LeafTicker, createCuratedTickerEntries } from "./LeafTicker";
 import styles from "./BudgetExplorer.module.css";
 
 const rootNode = budgetData as BudgetNode;
@@ -85,13 +85,14 @@ function NotableExpenseCard({ node, amount, isExpanded, onToggle }: NotableExpen
 
 export function BudgetExplorer() {
   const [userTax, setUserTax] = useState(0);
-  const [tickerItems] = useState(() => createLeafTickerSample(rootNode));
+  const [tickerItems] = useState(() => createCuratedTickerEntries(rootNode));
   const [selectedLeaf, setSelectedLeaf] = useState<BudgetNode | null>(null);
   const [isAboutExpanded, setIsAboutExpanded] = useState(false);
   const [expandedNotableId, setExpandedNotableId] = useState<string | null>(null);
   const [isNotableInfoPinned, setIsNotableInfoPinned] = useState(false);
   const [isNotableInfoHovered, setIsNotableInfoHovered] = useState(false);
   const expandAboutOnTickerNav = useRef(false);
+  const pendingTickerNotableId = useRef<string | null>(null);
   const donutRef = useRef<DonutChartHandle>(null);
   const { current, parent, drillDown, goBack, navigateToNode, depth, isRoot, direction } =
     useBudgetNavigation(rootNode);
@@ -166,6 +167,18 @@ export function BudgetExplorer() {
     setIsAboutExpanded(false);
   }, [current.id]);
 
+  useEffect(() => {
+    if (!pendingTickerNotableId.current) {
+      return;
+    }
+
+    if (notableExpenses.some((expense) => expense.id === pendingTickerNotableId.current)) {
+      setExpandedNotableId(pendingTickerNotableId.current);
+    }
+
+    pendingTickerNotableId.current = null;
+  }, [current.id, notableExpenses]);
+
   const handleItemSelect = useCallback((child: BudgetNode) => {
     if (child.categories && child.categories.length > 0) {
       setSelectedLeaf(null);
@@ -189,7 +202,8 @@ export function BudgetExplorer() {
   const handleTickerSelect = useCallback((item: (typeof tickerItems)[number]) => {
     setSelectedLeaf(null);
     expandAboutOnTickerNav.current = true;
-    navigateToNode(item.parentId);
+    pendingTickerNotableId.current = item.focusNotableId ?? null;
+    navigateToNode(item.targetId);
   }, [navigateToNode]);
   const isNotableInfoVisible = isNotableInfoPinned || isNotableInfoHovered;
 
