@@ -1,18 +1,15 @@
 ---
 import "../styles/global.css";
+import PageMetadata from "../components/PageMetadata.astro";
 import { SiteHeader } from "../components/SiteHeader";
 ---
 
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Learn what budget.fyi is, how the income calculator works, and where the budget data comes from."
+    <PageMetadata
+      title="About budget.fyi"
+      description="Learn what budget.fyi is, how the income calculator works, and where the budget data comes from."
     />
-    <title>About budget.fyi</title>
   </head>
   <body>
     <SiteHeader currentPath="/about" />

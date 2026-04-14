@@ -1,19 +1,16 @@
 ---
 import "../styles/global.css";
 import { BudgetExplorer } from "../components/BudgetExplorer";
+import PageMetadata from "../components/PageMetadata.astro";
 import { SiteHeader } from "../components/SiteHeader";
 ---
 
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="See how the U.S. government spends your tax dollars. Interactive budget breakdown."
+    <PageMetadata
+      title="budget.fyi — How Your Taxes Are Spent"
+      description="See how the U.S. government spends your tax dollars. Interactive budget breakdown."
     />
-    <title>budget.fyi — Where Your Tax Dollars Go</title>
   </head>
   <body>
     <SiteHeader />
