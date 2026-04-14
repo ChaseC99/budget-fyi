@@ -1635,521 +1635,588 @@
     {
       "id": "community-development",
       "title": "Community & Regional Development",
-      "desc": "Disaster response plus grants aimed at local recovery and regional growth",
-      "total": 84500000000,
+      "desc": "Federal spending to help communities prepare for and recover from disasters, invest in housing and local development, and strengthen historically underserved regions.",
+      "total": 84530000000,
+      "source": "https://www.fiscal.treasury.gov/files/reports-statements/combined-statement/cs2025/outlay.pdf",
+      "details": "Federal Community & Regional Development helps communities prepare for disasters, recover from them, and invest in local economic development. It funds FEMA's disaster response and preparedness work, provides flexible grants that cities and states use for housing and neighborhood improvements, and targets federal investment at economically distressed regions like Appalachia and the Mississippi Delta.",
       "categories": [
         {
           "id": "disaster-relief",
           "title": "Disaster Relief",
-          "desc": "FEMA disaster response, recovery, preparedness, and flood resilience programs",
-          "total": 56300000000,
+          "desc": "FEMA disaster response, recovery, preparedness, and hazard mitigation programs.",
+          "total": 62000000000,
+          "source": "https://democrats-budget.house.gov/focus-function-450-community-and-regional-development-0",
+          "details": "Disaster relief covers all FEMA programs funded through the Disaster Relief Fund (DRF), preparedness grants to states and localities, and flood/hazard mitigation programs. Spending swings dramatically year to year based on major disaster declarations. This total is an estimate; the MTS does not publish a single line for this sub-function.",
           "categories": [
             {
               "id": "disaster-drf",
-              "title": "Disaster Relief Fund",
-              "desc": "Response and recovery for major disasters",
-              "total": 43914000000,
-              "details": "This is the money the federal government spends on response and recovery for major disasters. In everyday terms, this is one of the line items that makes the broader category work in real life. The total here mostly depends on the grant formulas or award decisions and how much money lawmakers put into the program."
+              "title": "Disaster Relief Fund (DRF)",
+              "desc": "FEMA's primary account for responding to Presidentially declared major disasters and emergencies.",
+              "total": 22510000000,
+              "source": "https://www.congress.gov/crs-product/R47676",
+              "details": "The DRF is what pays for cleanup, rebuilding, and direct aid after hurricanes, wildfires, floods, and other federally declared disasters. When a disaster is declared, FEMA can send money to homeowners for temporary housing, help cities repair roads and schools, and fund long-term recovery projects."
             },
             {
               "id": "disaster-preparedness",
               "title": "Preparedness Grants",
-              "desc": "Preparedness and emergency-management grants",
-              "total": 6756000000,
-              "details": "This is the money the federal government spends on preparedness and emergency-management grants. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The total here mostly depends on the grant formulas or award decisions and how much money lawmakers put into the program."
+              "desc": "Grants to states, tribes, and localities to build emergency management capacity before disasters strike.",
+              "total": 1850000000,
+              "source": "https://www.fema.gov/fact-sheet/fy-2025-emergency-management-performance-grant-program-fact-sheet",
+              "details": "These grants fund state and local emergency management offices, first-responder training, and planning for worst-case scenarios. It includes the Emergency Management Performance Grant (EMPG), State Homeland Security Program and Urban Area Security Initiative. In plain terms, this money helps your local emergency manager keep the lights on, run drills, and be ready when a disaster hits."
             },
             {
               "id": "disaster-flood",
-              "title": "Flood Mitigation & Insurance",
-              "desc": "Flood insurance, mitigation, and resilience programs",
-              "total": 5630000000,
-              "details": "This is the money the federal government spends on flood insurance, mitigation, and resilience programs. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The total here mostly depends on the grant formulas or award decisions and how much money lawmakers put into the program."
+              "title": "Flood & Hazard Mitigation",
+              "desc": "Programs to reduce future flood damage, including property buyouts, home elevations, and the National Flood Insurance Program.",
+              "total": 2640000000,
+              "source": "https://www.congress.gov/crs-product/IN12642",
+              "details": "FEMA's Hazard Mitigation Grant Program (HMGP), Building Resilient Infrastructure and Communities (BRIC), and Flood Mitigation Assistance (FMA) pay for things like buying out flood-prone homes, elevating properties, and strengthening infrastructure before the next storm. FY2025 was an unusual year: FEMA canceled the $600M FMA grant opportunity in February 2025 and issued no new BRIC awards, so actual new grants were near zero — but prior-year commitments continued to disburse. This total reflects estimated ongoing disbursements from prior-year awards."
             }
-          ],
-          "details": "This part of the budget covers FEMA disaster response, recovery, preparedness, and flood resilience programs. That includes things like Disaster Relief Fund, Preparedness Grants, and Flood Mitigation & Insurance. The total here mostly depends on the grant formulas or award decisions and how much money lawmakers put into the program."
+          ]
         },
         {
           "id": "community-grants",
           "title": "Community Development",
-          "desc": "Block grants and targeted funding for housing, revitalization, and local growth",
-          "total": 16100000000,
-          "source": "https://www.hud.gov/sites/dfiles/CFO/documents/2025-Budget-in-Brief-Final.pdf",
+          "desc": "HUD block grants and targeted funding to help cities and states invest in housing, economic development, and neighborhood revitalization.",
+          "total": 9500000000,
+          "source": "https://www.congress.gov/crs-product/R48567",
+          "details": "This covers the main HUD community development programs that flow money directly to cities, counties, and states as flexible grants. HUD distributed over $30 billion in total grants in FY2025, but the majority of that (e.g., rental assistance, public housing) sits in other budget functions, not Function 450.",
           "categories": [
             {
               "id": "community-cdbg",
               "title": "CDBG",
-              "desc": "Community Development Block Grants",
-              "total": 6440000000,
-              "details": "This is the money the federal government spends on community development block grants. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
+              "desc": "Community Development Block Grants — flexible federal dollars that cities and counties use for local priorities.",
+              "total": 3400000000,
+              "source": "https://www.congress.gov/crs_external_products/R/HTML/R48567.web.html",
+              "details": "CDBG gives cities and counties a block of flexible federal money to spend on local priorities — fixing up housing, repairing infrastructure in low-income neighborhoods, or funding job training. At least 70% must benefit low- or moderate-income people. This is the grant side: one-time capital dollars that fund specific projects, not ongoing monthly payments."
             },
             {
               "id": "community-home",
               "title": "HOME",
-              "desc": "HOME Investment Partnerships and affordable housing support",
-              "total": 3703000000,
-              "details": "This is the money the federal government spends on HOME investment partnerships and affordable housing support. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "desc": "HOME Investment Partnerships — formula grants that states and cities use exclusively for affordable housing.",
+              "total": 1250000000,
+              "source": "https://www.congress.gov/crs-product/R40118",
+              "details": "HOME grants go exclusively to affordable housing projects — building new units, rehabbing existing ones, or helping low-income people buy a first home. HOME often provides the gap financing that makes a project financially viable. This is the grant side: it funds construction and development, not the monthly rent subsidies that keep tenants housed long-term."
             },
             {
               "id": "community-eda",
               "title": "EDA Grants",
-              "desc": "Economic Development Administration grants",
-              "total": 2737000000,
-              "details": "This is the money the federal government spends on economic development administration grants. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
+              "desc": "Economic Development Administration grants that fund infrastructure and job-creation projects in distressed communities.",
+              "total": 2000000000,
+              "source": "https://www.congress.gov/crs-product/IN12633",
+              "details": "EDA funds things like industrial parks, broadband infrastructure, workforce training centers, and port improvements in areas with high unemployment or recent economic shocks."
             },
             {
               "id": "community-other",
-              "title": "Other Community Grants",
-              "desc": "Other local development and revitalization grants",
-              "total": 3220000000,
-              "details": "This is the money the federal government spends on other local development and revitalization grants. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
+              "title": "Other Community Development",
+              "desc": "Other HUD grants including homeless assistance, Native American housing, housing for the elderly, and targeted community programs.",
+              "total": 2850000000,
+              "source": "https://www.congress.gov/crs_external_products/R/HTML/R48567.web.html",
+              "details": "This bucket covers several smaller HUD programs within Function 450: Emergency Solutions Grants for homeless services ($290M), Native American Housing Block Grants (~$1.5B), Housing Opportunities for Persons with AIDS (HOPWA, $505M), and other community-targeted programs. These grants go to tribal housing authorities, nonprofits, and local governments to serve specific populations. Note: Section 8 rental assistance and public housing are in a separate budget function and not included here."
             }
-          ],
-          "details": "This part of the budget covers block grants and targeted funding for housing, revitalization, and local growth. It covers the offices and agencies that help the federal government plan, manage, and carry out its basic work. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
+          ]
         },
         {
           "id": "regional-dev",
           "title": "Regional Development",
-          "desc": "Place-based grants for Appalachian, Delta, Tribal, and similar regions",
-          "total": 12100000000,
+          "desc": "Place-based federal investment in economically distressed regions, including Appalachia, the Mississippi Delta, and tribal lands.",
+          "total": 3030000000,
+          "source": "https://democrats-budget.house.gov/focus-function-450-community-and-regional-development-0",
+          "details": "Regional development programs are among the smallest pieces of Function 450. They target specific geographies that have persistently lagged the national economy — rural Appalachian coal communities, the Mississippi Delta, and tribal nations.",
           "categories": [
             {
               "id": "regional-appalachia",
               "title": "Appalachian Region",
-              "desc": "Appalachian Regional Commission programs",
-              "total": 2178000000,
-              "details": "This is the money the federal government spends on appalachian regional commission programs. In practice, it supports research, testing, labs, missions, or technology work in this area. The total here mostly depends on the grant formulas or award decisions and how much money lawmakers put into the program."
+              "desc": "Appalachian Regional Commission (ARC) grants for economic and community development across 13 states.",
+              "total": 400000000,
+              "source": "https://www.arc.gov/wp-content/uploads/2024/03/FY-2025-ARC-Budget-Congressional-Justification.pdf",
+              "details": "ARC invests in the 423-county Appalachian region stretching from New York to Mississippi — areas hit hard by the decline of coal, manufacturing, and the opioid crisis. Money goes to broadband infrastructure, workforce training, water systems, and small business development, all decided through a partnership between the federal government and 13 state governors."
             },
             {
               "id": "regional-delta",
               "title": "Delta Region",
-              "desc": "Delta Regional Authority and similar place-based support",
-              "total": 847000000,
-              "details": "This is the money the federal government spends on delta regional authority and similar place-based support. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "desc": "Delta Regional Authority (DRA) grants for the eight-state Mississippi Delta region.",
+              "total": 35000000,
+              "source": "https://www.congress.gov/crs-product/IN12633",
+              "details": "The Delta Regional Authority serves the poorest counties in one of the nation's most economically distressed areas — the Mississippi River Delta across eight states, covering about 10 million people. DRA funds workforce development, infrastructure, and business development. Annual appropriations are modest, around $35 million."
             },
             {
               "id": "regional-tribal",
               "title": "Tribal Community Programs",
-              "desc": "Tribal economic development and community infrastructure",
-              "total": 5445000000,
-              "details": "This is the money the federal government spends on tribal economic development and community infrastructure. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
+              "desc": "Federal grants for tribal economic development and community infrastructure within Function 450.",
+              "total": 1500000000,
+              "source": "https://www.congress.gov/crs_external_products/R/HTML/R48567.web.html",
+              "details": "The largest tribal housing program in Function 450 is HUD's Native American Housing Block Grant (NAHBG), funded at approximately $1.2 billion in FY2025, with additional funds for tribal colleges and community development. These dollars go to tribal housing authorities to build and maintain homes on reservations and in tribal communities — places where housing shortages and infrastructure deficits are severe. Note: Many tribal programs sit in other budget functions (Interior, HHS, BIA); this reflects only the HUD/Function-450 portion."
             },
             {
               "id": "regional-other",
               "title": "Other Regional Programs",
-              "desc": "Other regional commissions and development programs",
-              "total": 3630000000,
-              "details": "This is the money the federal government spends on other regional commissions and development programs. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
+              "desc": "Other federal regional commissions and economic development programs, including the Denali Commission (Alaska) and Northern Border Regional Commission.",
+              "total": 1095000000,
+              "source": "https://democrats-budget.house.gov/focus-function-450-community-and-regional-development-0",
+              "details": "Several other regional commissions serve specific geographies: the Denali Commission funds rural Alaska infrastructure, the Northern Border Regional Commission covers rural New England and upstate New York, the Southeast Crescent Regional Commission covers the rural South, and the Southwest Border Regional Commission serves border communities. Combined annual appropriations for all of these are relatively small — well under $200 million. The remainder of this line item reflects residual Function 450 spending from agencies like the Department of Commerce and SBA that doesn't fit cleanly into other sub-categories."
             }
-          ],
-          "details": "This part of the budget covers place-based grants for appalachian, delta, tribal, and similar regions. It covers the offices and agencies that help the federal government plan, manage, and carry out its basic work. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
+          ]
         }
-      ],
-      "details": "This part of the budget helps communities recover, rebuild, and invest in local development. It includes disaster relief, housing and development grants, and regional programs meant to strengthen local economies. Spending here can swing from year to year depending on disasters, project choices, and how much aid Congress provides."
+      ]
     },
     {
       "id": "education",
       "title": "Education & Social Services",
-      "desc": "Federal education aid, workforce programs, and social services for children and families",
-      "total": 69200000000,
+      "desc": "Federal education aid, workforce programs, and social services for children and families (Budget Function 500)",
+      "total": 71014000000,
+      "source": "https://www.fiscal.treasury.gov/files/reports-statements/combined-statement/cs2025/outlay.pdf",
       "categories": [
         {
           "id": "k12-education",
           "title": "K-12 Education",
           "desc": "Formula and targeted grants that support public schools and special education",
-          "total": 25000000000,
-          "source": "https://www.ed.gov/about/overview/budget/budget25/index.html?src=ct",
+          "total": 37720000000,
+          "source": "https://www.ed.gov/about/ed-overview/annual-performance-reports/budget/budget-tables",
           "categories": [
             {
               "id": "k12-title1",
               "title": "Title I",
-              "desc": "Aid for schools serving low-income students",
-              "total": 10750000000,
-              "details": "This is the money the federal government spends on aid for schools serving low-income students. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "desc": "Grants to public schools serving high concentrations of low-income students",
+              "total": 18400000000,
+              "source": "https://www.ed.gov/sites/ed/files/about/overview/budget/budget25/25pbapt.pdf",
+              "details": "Title I is the largest federal K-12 grant program, sending money to roughly 90% of U.S. school districts. Schools use it to hire extra teachers, provide tutoring, and run after-school programs for students in high-poverty neighborhoods. Funds flow from the federal government to states, then to local districts based on census poverty data. The FY2025 appropriation includes both current-year funds and an advance payment that will be spent in the following school year."
             },
             {
               "id": "k12-idea",
               "title": "IDEA",
-              "desc": "Special education grants under IDEA",
-              "total": 10500000000,
-              "details": "This is the money the federal government spends on special education grants under IDEA. It pays for investigations, casework, court operations, detention, or other public safety work in this area. The amount here mostly depends on staffing, caseloads, facilities, and the scale of the work the agency is expected to handle."
+              "desc": "Special education grants under the Individuals with Disabilities Education Act",
+              "total": 16300000000,
+              "source": "https://www.ed.gov/sites/ed/files/about/overview/budget/budget25/25pbapt.pdf",
+              "details": "IDEA requires public schools to provide a free, appropriate education to every child with a disability — from autism and learning disabilities to physical impairments. Most of this money flows as formula grants to states, which pass it to local school districts to pay for special education teachers, therapists, and assistive devices. FY2025 enacted funding includes grants to states, preschool grants, and early intervention grants for infants and toddlers with disabilities."
             },
             {
               "id": "k12-impact-aid",
               "title": "Impact Aid",
-              "desc": "Support for districts affected by federal activity",
-              "total": 2000000000,
-              "details": "This is the money the federal government spends on support for districts affected by federal activity. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "desc": "Support for school districts affected by federal land ownership or military bases",
+              "total": 1620000000,
+              "source": "https://www.ed.gov/sites/ed/files/about/overview/budget/budget25/25pbapt.pdf",
+              "details": "When federal land — like a military base, national park, or Native American reservation — sits inside a school district, that land generates no local property tax. Impact Aid compensates those districts for the lost revenue so they can still fund teachers and schools. About 1,200 districts nationwide receive these payments, with the largest going to districts serving military families or communities near federal installations."
             },
             {
               "id": "k12-other",
               "title": "Other K-12 Grants",
-              "desc": "Other elementary and secondary education grants",
-              "total": 1750000000,
-              "details": "This is the money the federal government spends on other elementary and secondary education grants. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "desc": "School improvement, English language acquisition, and other elementary and secondary grants",
+              "total": 2200000000,
+              "source": "https://www.ed.gov/sites/ed/files/about/overview/budget/budget25/25pbapt.pdf",
+              "details": "This covers targeted K-12 programs outside the major formula grants, including funding for English language learners, rural schools, charter school grants, Native American education, school safety, and school improvement initiatives. Each program is smaller on its own but addresses specific student populations that Title I and IDEA do not fully cover."
             }
           ],
-          "details": "This part of the budget covers formula and targeted grants that support public schools and special education. That includes things like Title I, IDEA, and Impact Aid, and other related programs. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+          "details": "This part of the budget covers formula and targeted grants that support public schools and special education. Title I and IDEA alone account for more than $33 billion and together reach nearly every school district in America. Enacted amounts reflect the Full-Year Continuing Appropriations Act (P.L. 119-4), which generally held programs at FY2024 levels."
         },
         {
           "id": "social-services",
           "title": "Social Services",
           "desc": "Early childhood, child care, and family-service programs",
-          "total": 22000000000,
+          "total": 24750000000,
+          "source": "https://www.appropriations.senate.gov/news/majority/bill-summary-labor-health-and-human-services-education-and-related-agencies-fiscal-year-2025-appropriations-bill",
           "categories": [
             {
               "id": "social-head-start",
               "title": "Head Start",
-              "desc": "Early childhood education and family services",
-              "total": 9680000000,
-              "details": "This is the money the federal government spends on early childhood education and family services. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here mostly depends on staffing, workload, contracts, and the cost of keeping the program running day to day."
+              "desc": "Early childhood education and family services for low-income children birth to age 5",
+              "total": 12300000000,
+              "source": "https://headstart.gov/about/legislation",
+              "details": "Head Start provides preschool, health screenings, meals, and family support services to roughly one million low-income children each year. Local nonprofits and community organizations run Head Start centers using direct federal grants."
             },
             {
               "id": "social-ccdf",
               "title": "Child Care",
-              "desc": "Child Care and Development Fund support",
-              "total": 7920000000,
-              "details": "This is the money the federal government spends on child care and development fund support. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
+              "desc": "Child Care and Development Fund subsidies helping low-income families pay for child care",
+              "total": 1080000000,
+              "source": "https://www.acf.hhs.gov/occ/ccdf-fundamentals",
+              "details": "The Child Care and Development Fund (CCDF) helps low-income working parents afford licensed child care by issuing vouchers or subsidies. States receive block grant funds and let eligible families choose their own providers — including family day cares, centers, and relatives. Without this subsidy, child care costs for many families would exceed their rent."
             },
             {
               "id": "social-ssbg",
               "title": "SSBG",
-              "desc": "Social Services Block Grant",
-              "total": 2640000000,
-              "details": "This is the money the federal government spends on social services block grant. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The total here mostly depends on the grant formulas or award decisions and how much money lawmakers put into the program."
+              "desc": "Social Services Block Grant giving states flexible funding for social service programs",
+              "total": 1550000000,
+              "source": "https://www.acf.hhs.gov/ocs/programs/ssbg",
+              "details": "The Social Services Block Grant gives states broad flexibility to fund protective services — including child abuse prevention, foster care support, services for people with disabilities, and programs for the elderly. States are not required to match federal dollars and have wide discretion over how they spend the money."
             },
             {
               "id": "social-other",
               "title": "Other Family Services",
-              "desc": "Other child welfare and family service programs",
-              "total": 1760000000,
-              "details": "This is the money the federal government spends on other child welfare and family service programs. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here mostly depends on staffing, workload, contracts, and the cost of keeping the program running day to day."
+              "desc": "Child welfare, family support, and protective services programs",
+              "total": 2000000000,
+              "source": "https://www.acf.hhs.gov/programs",
+              "details": "This covers smaller HHS programs including child abuse prevention grants, home visiting programs for new parents, services for runaway and homeless youth, and support for children in foster care. These programs connect vulnerable families with caseworkers, counselors, and community services."
             }
           ],
-          "details": "This part of the budget covers early childhood, child care, and family-service programs. That includes things like Head Start, Child Care, and SSBG, and other related programs. The amount here mostly depends on staffing, workload, contracts, and the cost of keeping the program running day to day."
+          "details": "This part of the budget covers early childhood, child care, and family-service programs administered primarily by HHS. Head Start and the Child Care and Development Fund together account for most of this spending and serve millions of low-income children and working families."
         },
         {
           "id": "training-employment",
           "title": "Training & Employment",
-          "desc": "Job training and workforce programs for youth and adults",
-          "total": 10000000000,
+          "desc": "Job training and workforce programs for youth, adults, and displaced workers",
+          "total": 5880000000,
+          "source": "https://www.dol.gov/agencies/eta/wioa",
           "categories": [
             {
               "id": "workforce-wioa",
-              "title": "WIOA Grants",
-              "desc": "Workforce Innovation and Opportunity Act formula grants",
-              "total": 4400000000,
-              "details": "This is the money the federal government spends on workforce innovation and opportunity act formula grants. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "title": "WIOA Formula Grants",
+              "desc": "Workforce Innovation and Opportunity Act formula grants for adult, youth, and dislocated worker training",
+              "total": 2830000000,
+              "source": "https://www.federalregister.gov/documents/2025/05/19/2025-08879/program-year-py-2025-workforce-innovation-and-opportunity-act-wioa-title-i-allotments-py-2025-title",
+              "details": "WIOA sends formula grants to states, which distribute money to local American Job Centers where workers can get career counseling, job search help, and paid training for in-demand occupations. PY2025 funds are split across adults facing barriers to employment ($883M), displaced workers (~$1B), and at-risk youth ($948M). States and localities have flexibility in designing local programs within federal guidelines."
             },
             {
               "id": "workforce-job-corps",
               "title": "Job Corps",
-              "desc": "Residential education and training for young adults",
-              "total": 2700000000,
-              "details": "This is the money the federal government spends on residential education and training for young adults. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here mostly depends on staffing, workload, contracts, and the cost of keeping the program running day to day."
+              "desc": "Residential education and job training program for low-income young adults ages 16–24",
+              "total": 1700000000,
+              "source": "https://www.dol.gov/agencies/eta/jobcorps",
+              "details": "Job Corps is a free, residential program that gives low-income young adults a place to live while they earn their GED, learn a trade, and get help finding a job. Students can train in fields like construction, health care, transportation, and IT at roughly 120 campuses nationwide, serving about 50,000 students per year. Most of the budget covers campus operations, staff, and student support."
             },
             {
               "id": "workforce-apprenticeship",
-              "title": "Apprenticeship & Youth",
-              "desc": "Apprenticeship, youth, and reentry workforce initiatives",
-              "total": 1200000000,
-              "details": "This is the money the federal government spends on apprenticeship, youth, and reentry workforce initiatives. In everyday terms, this is one of the line items that makes the broader category work in real life. How much gets spent here mostly depends on the size of the underlying program and the choices lawmakers make each year."
+              "title": "Apprenticeship & Competitive Grants",
+              "desc": "Registered apprenticeship, reentry employment, and other competitive workforce grants",
+              "total": 650000000,
+              "source": "https://www.dol.gov/agencies/eta/apprenticeship",
+              "details": "This funding expands Registered Apprenticeship — earn-while-you-learn programs where workers get paid on-the-job training plus classroom instruction leading to an industry-recognized credential. Grants also support reentry employment programs helping formerly incarcerated people find jobs and competitive grants to community colleges and employers building training pipelines."
             },
             {
               "id": "workforce-other",
-              "title": "Other Workforce Programs",
-              "desc": "Other employment and training services",
-              "total": 1700000000,
-              "details": "This is the money the federal government spends on other employment and training services. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here mostly depends on staffing, workload, contracts, and the cost of keeping the program running day to day."
+              "title": "Adult Education & Employment Services",
+              "desc": "Adult basic education, English literacy, and Wagner-Peyser Employment Service grants",
+              "total": 700000000,
+              "source": "https://www.dol.gov/sites/dolgov/files/general/budget/2025/CBJ-2025-V1-03.pdf",
+              "details": "Adult Education grants (AEFLA) help out-of-school adults get basic literacy skills, earn a high school equivalency diploma, or learn English. Wagner-Peyser Employment Service grants fund state labor exchange programs — the job boards and placement services operated through American Job Centers. FY2025 funding held at FY2024 enacted levels under the continuing resolution."
             }
           ],
-          "details": "This part of the budget covers job training and workforce programs for youth and adults. That includes things like WIOA Grants, Job Corps, and Apprenticeship & Youth, and other related programs. The amount here mostly depends on staffing, workload, contracts, and the cost of keeping the program running day to day."
+          "details": "This part of the budget covers job training and workforce programs for youth and adults, administered by the U.S. Department of Labor. WIOA formula grants and Job Corps together make up the bulk of spending. The FY2025 continuing resolution held most DOL workforce programs at FY2024 levels."
         },
         {
           "id": "student-aid",
           "title": "Student Financial Assistance",
-          "desc": "College aid through Pell Grants, campus aid, and student-loan subsidy costs",
-          "total": 8000000000,
-          "source": "https://www.ed.gov/about/overview/budget/budget25/index.html?src=ct",
+          "desc": "Net federal cost of Pell Grants, campus-based aid, and student loan programs after loan reestimates",
+          "total": -6450000000,
+          "source": "https://www.fiscal.treasury.gov/files/reports-statements/combined-statement/cs2025/outlay.pdf",
           "categories": [
             {
               "id": "aid-pell",
               "title": "Pell Grants",
-              "desc": "Need-based Pell Grant aid",
-              "total": 5520000000,
-              "details": "This is the money the federal government spends on need-based pell grant aid. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The total here mostly depends on the grant formulas or award decisions and how much money lawmakers put into the program."
+              "desc": "Need-based Pell Grants for low- and middle-income college students",
+              "total": 27600000000,
+              "source": "https://studentaid.gov/understand-aid/types/grants/pell",
+              "details": "Pell Grants are the largest federal college grant program — money students do not have to repay. More than 6 million students receive Pell Grants each year, and the maximum award for 2024-25 was $7,395. Funding comes from both annual discretionary appropriations (~$22.5B) and a mandatory funding stream, totaling roughly $27-29B in disbursements. Pell is the bedrock of federal college access policy and reaches students at nearly any accredited college or trade school."
             },
             {
               "id": "aid-campus",
               "title": "Campus-Based Aid",
-              "desc": "Federal Work-Study and supplemental grants",
-              "total": 800000000,
-              "details": "This is the money the federal government spends on federal work-study and supplemental grants. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The total here mostly depends on the grant formulas or award decisions and how much money lawmakers put into the program."
+              "desc": "Federal Work-Study and Federal Supplemental Educational Opportunity Grants",
+              "total": 1910000000,
+              "source": "https://studentaid.gov/understand-aid/types/work-study",
+              "details": "Campus-based programs give colleges a pool of federal funds to distribute to their neediest students. Federal Work-Study ($1.0B) subsidizes part-time jobs — often on-campus or at nonprofits — so students can earn money for expenses without borrowing. The Federal Supplemental Educational Opportunity Grant ($910M) provides additional non-repayable aid to students with exceptional financial need, with individual colleges deciding which students receive awards."
             },
             {
               "id": "aid-loans",
-              "title": "Loan Subsidy & Admin",
-              "desc": "Student loan subsidy costs and aid administration",
-              "total": 1680000000,
-              "details": "This is the money needed to run Student Financial Assistance behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
+              "title": "Student Loan Net Outlays",
+              "desc": "Net cost or savings to the federal government from the student loan program after annual reestimates",
+              "total": -35960000000,
+              "source": "https://www.fiscal.treasury.gov/files/reports-statements/combined-statement/cs2025/outlay.pdf",
+              "details": "The federal government originates over $80 billion in student loans each year, but under federal credit accounting rules, the estimated lifetime cost (or savings) of those loans is recorded upfront. In FY2025, H.R. 1 reversed Biden-era loan forgiveness cost estimates, producing a large negative outlay — meaning the government's books recorded a net cost savings on the existing loan portfolio. This accounting swing of roughly -$233 billion at the Department level is the main reason Function 500 totals are dramatically lower in FY2025 than in FY2024. The negative number here does not mean students received less aid; it reflects a change in the estimated future cost of loans already outstanding."
             }
           ],
-          "details": "This part of the budget covers college aid through pell grants, campus aid, and student-loan subsidy costs. That includes things like Pell Grants, Campus-Based Aid, and Loan Subsidy & Admin. The total here mostly depends on the grant formulas or award decisions and how much money lawmakers put into the program."
+          "details": "The net Student Financial Assistance figure is negative in FY2025 entirely because of student loan accounting, not because grant aid fell. H.R. 1 modified income-driven repayment rules, reversing large upward cost estimates recorded in FY2024. Pell Grant disbursements and campus-based aid continued at normal levels; the negative net here offsets those real outlays within the function total."
         },
         {
           "id": "other-education",
           "title": "Other Education",
-          "desc": "Research, libraries, higher-ed support, and smaller education programs",
-          "total": 4200000000,
-          "source": "https://www.ed.gov/about/overview/budget/budget25/index.html?src=ct",
+          "desc": "Higher education support, education research, libraries, vocational rehabilitation, and career & technical education",
+          "total": 9114000000,
+          "source": "https://www.ed.gov/about/ed-overview/annual-performance-reports/budget/budget-tables",
           "categories": [
             {
-              "id": "education-research",
-              "title": "Research & Evaluation",
-              "desc": "Education research, statistics, and evaluation",
-              "total": 1008000000,
-              "details": "This is the money the federal government spends on education research, statistics, and evaluation. In practice, it supports research, testing, labs, missions, or technology work in this area. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
-            },
-            {
-              "id": "education-libraries",
-              "title": "Libraries & Museums",
-              "desc": "Institute of Museum and Library Services and similar support",
-              "total": 798000000,
-              "details": "This is the money the federal government spends on institute of museum and library services and similar support. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "id": "education-voc-rehab",
+              "title": "Vocational Rehabilitation",
+              "desc": "State grants helping people with disabilities prepare for and find employment",
+              "total": 4010000000,
+              "source": "https://rsa.ed.gov/about/states",
+              "details": "Vocational Rehabilitation (VR) is a mandatory grant program that funds state agencies helping people with physical or mental disabilities return to work or find employment. Services include job counseling, skills training, assistive technology, and supported employment. States must match about 21 cents for every federal dollar, and about 600,000 people are served each year."
             },
             {
               "id": "education-higher-ed",
               "title": "Higher Education Support",
-              "desc": "Minority-serving institutions and other higher-ed programs",
-              "total": 1428000000,
-              "details": "This is the money the federal government spends on minority-serving institutions and other higher-ed programs. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "desc": "Grants to minority-serving institutions, TRIO, GEAR UP, and other postsecondary programs",
+              "total": 2400000000,
+              "source": "https://www2.ed.gov/programs/idueshsi/index.html",
+              "details": "These funds support Historically Black Colleges and Universities (HBCUs), Hispanic-Serving Institutions (HSIs), Tribal Colleges, and other minority-serving institutions that educate a disproportionate share of low-income and first-generation college students. Also included are TRIO programs that help low-income students navigate college access and completion, and GEAR UP grants that build college-going culture in middle and high schools."
+            },
+            {
+              "id": "education-research",
+              "title": "Research & Evaluation",
+              "desc": "Education research, national student performance data, and program evaluation through IES",
+              "total": 700000000,
+              "source": "https://ies.ed.gov/about/",
+              "details": "The Institute of Education Sciences (IES) funds research on what teaching methods work, collects national data on student performance (including the 'Nation's Report Card'), and evaluates whether federal education programs deliver results. This evidence base helps states, districts, and Congress make informed decisions. IES also operates regional educational laboratories that provide research assistance to local schools."
+            },
+            {
+              "id": "education-libraries",
+              "title": "Libraries & Museums",
+              "desc": "Institute of Museum and Library Services grants supporting public libraries and museums",
+              "total": 294000000,
+              "source": "https://www.imls.gov/grants/grants-state",
+              "details": "The Institute of Museum and Library Services (IMLS) distributes grants to public libraries, school libraries, and museums in all 50 states. Grants support children's literacy programs, digital access for rural communities, and preservation of local history. IMLS is one of the primary federal supporters of public library systems, which serve as free community learning and technology hubs."
             },
             {
               "id": "education-other",
-              "title": "Other Education Support",
-              "desc": "Other education and cultural support programs",
-              "total": 966000000,
-              "details": "This bucket groups smaller education support programs that still add up to real spending. It usually pulls together smaller costs in this area that are real parts of the budget even if they are not well known on their own. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "title": "Career & Technical Education and Other",
+              "desc": "Perkins CTE grants, federally supported special institutions, and other education programs",
+              "total": 1710000000,
+              "source": "https://cte.ed.gov/",
+              "details": "Perkins Career and Technical Education (CTE) grants fund high school and community college programs in fields like health care, IT, manufacturing, and agriculture — preparing millions of students for jobs that do not require a four-year degree. This category also covers federally supported institutions like Gallaudet University (serving the deaf and hard of hearing), the National Technical Institute for the Deaf, and the American Printing House for the Blind."
             }
           ],
-          "details": "This part of the budget covers research, libraries, higher-ed support, and smaller education programs. That includes things like Research & Evaluation, Libraries & Museums, and Higher Education Support, and other related programs. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
+          "details": "This part of the budget covers vocational rehabilitation, higher education support, education research, libraries, and career and technical education. Vocational Rehabilitation is the largest single program here, funded as a mandatory entitlement. The remainder covers discretionary programs that support postsecondary access, research quality, and public information infrastructure."
         }
       ],
-      "details": "This part of the budget supports schools, students, workers, and family services. It includes K-12 aid, child care and early childhood programs, job training, student aid, and other education support. The amount spent here depends mostly on who qualifies, how many people are served, and which grants and programs lawmakers fund."
+      "details": "This part of the budget supports schools, students, workers, and family services — including K-12 grants, early childhood programs, job training, college aid, and support for people with disabilities. The FY2025 total of $71.0 billion is dramatically lower than FY2024's $304.6 billion, almost entirely because of a $233 billion swing in student loan accounting: H.R. 1 reversed Biden-era loan forgiveness cost estimates, producing large negative outlays that offset real grant and program spending. Source: U.S. Treasury FY2025 Combined Statement of Receipts, Outlays, and Balances."
     },
     {
       "id": "agriculture",
       "title": "Agriculture",
-      "desc": "Farm safety-net payments, rural development, and USDA research",
+      "desc": "Farm safety-net payments, rural development, agricultural research, Forest Service, and USDA regulatory programs.",
       "total": 49300000000,
+      "source": "https://www.usda.gov/sites/default/files/documents/2025-usda-budget-summary.pdf",
       "categories": [
         {
           "id": "farm-subsidies",
           "title": "Farm Income Stabilization",
           "desc": "Farm safety-net programs that cushion crop losses and commodity price swings",
+          "details": "Federal programs that protect farmers from catastrophic losses due to weather, disease, and price swings. Includes crop insurance premium subsidies, direct commodity support payments, and working-lands conservation cost-share.",
           "total": 32400000000,
-          "source": "https://www.usda.gov/about-usda/general-information/staff-offices/office-budget-and-program-analysis/congressional-justifications/2025-usda-budget-explanatory-notes",
+          "source": "https://www.cbo.gov/data/baseline-projections-selected-programs",
           "categories": [
             {
               "id": "farm-crop-insurance",
               "title": "Crop Insurance",
               "desc": "Premium support and indemnities through federal crop insurance",
+              "details": "The federal government subsidizes a large share of farmers' crop insurance premiums so they can afford policies that pay out when crops are destroyed by drought, floods, pests, or price crashes. Private insurers sell and service the policies; USDA's Risk Management Agency backs and regulates them. The program covers over 130 commodities and roughly 284 million acres annually. FY2024 actual outlays were approximately $15 billion, with FY2025 in a similar range.",
               "total": 15228000000,
-              "details": "This is the money the federal government spends on premium support and indemnities through federal crop insurance. For people who use the program, this often shows up as a monthly payment, lower bill, direct service, or other help they can actually use. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "source": "https://www.conference-board.org/publications/department-of-agriculture-funding-and-opportunities-for-reform"
             },
             {
               "id": "farm-commodity",
               "title": "Commodity Programs",
               "desc": "Commodity support and farm safety-net programs",
+              "details": "Direct payments to producers of major crops — wheat, corn, soybeans, peanuts, rice, dairy, and sugar — when market prices fall below statutory reference levels or farm revenues drop below historical guarantees. The two main programs are Price Loss Coverage (PLC) and Agricultural Risk Coverage (ARC), both run by USDA's Farm Service Agency. CBO projects roughly $7–8B per year for FY2025–2034 under baseline law, though actual payments vary with prices.",
               "total": 11340000000,
-              "details": "This is the money the federal government spends on commodity support and farm safety-net programs. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "source": "https://www.cbo.gov/data/baseline-projections-selected-programs"
             },
             {
               "id": "farm-conservation",
               "title": "Conservation Support",
               "desc": "Working-lands conservation and related farm support",
+              "details": "Financial and technical assistance that pays farmers and landowners to adopt practices protecting soil, water quality, and wildlife habitat on working farmland. The largest programs are the Environmental Quality Incentives Program (EQIP) and the Conservation Stewardship Program (CSP). The Conservation Reserve Program (CRP) pays farmers to take environmentally sensitive land out of production entirely, at roughly $2B per year. USDA spent approximately $5.7B on major conservation programs in a recent fiscal year.",
               "total": 5832000000,
-              "details": "This is the money the federal government spends on working-lands conservation and related farm support. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "source": "https://www.conference-board.org/publications/department-of-agriculture-funding-and-opportunities-for-reform"
             }
-          ],
-          "details": "This part of the budget covers farm safety-net programs that cushion crop losses and commodity price swings. That includes things like Crop Insurance, Commodity Programs, and Conservation Support. How much gets spent here mostly depends on the size of the underlying program and the choices lawmakers make each year."
+          ]
         },
         {
           "id": "rural-development",
           "title": "Rural Development",
           "desc": "Housing, utility, broadband, and business support for rural communities",
-          "total": 10400000000,
-          "source": "https://www.usda.gov/about-usda/general-information/staff-offices/office-budget-and-program-analysis/congressional-justifications/2025-usda-budget-explanatory-notes",
+          "details": "Loans, loan guarantees, and grants for housing, utilities, broadband, and businesses in rural communities — areas that private capital often bypasses. Most of the volume here is in loans; the budget outlay is the net subsidy cost (the portion the government does not expect to recover), which is much smaller than total lending. USDA Rural Development primarily serves communities of fewer than 50,000 people.",
+          "total": 4200000000,
+          "source": "https://www.congress.gov/crs-product/R48431",
           "categories": [
             {
               "id": "rural-housing",
               "title": "Rural Housing",
               "desc": "Single-family, multifamily, and rental housing programs",
-              "total": 5408000000,
-              "details": "This is the money the federal government spends on single-family, multifamily, and rental housing programs. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "details": "Below-market direct loans and rental assistance so low- and moderate-income rural residents can buy, build, or stay in safe housing. USDA's Section 502 direct loan program offers subsidized interest rates to buyers who can't qualify for conventional mortgages. The Rental Assistance Program covers the gap between what low-income tenants can afford and their actual rent in USDA-financed properties.",
+              "total": 2100000000,
+              "source": "https://www.congress.gov/crs-product/R48431"
             },
             {
               "id": "rural-utilities",
               "title": "Rural Utilities",
               "desc": "Water, broadband, and electric infrastructure support",
-              "total": 3016000000,
-              "details": "This is the money the federal government spends on water, broadband, and electric infrastructure support. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "details": "Loans and grants to build or upgrade water systems, electric grids, and broadband internet in rural areas. The ReConnect program funds high-speed internet to communities where private providers won't build. Electric loan programs help rural cooperatives finance generation and transmission infrastructure. Budget outlays reflect the subsidy cost on loans, not total lending volume.",
+              "total": 1300000000,
+              "source": "https://www.congress.gov/crs-product/R48431"
             },
             {
               "id": "rural-business",
               "title": "Rural Business",
               "desc": "Rural business and cooperative development",
-              "total": 1976000000,
-              "details": "This is the money the federal government spends on rural business and cooperative development. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
+              "details": "Loan guarantees, grants, and technical assistance for rural small businesses, cooperatives, and entrepreneurs. The Business & Industry (B&I) loan guarantee program encourages private lenders to extend credit to rural businesses they would otherwise consider too risky. Net budget outlays are the estimated loss on guarantees, not the full loan volume.",
+              "total": 800000000,
+              "source": "https://www.congress.gov/crs-product/R48431"
             }
-          ],
-          "details": "This part of the budget covers housing, utility, broadband, and business support for rural communities. It covers the offices and agencies that help the federal government plan, manage, and carry out its basic work. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
+          ]
         },
         {
           "id": "ag-research",
           "title": "Agricultural Research",
           "desc": "USDA science, extension, and research grants that support food and farm systems",
-          "total": 6500000000,
-          "source": "https://www.usda.gov/about-usda/general-information/staff-offices/office-budget-and-program-analysis/congressional-justifications/2025-usda-budget-explanatory-notes",
+          "details": "Federal investment in the science behind American food and farming — from disease-resistant seeds to food safety detection to climate adaptation. USDA's research mission is split between in-house laboratories (ARS) and competitive grants to universities and extension services (NIFA). The FY2025 budget requested approximately $3.8B for USDA research, education, and outreach, continuing near FY2024 enacted levels under the year-long continuing resolution.",
+          "total": 3800000000,
+          "source": "https://esa.org/esablog/science-policy/federal-budget-tracker/",
           "categories": [
             {
               "id": "ag-ars",
-              "title": "ARS",
+              "title": "Agricultural Research Service (ARS)",
               "desc": "Agricultural Research Service research programs",
-              "total": 2990000000,
-              "details": "This is the money the federal government spends on agricultural research service research programs. In practice, it supports research, testing, labs, missions, or technology work in this area. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
+              "details": "USDA's in-house research agency, operating over 90 laboratories across the country. ARS scientists work on crop disease resistance, food contamination, pollinator health, and drought-tolerant varieties — work that benefits farmers and consumers but isn't profitable enough for private industry alone. The FY2025 budget requested $1.784B for ARS, slightly below the FY2024 enacted level of $1.845B.",
+              "total": 1784000000,
+              "source": "https://esa.org/esablog/science-policy/federal-budget-tracker/"
             },
             {
               "id": "ag-nifa",
               "title": "NIFA & Extension",
               "desc": "Research grants, extension, and higher-education support",
-              "total": 2535000000,
-              "details": "This is the money the federal government spends on research grants, extension, and higher-education support. In practice, it supports research, testing, labs, missions, or technology work in this area. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
+              "details": "Competitive and formula grants to land-grant universities, Historically Black Colleges and Universities, and cooperative extension services to conduct research and deliver findings directly to farmers and rural communities. The flagship Agriculture and Food Research Initiative (AFRI) is the nation's largest competitive grants program for agricultural science. NIFA was funded at approximately $1.68B in FY2024, with FY2025 continuing at a similar level.",
+              "total": 1680000000,
+              "source": "https://esa.org/esablog/science-policy/federal-budget-tracker/"
             },
             {
               "id": "ag-other-science",
               "title": "Other USDA Science",
               "desc": "Other agricultural science and data programs",
-              "total": 975000000,
-              "details": "This is the money the federal government spends on other agricultural science and data programs. In practice, it supports research, testing, labs, missions, or technology work in this area. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
+              "details": "Funding for the National Agricultural Statistics Service (NASS), the Economic Research Service (ERS), and other data programs that produce the official crop reports, farm income estimates, and food price data that markets and policymakers rely on. These agencies do not conduct field research but provide the statistical backbone for U.S. agricultural policy.",
+              "total": 336000000,
+              "source": "https://www.congress.gov/crs_external_products/R/PDF/R48307/R48307.3.pdf"
             }
-          ],
-          "details": "This part of the budget covers USDA science, extension, and research grants that support food and farm systems. That includes things like ARS, NIFA & Extension, and Other USDA Science. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
+          ]
+        },
+        {
+          "id": "ag-other",
+          "title": "Forest Service & Other USDA Programs",
+          "desc": "Forest Service, food safety, animal and plant health, agricultural marketing, and trade programs",
+          "details": "Covers the U.S. Forest Service (managing 193 million acres of national forests and grasslands, including wildland firefighting), food safety inspection (FSIS), animal and plant health programs (APHIS), agricultural marketing, foreign agricultural trade promotion (FAS), and departmental administration. The Forest Service accounts for roughly $7–8B of this total; the remainder covers regulatory and trade functions.",
+          "total": 8900000000,
+          "source": "https://www.usda.gov/sites/default/files/documents/2025-usda-budget-summary.pdf"
         }
-      ],
-      "details": "This part of the budget supports farms, rural communities, and agricultural research. It includes crop insurance, commodity programs, rural development, and science tied to food and farming. The total here depends on farm conditions, program rules, and the projects or grants Congress chooses to support."
+      ]
     },
     {
       "id": "international-affairs",
       "title": "International Affairs",
-      "desc": "Foreign assistance, diplomacy, and security support abroad",
-      "total": 45200000000,
+      "desc": "Funding for U.S. diplomacy, foreign aid, and security support abroad. Covers embassy operations, humanitarian relief, global health, economic development, and military assistance to allies. This is Budget Function 150 and represents less than 1% of total federal spending.",
+      "details": "International Affairs (Budget Function 150) covers all U.S. government spending on diplomacy, foreign aid, and security assistance abroad. It is entirely discretionary spending — Congress votes on it every year. FY2025 was unusual: the Trump administration froze and cancelled large amounts of previously appropriated foreign assistance early in the year, and Congress separately rescinded ~$7.67 billion in July 2025 (P.L. 119-28). As a result, actual outlays of $45.2 billion were $11.2 billion (20%) below FY2024 levels. Sub-category totals are estimates based on enacted appropriations adjusted for known rescissions; account-level outlay data is available at USAspending.gov and ForeignAssistance.gov.",
+      "total": 45170000000,
+      "source": "https://www.fiscal.treasury.gov/files/reports-statements/combined-statement/cs2025/outlay.pdf",
       "categories": [
         {
           "id": "foreign-aid",
           "title": "Foreign Economic Aid",
           "desc": "Humanitarian relief, development, and global health assistance overseas",
-          "total": 20400000000,
+          "details": "U.S. economic and humanitarian assistance provided overseas through USAID, the State Department, and other agencies. Includes emergency disaster relief, global health programs, and long-term development finance. FY2025 outlays were significantly lower than appropriated levels due to a funding pause and $7.67 billion in mid-year rescissions enacted by Congress (P.L. 119-28). Actual outlay totals reflect only funds that were disbursed before cancellation.",
+          "total": 17800000000,
+          "source": "https://www.congress.gov/crs-product/R48231",
           "categories": [
             {
               "id": "aid-humanitarian",
               "title": "Humanitarian Assistance",
               "desc": "Refugee, food, and emergency humanitarian aid",
-              "total": 6936000000,
-              "details": "This is the money the federal government spends on refugee, food, and emergency humanitarian aid. In practice, this money supports aid programs, embassy work, training, security help, or other U.S. activities overseas. The total here depends on world events, foreign policy priorities, and how much Congress chooses to provide."
+              "details": "Emergency relief for refugees, displaced people, and disaster-affected populations overseas, funded through USAID's International Disaster Assistance (IDA) and State Department's Migration and Refugee Assistance (MRA) accounts. Originally appropriated at ~$8.7 billion for FY2025, but administration actions and rescissions reduced actual disbursements to an estimated $5.9 billion. Funds support food, shelter, medical care, and protection for people caught in conflict or natural disasters.",
+              "total": 5900000000,
+              "source": "https://www.cgdev.org/blog/update-lives-lost-usaid-cuts"
             },
             {
               "id": "aid-health",
               "title": "Global Health",
               "desc": "Global health security and disease-response assistance",
-              "total": 4896000000,
-              "details": "This is the money the federal government spends on global health security and disease-response assistance. In practice, this money supports aid programs, embassy work, training, security help, or other U.S. activities overseas. The total here depends on world events, foreign policy priorities, and how much Congress chooses to provide."
+              "details": "Funds U.S. global health programs including PEPFAR (HIV/AIDS), the President's Malaria Initiative, tuberculosis treatment, maternal and child health, and global health security. The Global Health Programs account was appropriated at $9.53 billion for FY2025 after a $500 million rescission, but actual outlays reached approximately $6.5 billion due to a funding pause and award cancellations early in the fiscal year. The U.S. is historically the world's largest funder of global health aid.",
+              "total": 6500000000,
+              "source": "https://www.cgdev.org/blog/fixing-spending-crisis-department-state"
             },
             {
               "id": "aid-development",
               "title": "Development Assistance",
               "desc": "Development finance and bilateral assistance",
-              "total": 5304000000,
-              "details": "This is the money the federal government spends on development finance and bilateral assistance. In practice, this money supports aid programs, embassy work, training, security help, or other U.S. activities overseas. The total here depends on world events, foreign policy priorities, and how much Congress chooses to provide."
+              "details": "Bilateral economic assistance for long-term development goals such as food security, clean energy, good governance, and poverty reduction, administered through USAID's Development Assistance (DA) and Economic Support Fund (ESF) accounts. The Trump administration rescinded $2.5 billion in DA funds and $1.65 billion in ESF funds during FY2025. Actual outlays for these accounts were roughly 25–40% below FY2024 levels.",
+              "total": 3900000000,
+              "source": "https://www.cgdev.org/blog/one-year-what-do-we-know-about-humanitarian-and-development-spending-under-trump"
             },
             {
               "id": "aid-other-economic",
-              "title": "MCC & Other Aid",
-              "desc": "Millennium Challenge Corporation and other economic aid",
-              "total": 3264000000,
-              "details": "This is the money the federal government spends on millennium challenge corporation and other economic aid. In practice, this money supports aid programs, embassy work, training, security help, or other U.S. activities overseas. The total here depends on world events, foreign policy priorities, and how much Congress chooses to provide."
+              "title": "MCC, Food Aid & Other",
+              "desc": "Millennium Challenge Corporation, international food aid, and other economic assistance",
+              "details": "Includes the Millennium Challenge Corporation (MCC), which funds compact agreements with lower-income countries to reduce poverty through economic growth; international food aid programs (Food for Peace Title II); and assessed contributions to international organizations such as the UN and WHO. The FY2026 budget proposed a 75.9% cut to MCC. Combined CIO and CIPA (UN dues and peacekeeping assessments) were funded at $2.45 billion in FY2025.",
+              "total": 1500000000,
+              "source": "https://www.congress.gov/crs-product/R48624"
             }
-          ],
-          "details": "This part of the budget covers humanitarian relief, development, and global health assistance overseas. It brings together diplomatic operations, aid programs, or security support that the United States provides overseas. The total here depends on world events, foreign policy priorities, and how much Congress chooses to provide."
+          ]
         },
         {
           "id": "state-dept",
           "title": "Diplomacy",
           "desc": "Embassies, diplomatic operations, and consular support run by the State Department",
-          "total": 13100000000,
+          "details": "State Department operations including U.S. embassies and consulates worldwide, the Foreign Service workforce, diplomatic security, and consular services. Title I of the annual SFOPS bill funds these activities. Total enacted funding for State Department and USAID operations was approximately $12.2 billion for FY2025, though some funds were subject to rescission.",
+          "total": 14000000000,
+          "source": "https://www.appropriations.senate.gov/news/majority/bill-summary-state-foreign-operations-and-related-programs-fiscal-year-2025-appropriations-bill",
           "categories": [
             {
               "id": "state-diplomatic",
               "title": "Diplomatic Programs",
               "desc": "Embassy operations, diplomacy, and foreign service support",
-              "total": 6681000000,
-              "details": "This is the money the federal government spends on embassy operations, diplomacy, and foreign service support. In practice, this money supports aid programs, embassy work, training, security help, or other U.S. activities overseas. The total here depends on world events, foreign policy priorities, and how much Congress chooses to provide."
+              "details": "Covers the day-to-day cost of running U.S. diplomacy: salaries and benefits for Foreign Service and Civil Service employees, embassy operations, policy work, and international negotiations. This is the core operating budget of the State Department. It also funds public diplomacy and cultural exchange programs like the Fulbright scholarship.",
+              "total": 7100000000,
+              "source": "https://www.congress.gov/crs-product/R48231"
             },
             {
               "id": "state-security",
               "title": "Embassy Security & Construction",
               "desc": "Embassy security, construction, and maintenance",
-              "total": 3668000000,
-              "details": "This is the money the federal government spends on embassy security, construction, and maintenance. In practice, this money supports aid programs, embassy work, training, security help, or other U.S. activities overseas. The total here depends on world events, foreign policy priorities, and how much Congress chooses to provide."
+              "details": "Pays for physical security upgrades, new embassy construction, and maintenance of U.S. diplomatic facilities worldwide through the Embassy Security, Construction, and Maintenance (ESCM) account. Funding has grown following high-profile security incidents at overseas posts. The FY2025 enacted level was approximately $3.5 billion.",
+              "total": 3500000000,
+              "source": "https://www.congress.gov/crs-product/R48231"
             },
             {
               "id": "state-consular",
-              "title": "Consular & Border Security",
-              "desc": "Consular affairs and border-security support",
-              "total": 1572000000,
-              "details": "This is the money the federal government spends on consular affairs and border-security support. In practice, this money supports aid programs, embassy work, training, security help, or other U.S. activities overseas. The total here depends on world events, foreign policy priorities, and how much Congress chooses to provide."
-            },
-            {
-              "id": "state-other",
-              "title": "Other State Operations",
-              "desc": "Other State Department administration and support",
-              "total": 1179000000,
-              "details": "This is the money needed to run Diplomacy behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
+              "title": "Consular & International Organizations",
+              "desc": "U.S. consular operations and contributions to international organizations",
+              "details": "Covers U.S. consular operations (passport and visa processing, American citizen services abroad) and assessed U.S. contributions to over 40 international organizations including the United Nations regular budget, NATO, WHO, and IAEA. Combined UN dues and peacekeeping contributions (CIO + CIPA) were funded at approximately $2.45 billion for FY2025.",
+              "total": 3400000000,
+              "source": "https://www.congress.gov/crs-product/R48624"
             }
-          ],
-          "details": "This part of the budget covers embassies, diplomatic operations, and consular support run by the state department. It brings together diplomatic operations, aid programs, or security support that the United States provides overseas. The total here depends on world events, foreign policy priorities, and how much Congress chooses to provide."
+          ]
         },
         {
           "id": "military-aid",
           "title": "Foreign Military Aid",
-          "desc": "Security assistance that helps allies buy equipment and build defense capacity",
-          "total": 11700000000,
+          "desc": "Security assistance that helps allied and partner nations purchase U.S. defense equipment, build their military capacity, and participate in peacekeeping. Administered primarily through the State Department's Title IV security assistance accounts. Israel ($3.3B), Egypt ($1.3B), and Jordan are consistently among the largest recipients of Foreign Military Financing.",
+          "total": 13370000000,
+          "source": "https://appropriations.house.gov/news/press-releases/committee-approves-fy25-state-foreign-operations-and-related-programs",
           "categories": [
             {
               "id": "mil-aid-fmf",
-              "title": "Foreign Military Financing",
+              "title": "Foreign Military Financing (FMF)",
               "desc": "Grants for allies to purchase U.S. defense equipment",
-              "total": 8307000000,
-              "details": "This is the money the federal government spends on grants for allies to purchase U.S. defense equipment. In practice, this money supports aid programs, embassy work, training, security help, or other U.S. activities overseas. The total here depends on world events, foreign policy priorities, and how much Congress chooses to provide."
+              "details": "Grants that allow foreign governments to purchase U.S.-made defense equipment and services. Israel receives $3.8 billion annually under a 10-year memorandum of understanding; Egypt receives $1.3 billion per year. FMF is the largest single security assistance account. In practice, most FMF funds are spent on U.S. defense contracts, supporting American defense industry jobs.",
+              "total": 8800000000,
+              "source": "https://en.wikipedia.org/wiki/United_States_Foreign_Military_Financing"
             },
             {
               "id": "mil-aid-peacekeeping",
-              "title": "Peacekeeping & Security",
+              "title": "Peacekeeping & Security Programs",
               "desc": "Peacekeeping and broader security-assistance programs",
-              "total": 2340000000,
-              "details": "This is the money the federal government spends on peacekeeping and broader security-assistance programs. In practice, this money supports aid programs, embassy work, training, security help, or other U.S. activities overseas. The total here depends on world events, foreign policy priorities, and how much Congress chooses to provide."
+              "details": "Funds U.S. contributions to UN peacekeeping missions and broader security assistance programs including the Economic Support and Stabilization Fund, Nonproliferation and Antiterrorism programs (NADR), and the Global Security Contingency Fund. These programs help partner nations maintain stability, counter terrorism, and clear land mines.",
+              "total": 3100000000,
+              "source": "https://www.congress.gov/crs-product/R40482"
             },
             {
               "id": "mil-aid-training",
-              "title": "Training & Other Aid",
+              "title": "Military Training & Other Aid",
               "desc": "IMET and other military training support",
-              "total": 1053000000,
-              "details": "This is the money the federal government spends on IMET and other military training support. In practice, this money supports aid programs, embassy work, training, security help, or other U.S. activities overseas. The total here depends on world events, foreign policy priorities, and how much Congress chooses to provide."
+              "details": "Covers the International Military Education and Training (IMET) program, which brings foreign military officers to the U.S. for professional training, and other smaller capacity-building programs. IMET funding is typically under $200 million per year. Also includes counter-narcotics assistance and programs to support foreign police and justice sector reforms.",
+              "total": 1470000000,
+              "source": "https://www.congress.gov/crs-product/R48231"
             }
-          ],
-          "details": "This part of the budget covers security assistance that helps allies buy equipment and build defense capacity. It brings together diplomatic operations, aid programs, or security support that the United States provides overseas. The total here depends on world events, foreign policy priorities, and how much Congress chooses to provide."
+          ]
         }
-      ],
-      "details": "This part of the budget covers diplomacy, foreign aid, and security support overseas. It includes humanitarian relief, development assistance, embassy operations, and military aid to partners. The total here depends on world events, foreign policy priorities, and how much Congress decides to provide."
+      ]
     },
     {
       "id": "science-space",
