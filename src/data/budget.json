@@ -2223,411 +2223,590 @@
       "title": "Science, Space & Technology",
       "desc": "Civilian research and space programs across NASA, NSF, and other agencies",
       "total": 42100000000,
+      "source": "https://www.whitehouse.gov/omb/budget/",
       "categories": [
         {
           "id": "nasa",
           "title": "NASA",
-          "desc": "Space science, human exploration, mission operations, and aeronautics research",
-          "details": "This is NASA's slice of the federal budget. It pays for space science, human exploration, mission operations, new technology, and aeronautics research. The total here depends on which missions, launches, and research efforts lawmakers choose to fund.",
-          "total": 25100000000,
-          "source": "https://www.nasa.gov/fy-2025-budget-request/",
+          "desc": "America's civilian space agency, covering science missions, astronaut exploration, aviation research, and mission support",
+          "details": "NASA explores space, studies Earth and the universe, develops new aerospace technology, and runs major human spaceflight programs. This budget includes everything from telescopes and planetary probes to Moon missions, flight operations, engineering support, and aeronautics research. The figures here follow NASA's FY2025 budget request.",
+          "total": 25383700000,
+          "source": "https://www.nasa.gov/wp-content/uploads/2024/04/fy-2025-budget-request-summary-updated.pdf",
           "notableExpenses": [
             {
               "id": "artemis-campaign",
               "title": "Artemis Campaign",
-              "desc": "NASA's flagship lunar return effort, bringing together the systems and missions aimed at sending astronauts back to the Moon.",
-              "details": "The FY2025 NASA budget request includes $7.8 billion for the Artemis campaign. This is a curated mission-level highlight rather than a receipt subtotal: it reflects the Moon-return effort people recognize by name, spanning work associated with SLS, Orion, lunar mission planning, and related exploration systems, while the receipt below stays organized by NASA appropriations accounts like Exploration Systems and Space Operations.",
+              "desc": "NASA's Moon program, including the systems needed to send astronauts back to lunar orbit and the lunar surface",
+              "details": "Artemis is NASA's effort to return astronauts to the Moon and build the systems needed for longer-term exploration. NASA's FY2025 budget request highlighted about $7.8 billion for Artemis-related work. This is a mission-level highlight that spans multiple NASA accounts rather than a separate add-on to the total.",
               "total": 7800000000,
               "source": "https://www.nasa.gov/fy-2025-budget-request/"
             },
             {
               "id": "iss",
               "title": "International Space Station",
-              "desc": "NASA funding to keep the ISS operating in orbit while supporting research and the transition to commercial low-Earth-orbit destinations.",
-              "details": "NASA's FY2025 budget request includes $1.2696 billion for the International Space Station. The request breaks that into about $1.009 billion for continuous ISS operations, support for extension through retirement in 2030, and transition planning for commercial low-Earth-orbit destinations, plus about $261 million for research and technology demonstrations carried out on the station.",
+              "desc": "Funding to keep the ISS operating while NASA prepares for commercial stations in low Earth orbit",
+              "details": "NASA's FY2025 budget request included about $1.2696 billion for the International Space Station. That supports station operations, research on board, and planning for the shift to commercial replacements later in the decade. In simple terms, it keeps the station running while NASA prepares for what comes next.",
               "total": 1269600000,
               "source": "https://www.nasa.gov/wp-content/uploads/2024/04/fy-2025-budget-request-summary-updated.pdf"
             }
           ],
           "categories": [
             {
+              "id": "nasa-deep-space-exploration",
+              "title": "Deep Space Exploration Systems",
+              "desc": "Moon to Mars hardware and other systems for human exploration beyond low Earth orbit",
+              "total": 7618200000,
+              "source": "https://www.nasa.gov/wp-content/uploads/2024/04/fy-2025-budget-request-summary-updated.pdf",
+              "details": "This category funds the hardware and systems NASA uses for deep-space human exploration. It includes the Moon to Mars effort, such as transportation systems, lunar systems development, and exploration architecture. In simple terms, this is the core budget for building and preparing the next big human missions."
+            },
+            {
+              "id": "nasa-space-operations",
+              "title": "Space Operations",
+              "desc": "International Space Station, launch support, communications networks, and other day-to-day flight operations",
+              "total": 4389700000,
+              "source": "https://www.nasa.gov/wp-content/uploads/2024/04/fy-2025-budget-request-summary-updated.pdf",
+              "details": "This pays for operating missions that are already flying or supporting launches. It covers the International Space Station, space communications, launch services, and other mission operations. Think of it as the part of NASA that keeps space activities running every day."
+            },
+            {
+              "id": "nasa-space-technology",
+              "title": "Space Technology",
+              "desc": "New technologies that could make future missions safer, cheaper, or more capable",
+              "total": 1181800000,
+              "source": "https://www.nasa.gov/wp-content/uploads/2024/04/fy-2025-budget-request-summary-updated.pdf",
+              "details": "This budget develops and tests tools NASA may need for future missions. That includes things like advanced propulsion, in-space manufacturing, robotics, and other technologies before they are ready for routine use. It is basically NASA's future-toolbox budget."
+            },
+            {
               "id": "nasa-science",
               "title": "Science",
-              "desc": "Earth, planetary, heliophysics, and astrophysics missions",
-              "total": 7530000000,
-              "details": "This is the money the federal government spends on earth, planetary, heliophysics, and astrophysics missions. In practice, it supports research, testing, labs, missions, or technology work in this area. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
+              "desc": "Earth science, planetary science, astrophysics, heliophysics, and space biology research",
+              "total": 7565700000,
+              "source": "https://www.nasa.gov/wp-content/uploads/2024/04/fy-2025-budget-request-summary-updated.pdf",
+              "details": "This supports NASA's robotic science missions and research programs. It includes studying Earth, the Sun, planets, the universe, and how living systems behave in space. These are many of the missions people think of when they picture NASA discoveries."
             },
             {
-              "id": "nasa-exploration",
-              "title": "Exploration Systems",
-              "desc": "Artemis, deep-space systems, and human exploration",
-              "total": 7279000000,
-              "details": "This is the money the federal government spends on artemis, deep-space systems, and human exploration. In everyday terms, this is one of the line items that makes the broader category work in real life. How much gets spent here mostly depends on the size of the underlying program and the choices lawmakers make each year."
+              "id": "nasa-aeronautics",
+              "title": "Aeronautics",
+              "desc": "Research to improve aircraft safety, efficiency, and lower-emission flight",
+              "total": 965800000,
+              "source": "https://www.nasa.gov/wp-content/uploads/2024/04/fy-2025-budget-request-summary-updated.pdf",
+              "details": "NASA does aviation research as well as space work. This money supports safer and quieter aircraft, better air traffic systems, and technologies that can cut fuel use and emissions. It is the part of NASA focused on flight inside Earth's atmosphere."
             },
             {
-              "id": "nasa-space-ops",
-              "title": "Space Operations",
-              "desc": "ISS, launch services, and mission operations",
-              "total": 6526000000,
-              "details": "This is the money the federal government spends on ISS, launch services, and mission operations. In practice, it supports research, testing, labs, missions, or technology work in this area. The total here mostly depends on the projects selected, the equipment or facilities involved, and annual funding decisions."
+              "id": "nasa-stem-engagement",
+              "title": "STEM Engagement",
+              "desc": "Education and outreach programs that connect students and educators to NASA's work",
+              "total": 143500000,
+              "source": "https://www.nasa.gov/wp-content/uploads/2024/04/fy-2025-budget-request-summary-updated.pdf",
+              "details": "This supports NASA education and public engagement efforts. It helps students, teachers, and communities connect with NASA missions through learning programs and outreach. It is small compared with mission budgets, but it helps build the next generation of scientists and engineers."
             },
             {
-              "id": "nasa-tech",
-              "title": "Space Technology",
-              "desc": "Advanced technology development and demonstrations",
-              "total": 2008000000,
-              "details": "This is the money the federal government spends on advanced technology development and demonstrations. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
+              "id": "nasa-mission-support",
+              "title": "Safety, Security & Mission Services",
+              "desc": "The workforce, IT, facilities support, and mission assurance needed to run NASA safely",
+              "total": 3044400000,
+              "source": "https://www.nasa.gov/wp-content/uploads/2024/04/fy-2025-budget-request-summary-updated.pdf",
+              "details": "This is the support structure that keeps NASA functioning. It pays for mission assurance, engineering support, cybersecurity, buildings, workforce costs, and other agency-wide services. In plain terms, it is the operating backbone behind NASA's missions."
             },
             {
-              "id": "nasa-aero-support",
-              "title": "Aeronautics & Support",
-              "desc": "Aeronautics research plus safety, security, and mission support",
-              "total": 1757000000,
-              "details": "This is the money the federal government spends on aeronautics research plus safety, security, and mission support. In practice, it supports research, testing, labs, missions, or technology work in this area. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
+              "id": "nasa-construction-environment",
+              "title": "Construction & Environmental Compliance",
+              "desc": "Construction, modernization, and environmental cleanup work at NASA facilities",
+              "total": 424100000,
+              "source": "https://www.nasa.gov/wp-content/uploads/2024/04/fy-2025-budget-request-summary-updated.pdf",
+              "details": "This funds upgrades and repairs to NASA buildings, launch facilities, and other infrastructure. It also covers environmental compliance and restoration work at agency sites. These dollars help keep NASA's physical footprint usable and safe."
+            },
+            {
+              "id": "nasa-inspector-general",
+              "title": "Inspector General",
+              "desc": "Independent oversight and audits of NASA programs and operations",
+              "total": 50500000,
+              "source": "https://www.nasa.gov/wp-content/uploads/2024/04/fy-2025-budget-request-summary-updated.pdf",
+              "details": "This pays for independent watchdog work inside NASA. The Inspector General audits programs, investigates misconduct, and looks for waste, fraud, or abuse. It helps Congress and the public see whether NASA is managing money responsibly."
             }
           ]
         },
         {
           "id": "nsf",
           "title": "National Science Foundation",
-          "desc": "Basic research, STEM education, and research infrastructure grants",
-          "total": 9000000000,
+          "desc": "The main federal agency for basic research grants, research facilities, and STEM education",
+          "total": 10183000000,
           "source": "https://www.nsf.gov/about/budget/fy2025",
+          "details": "NSF mostly sends money out as grants to universities, nonprofits, and research teams rather than running large missions itself. It funds basic research, research infrastructure, and education and workforce programs across science and engineering. The figures here follow NSF's FY2025 budget request.",
           "categories": [
             {
               "id": "nsf-rra",
               "title": "Research & Related Activities",
-              "desc": "Core science and engineering research funding",
-              "total": 6480000000,
-              "details": "This is the money the federal government spends on core science and engineering research funding. In practice, it supports research, testing, labs, missions, or technology work in this area. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
+              "desc": "NSF's main research account for grants, institutes, computing, polar science, and research partnerships",
+              "total": 8045320000,
+              "source": "https://www.nsf.gov/about/budget/fy2025",
+              "details": "This is NSF's biggest account by far. It funds the core research portfolio across fields like biology, computing, engineering, math, social science, and polar research. In simple terms, this is where most NSF grant money lives."
             },
             {
               "id": "nsf-stem",
               "title": "STEM Education",
-              "desc": "Education and human resources programs",
-              "total": 1080000000,
-              "details": "This is the money the federal government spends on education and human resources programs. In everyday terms, this is one of the line items that makes the broader category work in real life. The total here mostly depends on the grant formulas or award decisions and how much money lawmakers put into the program."
+              "desc": "Programs that support STEM learning, teacher development, scholarships, and workforce training",
+              "total": 1300000000,
+              "source": "https://www.nsf.gov/about/budget/fy2025",
+              "details": "This supports STEM learning from early education through graduate school and into the workforce. It includes scholarships, teacher programs, undergraduate and graduate training, and efforts to broaden participation in STEM. The goal is to help more people build science and engineering skills."
             },
             {
               "id": "nsf-mrefc",
-              "title": "Major Research Equipment",
-              "desc": "Major research equipment and facilities construction",
-              "total": 990000000,
-              "details": "This is the money the federal government spends on major research equipment and facilities construction. In practice, it supports research, testing, labs, missions, or technology work in this area. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
+              "title": "Major Research Facilities",
+              "desc": "Construction and acquisition of large scientific facilities and major mid-scale infrastructure",
+              "total": 300000000,
+              "source": "https://www.nsf.gov/about/budget/fy2025",
+              "details": "This account pays for very large research tools and facilities that are too big for ordinary grant programs. Examples include major computing systems, observatories, and other shared infrastructure used by many researchers. It is the part of NSF that helps build the scientific tools themselves."
             },
             {
               "id": "nsf-operations",
-              "title": "Agency Operations",
-              "desc": "Operations, administration, and the inspector general",
-              "total": 450000000,
-              "details": "This is the money needed to run National Science Foundation behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
+              "title": "Agency Operations & Award Management",
+              "desc": "Staff, systems, and administration needed to review, award, and oversee NSF funding",
+              "total": 504000000,
+              "source": "https://www.nsf.gov/about/budget/fy2025",
+              "details": "This pays for the people and systems that run NSF. It covers proposal review, grant oversight, IT, staffing, and other behind-the-scenes operations. It is how NSF manages a very large grant portfolio with a relatively small staff."
+            },
+            {
+              "id": "nsf-oversight",
+              "title": "Oversight & Board",
+              "desc": "The Inspector General and National Science Board",
+              "total": 33680000,
+              "source": "https://www.nsf.gov/about/budget/fy2025",
+              "details": "This small slice covers independent oversight and NSF's governing board. The Inspector General handles audits and investigations, while the National Science Board helps guide policy and strategy. Together they make up a very small share of NSF's budget."
             }
-          ],
-          "details": "This part of the budget covers basic research, STEM education, and research infrastructure grants. That includes things like Research & Related Activities, STEM Education, and Major Research Equipment, and other related programs. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
+          ]
         },
         {
-          "id": "other-science",
-          "title": "Other Science Programs",
-          "desc": "Civilian science spending outside NASA and NSF, including DOE and NOAA",
-          "total": 8000000000,
+          "id": "doe-science",
+          "title": "DOE Office of Science",
+          "desc": "Basic research and national-lab science in physics, computing, fusion, energy, and large user facilities",
+          "total": 8583000000,
+          "source": "https://www.energy.gov/media/319161",
+          "details": "DOE's Office of Science is the federal government's biggest funder of basic research in the physical sciences. It supports university researchers, national labs, and large shared facilities used by scientists across the country. The figures here follow the FY2025 Office of Science budget request.",
           "categories": [
             {
-              "id": "science-doe",
-              "title": "DOE Office of Science",
-              "desc": "Energy science, national labs, and basic research",
-              "total": 4080000000,
-              "details": "This is the money the federal government spends on energy science, national labs, and basic research. In practice, it supports research, testing, labs, missions, or technology work in this area. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
+              "id": "doe-ascr",
+              "title": "Advanced Scientific Computing Research",
+              "desc": "Supercomputing, advanced software, networking, and computing research",
+              "total": 1136682000,
+              "source": "https://www.energy.gov/media/319162",
+              "details": "This funds DOE's high-end computing and computational science work. It supports supercomputers, networking, advanced software, and research that helps scientists solve problems too large for ordinary computers. In short, it powers the computing side of frontier science."
             },
             {
-              "id": "science-noaa",
-              "title": "NOAA Research",
-              "desc": "Climate, oceans, and weather research programs",
-              "total": 2160000000,
-              "details": "This is the money the federal government spends on climate, oceans, and weather research programs. In practice, it supports research, testing, labs, missions, or technology work in this area. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
+              "id": "doe-bes",
+              "title": "Basic Energy Sciences",
+              "desc": "Materials science, chemistry, and major user facilities such as light sources and neutron sources",
+              "total": 2582285000,
+              "source": "https://www.energy.gov/media/319163",
+              "details": "This is DOE's largest Office of Science program. It supports basic research in materials, chemistry, and related fields, along with major scientific facilities that thousands of researchers use. A lot of foundational energy and materials science starts here."
             },
             {
-              "id": "science-other-federal",
-              "title": "Other Federal Science",
-              "desc": "USGS and other smaller federal science programs",
-              "total": 1760000000,
-              "details": "This is the money the federal government spends on USGS and other smaller federal science programs. In practice, it supports research, testing, labs, missions, or technology work in this area. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
+              "id": "doe-ber",
+              "title": "Biological & Environmental Research",
+              "desc": "Climate, environmental systems, bioenergy, genomics, and related biological research",
+              "total": 945225000,
+              "source": "https://www.energy.gov/media/319161",
+              "details": "This supports research on biological systems, environmental processes, climate, and related tools and facilities. It helps scientists understand how living systems and the environment work, including energy-relevant biology and Earth systems. It is one of DOE's main bridges between physical science and life and climate science."
+            },
+            {
+              "id": "doe-fes",
+              "title": "Fusion Energy Sciences",
+              "desc": "Fusion research, plasma science, and U.S. contributions to major fusion facilities",
+              "total": 844496000,
+              "source": "https://www.energy.gov/media/319165",
+              "details": "This funds the basic science and experimental work behind fusion energy. It supports plasma physics, fusion materials research, and U.S. participation in major facilities like ITER. The goal is to build the scientific base needed for future fusion power."
+            },
+            {
+              "id": "doe-hep",
+              "title": "High Energy Physics",
+              "desc": "Particle physics, accelerators, neutrino experiments, and related facilities",
+              "total": 1230768000,
+              "source": "https://www.energy.gov/media/319161",
+              "details": "This funds research on the smallest building blocks of matter and the forces that shape the universe. It includes particle accelerators, detector projects, and large experiments such as neutrino research. It is the part of DOE focused on answering very fundamental physics questions."
+            },
+            {
+              "id": "doe-np",
+              "title": "Nuclear Physics",
+              "desc": "Research on atomic nuclei, nuclear matter, and the facilities used to study them",
+              "total": 833091000,
+              "source": "https://www.energy.gov/media/319161",
+              "details": "This program studies the atomic nucleus and how nuclear matter behaves. It supports large facilities, experiments, and the development of new tools like the Electron-Ion Collider. In plain English, it focuses on the structure and behavior of matter at the nuclear level."
+            },
+            {
+              "id": "doe-other-science",
+              "title": "Other Office of Science Programs",
+              "desc": "Isotopes, lab infrastructure, management, and other smaller Office of Science activities",
+              "total": 1010453000,
+              "source": "https://www.energy.gov/media/319161",
+              "details": "This combined bucket covers the smaller parts of the Office of Science budget that still matter a lot. It includes isotope production, science laboratory infrastructure, and program direction and management. These funds help keep the research system running and support work that does not fit the larger science accounts."
             }
-          ],
-          "details": "This part of the budget covers civilian science spending outside NASA and NSF, including DOE and NOAA. That includes things like DOE Office of Science, NOAA Research, and Other Federal Science. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
+          ]
+        },
+        {
+          "id": "noaa",
+          "title": "NOAA Research & Satellites",
+          "desc": "NOAA science, research infrastructure, and weather and space-weather satellite programs",
+          "total": 3264936000,
+          "source": "https://www.commerce.gov/sites/default/files/2024-03/NOAA-FY2025-Congressional-Budget-Submission.pdf",
+          "details": "This groups the NOAA pieces most people think of as science and space work. It combines NOAA research and development with major weather and space-weather satellite funding. Because NOAA also handles fisheries, oceans, and forecasting operations, this is a science-focused slice rather than the agency's full budget.",
+          "categories": [
+            {
+              "id": "noaa-rd",
+              "title": "Research & Development",
+              "desc": "Research, development, and research facilities across NOAA's science offices",
+              "total": 1164936000,
+              "source": "https://www.commerce.gov/sites/default/files/2024-03/NOAA-FY2025-Congressional-Budget-Submission.pdf",
+              "details": "This covers NOAA research and development spending, including equipment and facilities tied to that work. It supports climate, oceans, atmosphere, environmental data, modeling, and research tools across multiple NOAA offices. In simple terms, it is NOAA's core science and research budget."
+            },
+            {
+              "id": "noaa-satellites",
+              "title": "Weather Satellites",
+              "desc": "Current and next-generation weather and space-weather satellite systems",
+              "total": 2100000000,
+              "source": "https://www.commerce.gov/news/press-releases/2024/03/president-bidens-fiscal-year-2025-budget-would-strengthen-commerce",
+              "details": "This funds NOAA's weather satellite systems and the next generation of satellites being built to replace them. These spacecraft feed the forecasts and environmental data people rely on every day. It is one of the biggest and most visible technology investments inside NOAA."
+            }
+          ]
+        },
+        {
+          "id": "usgs",
+          "title": "U.S. Geological Survey",
+          "desc": "Earth science, hazard monitoring, mapping, ecosystems, water, and resource research",
+          "total": 1578000000,
+          "source": "https://www.doi.gov/sites/default/files/documents/2024-04/2025bibusgs508.pdf",
+          "details": "USGS provides science about hazards, maps, water, ecosystems, and natural resources. It is the agency behind a lot of the earthquake sensors, streamgages, geologic mapping, and Landsat-related science the public depends on. The figures here follow the FY2025 USGS budget request.",
+          "categories": [
+            {
+              "id": "usgs-ecosystems",
+              "title": "Ecosystems",
+              "desc": "Science on wildlife, invasive species, environmental health, climate effects, and land management",
+              "total": 326100000,
+              "source": "https://www.doi.gov/sites/default/files/documents/2024-04/2025bibusgs508.pdf",
+              "details": "This supports research on ecosystems, species, environmental health, and how land and climate change affect them. It helps managers make decisions about conservation, invasive species, disease, and habitat. It is the biological and ecological side of USGS."
+            },
+            {
+              "id": "usgs-energy-minerals",
+              "title": "Energy & Mineral Resources",
+              "desc": "Science on critical minerals, energy resources, and the environmental effects of extracting them",
+              "total": 120300000,
+              "source": "https://www.doi.gov/sites/default/files/documents/2024-04/2025bibusgs508.pdf",
+              "details": "This category studies where energy and mineral resources are, how much exists, and what the environmental tradeoffs are. It includes critical minerals, geothermal assessments, and other resource analyses. The work helps inform energy and supply-chain decisions."
+            },
+            {
+              "id": "usgs-natural-hazards",
+              "title": "Natural Hazards",
+              "desc": "Earthquakes, volcanoes, landslides, coastal hazards, geomagnetism, and related warning science",
+              "total": 210600000,
+              "source": "https://www.doi.gov/sites/default/files/documents/2024-04/2025bibusgs508.pdf",
+              "details": "This pays for science and monitoring tied to hazards that can threaten lives and property. It includes earthquake sensors, volcano observatories, landslide work, coastal hazards, and geomagnetism. These are some of USGS's most directly public-facing safety programs."
+            },
+            {
+              "id": "usgs-water",
+              "title": "Water Resources",
+              "desc": "Streamgages, groundwater, water quality, water availability, and related monitoring and research",
+              "total": 309600000,
+              "source": "https://www.doi.gov/sites/default/files/documents/2024-04/2025bibusgs508.pdf",
+              "details": "This supports the water data and science used by communities, farmers, utilities, and emergency managers. It includes streamgages, groundwater monitoring, water quality work, and studies of drought and water availability. In plain terms, it helps track where water is, what condition it is in, and how it is changing."
+            },
+            {
+              "id": "usgs-core-science",
+              "title": "Core Science Systems",
+              "desc": "Maps, geospatial data, Landsat-related science, and foundational Earth data systems",
+              "total": 313000000,
+              "source": "https://www.doi.gov/sites/default/files/documents/2024-04/2025bibusgs508.pdf",
+              "details": "This is the part of USGS that provides the foundational mapping and data layers other science depends on. It includes geospatial systems, imagery, data platforms, and work tied to Landsat and other shared information systems. It is the backbone data infrastructure for a lot of USGS science."
+            },
+            {
+              "id": "usgs-support",
+              "title": "Mission Support & Other",
+              "desc": "Administration, facilities, and other USGS activities outside the main mission areas",
+              "total": 298400000,
+              "source": "https://www.doi.gov/sites/default/files/documents/2024-04/2025bibusgs508.pdf",
+              "details": "This combined bucket covers the rest of the USGS request outside the major science mission areas. It includes support functions, administration, and other agency-wide work needed to operate labs, field programs, and data systems. It is the support layer that keeps the mission areas working."
+            }
+          ]
+        },
+        {
+          "id": "nist",
+          "title": "National Institute of Standards and Technology",
+          "desc": "Measurement science, standards, manufacturing programs, and research facilities",
+          "total": 1498500000,
+          "source": "https://www.nist.gov/congressional-and-legislative-affairs/nist-appropriations-summary-1/fy-2025-presidential-budget",
+          "details": "NIST develops the measurements, standards, and technical tools that support science, industry, and technology policy. It also funds manufacturing competitiveness programs and upgrades to research facilities. The figures here follow NIST's FY2025 budget request.",
+          "categories": [
+            {
+              "id": "nist-strs",
+              "title": "Scientific & Technical Research and Services",
+              "desc": "NIST's core research labs, measurement science, and standards work",
+              "total": 975000000,
+              "source": "https://www.nist.gov/congressional-and-legislative-affairs/nist-appropriations-summary-1/fy-2025-presidential-budget",
+              "details": "This is NIST's main research account. It supports the labs and experts who develop measurement science, test methods, standards, and technical guidance across fields like AI, cybersecurity, quantum, manufacturing, and physics. In simple terms, it funds the science NIST is best known for."
+            },
+            {
+              "id": "nist-crf",
+              "title": "Construction of Research Facilities",
+              "desc": "Construction, modernization, and repair of NIST research buildings and infrastructure",
+              "total": 311500000,
+              "source": "https://www.nist.gov/congressional-and-legislative-affairs/nist-appropriations-summary-1/fy-2025-presidential-budget",
+              "details": "This pays for repairing and modernizing NIST's research facilities. It covers building upgrades, maintenance backlogs, utilities, and specialized infrastructure needed for advanced scientific work. These funds help make sure the labs are safe and capable enough for modern research."
+            },
+            {
+              "id": "nist-its",
+              "title": "Industrial Technology Services",
+              "desc": "Manufacturing Extension Partnership and Manufacturing USA",
+              "total": 212000000,
+              "source": "https://www.nist.gov/congressional-and-legislative-affairs/nist-appropriations-summary-1/fy-2025-presidential-budget",
+              "details": "This supports NIST programs that help American manufacturers adopt better tools and processes. It includes the Hollings Manufacturing Extension Partnership and Manufacturing USA. The aim is to strengthen industrial competitiveness and spread new manufacturing technology more quickly."
+            }
+          ]
         }
       ],
-      "details": "This part of the budget pays for civilian science and space programs. It includes NASA, the National Science Foundation, and other research done across the federal government. The total here depends mostly on which missions, facilities, and research efforts lawmakers choose to fund."
+      "details": "This section is organized by agency instead of by OMB budget function, so the total will not add up to the overall Science budget due to overlapping responsibilities and funding streams. It groups together the FY2025 budget requests for major civilian science and space agencies and science-focused agency components that people are most likely to recognize."
     },
     {
       "id": "general-government",
       "title": "General Government",
-      "desc": "Core operations of Treasury, Congress, the White House, and government-wide management agencies",
-      "total": 36300000000,
+      "desc": "Core operations of the federal government itself: Congress, the White House, Treasury, and the agencies that keep the government running day to day.",
+      "total": 34454000000,
+      "source": "https://www.fiscal.treasury.gov/files/reports-statements/combined-statement/cs2025/outlay.pdf",
+      "details": "This is the part of the budget that keeps the federal government itself running. It covers tax collection, managing federal debt, running Congress, operating the White House, and managing federal buildings and employees. This is entirely discretionary — Congress votes on it every year. The total here is from the FY2025 Combined Statement of Receipts, Outlays, and Balances (U.S. Treasury), which reports $34.5 billion net. The OMB Historical Table 3.2 reports $40.5 billion gross before deducting $2.5 billion in offsetting receipts.",
       "categories": [
         {
           "id": "fiscal-operations",
-          "title": "Fiscal Operations",
-          "desc": "Tax collection, debt management, payments, and other Treasury operations",
-          "total": 15900000000,
-          "source": "https://home.treasury.gov/about/budget-financial-reporting-planning-and-performance/budget-requestannual-performance-plan-and-reports/congressional-justification/fy-2025-congressional-justification",
+          "title": "Central Fiscal Operations",
+          "desc": "IRS tax collection, the Bureau of the Fiscal Service (debt payments and accounting), and Treasury Departmental Offices including sanctions enforcement.",
+          "total": 21105000000,
+          "source": "https://www.whitehouse.gov/wp-content/uploads/2026/04/hist03z2_fy2027.xlsx",
+          "details": "This is OMB budget subfunction 803. It is the largest slice of general government spending and includes everything needed to collect taxes and manage the government's money. The IRS alone received about $12.3 billion in FY2025 appropriations to process returns, enforce tax law, and answer taxpayer questions — that work funds virtually all other government programs. The Bureau of the Fiscal Service runs payment systems that send out Social Security checks, tax refunds, and other federal payments to hundreds of millions of Americans each year.",
           "categories": [
             {
               "id": "fiscal-irs",
               "title": "IRS",
-              "desc": "Tax administration, enforcement, and taxpayer services",
-              "total": 11448000000,
-              "details": "This is the money needed to run Fiscal Operations behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
+              "desc": "Tax administration, enforcement, and taxpayer services.",
+              "total": 12300000000,
+              "source": "https://www.appropriations.senate.gov/news/majority/bill-summary-financial-services-and-general-government-fiscal-year-2025-appropriations-bill",
+              "details": "The IRS collected roughly $5 trillion in taxes in FY2025 — every dollar the government spends on Social Security, defense, and health care flows through collections the IRS manages. This funding pays for customer service phone lines, online filing systems, audit and enforcement staff, and IT modernization. Without this investment, the government would collect far less than it spends, widening the deficit. The IRS appropriation for FY2025 was held flat at $12.3 billion for the third consecutive year."
             },
             {
               "id": "fiscal-service",
-              "title": "Fiscal Service",
-              "desc": "Debt financing, payment systems, and accounting operations",
+              "title": "Bureau of the Fiscal Service",
+              "desc": "Federal payment systems, debt financing, and government-wide accounting.",
               "total": 1908000000,
-              "details": "This is the money the federal government spends on debt financing, payment systems, and accounting operations. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
+              "source": "https://home.treasury.gov/system/files/266/14.-BFS-FY-2025-CJ.pdf",
+              "details": "The Bureau of the Fiscal Service is the government's payment processor and accountant. It issues Social Security checks, tax refunds, and federal payroll — handling over one billion payments a year. It also manages the borrowing that finances the federal deficit by auctioning Treasury securities. This office publishes USAspending.gov and Fiscal Data so the public can see how their money is spent."
             },
             {
               "id": "fiscal-treasury-do",
               "title": "Treasury Departmental Offices",
-              "desc": "Departmental offices, sanctions, and financial intelligence",
-              "total": 1590000000,
-              "details": "This is the money the federal government spends on departmental offices, sanctions, and financial intelligence. This is not a program people sign up for. It is a financing cost the government owes because it has borrowed money. How much gets spent here mostly depends on the size of the underlying program and the choices lawmakers make each year."
-            },
-            {
-              "id": "fiscal-other",
-              "title": "Other Fiscal Agencies",
-              "desc": "Other Treasury fiscal and financial oversight activities",
-              "total": 954000000,
-              "details": "This is the money the federal government spends on other treasury fiscal and financial oversight activities. This is not a program people sign up for. It is a financing cost the government owes because it has borrowed money. How much gets spent here mostly depends on the size of the underlying program and the choices lawmakers make each year."
+              "desc": "Policy leadership, sanctions enforcement, and financial intelligence including OFAC and FinCEN.",
+              "total": 2897000000,
+              "source": "https://home.treasury.gov/about/budget-financial-reporting-planning-and-performance/budget-requestannual-performance-plan-and-reports/budget-in-brief/fy-2025-budget-in-brief",
+              "details": "This covers the parts of Treasury that set economic policy, enforce financial sanctions, and fight money laundering. The Office of Foreign Assets Control (OFAC) administers sanctions programs that freeze the assets of adversaries like Russia, Iran, and North Korea. The Financial Crimes Enforcement Network (FinCEN) tracks suspicious financial transactions to combat drug trafficking and terrorism financing. The amount here also includes the Community Development Financial Institutions (CDFI) Fund, which directs capital to underserved communities."
             }
-          ],
-          "details": "This part of the budget covers tax collection, debt management, payments, and other treasury operations. That includes things like IRS, Fiscal Service, and Treasury Departmental Offices, and other related programs. How much gets spent here mostly depends on the size of the underlying program and the choices lawmakers make each year."
-        },
-        {
-          "id": "other-general",
-          "title": "Other General Government",
-          "desc": "Government-wide management, buildings, procurement, and civil-service support",
-          "total": 7900000000,
-          "categories": [
-            {
-              "id": "general-gsa",
-              "title": "GSA",
-              "desc": "Federal buildings, procurement, and shared services",
-              "total": 3081000000,
-              "details": "This is the money the federal government spends on federal buildings, procurement, and shared services. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
-            },
-            {
-              "id": "general-opm",
-              "title": "OPM",
-              "desc": "Federal workforce management and civil service administration",
-              "total": 2133000000,
-              "details": "This is the money the federal government spends on federal workforce management and civil service administration. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
-            },
-            {
-              "id": "general-election-civil",
-              "title": "Election & Civil Agencies",
-              "desc": "Election administration and smaller civil agencies",
-              "total": 1106000000,
-              "details": "This is the money needed to run Other General Government behind the scenes. It pays for staff, computer systems, oversight, customer service, and other behind-the-scenes work. The amount here depends more on workload, staffing, technology, and oversight needs than on direct payments to the public."
-            },
-            {
-              "id": "general-other",
-              "title": "Other General Government",
-              "desc": "Other government-wide management and support activities",
-              "total": 1580000000,
-              "details": "This bucket groups smaller general government programs that still add up to real spending. It usually pulls together smaller costs in this area that are real parts of the budget even if they are not well known on their own. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
-            }
-          ],
-          "details": "This part of the budget covers government-wide management, buildings, procurement, and civil-service support. That includes things like GSA, OPM, and Election & Civil Agencies, and other related programs. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+          ]
         },
         {
           "id": "legislative",
           "title": "Legislative Branch",
-          "desc": "Congressional operations and support agencies like GAO, CBO, and the Library of Congress",
-          "total": 6800000000,
+          "desc": "Congressional operations including the House, Senate, GAO, CBO, Library of Congress, and Capitol Police.",
+          "total": 6303000000,
+          "source": "https://www.whitehouse.gov/wp-content/uploads/2026/04/hist03z2_fy2027.xlsx",
+          "details": "This is OMB budget subfunction 801. It funds the 535 members of Congress, their staffs, and the agencies that support legislative work. The Government Accountability Office (GAO) uses this funding to audit how executive agencies spend money and publishes hundreds of oversight reports each year. The Congressional Budget Office (CBO) provides independent cost estimates for every major bill before it passes. The Library of Congress — the world's largest library — is also funded here, serving both Congress and the public.",
           "categories": [
             {
               "id": "leg-house-senate",
               "title": "Congressional Operations",
-              "desc": "House, Senate, and joint legislative operations",
+              "desc": "House, Senate, and joint legislative operations including member offices, committees, and leadership.",
               "total": 3128000000,
-              "details": "This is the money the federal government spends on house, senate, and joint legislative operations. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
+              "source": "https://www.congress.gov/crs-product/R48145",
+              "details": "This pays for every senator's and representative's office, committee staff, floor operations, and legislative support services. Each member of Congress has a staff that handles constituent services — helping Americans navigate problems with Social Security, VA benefits, immigration cases, and federal agencies. The roughly 10,000 congressional staff who work in these offices are often the first point of contact between ordinary Americans and the federal government."
             },
             {
               "id": "leg-library",
               "title": "Library of Congress",
-              "desc": "Library of Congress and associated services",
+              "desc": "Library of Congress collections, copyright office, and research services.",
               "total": 1020000000,
-              "details": "This is the money the federal government spends on the Library of Congress and associated services. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
+              "source": "https://www.congress.gov/crs-product/R48145",
+              "details": "The Library of Congress holds over 175 million items — books, maps, photographs, recordings, and manuscripts — making it the largest library in the world. It provides research services directly to Congress and runs the U.S. Copyright Office, which registers intellectual property protections for millions of American creators each year. The library also offers free public access to its digital collections online."
             },
             {
               "id": "leg-gao",
               "title": "GAO",
-              "desc": "Government Accountability Office",
+              "desc": "Government Accountability Office — the independent auditor of the federal government.",
               "total": 952000000,
-              "details": "This is the money the federal government spends on the Government Accountability Office. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
+              "source": "https://www.congress.gov/crs-product/R48145",
+              "details": "The GAO is Congress's watchdog, auditing how federal agencies use taxpayer money. It publishes hundreds of reports each year identifying waste, fraud, and inefficiency across government. GAO recommendations have historically saved billions of dollars — in FY2024 alone, implemented GAO recommendations saved an estimated $56.7 billion. Every dollar spent on GAO has generated roughly $114 in documented savings over recent years."
             },
             {
               "id": "leg-other",
               "title": "Capitol Complex & Other",
-              "desc": "Capitol Police, Architect, CBO, and other legislative support",
-              "total": 1700000000,
-              "details": "This is the money the federal government spends on capitol police, architect, CBO, and other legislative support. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
+              "desc": "Capitol Police, Architect of the Capitol, CBO, and other legislative support agencies.",
+              "total": 1203000000,
+              "source": "https://www.congress.gov/crs-product/R48145",
+              "details": "This covers the agencies that keep the Capitol campus functioning and provide independent analysis. The Capitol Police protect members of Congress, staff, and visitors. The Architect of the Capitol maintains the Capitol building, the Supreme Court building, and the Library of Congress facilities. The Congressional Budget Office scores every major piece of legislation with an independent cost estimate before a vote."
             }
-          ],
-          "details": "This part of the budget covers congressional operations and support agencies like GAO, CBO, and the library of congress. It covers the offices and agencies that help the federal government plan, manage, and carry out its basic work. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
+          ]
+        },
+        {
+          "id": "general-purpose-fiscal-assistance",
+          "title": "General Purpose Fiscal Assistance",
+          "desc": "Payments to Washington D.C., U.S. territories (Puerto Rico, Guam, etc.), and tax-sharing payments.",
+          "total": 9134000000,
+          "source": "https://www.whitehouse.gov/wp-content/uploads/2026/04/hist03z2_fy2027.xlsx",
+          "details": "This is OMB budget subfunction 806. The largest piece is a direct federal payment to Washington D.C., which cannot raise the same tax revenue as a state but must fund city services like police, schools, and courts. Payments to U.S. territories including Puerto Rico, Guam, the U.S. Virgin Islands, and the Northern Mariana Islands are also included here, compensating for the fact that these jurisdictions have limited fiscal authority and their residents pay federal taxes but receive less federal program funding than states."
+        },
+        {
+          "id": "other-general-management",
+          "title": "Other General Government",
+          "desc": "GSA (federal buildings and procurement), OPM (federal workforce management), and other government-wide management.",
+          "total": 5872000000,
+          "source": "https://www.whitehouse.gov/wp-content/uploads/2026/04/hist03z2_fy2027.xlsx",
+          "details": "This combines OMB subfunctions 804 (General property and records management), 805 (Central personnel management), and 808 (Other general government). The General Services Administration (GSA) manages over 370 million square feet of federal office space and runs centralized procurement that saves money through bulk purchasing. The Office of Personnel Management (OPM) administers retirement and health benefits for roughly 2.7 million active federal employees and millions of retirees. The net figure for property management is nearly zero in FY2025 because offsetting receipts from building rentals offset most gross spending."
         },
         {
           "id": "executive",
-          "title": "Executive Office",
-          "desc": "White House and Executive Office units that support presidential management and policy",
-          "total": 5700000000,
-          "categories": [
-            {
-              "id": "exec-eop",
-              "title": "Executive Office",
-              "desc": "Executive Office of the President and support offices",
-              "total": 3078000000,
-              "details": "This is the money the federal government spends on the Executive Office of the President and support offices. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
-            },
-            {
-              "id": "exec-omb",
-              "title": "OMB",
-              "desc": "Office of Management and Budget",
-              "total": 912000000,
-              "details": "This is the office that helps the president build the federal budget and manage executive branch priorities. It reviews agency spending plans, writes budget guidance, and helps coordinate management decisions across government. The total here mostly depends on staffing and the work needed to oversee the budget process."
-            },
-            {
-              "id": "exec-white-house",
-              "title": "White House",
-              "desc": "White House Office and Executive Residence",
-              "total": 456000000,
-              "details": "This is the money the federal government spends on the White House Office and Executive Residence. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
-            },
-            {
-              "id": "exec-other",
-              "title": "NSC & Other Offices",
-              "desc": "National Security Council and other executive offices",
-              "total": 1254000000,
-              "details": "This is the money the federal government spends on the National Security Council and other executive offices. It pays for staff, planning, oversight, and day-to-day operations that help the federal government do its job. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
-            }
-          ],
-          "details": "This part of the budget covers white house and executive office units that support presidential management and policy. It covers the offices and agencies that help the federal government plan, manage, and carry out its basic work. The amount here mostly depends on staffing, workload, and the responsibilities assigned to the office or agency."
+          "title": "Executive Direction and Management",
+          "desc": "White House and Executive Office units including OMB, NSC, and other presidential management offices.",
+          "total": 589000000,
+          "source": "https://www.whitehouse.gov/wp-content/uploads/2026/04/hist03z2_fy2027.xlsx",
+          "details": "This is OMB budget subfunction 802. It covers the operational costs of the Executive Office of the President — the White House staff, the Office of Management and Budget (OMB), the National Security Council, and related policy offices. OMB coordinates the entire federal budget process, reviewing every agency's spending plan before the President's budget is submitted to Congress. This relatively small figure reflects direct operating costs only; the programs these offices oversee are funded in other budget functions."
         }
-      ],
-      "details": "This is the part of the budget that keeps the federal government itself running. It includes tax collection, Treasury operations, Congress, the White House, and other agencies that manage the government's basic operations. The total here depends mostly on staffing, systems, buildings, and the work needed to run the government day to day."
+      ]
     },
     {
       "id": "energy",
       "title": "Energy",
-      "desc": "Civilian energy programs for supply, efficiency, and strategic fuel reserves",
-      "total": 20900000000,
+      "desc": "Civilian energy programs at the Department of Energy, including clean energy research, efficiency programs, grid resilience, and the Strategic Petroleum Reserve.",
+      "total": 20892000000,
+      "source": "https://www.fiscal.treasury.gov/files/reports-statements/combined-statement/cs2025/outlay.pdf",
+      "details": "This covers non-nuclear-weapons spending by the Department of Energy and related agencies. FY2025 outlays were $20.9 billion — a 51.5% increase over FY2024's $13.8 billion, largely driven by Inflation Reduction Act (IRA) funding for clean energy deployment and a major restocking of the Strategic Petroleum Reserve. This function does not include DOE's nuclear weapons activities, which fall under National Defense.",
       "categories": [
         {
           "id": "energy-supply",
           "title": "Energy Supply",
-          "desc": "DOE support for power technologies, grid resilience, and energy production research",
-          "total": 10500000000,
+          "desc": "DOE programs for clean energy deployment, nuclear power, fossil energy research, and grid resilience.",
+          "total": 11794000000,
+          "source": "https://www.whitehouse.gov/wp-content/uploads/2026/04/hist03z2_fy2027.xlsx",
+          "details": "This is OMB budget subfunction 271. It is the largest energy subfunction and funds research, demonstration projects, and deployment support across all major power technologies. Clean energy deployment programs received a large boost from Inflation Reduction Act funding, supporting projects like utility-scale battery storage, advanced geothermal, and next-generation nuclear reactors. Grid resilience investments help protect the electrical grid against extreme weather and cyberattacks.",
           "categories": [
             {
               "id": "energy-clean",
               "title": "Clean Energy Deployment",
-              "desc": "Clean energy demonstration and deployment support",
+              "desc": "Loan guarantees, grants, and demonstration projects for solar, wind, battery storage, and other clean technologies.",
               "total": 3570000000,
-              "details": "This is the money the federal government spends on clean energy demonstration and deployment support. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "source": "https://home.treasury.gov/about/budget-financial-reporting-planning-and-performance/budget-requestannual-performance-plan-and-reports/budget-in-brief/fy-2025-budget-in-brief",
+              "details": "This funds DOE's Loan Programs Office and technology demonstration projects that help bring new clean energy technologies from the lab to commercial scale. Loan guarantees lower the financial risk for projects like advanced nuclear plants, offshore wind, and long-duration energy storage that are too novel for private lenders alone. These programs aim to create manufacturing jobs and reduce electricity costs over time."
             },
             {
               "id": "energy-nuclear",
               "title": "Nuclear Energy",
-              "desc": "Advanced nuclear and fuel-cycle programs",
+              "desc": "Research and development for advanced nuclear reactors and fuel-cycle programs.",
               "total": 2520000000,
-              "details": "This is the money the federal government spends on advanced nuclear and fuel-cycle programs. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "source": "https://home.treasury.gov/about/budget-financial-reporting-planning-and-performance/budget-requestannual-performance-plan-and-reports/budget-in-brief/fy-2025-budget-in-brief",
+              "details": "Nuclear power currently provides about 18% of U.S. electricity and nearly half of all carbon-free electricity. This funding supports research into advanced reactor designs — including small modular reactors (SMRs) and microreactors — that could be cheaper and faster to build than traditional large plants. It also funds work on fuel recycling and waste management to reduce the long-term burden of nuclear waste storage."
             },
             {
               "id": "energy-fossil",
               "title": "Fossil & Carbon Management",
-              "desc": "Fossil energy research and carbon-management programs",
+              "desc": "Research on carbon capture, hydrogen, and cleaner use of fossil fuels.",
               "total": 1890000000,
-              "details": "This is the money the federal government spends on fossil energy research and carbon-management programs. In practice, it supports research, testing, labs, missions, or technology work in this area. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
+              "source": "https://home.treasury.gov/about/budget-financial-reporting-planning-and-performance/budget-requestannual-performance-plan-and-reports/budget-in-brief/fy-2025-budget-in-brief",
+              "details": "This funds DOE's National Energy Technology Laboratory (NETL) and programs focused on capturing carbon dioxide from power plants and industrial facilities before it enters the atmosphere. It also supports hydrogen production research, which could provide clean fuel for industries like steel and shipping that are hard to electrify. These programs are aimed at reducing emissions while natural gas and coal remain part of the energy mix."
             },
             {
               "id": "energy-grid",
               "title": "Grid & Other Supply",
-              "desc": "Grid resilience and other energy-supply programs",
-              "total": 2520000000,
-              "details": "This bucket groups smaller grid & other supply programs that still add up to real spending. It usually pulls together smaller costs in this area that are real parts of the budget even if they are not well known on their own. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "desc": "Grid modernization, transmission infrastructure, and other energy supply programs.",
+              "total": 3814000000,
+              "source": "https://home.treasury.gov/about/budget-financial-reporting-planning-and-performance/budget-requestannual-performance-plan-and-reports/budget-in-brief/fy-2025-budget-in-brief",
+              "details": "A reliable electrical grid is the backbone of the U.S. economy. This funding goes toward upgrading transmission lines to carry more renewable power, improving cybersecurity for grid control systems, and building energy storage that can balance supply and demand as more intermittent wind and solar comes online. The Federal Energy Regulatory Commission (FERC) and the electricity marketing administrations (such as the Bonneville Power Administration) are also funded here."
             }
-          ],
-          "details": "This part of the budget covers DOE support for power technologies, grid resilience, and energy production research. That includes things like Clean Energy Deployment, Nuclear Energy, and Fossil & Carbon Management, and other related programs. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
+          ]
         },
         {
           "id": "energy-conservation",
           "title": "Energy Conservation",
-          "desc": "Efficiency and weatherization programs that lower energy use and costs",
-          "total": 6300000000,
+          "desc": "Weatherization grants, state efficiency programs, federal building upgrades, and efficiency research.",
+          "total": 5792000000,
+          "source": "https://www.whitehouse.gov/wp-content/uploads/2026/04/hist03z2_fy2027.xlsx",
+          "details": "This is OMB budget subfunction 272. These programs help households, businesses, and government reduce the amount of energy they use — which lowers energy bills and reduces pollution. The Weatherization Assistance Program helps low-income households insulate their homes, upgrade heating and cooling systems, and reduce drafts, cutting their energy bills by an average of hundreds of dollars a year. Federal building efficiency upgrades save taxpayer money on utility bills in the long run.",
           "categories": [
             {
               "id": "conserve-weatherization",
               "title": "Weatherization & State Programs",
-              "desc": "State and local efficiency programs including weatherization",
+              "desc": "Grants to states for home weatherization and energy efficiency, primarily for low-income households.",
               "total": 1701000000,
-              "details": "This is the money the federal government spends on state and local efficiency programs including weatherization. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here mostly depends on which projects, facilities, and energy priorities the government chooses to support."
+              "source": "https://home.treasury.gov/about/budget-financial-reporting-planning-and-performance/budget-requestannual-performance-plan-and-reports/budget-in-brief/fy-2025-budget-in-brief",
+              "details": "The Weatherization Assistance Program provides funding to states and localities to upgrade the homes of income-qualifying households — adding insulation, sealing air leaks, and replacing inefficient furnaces and water heaters. These upgrades typically cut household energy bills by $300–$500 a year on a permanent basis, helping low-income families afford other necessities. The State Energy Program (SEP) provides flexible grants to states to develop their own energy efficiency and renewable energy strategies."
             },
             {
               "id": "conserve-federal",
               "title": "Federal Energy Management",
-              "desc": "Efficiency programs for federal facilities and operations",
+              "desc": "Efficiency upgrades for federal buildings, vehicles, and operations.",
               "total": 1008000000,
-              "details": "This is the money the federal government spends on efficiency programs for federal facilities and operations. In practice, it pays for buildings, equipment, long-term projects, or physical infrastructure. The amount here depends mostly on the size of the projects, the contracts involved, and how much Congress decides to fund."
+              "source": "https://home.treasury.gov/about/budget-financial-reporting-planning-and-performance/budget-requestannual-performance-plan-and-reports/budget-in-brief/fy-2025-budget-in-brief",
+              "details": "The federal government is the single largest energy consumer in the U.S., occupying over 300,000 buildings and operating a fleet of more than 600,000 vehicles. This funding pays for efficiency upgrades — LED lighting, better HVAC systems, rooftop solar, and electric vehicles — that reduce long-term utility and fuel costs for taxpayers. Congress requires federal agencies to meet energy intensity reduction targets each year."
             },
             {
               "id": "conserve-rd",
               "title": "Efficiency R&D",
-              "desc": "Building, industrial, and vehicle efficiency research",
+              "desc": "Research on building, industrial, and vehicle efficiency technologies.",
               "total": 2016000000,
-              "details": "This is the money the federal government spends on building, industrial, and vehicle efficiency research. In practice, it supports research, testing, labs, missions, or technology work in this area. How much gets spent here depends mostly on which projects, missions, and research efforts Congress chooses to fund."
+              "source": "https://home.treasury.gov/about/budget-financial-reporting-planning-and-performance/budget-requestannual-performance-plan-and-reports/budget-in-brief/fy-2025-budget-in-brief",
+              "details": "This funds DOE's Building Technologies, Industrial Efficiency, and Vehicle Technologies offices. Research here has produced innovations like LED lighting (which now saves Americans roughly $14 billion a year compared to incandescent bulbs), highly efficient heat pumps, and advanced materials for electric vehicle batteries. The goal is to push down the cost of efficient technologies so the private market adopts them at scale."
             },
             {
               "id": "conserve-other",
               "title": "Other Conservation",
-              "desc": "Other conservation and consumer energy-efficiency efforts",
-              "total": 1575000000,
-              "details": "This bucket groups smaller conservation programs that still add up to real spending. It usually pulls together smaller costs in this area that are real parts of the budget even if they are not well known on their own. The amount here mostly depends on which projects, facilities, and energy priorities the government chooses to support."
+              "desc": "Energy efficiency standards, consumer information programs, and other conservation efforts.",
+              "total": 1067000000,
+              "source": "https://home.treasury.gov/about/budget-financial-reporting-planning-and-performance/budget-requestannual-performance-plan-and-reports/budget-in-brief/fy-2025-budget-in-brief",
+              "details": "This includes the appliance and equipment efficiency standards program, which sets minimum efficiency levels for refrigerators, air conditioners, water heaters, and other products. These standards are estimated to save households hundreds of dollars over the life of an appliance and reduce the need for new power plants. The ENERGY STAR program (run jointly with EPA) helps consumers and businesses identify efficient products."
             }
-          ],
-          "details": "This part of the budget covers efficiency and weatherization programs that lower energy use and costs. That includes things like Weatherization & State Programs, Federal Energy Management, and Efficiency R&D, and other related programs. The amount here mostly depends on which projects, facilities, and energy priorities the government chooses to support."
+          ]
         },
         {
-          "id": "strategic-reserve",
-          "title": "Strategic Petroleum Reserve",
-          "desc": "Storage, maintenance, and cleanup tied to the federal emergency oil reserve",
-          "total": 4100000000,
+          "id": "emergency-energy-preparedness",
+          "title": "Strategic Petroleum Reserve & Emergency Preparedness",
+          "desc": "The Strategic Petroleum Reserve (SPR), Northeast Home Heating Oil Reserve, and related emergency fuel stockpiles.",
+          "total": 2383000000,
+          "source": "https://www.whitehouse.gov/wp-content/uploads/2026/04/hist03z2_fy2027.xlsx",
+          "details": "This is OMB budget subfunction 274. The Strategic Petroleum Reserve is the world's largest emergency oil stockpile — up to 714 million barrels stored in underground salt caverns in Louisiana and Texas. The government released roughly 180 million barrels from the SPR in 2022 to combat gasoline price spikes after Russia's invasion of Ukraine; this funding covers the ongoing effort to replenish those stocks, maintain the storage sites, and operate the Northeast Home Heating Oil Reserve, which protects consumers in the Northeast from winter supply disruptions.",
           "categories": [
             {
               "id": "spr-core",
               "title": "Strategic Petroleum Reserve",
-              "desc": "Core petroleum reserve storage and management",
-              "total": 3444000000,
-              "details": "This is the money the federal government spends on core petroleum reserve storage and management. In everyday terms, this is one of the line items that makes the broader category work in real life. The amount here mostly depends on which projects, facilities, and energy priorities the government chooses to support."
+              "desc": "Core SPR oil purchases, storage operations, and site maintenance.",
+              "total": 1927000000,
+              "source": "https://www.energy.gov/ceser/strategic-petroleum-reserve",
+              "details": "The SPR holds crude oil that can be released into the market within days when supply disruptions threaten the economy — such as after a hurricane, a pipeline failure, or a geopolitical crisis. The U.S. can release up to 4.4 million barrels per day from the reserve. After large releases in 2022, this funding supports buying oil back to restore reserve levels, as well as maintaining the aging infrastructure of the four storage sites."
             },
             {
               "id": "spr-northeast",
               "title": "Northeast Reserves",
-              "desc": "Regional gasoline and home heating oil reserves",
+              "desc": "Regional heating oil and gasoline reserves for the Northeast U.S.",
               "total": 246000000,
-              "details": "This is the money the federal government spends on regional gasoline and home heating oil reserves. A lot of this money flows out as grants or subsidies to states, local governments, schools, agencies, or other organizations. The total here mostly depends on the grant formulas or award decisions and how much money lawmakers put into the program."
+              "source": "https://www.energy.gov/ceser/strategic-petroleum-reserve",
+              "details": "The Northeast Home Heating Oil Reserve holds about 1 million barrels of heating oil to protect homeowners in New England — one of the few U.S. regions that still relies heavily on heating oil — from supply disruptions during winter. A separate Northeast Gasoline Supply Reserve was also maintained here. These relatively small stockpiles are designed to provide bridge supply while the broader market adjusts to a disruption, not to replace the full SPR."
             },
             {
               "id": "spr-sites",
               "title": "Site Operations & Cleanup",
-              "desc": "Site operations, maintenance, and environmental work",
-              "total": 410000000,
-              "details": "This is the money the federal government spends on site operations, maintenance, and environmental work. It pays for the day-to-day work needed to keep this part of government or the program running. The amount here mostly depends on which projects, facilities, and energy priorities the government chooses to support."
+              "desc": "Environmental remediation and ongoing maintenance of SPR storage facilities.",
+              "total": 210000000,
+              "source": "https://www.energy.gov/ceser/strategic-petroleum-reserve",
+              "details": "The four SPR sites — Bryan Mound, Big Hill, West Hackberry, and Bayou Choctaw — require ongoing maintenance to keep salt caverns structurally sound and equipment operational. Some older infrastructure requires environmental remediation to address leaks or contamination from decades of oil storage. This funding ensures the reserve can respond quickly in an emergency."
             }
-          ],
-          "details": "This part of the budget covers storage, maintenance, and cleanup tied to the federal emergency oil reserve. That includes things like Strategic Petroleum Reserve, Northeast Reserves, and Site Operations & Cleanup. The amount here mostly depends on which projects, facilities, and energy priorities the government chooses to support."
+          ]
+        },
+        {
+          "id": "energy-info-policy",
+          "title": "Energy Information, Policy, and Regulation",
+          "desc": "Energy Information Administration (EIA) data collection and analysis, and other energy regulatory functions.",
+          "total": 796000000,
+          "source": "https://www.whitehouse.gov/wp-content/uploads/2026/04/hist03z2_fy2027.xlsx",
+          "details": "This is OMB budget subfunction 276. The Energy Information Administration (EIA) is the primary source of independent energy data for the United States — tracking oil and gas prices, electricity generation, energy consumption by sector, and long-term energy outlooks. Its weekly petroleum status reports move global oil markets. This small but influential office also includes funding for energy regulatory functions and policy analysis offices that inform major energy decisions."
         }
-      ],
-      "details": "This part of the budget covers civilian energy programs and the federal oil reserve. It includes work on energy supply, efficiency, grid resilience, and the Strategic Petroleum Reserve. The amount spent here depends on which projects, facilities, and energy priorities the government chooses to support."
+      ]
     }
   ]
 }
