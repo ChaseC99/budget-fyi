@@ -12,6 +12,16 @@
       "desc": "Federal health spending, led by Medicare, Medicaid, marketplace aid, and public health agencies",
       "total": 1975600000000,
       "details": "This is the big bucket for federal health spending. It includes programs like Medicare, Medicaid, marketplace subsidies, and public health agencies. Most of the money here goes toward health coverage and medical care, while a smaller share supports research, oversight, and public health work.",
+      "notableExpenses": [
+        {
+          "id": "medicare-medicaid-improper-payments",
+          "title": "Medicare & Medicaid Improper Payments",
+          "desc": "About $94.1 billion in combined improper payments across Medicare and Medicaid in FY2025",
+          "details": "CMS reported about $56.73 billion in Medicare improper payments and $37.39 billion in Medicaid improper payments in FY2025. These are often discussed alongside fraud and abuse, but improper payments are a broader category that also includes missing documentation, billing mistakes, and eligibility errors. CMS said most of Medicaid's total was tied to insufficient paperwork rather than proven fraud.",
+          "total": 94120000000,
+          "source": "https://www.cms.gov/newsroom/fact-sheets/fiscal-year-2025-improper-payments-fact-sheet"
+        }
+      ],
       "categories": [
         {
           "id": "medicare",
@@ -245,6 +255,16 @@
       "desc": "Cash benefits for retirees, survivors, and disabled workers through the Social Security system",
       "source": "https://www.ssa.gov/finance/2025/Highlights%20of%20Financial%20Position.pdf",
       "total": 1645700000000,
+      "notableExpenses": [
+        {
+          "id": "social-security-improper-payments",
+          "title": "Social Security Improper Payments",
+          "desc": "About $11.3 billion in improper payments across Social Security programs",
+          "details": "The latest SSA estimate put improper payments across retirement, disability, and SSI programs at about $11.3 billion. These cases are often discussed alongside fraud, but improper payments are a broader category that also includes overpayments tied to unreported earnings, living arrangement changes, or other eligibility updates that were not processed correctly.",
+          "total": 11300000000,
+          "source": "https://oig.ssa.gov/assets/uploads/2025-fall-semiannual-report-to-congress.pdf"
+        }
+      ],
       "categories": [
         {
           "id": "oasi",
@@ -446,6 +466,40 @@
       "desc": "Military operations, nuclear forces, and other defense-wide national security spending",
       "source": "https://www.fiscal.treasury.gov/files/reports-statements/combined-statement/cs2025/outlay.pdf",
       "total": 916600000000,
+      "notableExpenses": [
+        {
+          "id": "us-army",
+          "title": "U.S. Army",
+          "desc": "The Army's FY2025 budget request to man, train, and equip the force, including active-duty, Guard, and Reserve components.",
+          "details": "The Army released a FY2025 presidential budget request of $185.9 billion. This is the service's top-line budget request rather than a receipt subtotal inside this explorer, so it cuts across personnel, operations, procurement, research, and construction rather than fitting neatly into one spending category below.",
+          "total": 185900000000,
+          "source": "https://www.army.mil/article/274493/building_for_the_future_army_unveils_185_9_billion_budget_proposal"
+        },
+        {
+          "id": "us-navy",
+          "title": "U.S. Navy",
+          "desc": "The Department of the Navy's FY2025 budget request, including both the Navy and Marine Corps.",
+          "details": "The Department of the Navy requested $257.6 billion for FY2025. That top line includes the Marine Corps, because the Navy and Marine Corps are budgeted together at the department level. It is shown here as a branch-level lens people recognize, not as a stand-alone slice that can be added to the subcategories below.",
+          "total": 257600000000,
+          "source": "https://www.navy.mil/Press-Office/Press-Releases/display-pressreleases/Article/3703469/department-of-the-navy-fy-2025-presidents-budget/"
+        },
+        {
+          "id": "us-air-force",
+          "title": "U.S. Air Force",
+          "desc": "The Air Force's FY2025 budget request for air superiority, global strike, mobility, and other air operations.",
+          "details": "The Department of the Air Force said the FY2025 budget proposal includes $188.1 billion for the Air Force. This is a service top-line request rather than a subcategory total, spanning the Air Force's personnel, operations, procurement, research, and construction accounts.",
+          "total": 188100000000,
+          "source": "https://www.spaceforce.mil/News/Article-Display/Article/3703322/department-of-the-air-force-releases-2025-budget-proposal/"
+        },
+        {
+          "id": "us-space-force",
+          "title": "U.S. Space Force",
+          "desc": "The Space Force's FY2025 budget request for military space operations, launch, missile warning, and satellite systems.",
+          "details": "The Department of the Air Force said the FY2025 budget proposal includes $29.4 billion for the Space Force. This is the service's top-line budget request and is shown here as a recognizable branch-level callout rather than a separate budget category already broken out elsewhere in the defense tree.",
+          "total": 29400000000,
+          "source": "https://www.spaceforce.mil/News/Article-Display/Article/3703322/department-of-the-air-force-releases-2025-budget-proposal/"
+        }
+      ],
       "categories": [
         {
           "id": "dod-military",
@@ -454,6 +508,32 @@
           "details": "This is the main pot of Pentagon spending. It covers troop pay, training, weapons, military construction, and the everyday cost of running the armed forces.",
           "total": 866200000000,
           "source": "https://comptroller.defense.gov/Budget-Materials/Budget2025/",
+          "notableExpenses": [
+            {
+              "id": "b21-raider",
+              "title": "B-21 Raider",
+              "desc": "America's newest stealth bomber entering service under the Air Force's next-generation bomber program.",
+              "details": "The FY2025 defense budget request includes $5.3 billion for the B-21 Raider. This is a curated weapons-system highlight rather than a receipt subtotal: it captures one of the most recognizable new platforms in the budget, a long-range stealth bomber built to penetrate advanced air defenses and eventually replace older bombers in the fleet.",
+              "total": 5300000000,
+              "source": "https://www.defense.gov/News/Releases/Release/Article/3703410/department-of-defense-releases-the-presidents-fiscal-year-2025-defense-budget/"
+            },
+            {
+              "id": "columbia-class-submarine",
+              "title": "Columbia-class Submarine",
+              "desc": "The Navy's next ballistic missile submarine, built to replace the aging Ohio-class fleet.",
+              "details": "The FY2025 defense budget request includes $9.9 billion for the Columbia-class submarine. It is one of the largest single military build efforts in the budget and a central piece of nuclear modernization, funding the boats that will carry the sea-based leg of the U.S. nuclear deterrent for decades.",
+              "total": 9900000000,
+              "source": "https://www.defense.gov/News/Releases/Release/Article/3703410/department-of-defense-releases-the-presidents-fiscal-year-2025-defense-budget/"
+            },
+            {
+              "id": "air-force-f35a-42-aircraft",
+              "title": "42 Air Force F-35A Aircraft",
+              "desc": "The FY2025 Air Force buy of 42 F-35A stealth fighters.",
+              "details": "The FY2025 Air Force procurement request includes $4.474156 billion for 42 F-35A aircraft. This is the clean FY2025 aircraft-buy slice for the Air Force, separate from Navy and Marine Corps purchases and separate from the broader, long-term F-35 program people usually hear about in aggregate.",
+              "total": 4474156000,
+              "source": "https://comptroller.defense.gov/Portals/45/Documents/defbudget/FY2025/FY2025_p1.pdf"
+            }
+          ],
           "categories": [
             {
               "id": "dod-om",
@@ -777,6 +857,24 @@
       "desc": "Cash benefits, health care, education, and support services for veterans and their families — administered by the U.S. Department of Veterans Affairs (VA)",
       "total": 400900000000,
       "source": "https://department.va.gov/wp-content/uploads/2025/06/2026-Budget-in-Brief.pdf",
+      "notableExpenses": [
+        {
+          "id": "pact-act",
+          "title": "PACT Act",
+          "desc": "The largest expansion of veterans' benefits in decades for toxic exposures like burn pits, Agent Orange, and radiation.",
+          "details": "FY2025 spending through the Toxic Exposures Fund reached $30.455 billion. This callout highlights the PACT Act as a named policy people recognize, even though the money is actually distributed across medical care, community care, claims processing, and IT rather than sitting in one simple service bucket.",
+          "total": 30455000000,
+          "source": "https://department.va.gov/wp-content/uploads/2025/06/2026-Budget-in-Brief.pdf"
+        },
+        {
+          "id": "post-911-gi-bill",
+          "title": "Post-9/11 GI Bill",
+          "desc": "Tuition, housing allowances, and book stipends for veterans and families using Chapter 33 education benefits.",
+          "details": "FY2025 spending for the Post-9/11 GI Bill is estimated here at $12.0 billion. It is the most recognizable veterans education benefit by name, paying schools directly while also helping with rent and books for people using military service to finance college or job training after leaving active duty.",
+          "total": 12000000000,
+          "source": "https://www.congress.gov/crs-product/R48608"
+        }
+      ],
       "categories": [
         {
           "id": "veterans-compensation",
@@ -858,32 +956,6 @@
               "total": 9548000000,
               "source": "https://department.va.gov/wp-content/uploads/2025/06/2026-Budget-in-Brief.pdf",
               "details": "VA operates 153 million square feet of physical space across 16,025 acres — one of the largest federal real estate portfolios. This line funds routine maintenance, repairs, utilities, and smaller capital projects at VA hospitals and clinics. It also covers leases for community-based outpatient clinics and Vet Centers. Deferred maintenance has been a long-standing challenge: GAO and VA's own inspector general have flagged aging infrastructure at many facilities."
-            }
-          ]
-        },
-        {
-          "id": "veterans-tef",
-          "title": "Toxic Exposures Fund (PACT Act)",
-          "desc": "Mandatory fund created by the 2022 PACT Act to cover the additional costs of health care and benefits for veterans exposed to burn pits, Agent Orange, radiation, and other toxic substances",
-          "total": 30455000000,
-          "source": "https://department.va.gov/wp-content/uploads/2025/06/2026-Budget-in-Brief.pdf",
-          "note": "TEF spending is already allocated to specific accounts (Medical Services, Community Care, VBA admin, IT) in the combined appropriation table. It is shown here separately to highlight its significance and rapid growth. Costs were $20B in FY2024, $30.4B in FY2025, and projected at $52.6B in FY2026.",
-          "categories": [
-            {
-              "id": "tef-medical",
-              "title": "TEF Medical Care",
-              "desc": "Health care costs for veterans with toxic exposure conditions, above the FY2021 baseline",
-              "total": 27578000000,
-              "source": "https://department.va.gov/wp-content/uploads/2025/06/2026-Budget-in-Brief.pdf",
-              "details": "The PACT Act of 2022 is the largest expansion of VA health care in 30 years. It established presumptive service connections for dozens of conditions — meaning veterans no longer have to prove a specific toxic substance caused their illness. This covers veterans who were near burn pits in Iraq and Afghanistan, exposed to Agent Orange in Vietnam, or worked around radiation during Cold War nuclear tests. VA uses this fund to pay medical costs above what it was already spending in 2021, keeping toxic-exposure care from crowding out other veterans' health budgets."
-            },
-            {
-              "id": "tef-vba",
-              "title": "TEF Benefits Administration & IT",
-              "desc": "Claims processing staff and technology to handle the surge in PACT Act disability claims",
-              "total": 2877000000,
-              "source": "https://department.va.gov/wp-content/uploads/2025/06/2026-Budget-in-Brief.pdf",
-              "details": "The PACT Act added hundreds of thousands of new claimants to VA's disability system almost overnight. This money pays for the VBA staff, claims adjudicators, and technology upgrades needed to process those claims — including the VA's AI-assisted claims tools. Without this investment, wait times for disability decisions would spike even further."
             }
           ]
         },
@@ -1044,6 +1116,16 @@
       "details": "This is the total federal spending on moving people and goods across America. It funds grants to states for road and bridge repairs, air traffic controllers who keep flights safe, bus and rail systems that commuters depend on, and ports that keep goods flowing. The $145.8 billion total is the actual amount paid out (outlays) in FY2025, confirmed by the U.S. Treasury. It is larger than DOT's own enacted budget ($152B) because outlays from prior-year appropriations continue to flow out — especially for multi-year highway and transit construction projects funded under the 2021 Infrastructure Investment and Jobs Act (IIJA).",
       "source": "https://www.fiscal.treasury.gov/files/reports-statements/combined-statement/cs2025/outlay.pdf",
       "total": 145804000000,
+      "notableExpenses": [
+        {
+          "id": "brent-spence-bridge-corridor-project",
+          "title": "Brent Spence Bridge Corridor Project",
+          "desc": "A major Ohio River megaproject to replace and rework the I-71/I-75 corridor between Cincinnati and northern Kentucky.",
+          "details": "FHWA's Bridge Investment Program table assigns $400 million of FY2025 funding to the Brent Spence Bridge Corridor Project. The full federal bridge award is much larger and spans multiple years, but this callout uses the FY2025 slice only so the number matches the year shown in the rest of the budget explorer.",
+          "total": 400000000,
+          "source": "https://www.fhwa.dot.gov/bridge/bip/fy24_annualreport_funding_largebridgeprojects.pdf"
+        }
+      ],
       "categories": [
         {
           "id": "highways",
@@ -1639,6 +1721,16 @@
       "total": 84530000000,
       "source": "https://www.fiscal.treasury.gov/files/reports-statements/combined-statement/cs2025/outlay.pdf",
       "details": "Federal Community & Regional Development helps communities prepare for disasters, recover from them, and invest in local economic development. It funds FEMA's disaster response and preparedness work, provides flexible grants that cities and states use for housing and neighborhood improvements, and targets federal investment at economically distressed regions like Appalachia and the Mississippi Delta.",
+      "notableExpenses": [
+        {
+          "id": "hurricane-helene-recovery",
+          "title": "Hurricane Helene Recovery",
+          "desc": "A major FY2025 FEMA recovery push in North Carolina after Helene's catastrophic flooding and infrastructure damage.",
+          "details": "By September 22, 2025, FEMA said that since January 20, 2025 more than $510 million in Public Assistance reimbursements had been approved to support recovery in North Carolina after Hurricane Helene. The reimbursements cover road and bridge repairs, debris removal, water systems, and other public infrastructure, making this a concrete FY2025 disaster-recovery snapshot rather than a lifetime storm-cost estimate.",
+          "total": 510000000,
+          "source": "https://www.fema.gov/press-release/20250922/nearly-48-million-approved-support-disaster-recovery"
+        }
+      ],
       "categories": [
         {
           "id": "disaster-relief",
@@ -2106,6 +2198,24 @@
       "details": "International Affairs (Budget Function 150) covers all U.S. government spending on diplomacy, foreign aid, and security assistance abroad. It is entirely discretionary spending — Congress votes on it every year. FY2025 was unusual: the Trump administration froze and cancelled large amounts of previously appropriated foreign assistance early in the year, and Congress separately rescinded ~$7.67 billion in July 2025 (P.L. 119-28). As a result, actual outlays of $45.2 billion were $11.2 billion (20%) below FY2024 levels. Sub-category totals are estimates based on enacted appropriations adjusted for known rescissions; account-level outlay data is available at USAspending.gov and ForeignAssistance.gov.",
       "total": 45170000000,
       "source": "https://www.fiscal.treasury.gov/files/reports-statements/combined-statement/cs2025/outlay.pdf",
+      "notableExpenses": [
+        {
+          "id": "pepfar",
+          "title": "PEPFAR",
+          "desc": "The U.S. government's flagship global HIV/AIDS effort, including treatment, prevention, and support for health systems abroad",
+          "details": "This uses the broader FY2025 HIV/AIDS package commonly associated with PEPFAR: $4.395 billion in State HIV/AIDS funding, $330 million in USAID HIV/AIDS funding, and a $1.65 billion U.S. contribution to the Global Fund. In plain terms, it funds anti-retroviral treatment, testing, prevention, and the international partnerships that help keep millions of people alive.",
+          "total": 6375000000,
+          "source": "https://www.congress.gov/crs-product/R48231"
+        },
+        {
+          "id": "food-for-peace",
+          "title": "Food for Peace",
+          "desc": "Emergency food aid that buys and ships U.S. commodities to people facing hunger, conflict, and displacement overseas",
+          "details": "Food for Peace Title II is one of the best-known U.S. humanitarian aid programs. The FY2025 enacted amount supports grants that buy food, move it through ports and shipping networks, and distribute it in crisis zones through humanitarian partners.",
+          "total": 1687580000,
+          "source": "https://www.congress.gov/crs-product/R48231"
+        }
+      ],
       "categories": [
         {
           "id": "foreign-aid",
@@ -2189,6 +2299,24 @@
           "desc": "Security assistance that helps allied and partner nations purchase U.S. defense equipment, build their military capacity, and participate in peacekeeping. Administered primarily through the State Department's Title IV security assistance accounts. Israel ($3.3B), Egypt ($1.3B), and Jordan are consistently among the largest recipients of Foreign Military Financing.",
           "total": 13370000000,
           "source": "https://appropriations.house.gov/news/press-releases/committee-approves-fy25-state-foreign-operations-and-related-programs",
+          "notableExpenses": [
+            {
+              "id": "ukraine-military-aid",
+              "title": "Ukraine Military Aid",
+              "desc": "U.S. security assistance to Ukraine, including Foreign Military Financing and other support",
+              "details": "FMF grants enable purchase of U.S. defense articles/services. Supports Ukraine's self-defense and regional partners affected by conflict, funding equipment, training, and capacity building to deter aggression.",
+              "total": 3300000000,
+              "source": "https://foreignassistance.gov/"
+            },
+            {
+              "id": "israel-military-aid",
+              "title": "Israel Military Aid",
+              "desc": "U.S. security assistance that helps Israel purchase American defense equipment through Foreign Military Financing",
+              "details": "This is the recurring FY2025 base Foreign Military Financing amount for Israel, separate from the large supplemental enacted in April 2024. In practice, FMF works like a grant that Israel uses to buy U.S.-made defense equipment and services.",
+              "total": 3300000000,
+              "source": "https://www.congress.gov/crs-products/product/pdf/RL/RL33222"
+            }
+          ],
           "categories": [
             {
               "id": "mil-aid-fmf",
@@ -2679,6 +2807,16 @@
       "total": 20892000000,
       "source": "https://www.fiscal.treasury.gov/files/reports-statements/combined-statement/cs2025/outlay.pdf",
       "details": "This covers non-nuclear-weapons spending by the Department of Energy and related agencies. FY2025 outlays were $20.9 billion — a 51.5% increase over FY2024's $13.8 billion, largely driven by Inflation Reduction Act (IRA) funding for clean energy deployment and a major restocking of the Strategic Petroleum Reserve. This function does not include DOE's nuclear weapons activities, which fall under National Defense.",
+      "notableExpenses": [
+        {
+          "id": "diablo-canyon-power-plant-support",
+          "title": "Diablo Canyon Power Plant Support (CA)",
+          "desc": "Federal support to keep California's Diablo Canyon nuclear plant operating instead of shutting down on its original retirement schedule.",
+          "details": "DOE says the maximum four-year Civil Nuclear Credit award value for Diablo Canyon is up to $1,100,520,444 and is subject to annual adjustment. To keep this receipt on a FY2025 basis, this notable expense uses an annualized estimate of $275.1 million by splitting the four-year cap evenly across the four-year award period. This is an inference for year-by-year display, not a DOE-published FY2025 payment figure.",
+          "total": 275130111,
+          "source": "https://www.energy.gov/gdo/frequently-asked-questions-civil-nuclear-credit-program"
+        }
+      ],
       "categories": [
         {
           "id": "energy-supply",
