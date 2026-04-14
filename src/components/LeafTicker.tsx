@@ -1,4 +1,4 @@
-import type { CSSProperties, ReactNode } from "react";
+import type { CSSProperties } from "react";
 import { useReducedMotion } from "motion/react";
 import type { BudgetNode } from "../data/types";
 import { formatCurrency } from "../lib/format";
@@ -83,36 +83,22 @@ export function LeafTicker({ items, getAmount, onSelect }: LeafTickerProps) {
     return null;
   }
 
-  const renderItems = (copyId: string, interactive: boolean): ReactNode =>
+  const renderItems = (copyId: string, interactive: boolean) =>
     items.map((item) => {
       const style = {
         "--ticker-color": getCategoryColor(item.branchIndex),
       } as CSSProperties;
 
-      if (!interactive) {
-        return (
-          <span
-            key={`${copyId}-${item.id}`}
-            className={styles.item}
-            style={style}
-            aria-hidden="true"
-          >
-            <span className={styles.value}>{formatCurrency(getAmount(item.total))}</span>
-            <span className={styles.title}>{item.title}</span>
-            <span className={styles.separator} aria-hidden="true">|</span>
-            <span className={styles.parent}>{item.parentTitle}</span>
-          </span>
-        );
-      }
-
       return (
         <button
           key={`${copyId}-${item.id}`}
           type="button"
-          className={styles.item}
+          className={`${styles.item} ${interactive ? "" : styles.clone}`}
           style={style}
-          onClick={() => onSelect(item)}
-          aria-label={`${item.title} in ${item.parentTitle}`}
+          onClick={interactive ? () => onSelect(item) : undefined}
+          aria-hidden={interactive ? undefined : "true"}
+          aria-label={interactive ? `${item.title} in ${item.parentTitle}` : undefined}
+          tabIndex={interactive ? undefined : -1}
         >
           <span className={styles.value}>{formatCurrency(getAmount(item.total))}</span>
           <span className={styles.title}>{item.title}</span>

@@ -36,6 +36,7 @@
 .item {
   --ticker-color: #6366f1;
   display: inline-flex;
+  flex: 0 0 auto;
   align-items: center;
   gap: 8px;
   white-space: nowrap;
@@ -56,6 +57,10 @@
     transform 0.18s ease,
     background-color 0.18s ease,
     border-color 0.18s ease;
+}
+
+.clone {
+  pointer-events: none;
 }
 
 .item:hover {

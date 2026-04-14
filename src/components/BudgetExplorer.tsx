@@ -243,7 +243,7 @@ export function BudgetExplorer() {
         <AnimatePresence mode="wait" initial={false}>
           {isRoot ? (
             <LeafTicker
-              key="ticker"
+              key={`ticker-${hasContribution ? userTax : "total"}`}
               items={tickerItems}
               getAmount={getAmount}
               onSelect={handleTickerSelect}
