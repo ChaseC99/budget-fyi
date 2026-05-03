@@ -107,6 +107,7 @@ export function BudgetExplorer() {
   const [isNotableInfoHovered, setIsNotableInfoHovered] = useState(false);
   const expandAboutOnTickerNav = useRef(false);
   const pendingTickerNotableId = useRef<string | null>(null);
+  const pendingSelectLeafId = useRef<string | null>(null);
   const donutRef = useRef<DonutChartHandle>(null);
   const { current, parent, drillDown, goBack, navigateToNode, depth, isRoot, direction } =
     useBudgetNavigation(rootNode);
@@ -162,6 +163,14 @@ export function BudgetExplorer() {
   }, [parent, current]);
 
   useEffect(() => {
+    if (pendingSelectLeafId.current) {
+      const leaf = current.categories?.find(
+        (child) => child.id === pendingSelectLeafId.current,
+      );
+      pendingSelectLeafId.current = null;
+      setSelectedLeaf(leaf ?? null);
+      return;
+    }
     setSelectedLeaf(null);
   }, [current.id]);
 
@@ -192,6 +201,48 @@ export function BudgetExplorer() {
 
     pendingTickerNotableId.current = null;
   }, [current.id, notableExpenses]);
+
+  useEffect(() => {
+    function handleNavigate(event: Event) {
+      const detail = (event as CustomEvent<{
+        targetId: string;
+        focusNotableId?: string;
+        selectLeafId?: string;
+      }>).detail;
+      if (!detail?.targetId) return;
+
+      const alreadyAtTarget = current.id === detail.targetId;
+
+      if (detail.focusNotableId) {
+        pendingTickerNotableId.current = detail.focusNotableId;
+        expandAboutOnTickerNav.current = false;
+      }
+      if (detail.selectLeafId) {
+        pendingSelectLeafId.current = detail.selectLeafId;
+      }
+
+      navigateToNode(detail.targetId);
+
+      if (alreadyAtTarget) {
+        if (pendingSelectLeafId.current) {
+          const leaf = current.categories?.find(
+            (child) => child.id === pendingSelectLeafId.current,
+          );
+          pendingSelectLeafId.current = null;
+          if (leaf) setSelectedLeaf(leaf);
+        }
+        if (pendingTickerNotableId.current) {
+          const notableId = pendingTickerNotableId.current;
+          const expense = current.notableExpenses?.find((e) => e.id === notableId);
+          pendingTickerNotableId.current = null;
+          if (expense) setExpandedNotableId(notableId);
+        }
+      }
+    }
+
+    window.addEventListener("budget:navigate", handleNavigate);
+    return () => window.removeEventListener("budget:navigate", handleNavigate);
+  }, [current, navigateToNode]);
 
   const handleItemSelect = useCallback((child: BudgetNode) => {
     if (child.categories && child.categories.length > 0) {
